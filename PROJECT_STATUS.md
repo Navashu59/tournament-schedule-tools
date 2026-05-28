@@ -17,7 +17,7 @@ The new site is implemented as a static Cloudflare Pages-ready project.
 
 The first launch includes:
 
-- 30 SEO pages from the validated tournament scheduling cluster
+- 38 SEO pages from the validated tournament scheduling cluster
 - Homepage with a working scheduler
 - Tools index
 - About, How it works, Privacy, Terms, Contact
@@ -43,13 +43,28 @@ Each planned page has:
 
 DeepSeek was used for first-pass copy drafts. The generator normalizes internal links so generated pages do not link to non-existent paths.
 
+## Authority Expansion
+
+Eight pages were added after the first 30-page build to make the site feel more complete around real scheduling constraints:
+
+- `/round-robin-schedule-maker/`
+- `/tournament-fixture-generator/`
+- `/sports-schedule-maker/`
+- `/pool-play-schedule-generator/`
+- `/tournament-schedule-template/`
+- `/5-team-round-robin/`
+- `/7-team-round-robin/`
+- `/9-team-round-robin/`
+
+These pages strengthen the round robin schedule, fixture, pool play, template, and odd-team bye clusters without turning the site into low-value page expansion.
+
 ## Verification Completed
 
 - `npm run build` passed
 - `node --check public/assets/app.js` passed
-- 37 index pages generated
-- 37 sitemap URLs generated
-- 38 HTML files have parseable JSON-LD, including `404.html`
+- 45 index pages generated
+- 45 sitemap URLs generated
+- 46 HTML files have parseable JSON-LD, including `404.html`
 - Internal link check found 0 broken local links
 - Playwright smoke test passed:
   - homepage schedule generation works

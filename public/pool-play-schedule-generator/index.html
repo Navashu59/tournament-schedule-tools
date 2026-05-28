@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pool Play Schedule Generator | Tournament Schedule Tools</title>
+  <meta name="description" content="Use this pool play schedule generator to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://example.com/pool-play-schedule-generator/">
+  <meta name="theme-color" content="#17463a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tournament Schedule Tools">
+  <meta property="og:title" content="Pool Play Schedule Generator">
+  <meta property="og:description" content="Use this pool play schedule generator to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta property="og:url" content="https://example.com/pool-play-schedule-generator/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pool Play Schedule Generator">
+  <meta name="twitter:description" content="Use this pool play schedule generator to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"Pool Play Schedule Generator","item":"https://example.com/pool-play-schedule-generator/"}]},{"@type":"WebPage","@id":"https://example.com/pool-play-schedule-generator/#webpage","url":"https://example.com/pool-play-schedule-generator/","name":"Pool Play Schedule Generator","headline":"Pool Play Schedule Generator","description":"Use this pool play schedule generator to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/pool-play-schedule-generator/#app","name":"Pool Play Schedule Generator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/pool-play-schedule-generator/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]},{"@type":"FAQPage","@id":"https://example.com/pool-play-schedule-generator/#faq","mainEntity":[{"@type":"Question","name":"What if I have an odd number of teams?","acceptedAnswer":{"@type":"Answer","text":"The tool creates pools of 3 or 5. A 3-team pool has 3 matches per team (2 games, 1 bye). A 5-team pool has 5 matches per team (4 games, 1 bye). The schedule remains balanced."}},{"@type":"Question","name":"How does the tool ensure fairness?","acceptedAnswer":{"@type":"Answer","text":"It uses a round-robin algorithm that rotates teams so each team plays the same number of matches, with equal rest intervals. Court assignments rotate to avoid home-court advantage."}},{"@type":"Question","name":"Can I export to CSV?","acceptedAnswer":{"@type":"Answer","text":"Yes. Click \"Download CSV\" for a file with columns: Pool, Match#, Home, Away, Court, Time. Open in any spreadsheet app."}},{"@type":"Question","name":"What happens after pool play?","acceptedAnswer":{"@type":"Answer","text":"The tool outputs standings (wins, losses, point differential). Use these to seed your bracket. The schedule includes a 15-minute buffer after the last match for seeding."}},{"@type":"Question","name":"Does it work for single-elimination after pools?","acceptedAnswer":{"@type":"Answer","text":"Yes. The schedule ends with a \"Playoff seed\" column. Copy these seeds into your bracket tool. The tool does not generate bracket matches."}}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Tournament Schedule Tools home">
+      <span class="brand-mark">TS</span>
+      <span>Tournament Schedule Tools</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation"><a  href="/">Home</a><a  href="/tools/">Tools</a><a  href="/tournament-schedule-maker/">Schedule Maker</a><a  href="/round-robin-generator/">Round Robin</a><a  href="/tournament-bracket-maker/">Bracket Maker</a><a  href="/guides/how-to-make-a-fair-tournament-schedule/">Fair Scheduling</a></nav>
+  </header>
+  <main>
+    <section class="hero compact">
+      <div>
+        <p class="eyebrow">format tool</p>
+        <h1>Pool Play Schedule Generator</h1>
+        <p>Tournament organizers need fair pool play schedules before playoffs or elimination rounds.</p>
+      </div>
+    </section>
+    <section class="tool-shell" data-tool data-default-mode="round_robin">
+    <div class="tool-panel">
+      <div class="field-block">
+        <label for="participants-pool-play-schedule-generator">Teams or players</label>
+        <textarea id="participants-pool-play-schedule-generator" data-participants rows="8">Falcons
+Lions
+Tigers
+Sharks
+Rangers
+Wolves
+Eagles
+Panthers</textarea>
+      </div>
+      <div class="control-grid">
+        <label>Format
+          <select data-mode>
+            
+            <option value="round_robin">Round robin</option>
+            
+          </select>
+        </label>
+        <label>Courts or venues
+          <input data-courts type="number" min="1" max="24" value="2">
+        </label>
+        <label>Start time
+          <input data-start type="time" value="09:00">
+        </label>
+        <label>Match length
+          <input data-length type="number" min="5" max="240" value="30">
+        </label>
+        <label>Seeding
+          <select data-seeding>
+            <option value="manual">Use entered order</option>
+            <option value="shuffle">Randomize first</option>
+          </select>
+        </label>
+      </div>
+      <div class="actions">
+        <button class="primary" data-generate type="button">Generate schedule</button>
+        <button data-copy type="button">Copy</button>
+        <button data-csv type="button">CSV</button>
+        <button data-print type="button">Print</button>
+      </div>
+      <p class="tool-note" data-status>Enter one participant per line. The tool handles byes and court assignment.</p>
+    </div>
+    <div class="result-panel" aria-live="polite">
+      <div class="result-head">
+        <h2>Generated schedule</h2>
+        <span data-summary-pill>Ready</span>
+      </div>
+      <div data-fairness class="fairness-grid"></div>
+      <div data-results class="results-table"></div>
+    </div>
+  </section>
+    <article class="content-body">
+      <p>You have 12 teams, three courts, and four hours before bracket play starts. Every team needs to play at least three games, but you can&#39;t have one team playing twice while another sits idle. That&#39;s the problem this tool solves.</p>
+<p>Pool play divides teams into smaller round-robin groups. Each team plays every other team in its pool exactly once. The schedule generator creates a balanced set of matches so you can move directly to playoffs or elimination rounds.</p>
+<h2>How To Use It</h2>
+<ol>
+<li><strong>Enter total teams</strong> (4 to 48). The tool automatically calculates pool sizes.</li>
+<li><strong>Select pool size</strong> (3, 4, 5, or 6 teams per pool). Uneven pools? Choose &quot;Auto-balance&quot; to distribute teams evenly.</li>
+<li><strong>Set courts or venues</strong> (1 to 12). The tool assigns matches to available courts.</li>
+<li><strong>Set time slots</strong> (optional). Enter match duration and total time available. The tool generates start times.</li>
+<li><strong>Click &quot;Generate Schedule&quot;</strong>. Results appear in a table below.</li>
+</ol>
+<p><strong>Output options:</strong> Print directly or download as CSV. The CSV includes pool name, match number, home team, away team, court, and time slot.</p>
+<h2>Example</h2>
+<p><strong>Input:</strong> 16 teams, 4 pools of 4, 2 courts, 3-hour window, 30-minute matches.</p>
+<p><strong>Output:</strong></p>
+<ul>
+<li>Pool A: Teams 1-4. Match 1: Team 1 vs Team 2 (Court 1, 9:00 AM). Match 2: Team 3 vs Team 4 (Court 2, 9:00 AM). Match 3: Team 1 vs Team 3 (Court 1, 9:30 AM). And so on until every team in Pool A has played three matches.</li>
+<li>Pools B, C, D follow the same pattern, staggered across courts and times.</li>
+</ul>
+<h2>What The Results Mean</h2>
+<ul>
+<li><strong>Byes:</strong> In odd-numbered pools (3 or 5 teams), one team sits out each round. The tool marks these as &quot;BYE&quot; and adjusts the schedule so no team has consecutive byes.</li>
+<li><strong>Fairness:</strong> The tool uses a cyclic algorithm. Each team gets equal rest between matches, and no team plays more than one match per round.</li>
+<li><strong>Playoff handoff:</strong> The final column shows &quot;Playoff seed&quot; based on pool standings (wins, then point differential). The schedule ends with enough buffer time for bracket seeding.</li>
+</ul>
+<h2>Common Mistakes</h2>
+<ul>
+<li><strong>Forgetting byes in odd pools.</strong> A 3-team pool has one bye per round. The tool handles this, but you must account for the extra round in your total time.</li>
+<li><strong>Overloading courts.</strong> If you have 6 teams in one pool and 2 courts, expect 5 rounds. The tool warns you if time is insufficient.</li>
+<li><strong>Ignoring time slots.</strong> Without setting match duration, the tool assumes continuous play. Always enter your actual time window.</li>
+<li><strong>Mixing pool sizes manually.</strong> Let the tool auto-balance unless you have a specific reason for uneven pools (e.g., 5-team and 4-team pools).</li>
+</ul>
+<h2>Common Questions</h2>
+<p><strong>What if I have an odd number of teams?</strong> The tool creates pools of 3 or 5. A 3-team pool has 3 matches per team (2 games, 1 bye). A 5-team pool has 5 matches per team (4 games, 1 bye). The schedule remains balanced.</p>
+<p><strong>How does the tool ensure fairness?</strong> It uses a round-robin algorithm that rotates teams so each team plays the same number of matches, with equal rest intervals. Court assignments rotate to avoid home-court advantage.</p>
+<p><strong>Can I export to CSV?</strong> Yes. Click &quot;Download CSV&quot; for a file with columns: Pool, Match#, Home, Away, Court, Time. Open in any spreadsheet app.</p>
+<p><strong>What happens after pool play?</strong> The tool outputs standings (wins, losses, point differential). Use these to seed your bracket. The schedule includes a 15-minute buffer after the last match for seeding.</p>
+<p><strong>Does it work for single-elimination after pools?</strong> Yes. The schedule ends with a &quot;Playoff seed&quot; column. Copy these seeds into your bracket tool. The tool does not generate bracket matches.</p>
+    </article>
+    <section class="link-band" aria-labelledby="related-heading">
+    <h2 id="related-heading">Related planning pages</h2>
+    <div class="link-grid"><a href="/single-elimination-bracket-generator/"><strong>Single Elimination Bracket Generator</strong><span>Users need a knockout bracket where one loss eliminates a team.</span></a><a href="/double-elimination-bracket-generator/"><strong>Double Elimination Bracket Generator</strong><span>Users need to understand or plan a bracket where teams are eliminated after two losses.</span></a><a href="/tournament-schedule-maker/"><strong>Tournament Schedule Maker</strong><span>Users need one place to make brackets, round robin schedules, league fixtures, and printable match lists.</span></a><a href="/round-robin-generator/"><strong>Round Robin Generator</strong><span>Users need each team or player to face every other participant with fair byes and clear rounds.</span></a><a href="/tournament-bracket-maker/"><strong>Tournament Bracket Maker</strong><span>Users need a quick elimination bracket with seeds, byes, print, and export.</span></a></div>
+  </section>
+  </main>
+  <footer class="site-footer">
+    <div>
+      <strong>Tournament Schedule Tools</strong>
+      <p>Fair brackets, round robins, fixtures, byes, print views, and exports for real events.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="/about/">About</a>
+      <a href="/how-it-works/">How it works</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </footer>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

@@ -372,18 +372,12 @@ function layout({ title, description, url, body, schema, currentUrl = "" }) {
 
 function toolHtml(page) {
   const modes = page.tool_modes || ["single_elimination"];
+  const participants = defaultParticipants(page);
   return `<section class="tool-shell" data-tool data-default-mode="${esc(modes[0])}">
     <div class="tool-panel">
       <div class="field-block">
         <label for="participants-${page.slug}">Teams or players</label>
-        <textarea id="participants-${page.slug}" data-participants rows="8">Falcons
-Lions
-Tigers
-Sharks
-Rangers
-Wolves
-Eagles
-Panthers</textarea>
+        <textarea id="participants-${page.slug}" data-participants rows="8">${participants.map(esc).join("\n")}</textarea>
       </div>
       <div class="control-grid">
         <label>Format
@@ -426,6 +420,18 @@ Panthers</textarea>
       <div data-results class="results-table"></div>
     </div>
   </section>`;
+}
+
+function defaultParticipants(page) {
+  const match = String(page.slug || "").match(/^(\d+)-team/);
+  const count = match ? Number(match[1]) : 8;
+  const names = [
+    "Falcons", "Lions", "Tigers", "Sharks", "Rangers", "Wolves", "Eagles", "Panthers",
+    "Hawks", "Bears", "Raptors", "Comets", "Royals", "Storm", "Knights", "Spartans",
+    "Raiders", "Pioneers", "Titans", "Warriors", "Blazers", "United", "City", "North",
+    "South", "East", "West", "Red", "Blue", "Gold", "Green", "Silver"
+  ];
+  return names.slice(0, count);
 }
 
 function relatedPages(page) {

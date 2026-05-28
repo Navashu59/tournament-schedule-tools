@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-05-28",
-  "page_count": 30,
+  "page_count": 38,
   "pages": [
     {
       "rank": 1,
@@ -453,6 +453,130 @@
         "league_schedule"
       ],
       "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 31,
+      "title": "Round Robin Schedule Maker",
+      "keyword": "round robin schedule maker",
+      "slug": "round-robin-schedule-maker",
+      "url": "/round-robin-schedule-maker/",
+      "cluster": "core",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a complete round robin schedule with rounds, courts, times, and fair byes, not just matchup math.",
+      "tool_modes": [
+        "round_robin"
+      ],
+      "content_angle": "Lead with the scheduler, then explain round counts, odd teams, byes, printable exports, and venue limits."
+    },
+    {
+      "rank": 32,
+      "title": "Tournament Fixture Generator",
+      "keyword": "tournament fixture generator",
+      "slug": "tournament-fixture-generator",
+      "url": "/tournament-fixture-generator/",
+      "cluster": "core",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a tournament fixture list that is easy to share, print, and adjust for courts or time slots.",
+      "tool_modes": [
+        "league_schedule",
+        "round_robin"
+      ],
+      "content_angle": "Position fixtures as the practical match list for organizers who care about dates, rounds, courts, and exports."
+    },
+    {
+      "rank": 33,
+      "title": "Sports Schedule Maker",
+      "keyword": "sports schedule maker",
+      "slug": "sports-schedule-maker",
+      "url": "/sports-schedule-maker/",
+      "cluster": "use-case",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Coaches and league organizers need a fast way to make a sports schedule without spreadsheet formulas.",
+      "tool_modes": [
+        "league_schedule",
+        "round_robin"
+      ],
+      "content_angle": "Focus on youth leagues, recreational sports, venues, repeat matchups, and fair home/away planning."
+    },
+    {
+      "rank": 34,
+      "title": "Pool Play Schedule Generator",
+      "keyword": "pool play schedule generator",
+      "slug": "pool-play-schedule-generator",
+      "url": "/pool-play-schedule-generator/",
+      "cluster": "format",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Tournament organizers need fair pool play schedules before playoffs or elimination rounds.",
+      "tool_modes": [
+        "round_robin"
+      ],
+      "content_angle": "Explain pool play as a smaller round robin group, with examples for uneven pools and playoff handoff."
+    },
+    {
+      "rank": 35,
+      "title": "Tournament Schedule Template",
+      "keyword": "tournament schedule template",
+      "slug": "tournament-schedule-template",
+      "url": "/tournament-schedule-template/",
+      "cluster": "export",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users want a printable or spreadsheet-friendly tournament schedule template they can customize quickly.",
+      "tool_modes": [
+        "single_elimination",
+        "round_robin",
+        "league_schedule"
+      ],
+      "content_angle": "Offer the live generator as a better template, then explain what every printable schedule should include."
+    },
+    {
+      "rank": 36,
+      "title": "5 Team Round Robin",
+      "keyword": "5 team round robin",
+      "slug": "5-team-round-robin",
+      "url": "/5-team-round-robin/",
+      "cluster": "size",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a 5-team round robin schedule with one bye each round and no duplicate matchups.",
+      "tool_modes": [
+        "round_robin"
+      ],
+      "content_angle": "Make the odd-team bye logic explicit with a concrete five-team example and fairness checks."
+    },
+    {
+      "rank": 37,
+      "title": "7 Team Round Robin",
+      "keyword": "7 team round robin",
+      "slug": "7-team-round-robin",
+      "url": "/7-team-round-robin/",
+      "cluster": "size",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a 7-team round robin schedule where byes rotate fairly across seven rounds.",
+      "tool_modes": [
+        "round_robin"
+      ],
+      "content_angle": "Show how seven participants create seven rounds, twenty-one games, and one bye per participant."
+    },
+    {
+      "rank": 38,
+      "title": "9 Team Round Robin",
+      "keyword": "9 team round robin",
+      "slug": "9-team-round-robin",
+      "url": "/9-team-round-robin/",
+      "cluster": "size",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a 9-team round robin schedule with balanced byes, courts, and time slots.",
+      "tool_modes": [
+        "round_robin"
+      ],
+      "content_angle": "Explain why nine teams require nine rounds and how court limits affect the event timeline."
     }
   ]
 }
