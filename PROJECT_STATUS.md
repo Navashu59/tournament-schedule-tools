@@ -7,11 +7,37 @@ Updated: 2026-05-28
 The new site is implemented as a static Cloudflare Pages-ready project.
 
 - Source path: `/Users/bluepha/tournament schedule tools`
+- GitHub repository: `https://github.com/Navashu59/tournament-schedule-tools`
+- Current pushed branch: `main`
 - Build command: `npm run build`
 - Publish directory: `public`
 - Local preview command: `npm run serve`
 - Default local URL: `http://127.0.0.1:8790/`
-- Domain: pending. Set `SITE_ORIGIN=https://your-domain.com npm run build` before production deployment.
+- Domain: pending. Recommended first choice: `tournamentscheduletools.com`.
+- Before production deployment, rebuild with the final origin:
+  `SITE_ORIGIN=https://your-domain.com npm run build`
+
+## Domain Recommendation
+
+Recommended domain: `tournamentscheduletools.com`
+
+Reason:
+
+- It exactly matches the site's category and current positioning.
+- It covers the broader authority field better than a narrow bracket-only or round-robin-only name.
+- It matches the GitHub repository and product name.
+- It remains flexible if the site later adds calculators, templates, printable sheets, standings, or sport-specific scheduling tools.
+
+WHOIS check on 2026-05-29 showed `No match` for these candidates:
+
+- `tournamentscheduletools.com`
+- `tournamentfixturemaker.com`
+- `fairtournamentscheduler.com`
+- `poolplayscheduler.com`
+- `roundscheduler.com`
+- `tourneyscheduletools.com`
+
+Final availability must still be confirmed at checkout because domain availability can change quickly.
 
 ## Launch Scope
 
@@ -74,13 +100,14 @@ These pages strengthen the round robin schedule, fixture, pool play, template, a
 
 ## Next Steps
 
-1. Choose and buy the production domain.
+1. Choose and buy the production domain. First choice: `tournamentscheduletools.com`.
 2. Rebuild with the final origin:
    `SITE_ORIGIN=https://final-domain.com npm run build`
-3. Create the GitHub repository and push this project.
-4. Connect the repository to Cloudflare Pages:
+3. Connect the repository to Cloudflare Pages:
+   - repository: `Navashu59/tournament-schedule-tools`
    - build command: `npm run build`
    - publish directory: `public`
+4. Add the final custom domain in Cloudflare Pages.
 5. After launch, submit `sitemap.xml` in Google Search Console.
 6. Watch the first indexing cycle by cluster:
    - core schedule/bracket pages
