@@ -1,0 +1,458 @@
+{
+  "generated_at": "2026-05-28",
+  "page_count": 30,
+  "pages": [
+    {
+      "rank": 1,
+      "title": "Tournament Schedule Maker",
+      "keyword": "tournament schedule maker",
+      "slug": "tournament-schedule-maker",
+      "url": "/tournament-schedule-maker/",
+      "cluster": "core",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need one place to make brackets, round robin schedules, league fixtures, and printable match lists.",
+      "tool_modes": [
+        "single_elimination",
+        "round_robin",
+        "league_schedule"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 2,
+      "title": "Round Robin Generator",
+      "keyword": "round robin generator",
+      "slug": "round-robin-generator",
+      "url": "/round-robin-generator/",
+      "cluster": "core",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need each team or player to face every other participant with fair byes and clear rounds.",
+      "tool_modes": [
+        "round_robin"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 3,
+      "title": "Tournament Bracket Maker",
+      "keyword": "tournament bracket maker",
+      "slug": "tournament-bracket-maker",
+      "url": "/tournament-bracket-maker/",
+      "cluster": "core",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a quick elimination bracket with seeds, byes, print, and export.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 4,
+      "title": "League Schedule Maker",
+      "keyword": "league schedule maker",
+      "slug": "league-schedule-maker",
+      "url": "/league-schedule-maker/",
+      "cluster": "core",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a fixture list across weeks or rounds with home/away and venue/time options.",
+      "tool_modes": [
+        "league_schedule"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 5,
+      "title": "Fixture Generator",
+      "keyword": "fixture generator",
+      "slug": "fixture-generator",
+      "url": "/fixture-generator/",
+      "cluster": "core",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a match fixture list that can be copied, printed, or exported.",
+      "tool_modes": [
+        "league_schedule"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 6,
+      "title": "Single Elimination Bracket Generator",
+      "keyword": "single elimination bracket generator",
+      "slug": "single-elimination-bracket-generator",
+      "url": "/single-elimination-bracket-generator/",
+      "cluster": "format",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a knockout bracket where one loss eliminates a team.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 7,
+      "title": "Double Elimination Bracket Generator",
+      "keyword": "double elimination bracket generator",
+      "slug": "double-elimination-bracket-generator",
+      "url": "/double-elimination-bracket-generator/",
+      "cluster": "format",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need to understand or plan a bracket where teams are eliminated after two losses.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 8,
+      "title": "Printable Tournament Bracket",
+      "keyword": "printable tournament bracket",
+      "slug": "printable-tournament-bracket",
+      "url": "/printable-tournament-bracket/",
+      "cluster": "export",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a bracket layout that prints cleanly for events and classrooms.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 9,
+      "title": "Bracket Generator",
+      "keyword": "bracket generator",
+      "slug": "bracket-generator",
+      "url": "/bracket-generator/",
+      "cluster": "core",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a generic bracket generator but benefit from format guidance and export options.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 10,
+      "title": "4 Team Bracket",
+      "keyword": "4 team bracket",
+      "slug": "4-team-bracket",
+      "url": "/4-team-bracket/",
+      "cluster": "size",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a small four-team bracket quickly.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 11,
+      "title": "8 Team Bracket",
+      "keyword": "8 team bracket",
+      "slug": "8-team-bracket",
+      "url": "/8-team-bracket/",
+      "cluster": "size",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a standard eight-team bracket with quarterfinals and finals.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 12,
+      "title": "16 Team Bracket",
+      "keyword": "16 team bracket",
+      "slug": "16-team-bracket",
+      "url": "/16-team-bracket/",
+      "cluster": "size",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a sixteen-team bracket with proper rounds and seeds.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 13,
+      "title": "32 Team Bracket",
+      "keyword": "32 team bracket",
+      "slug": "32-team-bracket",
+      "url": "/32-team-bracket/",
+      "cluster": "size",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a larger bracket that stays printable and readable.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 14,
+      "title": "6 Team Round Robin",
+      "keyword": "6 team round robin",
+      "slug": "6-team-round-robin",
+      "url": "/6-team-round-robin/",
+      "cluster": "size",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a fair six-team round robin schedule.",
+      "tool_modes": [
+        "round_robin"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 15,
+      "title": "8 Team Round Robin",
+      "keyword": "8 team round robin",
+      "slug": "8-team-round-robin",
+      "url": "/8-team-round-robin/",
+      "cluster": "size",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need an eight-team round robin schedule and match count.",
+      "tool_modes": [
+        "round_robin"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 16,
+      "title": "10 Team Round Robin",
+      "keyword": "10 team round robin",
+      "slug": "10-team-round-robin",
+      "url": "/10-team-round-robin/",
+      "cluster": "size",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a ten-team round robin schedule across rounds.",
+      "tool_modes": [
+        "round_robin"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 17,
+      "title": "12 Team Round Robin",
+      "keyword": "12 team round robin",
+      "slug": "12-team-round-robin",
+      "url": "/12-team-round-robin/",
+      "cluster": "size",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Users need a twelve-team round robin schedule that can be exported.",
+      "tool_modes": [
+        "round_robin"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 18,
+      "title": "Pickleball Round Robin Generator",
+      "keyword": "pickleball round robin generator",
+      "slug": "pickleball-round-robin-generator",
+      "url": "/pickleball-round-robin-generator/",
+      "cluster": "use-case",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Pickleball organizers need court rotation, byes, and reduced repeat partners or opponents.",
+      "tool_modes": [
+        "round_robin"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 19,
+      "title": "Esports Bracket Maker",
+      "keyword": "esports bracket maker",
+      "slug": "esports-bracket-maker",
+      "url": "/esports-bracket-maker/",
+      "cluster": "use-case",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Esports organizers need simple seeded brackets for small tournaments.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 20,
+      "title": "Cornhole Bracket Maker",
+      "keyword": "cornhole bracket maker",
+      "slug": "cornhole-bracket-maker",
+      "url": "/cornhole-bracket-maker/",
+      "cluster": "use-case",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Cornhole event organizers need printable brackets and match lists.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 21,
+      "title": "Ping Pong Bracket Maker",
+      "keyword": "ping pong bracket maker",
+      "slug": "ping-pong-bracket-maker",
+      "url": "/ping-pong-bracket-maker/",
+      "cluster": "use-case",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Ping pong organizers need brackets or round robin schedules for casual tournaments.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 22,
+      "title": "Chess Tournament Schedule Maker",
+      "keyword": "chess tournament schedule maker",
+      "slug": "chess-tournament-schedule-maker",
+      "url": "/chess-tournament-schedule-maker/",
+      "cluster": "use-case",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Chess organizers need pairings, rounds, and printable fixture lists.",
+      "tool_modes": [
+        "league_schedule"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 23,
+      "title": "Classroom Tournament Bracket",
+      "keyword": "classroom tournament bracket",
+      "slug": "classroom-tournament-bracket",
+      "url": "/classroom-tournament-bracket/",
+      "cluster": "use-case",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Teachers need quick classroom brackets for games and review activities.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 24,
+      "title": "Office Tournament Bracket",
+      "keyword": "office tournament bracket",
+      "slug": "office-tournament-bracket",
+      "url": "/office-tournament-bracket/",
+      "cluster": "use-case",
+      "volume": null,
+      "page_type": "tool",
+      "user_problem": "Office organizers need quick brackets for pools, games, and team events.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 25,
+      "title": "How To Make A Round Robin Schedule",
+      "keyword": "how to make a round robin schedule",
+      "slug": "guides/how-to-make-a-round-robin-schedule",
+      "url": "/guides/how-to-make-a-round-robin-schedule/",
+      "cluster": "guide",
+      "volume": null,
+      "page_type": "guide",
+      "user_problem": "Users need to understand round robin scheduling before or after using the generator.",
+      "tool_modes": [
+        "round_robin"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 26,
+      "title": "How Many Games In A Round Robin",
+      "keyword": "how many games in a round robin",
+      "slug": "guides/how-many-games-in-a-round-robin",
+      "url": "/guides/how-many-games-in-a-round-robin/",
+      "cluster": "guide",
+      "volume": null,
+      "page_type": "guide",
+      "user_problem": "Users need the round robin match formula and examples.",
+      "tool_modes": [
+        "round_robin"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 27,
+      "title": "How To Handle Byes In A Tournament",
+      "keyword": "how to handle byes in a tournament",
+      "slug": "guides/how-to-handle-byes-in-a-tournament",
+      "url": "/guides/how-to-handle-byes-in-a-tournament/",
+      "cluster": "guide",
+      "volume": null,
+      "page_type": "guide",
+      "user_problem": "Users need to understand byes when participant counts do not fit the format.",
+      "tool_modes": [
+        "league_schedule"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 28,
+      "title": "How To Seed A Tournament Bracket",
+      "keyword": "how to seed a tournament bracket",
+      "slug": "guides/how-to-seed-a-tournament-bracket",
+      "url": "/guides/how-to-seed-a-tournament-bracket/",
+      "cluster": "guide",
+      "volume": null,
+      "page_type": "guide",
+      "user_problem": "Users need fair seeding rules and examples.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 29,
+      "title": "Single Elimination Vs Double Elimination",
+      "keyword": "single elimination vs double elimination",
+      "slug": "guides/single-elimination-vs-double-elimination",
+      "url": "/guides/single-elimination-vs-double-elimination/",
+      "cluster": "guide",
+      "volume": null,
+      "page_type": "guide",
+      "user_problem": "Users need to choose the right tournament format.",
+      "tool_modes": [
+        "single_elimination"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    },
+    {
+      "rank": 30,
+      "title": "How To Make A Fair Tournament Schedule",
+      "keyword": "how to make a fair tournament schedule",
+      "slug": "guides/how-to-make-a-fair-tournament-schedule",
+      "url": "/guides/how-to-make-a-fair-tournament-schedule/",
+      "cluster": "guide",
+      "volume": null,
+      "page_type": "guide",
+      "user_problem": "Users need practical rules for fairness, byes, courts, and repeat matchups.",
+      "tool_modes": [
+        "league_schedule"
+      ],
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+    }
+  ]
+}

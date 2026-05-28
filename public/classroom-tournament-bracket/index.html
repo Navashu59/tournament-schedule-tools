@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classroom Tournament Bracket | Tournament Schedule Tools</title>
+  <meta name="description" content="Use this classroom tournament bracket to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://example.com/classroom-tournament-bracket/">
+  <meta name="theme-color" content="#17463a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tournament Schedule Tools">
+  <meta property="og:title" content="Classroom Tournament Bracket">
+  <meta property="og:description" content="Use this classroom tournament bracket to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta property="og:url" content="https://example.com/classroom-tournament-bracket/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Classroom Tournament Bracket">
+  <meta name="twitter:description" content="Use this classroom tournament bracket to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"Classroom Tournament Bracket","item":"https://example.com/classroom-tournament-bracket/"}]},{"@type":"WebPage","@id":"https://example.com/classroom-tournament-bracket/#webpage","url":"https://example.com/classroom-tournament-bracket/","name":"Classroom Tournament Bracket","headline":"Classroom Tournament Bracket","description":"Use this classroom tournament bracket to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/classroom-tournament-bracket/#app","name":"Classroom Tournament Bracket","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/classroom-tournament-bracket/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Tournament Schedule Tools home">
+      <span class="brand-mark">TS</span>
+      <span>Tournament Schedule Tools</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation"><a  href="/">Home</a><a  href="/tools/">Tools</a><a  href="/tournament-schedule-maker/">Schedule Maker</a><a  href="/round-robin-generator/">Round Robin</a><a  href="/tournament-bracket-maker/">Bracket Maker</a><a  href="/guides/how-to-make-a-fair-tournament-schedule/">Fair Scheduling</a></nav>
+  </header>
+  <main>
+    <section class="hero compact">
+      <div>
+        <p class="eyebrow">use-case tool</p>
+        <h1>Classroom Tournament Bracket</h1>
+        <p>Teachers need quick classroom brackets for games and review activities.</p>
+      </div>
+    </section>
+    <section class="tool-shell" data-tool data-default-mode="single_elimination">
+    <div class="tool-panel">
+      <div class="field-block">
+        <label for="participants-classroom-tournament-bracket">Teams or players</label>
+        <textarea id="participants-classroom-tournament-bracket" data-participants rows="8">Falcons
+Lions
+Tigers
+Sharks
+Rangers
+Wolves
+Eagles
+Panthers</textarea>
+      </div>
+      <div class="control-grid">
+        <label>Format
+          <select data-mode>
+            <option value="single_elimination">Single elimination</option>
+            
+            
+          </select>
+        </label>
+        <label>Courts or venues
+          <input data-courts type="number" min="1" max="24" value="2">
+        </label>
+        <label>Start time
+          <input data-start type="time" value="09:00">
+        </label>
+        <label>Match length
+          <input data-length type="number" min="5" max="240" value="30">
+        </label>
+        <label>Seeding
+          <select data-seeding>
+            <option value="manual">Use entered order</option>
+            <option value="shuffle">Randomize first</option>
+          </select>
+        </label>
+      </div>
+      <div class="actions">
+        <button class="primary" data-generate type="button">Generate schedule</button>
+        <button data-copy type="button">Copy</button>
+        <button data-csv type="button">CSV</button>
+        <button data-print type="button">Print</button>
+      </div>
+      <p class="tool-note" data-status>Enter one participant per line. The tool handles byes and court assignment.</p>
+    </div>
+    <div class="result-panel" aria-live="polite">
+      <div class="result-head">
+        <h2>Generated schedule</h2>
+        <span data-summary-pill>Ready</span>
+      </div>
+      <div data-fairness class="fairness-grid"></div>
+      <div data-results class="results-table"></div>
+    </div>
+  </section>
+    <article class="content-body">
+      <p><strong>Tool Intro</strong></p>
+<p>Set up a classroom tournament bracket in seconds. Enter your students or teams, choose single or double elimination, and get a printable bracket with matchups, byes, and time slots. No signup required.</p>
+<p><strong>How To Use It</strong></p>
+<ol>
+<li>Enter team or player names (one per line).</li>
+<li>Choose single or double elimination.</li>
+<li>Add optional time slots or venue names (e.g., &quot;Court A&quot;, &quot;Round 1&quot;).</li>
+<li>Click &quot;Generate Bracket&quot;.</li>
+<li>Use <strong>Print View</strong>, <strong>Copy Schedule</strong>, or <strong>CSV Export</strong> to share.</li>
+</ol>
+<p><strong>Example</strong></p>
+<p>You have 7 students for a spelling bee. Enter their names. The tool adds one bye in Round 1. You see a 4-game first round, then semifinals and a final. Print it and hand it out.</p>
+<p><strong>What The Results Mean</strong></p>
+<ul>
+<li><strong>Bracket Tree</strong>: Shows who plays whom, and when.</li>
+<li><strong>Byes</strong>: Empty slots for odd-numbered entries (they advance automatically).</li>
+<li><strong>Fairness Summary</strong>: Explains seeding logic and bye placement.</li>
+<li><strong>Schedule Table</strong>: Lists each match with round, venue, and time.</li>
+</ul>
+<p><strong>Common Mistakes</strong></p>
+<ul>
+<li>Forgetting to account for byes when you have an odd number of teams.</li>
+<li>Using double elimination when you only have 20 minutes of class time.</li>
+<li>Not using the print view before class starts.</li>
+</ul>
+<p><strong>Common Questions</strong></p>
+<p><strong>How do you make a tournament bracket?</strong> Enter your teams, pick elimination type, and click generate. The tool builds the bracket for you.</p>
+<p><strong>How do you seed a bracket?</strong> Enter teams in order of strength (best first). The tool places them so top seeds don&#39;t meet until later rounds.</p>
+<p><strong>What is a bye?</strong> A free pass to the next round. Needed when the number of teams isn&#39;t a power of 2 (e.g., 7 teams needs 1 bye).</p>
+<p><strong>How many games are in a single elimination bracket?</strong> Number of teams minus 1. For 8 teams, that&#39;s 7 games.</p>
+<p><strong>What is the difference between single and double elimination?</strong> Single elimination: lose once, you&#39;re out. Double elimination: lose twice before elimination. Double takes about twice as many rounds.</p>
+<p><strong>Related Tools</strong></p>
+<ul>
+<li><a href="/round-robin-generator/">Round Robin Generator</a></li>
+<li><a href="/round-robin-generator/">Team Scheduler</a></li>
+<li><a href="/classroom-tournament-bracket/">Seating Chart Maker</a></li>
+</ul>
+    </article>
+    <section class="link-band" aria-labelledby="related-heading">
+    <h2 id="related-heading">Related planning pages</h2>
+    <div class="link-grid"><a href="/pickleball-round-robin-generator/"><strong>Pickleball Round Robin Generator</strong><span>Pickleball organizers need court rotation, byes, and reduced repeat partners or opponents.</span></a><a href="/esports-bracket-maker/"><strong>Esports Bracket Maker</strong><span>Esports organizers need simple seeded brackets for small tournaments.</span></a><a href="/cornhole-bracket-maker/"><strong>Cornhole Bracket Maker</strong><span>Cornhole event organizers need printable brackets and match lists.</span></a><a href="/tournament-schedule-maker/"><strong>Tournament Schedule Maker</strong><span>Users need one place to make brackets, round robin schedules, league fixtures, and printable match lists.</span></a><a href="/round-robin-generator/"><strong>Round Robin Generator</strong><span>Users need each team or player to face every other participant with fair byes and clear rounds.</span></a></div>
+  </section>
+  </main>
+  <footer class="site-footer">
+    <div>
+      <strong>Tournament Schedule Tools</strong>
+      <p>Fair brackets, round robins, fixtures, byes, print views, and exports for real events.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="/about/">About</a>
+      <a href="/how-it-works/">How it works</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </footer>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

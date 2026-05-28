@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tournament Bracket Maker | Tournament Schedule Tools</title>
+  <meta name="description" content="Use this tournament bracket maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://example.com/tournament-bracket-maker/">
+  <meta name="theme-color" content="#17463a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tournament Schedule Tools">
+  <meta property="og:title" content="Tournament Bracket Maker">
+  <meta property="og:description" content="Use this tournament bracket maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta property="og:url" content="https://example.com/tournament-bracket-maker/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tournament Bracket Maker">
+  <meta name="twitter:description" content="Use this tournament bracket maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"Tournament Bracket Maker","item":"https://example.com/tournament-bracket-maker/"}]},{"@type":"WebPage","@id":"https://example.com/tournament-bracket-maker/#webpage","url":"https://example.com/tournament-bracket-maker/","name":"Tournament Bracket Maker","headline":"Tournament Bracket Maker","description":"Use this tournament bracket maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/tournament-bracket-maker/#app","name":"Tournament Bracket Maker","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/tournament-bracket-maker/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]},{"@type":"FAQPage","@id":"https://example.com/tournament-bracket-maker/#faq","mainEntity":[{"@type":"Question","name":"How do you make a tournament bracket?","acceptedAnswer":{"@type":"Answer","text":"Enter your participants, set seeds if desired, and generate. The tool creates a single-elimination tree with byes for odd numbers."}},{"@type":"Question","name":"How do you seed a bracket?","acceptedAnswer":{"@type":"Answer","text":"Assign the strongest players as top seeds. They get placed in opposite halves so they can only meet in the final."}},{"@type":"Question","name":"What is a bye?","acceptedAnswer":{"@type":"Answer","text":"A bye is a free pass to the next round. It's given when the number of players isn't a power of 2 (e.g., 7 players needs 1 bye)."}},{"@type":"Question","name":"How many games are in a single elimination bracket?","acceptedAnswer":{"@type":"Answer","text":"Number of games = number of players minus 1. For 8 players, that's 7 games."}},{"@type":"Question","name":"What is the difference between single and double elimination?","acceptedAnswer":{"@type":"Answer","text":"Single elimination: lose once and you're out. Double elimination: you get a second chance in a losers' bracket."}}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Tournament Schedule Tools home">
+      <span class="brand-mark">TS</span>
+      <span>Tournament Schedule Tools</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation"><a  href="/">Home</a><a  href="/tools/">Tools</a><a  href="/tournament-schedule-maker/">Schedule Maker</a><a  href="/round-robin-generator/">Round Robin</a><a aria-current="page" href="/tournament-bracket-maker/">Bracket Maker</a><a  href="/guides/how-to-make-a-fair-tournament-schedule/">Fair Scheduling</a></nav>
+  </header>
+  <main>
+    <section class="hero compact">
+      <div>
+        <p class="eyebrow">core tool</p>
+        <h1>Tournament Bracket Maker</h1>
+        <p>Users need a quick elimination bracket with seeds, byes, print, and export.</p>
+      </div>
+    </section>
+    <section class="tool-shell" data-tool data-default-mode="single_elimination">
+    <div class="tool-panel">
+      <div class="field-block">
+        <label for="participants-tournament-bracket-maker">Teams or players</label>
+        <textarea id="participants-tournament-bracket-maker" data-participants rows="8">Falcons
+Lions
+Tigers
+Sharks
+Rangers
+Wolves
+Eagles
+Panthers</textarea>
+      </div>
+      <div class="control-grid">
+        <label>Format
+          <select data-mode>
+            <option value="single_elimination">Single elimination</option>
+            
+            
+          </select>
+        </label>
+        <label>Courts or venues
+          <input data-courts type="number" min="1" max="24" value="2">
+        </label>
+        <label>Start time
+          <input data-start type="time" value="09:00">
+        </label>
+        <label>Match length
+          <input data-length type="number" min="5" max="240" value="30">
+        </label>
+        <label>Seeding
+          <select data-seeding>
+            <option value="manual">Use entered order</option>
+            <option value="shuffle">Randomize first</option>
+          </select>
+        </label>
+      </div>
+      <div class="actions">
+        <button class="primary" data-generate type="button">Generate schedule</button>
+        <button data-copy type="button">Copy</button>
+        <button data-csv type="button">CSV</button>
+        <button data-print type="button">Print</button>
+      </div>
+      <p class="tool-note" data-status>Enter one participant per line. The tool handles byes and court assignment.</p>
+    </div>
+    <div class="result-panel" aria-live="polite">
+      <div class="result-head">
+        <h2>Generated schedule</h2>
+        <span data-summary-pill>Ready</span>
+      </div>
+      <div data-fairness class="fairness-grid"></div>
+      <div data-results class="results-table"></div>
+    </div>
+  </section>
+    <article class="content-body">
+      <h2>Tool Intro</h2>
+<p>Build a single-elimination bracket in seconds. Enter your teams or players, set seeds and byes, then print or export. No signup required.</p>
+<h2>How To Use It</h2>
+<ol>
+<li>Enter team or player names (one per line).</li>
+<li>Set the number of seeds (optional). Top seeds get placed in separate bracket halves.</li>
+<li>Add byes automatically if you have an odd number of entrants.</li>
+<li>Assign courts, venues, and time slots if needed.</li>
+<li>Click <strong>Generate Bracket</strong>.</li>
+<li>Use <strong>Print View</strong> for a clean paper copy, or <strong>CSV Export</strong> / <strong>Copy Schedule</strong> to share digitally.</li>
+</ol>
+<h2>Example</h2>
+<p>You have 7 players for a ping-pong tournament. Enter their names. The tool adds 1 bye (to make 8 slots). Player 1 (top seed) gets the bye. The bracket shows 3 first-round matches and 1 bye slot. Winner of each match advances to the semifinals.</p>
+<h2>What The Results Mean</h2>
+<ul>
+<li><strong>Bracket tree</strong>: Shows all matchups, winners advance upward.</li>
+<li><strong>Bye slots</strong>: Empty spots where a player automatically advances.</li>
+<li><strong>Seeds</strong>: Placed so top seeds don&#39;t meet until later rounds.</li>
+<li><strong>Schedule</strong>: If you added times/venues, each match gets a slot.</li>
+</ul>
+<h2>Common Mistakes</h2>
+<ul>
+<li><strong>Forgetting byes</strong>: With an odd number of players, someone gets a free pass. The tool handles this automatically.</li>
+<li><strong>Over-seeding</strong>: Seeding more than 4 or 8 teams in a small bracket creates unbalanced halves.</li>
+<li><strong>Missing print setup</strong>: Use <strong>Print View</strong> before printing to avoid cutting off match lines.</li>
+</ul>
+<h2>Common Questions</h2>
+<p><strong>How do you make a tournament bracket?</strong> Enter your participants, set seeds if desired, and generate. The tool creates a single-elimination tree with byes for odd numbers.</p>
+<p><strong>How do you seed a bracket?</strong> Assign the strongest players as top seeds. They get placed in opposite halves so they can only meet in the final.</p>
+<p><strong>What is a bye?</strong> A bye is a free pass to the next round. It&#39;s given when the number of players isn&#39;t a power of 2 (e.g., 7 players needs 1 bye).</p>
+<p><strong>How many games are in a single elimination bracket?</strong> Number of games = number of players minus 1. For 8 players, that&#39;s 7 games.</p>
+<p><strong>What is the difference between single and double elimination?</strong> Single elimination: lose once and you&#39;re out. Double elimination: you get a second chance in a losers&#39; bracket.</p>
+    </article>
+    <section class="link-band" aria-labelledby="related-heading">
+    <h2 id="related-heading">Related planning pages</h2>
+    <div class="link-grid"><a href="/tournament-schedule-maker/"><strong>Tournament Schedule Maker</strong><span>Users need one place to make brackets, round robin schedules, league fixtures, and printable match lists.</span></a><a href="/round-robin-generator/"><strong>Round Robin Generator</strong><span>Users need each team or player to face every other participant with fair byes and clear rounds.</span></a><a href="/league-schedule-maker/"><strong>League Schedule Maker</strong><span>Users need a fixture list across weeks or rounds with home/away and venue/time options.</span></a></div>
+  </section>
+  </main>
+  <footer class="site-footer">
+    <div>
+      <strong>Tournament Schedule Tools</strong>
+      <p>Fair brackets, round robins, fixtures, byes, print views, and exports for real events.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="/about/">About</a>
+      <a href="/how-it-works/">How it works</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </footer>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

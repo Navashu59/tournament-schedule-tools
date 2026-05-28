@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ping Pong Bracket Maker | Tournament Schedule Tools</title>
+  <meta name="description" content="Use this ping pong bracket maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://example.com/ping-pong-bracket-maker/">
+  <meta name="theme-color" content="#17463a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tournament Schedule Tools">
+  <meta property="og:title" content="Ping Pong Bracket Maker">
+  <meta property="og:description" content="Use this ping pong bracket maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta property="og:url" content="https://example.com/ping-pong-bracket-maker/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ping Pong Bracket Maker">
+  <meta name="twitter:description" content="Use this ping pong bracket maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"Ping Pong Bracket Maker","item":"https://example.com/ping-pong-bracket-maker/"}]},{"@type":"WebPage","@id":"https://example.com/ping-pong-bracket-maker/#webpage","url":"https://example.com/ping-pong-bracket-maker/","name":"Ping Pong Bracket Maker","headline":"Ping Pong Bracket Maker","description":"Use this ping pong bracket maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/ping-pong-bracket-maker/#app","name":"Ping Pong Bracket Maker","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/ping-pong-bracket-maker/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]},{"@type":"FAQPage","@id":"https://example.com/ping-pong-bracket-maker/#faq","mainEntity":[{"@type":"Question","name":"How do you make a tournament bracket?","acceptedAnswer":{"@type":"Answer","text":"Enter your players, choose elimination type, and generate. The tool creates the bracket and schedule instantly."}},{"@type":"Question","name":"How do you seed a bracket?","acceptedAnswer":{"@type":"Answer","text":"Seeding places top players apart so they meet later. Enter names in ranked order, and the tool seeds them automatically."}},{"@type":"Question","name":"What is a bye?","acceptedAnswer":{"@type":"Answer","text":"A bye means a player advances without playing. It happens when the number of players isn't a power of 2 (e.g., 5 players = 3 byes)."}},{"@type":"Question","name":"How many games are in a single elimination bracket?","acceptedAnswer":{"@type":"Answer","text":"Number of players minus 1. For 8 players, that's 7 games."}},{"@type":"Question","name":"What is the difference between single and double elimination?","acceptedAnswer":{"@type":"Answer","text":"Single elimination: one loss and you're out. Double elimination: you drop to a losers' bracket after your first loss and can still win."}}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Tournament Schedule Tools home">
+      <span class="brand-mark">TS</span>
+      <span>Tournament Schedule Tools</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation"><a  href="/">Home</a><a  href="/tools/">Tools</a><a  href="/tournament-schedule-maker/">Schedule Maker</a><a  href="/round-robin-generator/">Round Robin</a><a  href="/tournament-bracket-maker/">Bracket Maker</a><a  href="/guides/how-to-make-a-fair-tournament-schedule/">Fair Scheduling</a></nav>
+  </header>
+  <main>
+    <section class="hero compact">
+      <div>
+        <p class="eyebrow">use-case tool</p>
+        <h1>Ping Pong Bracket Maker</h1>
+        <p>Ping pong organizers need brackets or round robin schedules for casual tournaments.</p>
+      </div>
+    </section>
+    <section class="tool-shell" data-tool data-default-mode="single_elimination">
+    <div class="tool-panel">
+      <div class="field-block">
+        <label for="participants-ping-pong-bracket-maker">Teams or players</label>
+        <textarea id="participants-ping-pong-bracket-maker" data-participants rows="8">Falcons
+Lions
+Tigers
+Sharks
+Rangers
+Wolves
+Eagles
+Panthers</textarea>
+      </div>
+      <div class="control-grid">
+        <label>Format
+          <select data-mode>
+            <option value="single_elimination">Single elimination</option>
+            
+            
+          </select>
+        </label>
+        <label>Courts or venues
+          <input data-courts type="number" min="1" max="24" value="2">
+        </label>
+        <label>Start time
+          <input data-start type="time" value="09:00">
+        </label>
+        <label>Match length
+          <input data-length type="number" min="5" max="240" value="30">
+        </label>
+        <label>Seeding
+          <select data-seeding>
+            <option value="manual">Use entered order</option>
+            <option value="shuffle">Randomize first</option>
+          </select>
+        </label>
+      </div>
+      <div class="actions">
+        <button class="primary" data-generate type="button">Generate schedule</button>
+        <button data-copy type="button">Copy</button>
+        <button data-csv type="button">CSV</button>
+        <button data-print type="button">Print</button>
+      </div>
+      <p class="tool-note" data-status>Enter one participant per line. The tool handles byes and court assignment.</p>
+    </div>
+    <div class="result-panel" aria-live="polite">
+      <div class="result-head">
+        <h2>Generated schedule</h2>
+        <span data-summary-pill>Ready</span>
+      </div>
+      <div data-fairness class="fairness-grid"></div>
+      <div data-results class="results-table"></div>
+    </div>
+  </section>
+    <article class="content-body">
+      <h2>Tool Intro</h2>
+<p>Set up a ping pong tournament in seconds. Enter your players or teams, pick single or double elimination, and get a printable bracket with no signup required. Handles odd numbers, byes, and multiple courts.</p>
+<h2>How To Use It</h2>
+<ol>
+<li>Enter player or team names (one per line).</li>
+<li>Choose <strong>Single Elimination</strong> or <strong>Double Elimination</strong>.</li>
+<li>Add optional time slots and court numbers.</li>
+<li>Click <strong>Generate Bracket</strong>.</li>
+<li>Print, copy the schedule, or export as CSV.</li>
+</ol>
+<h2>Example</h2>
+<p><strong>8 players, single elimination, 2 courts:</strong></p>
+<ul>
+<li>Round 1: 4 matches (Courts A &amp; B)</li>
+<li>Round 2: 2 matches</li>
+<li>Final: 1 match</li>
+</ul>
+<p>Total: 7 matches. The bracket shows who plays whom, when, and where.</p>
+<h2>What The Results Mean</h2>
+<ul>
+<li><strong>Bracket view</strong>: Shows the tournament tree with winners advancing.</li>
+<li><strong>Schedule table</strong>: Lists each match with round, court, and time.</li>
+<li><strong>Fairness summary</strong>: Notes if any player gets a bye and why.</li>
+<li><strong>CSV export</strong>: Download for spreadsheets or printing.</li>
+</ul>
+<h2>Common Mistakes</h2>
+<ul>
+<li><strong>Forgetting byes</strong>: With an odd number of players, some get a first-round bye. The tool adds them automatically.</li>
+<li><strong>Wrong elimination type</strong>: Single elimination is one loss and out. Double elimination gives a second chance.</li>
+<li><strong>Skipping time slots</strong>: Without them, the bracket shows match order but no specific times.</li>
+</ul>
+<h2>Common Questions</h2>
+<p><strong>How do you make a tournament bracket?</strong> Enter your players, choose elimination type, and generate. The tool creates the bracket and schedule instantly.</p>
+<p><strong>How do you seed a bracket?</strong> Seeding places top players apart so they meet later. Enter names in ranked order, and the tool seeds them automatically.</p>
+<p><strong>What is a bye?</strong> A bye means a player advances without playing. It happens when the number of players isn&#39;t a power of 2 (e.g., 5 players = 3 byes).</p>
+<p><strong>How many games are in a single elimination bracket?</strong> Number of players minus 1. For 8 players, that&#39;s 7 games.</p>
+<p><strong>What is the difference between single and double elimination?</strong> Single elimination: one loss and you&#39;re out. Double elimination: you drop to a losers&#39; bracket after your first loss and can still win.</p>
+    </article>
+    <section class="link-band" aria-labelledby="related-heading">
+    <h2 id="related-heading">Related planning pages</h2>
+    <div class="link-grid"><a href="/pickleball-round-robin-generator/"><strong>Pickleball Round Robin Generator</strong><span>Pickleball organizers need court rotation, byes, and reduced repeat partners or opponents.</span></a><a href="/esports-bracket-maker/"><strong>Esports Bracket Maker</strong><span>Esports organizers need simple seeded brackets for small tournaments.</span></a><a href="/cornhole-bracket-maker/"><strong>Cornhole Bracket Maker</strong><span>Cornhole event organizers need printable brackets and match lists.</span></a><a href="/tournament-schedule-maker/"><strong>Tournament Schedule Maker</strong><span>Users need one place to make brackets, round robin schedules, league fixtures, and printable match lists.</span></a><a href="/round-robin-generator/"><strong>Round Robin Generator</strong><span>Users need each team or player to face every other participant with fair byes and clear rounds.</span></a></div>
+  </section>
+  </main>
+  <footer class="site-footer">
+    <div>
+      <strong>Tournament Schedule Tools</strong>
+      <p>Fair brackets, round robins, fixtures, byes, print views, and exports for real events.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="/about/">About</a>
+      <a href="/how-it-works/">How it works</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </footer>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fixture Generator | Tournament Schedule Tools</title>
+  <meta name="description" content="Use this fixture generator to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://example.com/fixture-generator/">
+  <meta name="theme-color" content="#17463a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tournament Schedule Tools">
+  <meta property="og:title" content="Fixture Generator">
+  <meta property="og:description" content="Use this fixture generator to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta property="og:url" content="https://example.com/fixture-generator/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fixture Generator">
+  <meta name="twitter:description" content="Use this fixture generator to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"Fixture Generator","item":"https://example.com/fixture-generator/"}]},{"@type":"WebPage","@id":"https://example.com/fixture-generator/#webpage","url":"https://example.com/fixture-generator/","name":"Fixture Generator","headline":"Fixture Generator","description":"Use this fixture generator to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/fixture-generator/#app","name":"Fixture Generator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/fixture-generator/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]},{"@type":"FAQPage","@id":"https://example.com/fixture-generator/#faq","mainEntity":[{"@type":"Question","name":"How do you make a league schedule?","acceptedAnswer":{"@type":"Answer","text":"Enter your team count, choose round-robin, and click generate. The tool creates a balanced schedule with home/away rotation."}},{"@type":"Question","name":"What is a fixture list?","acceptedAnswer":{"@type":"Answer","text":"A fixture list shows all matches in a competition: who plays whom, when, and where. It includes round numbers and venue assignments."}},{"@type":"Question","name":"How do home and away games work?","acceptedAnswer":{"@type":"Answer","text":"In double round-robin, each pair plays twice – once home, once away. Single round-robin assigns home/away alternately across rounds."}},{"@type":"Question","name":"How many rounds are needed?","acceptedAnswer":{"@type":"Answer","text":"For N teams: N-1 rounds (single) or 2(N-1) rounds (double). Odd numbers add a bye per round."}},{"@type":"Question","name":"Can I export a league schedule?","acceptedAnswer":{"@type":"Answer","text":"Yes. Use the CSV export button or copy the table directly. Print view formats it for paper."}}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Tournament Schedule Tools home">
+      <span class="brand-mark">TS</span>
+      <span>Tournament Schedule Tools</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation"><a  href="/">Home</a><a  href="/tools/">Tools</a><a  href="/tournament-schedule-maker/">Schedule Maker</a><a  href="/round-robin-generator/">Round Robin</a><a  href="/tournament-bracket-maker/">Bracket Maker</a><a  href="/guides/how-to-make-a-fair-tournament-schedule/">Fair Scheduling</a></nav>
+  </header>
+  <main>
+    <section class="hero compact">
+      <div>
+        <p class="eyebrow">core tool</p>
+        <h1>Fixture Generator</h1>
+        <p>Users need a match fixture list that can be copied, printed, or exported.</p>
+      </div>
+    </section>
+    <section class="tool-shell" data-tool data-default-mode="league_schedule">
+    <div class="tool-panel">
+      <div class="field-block">
+        <label for="participants-fixture-generator">Teams or players</label>
+        <textarea id="participants-fixture-generator" data-participants rows="8">Falcons
+Lions
+Tigers
+Sharks
+Rangers
+Wolves
+Eagles
+Panthers</textarea>
+      </div>
+      <div class="control-grid">
+        <label>Format
+          <select data-mode>
+            
+            
+            <option value="league_schedule">League fixtures</option>
+          </select>
+        </label>
+        <label>Courts or venues
+          <input data-courts type="number" min="1" max="24" value="2">
+        </label>
+        <label>Start time
+          <input data-start type="time" value="09:00">
+        </label>
+        <label>Match length
+          <input data-length type="number" min="5" max="240" value="30">
+        </label>
+        <label>Seeding
+          <select data-seeding>
+            <option value="manual">Use entered order</option>
+            <option value="shuffle">Randomize first</option>
+          </select>
+        </label>
+      </div>
+      <div class="actions">
+        <button class="primary" data-generate type="button">Generate schedule</button>
+        <button data-copy type="button">Copy</button>
+        <button data-csv type="button">CSV</button>
+        <button data-print type="button">Print</button>
+      </div>
+      <p class="tool-note" data-status>Enter one participant per line. The tool handles byes and court assignment.</p>
+    </div>
+    <div class="result-panel" aria-live="polite">
+      <div class="result-head">
+        <h2>Generated schedule</h2>
+        <span data-summary-pill>Ready</span>
+      </div>
+      <div data-fairness class="fairness-grid"></div>
+      <div data-results class="results-table"></div>
+    </div>
+  </section>
+    <article class="content-body">
+      <h2>Tool Intro</h2>
+<p>Generate a complete match schedule for any number of teams or players. No signup needed. Copy the fixture list, print it, or export it as CSV. Works for leagues, tournaments, and round-robin formats.</p>
+<h2>How To Use It</h2>
+<ol>
+<li>Enter the number of teams or players (2–100).</li>
+<li>Choose single or double round-robin.</li>
+<li>Add optional venue names, court numbers, or time slots.</li>
+<li>Click &quot;Generate Fixtures.&quot;</li>
+<li>Copy the schedule, open print view, or download CSV.</li>
+</ol>
+<h2>Example</h2>
+<p><strong>8 teams, single round-robin</strong> produces 28 matches across 7 rounds. Each team plays once per round. The generator assigns home/away status automatically. If you have 4 courts, you can schedule 2 matches per round.</p>
+<h2>What The Results Mean</h2>
+<p>Each row shows: round number, home team, away team, venue (if set), and date/time (if set). The schedule ensures every team plays every other team exactly once (single) or twice (double). Byes appear automatically when you have an odd number of teams.</p>
+<h2>Common Mistakes</h2>
+<ul>
+<li><strong>Forgetting byes</strong> – With 5 teams, each round has 2 matches and 1 bye. The generator handles this.</li>
+<li><strong>Wrong round count</strong> – 6 teams need 5 rounds for single round-robin, not 6.</li>
+<li><strong>Missing venues</strong> – Add venues only if you have multiple courts. Leave blank for a single venue.</li>
+</ul>
+<h2>Common Questions</h2>
+<p><strong>How do you make a league schedule?</strong> Enter your team count, choose round-robin, and click generate. The tool creates a balanced schedule with home/away rotation.</p>
+<p><strong>What is a fixture list?</strong> A fixture list shows all matches in a competition: who plays whom, when, and where. It includes round numbers and venue assignments.</p>
+<p><strong>How do home and away games work?</strong> In double round-robin, each pair plays twice – once home, once away. Single round-robin assigns home/away alternately across rounds.</p>
+<p><strong>How many rounds are needed?</strong> For N teams: N-1 rounds (single) or 2(N-1) rounds (double). Odd numbers add a bye per round.</p>
+<p><strong>Can I export a league schedule?</strong> Yes. Use the CSV export button or copy the table directly. Print view formats it for paper.</p>
+    </article>
+    <section class="link-band" aria-labelledby="related-heading">
+    <h2 id="related-heading">Related planning pages</h2>
+    <div class="link-grid"><a href="/tournament-schedule-maker/"><strong>Tournament Schedule Maker</strong><span>Users need one place to make brackets, round robin schedules, league fixtures, and printable match lists.</span></a><a href="/round-robin-generator/"><strong>Round Robin Generator</strong><span>Users need each team or player to face every other participant with fair byes and clear rounds.</span></a><a href="/tournament-bracket-maker/"><strong>Tournament Bracket Maker</strong><span>Users need a quick elimination bracket with seeds, byes, print, and export.</span></a></div>
+  </section>
+  </main>
+  <footer class="site-footer">
+    <div>
+      <strong>Tournament Schedule Tools</strong>
+      <p>Fair brackets, round robins, fixtures, byes, print views, and exports for real events.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="/about/">About</a>
+      <a href="/how-it-works/">How it works</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </footer>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

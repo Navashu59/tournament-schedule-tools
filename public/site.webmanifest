@@ -1,0 +1,15 @@
+{
+  "name": "Tournament Schedule Tools",
+  "short_name": "Schedule Tools",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f4ec",
+  "theme_color": "#17463a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

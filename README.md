@@ -25,4 +25,13 @@ All project files for this new site live in this directory.
 
 ## Current status
 
-Planning and implementation in progress.
+First launch implementation is complete and ready for domain-specific rebuild.
+See `PROJECT_STATUS.md` for verification results and deployment next steps.
+
+## Commands
+
+```bash
+npm run build
+npm run serve
+SITE_ORIGIN=https://final-domain.com npm run build
+```

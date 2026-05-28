@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Round Robin Generator | Tournament Schedule Tools</title>
+  <meta name="description" content="Use this round robin generator to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://example.com/round-robin-generator/">
+  <meta name="theme-color" content="#17463a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tournament Schedule Tools">
+  <meta property="og:title" content="Round Robin Generator">
+  <meta property="og:description" content="Use this round robin generator to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta property="og:url" content="https://example.com/round-robin-generator/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Round Robin Generator">
+  <meta name="twitter:description" content="Use this round robin generator to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"Round Robin Generator","item":"https://example.com/round-robin-generator/"}]},{"@type":"WebPage","@id":"https://example.com/round-robin-generator/#webpage","url":"https://example.com/round-robin-generator/","name":"Round Robin Generator","headline":"Round Robin Generator","description":"Use this round robin generator to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/round-robin-generator/#app","name":"Round Robin Generator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/round-robin-generator/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]},{"@type":"FAQPage","@id":"https://example.com/round-robin-generator/#faq","mainEntity":[{"@type":"Question","name":"How do you make a round robin schedule?","acceptedAnswer":{"@type":"Answer","text":"Enter your participants. The tool pairs them using a standard circle method, rotating one team each round. No repeats."}},{"@type":"Question","name":"How many games are in a round robin?","acceptedAnswer":{"@type":"Answer","text":"N × (N-1) / 2. For 8 teams: 28 games. For 6 teams: 15 games."}},{"@type":"Question","name":"What happens with an odd number of teams?","acceptedAnswer":{"@type":"Answer","text":"One team gets a bye each round. The tool assigns byes fairly so no team sits out twice before others do."}},{"@type":"Question","name":"How do you avoid repeat matchups?","acceptedAnswer":{"@type":"Answer","text":"The circle method ensures each pair meets once. The tool never duplicates."}},{"@type":"Question","name":"How do you assign courts or time slots?","acceptedAnswer":{"@type":"Answer","text":"Enter your venue count. The tool spreads matches across available courts, minimizing wait time."}}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Tournament Schedule Tools home">
+      <span class="brand-mark">TS</span>
+      <span>Tournament Schedule Tools</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation"><a  href="/">Home</a><a  href="/tools/">Tools</a><a  href="/tournament-schedule-maker/">Schedule Maker</a><a aria-current="page" href="/round-robin-generator/">Round Robin</a><a  href="/tournament-bracket-maker/">Bracket Maker</a><a  href="/guides/how-to-make-a-fair-tournament-schedule/">Fair Scheduling</a></nav>
+  </header>
+  <main>
+    <section class="hero compact">
+      <div>
+        <p class="eyebrow">core tool</p>
+        <h1>Round Robin Generator</h1>
+        <p>Users need each team or player to face every other participant with fair byes and clear rounds.</p>
+      </div>
+    </section>
+    <section class="tool-shell" data-tool data-default-mode="round_robin">
+    <div class="tool-panel">
+      <div class="field-block">
+        <label for="participants-round-robin-generator">Teams or players</label>
+        <textarea id="participants-round-robin-generator" data-participants rows="8">Falcons
+Lions
+Tigers
+Sharks
+Rangers
+Wolves
+Eagles
+Panthers</textarea>
+      </div>
+      <div class="control-grid">
+        <label>Format
+          <select data-mode>
+            
+            <option value="round_robin">Round robin</option>
+            
+          </select>
+        </label>
+        <label>Courts or venues
+          <input data-courts type="number" min="1" max="24" value="2">
+        </label>
+        <label>Start time
+          <input data-start type="time" value="09:00">
+        </label>
+        <label>Match length
+          <input data-length type="number" min="5" max="240" value="30">
+        </label>
+        <label>Seeding
+          <select data-seeding>
+            <option value="manual">Use entered order</option>
+            <option value="shuffle">Randomize first</option>
+          </select>
+        </label>
+      </div>
+      <div class="actions">
+        <button class="primary" data-generate type="button">Generate schedule</button>
+        <button data-copy type="button">Copy</button>
+        <button data-csv type="button">CSV</button>
+        <button data-print type="button">Print</button>
+      </div>
+      <p class="tool-note" data-status>Enter one participant per line. The tool handles byes and court assignment.</p>
+    </div>
+    <div class="result-panel" aria-live="polite">
+      <div class="result-head">
+        <h2>Generated schedule</h2>
+        <span data-summary-pill>Ready</span>
+      </div>
+      <div data-fairness class="fairness-grid"></div>
+      <div data-results class="results-table"></div>
+    </div>
+  </section>
+    <article class="content-body">
+      <p>Create a fair schedule where every team or player faces each other exactly once. No signup needed—just enter your list and generate a balanced round robin in seconds.</p>
+<h2>How To Use It</h2>
+<ol>
+<li>Enter your teams or players (one per line).</li>
+<li>Choose number of courts or venues (optional).</li>
+<li>Click &quot;Generate Schedule.&quot;</li>
+<li>Print, copy, or export as CSV.</li>
+</ol>
+<p>Works for any number of participants—even odd counts.</p>
+<h2>Example</h2>
+<p><strong>Teams:</strong> A, B, C, D</p>
+<p><strong>Generated schedule (3 rounds):</strong></p>
+<ul>
+<li>Round 1: A vs B, C vs D</li>
+<li>Round 2: A vs C, B vs D</li>
+<li>Round 3: A vs D, B vs C</li>
+</ul>
+<p>Each team plays 3 matches. No repeats.</p>
+<h2>What The Results Mean</h2>
+<ul>
+<li><strong>Rounds:</strong> Each round contains simultaneous matches.</li>
+<li><strong>Byes:</strong> With odd teams, one team sits out each round.</li>
+<li><strong>Fairness:</strong> Every participant has the same number of matches (or one fewer if odd).</li>
+<li><strong>Courts/Time Slots:</strong> Assign venues to rounds—each match gets a unique slot.</li>
+</ul>
+<h2>Common Mistakes</h2>
+<ul>
+<li><strong>Forgetting byes:</strong> Odd teams need a bye each round. The tool handles this automatically.</li>
+<li><strong>Using too few rounds:</strong> A full round robin requires N-1 rounds (N teams). Don&#39;t skip rounds.</li>
+<li><strong>Mixing up home/away:</strong> This generator creates neutral matchups. Add home/away manually if needed.</li>
+</ul>
+<h2>Common Questions</h2>
+<p><strong>How do you make a round robin schedule?</strong> Enter your participants. The tool pairs them using a standard circle method, rotating one team each round. No repeats.</p>
+<p><strong>How many games are in a round robin?</strong> N × (N-1) / 2. For 8 teams: 28 games. For 6 teams: 15 games.</p>
+<p><strong>What happens with an odd number of teams?</strong> One team gets a bye each round. The tool assigns byes fairly so no team sits out twice before others do.</p>
+<p><strong>How do you avoid repeat matchups?</strong> The circle method ensures each pair meets once. The tool never duplicates.</p>
+<p><strong>How do you assign courts or time slots?</strong> Enter your venue count. The tool spreads matches across available courts, minimizing wait time.</p>
+    </article>
+    <section class="link-band" aria-labelledby="related-heading">
+    <h2 id="related-heading">Related planning pages</h2>
+    <div class="link-grid"><a href="/tournament-schedule-maker/"><strong>Tournament Schedule Maker</strong><span>Users need one place to make brackets, round robin schedules, league fixtures, and printable match lists.</span></a><a href="/tournament-bracket-maker/"><strong>Tournament Bracket Maker</strong><span>Users need a quick elimination bracket with seeds, byes, print, and export.</span></a><a href="/league-schedule-maker/"><strong>League Schedule Maker</strong><span>Users need a fixture list across weeks or rounds with home/away and venue/time options.</span></a></div>
+  </section>
+  </main>
+  <footer class="site-footer">
+    <div>
+      <strong>Tournament Schedule Tools</strong>
+      <p>Fair brackets, round robins, fixtures, byes, print views, and exports for real events.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="/about/">About</a>
+      <a href="/how-it-works/">How it works</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </footer>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>
