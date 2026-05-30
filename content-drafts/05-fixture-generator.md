@@ -1,50 +1,40 @@
 # Fixture Generator
 
-## Tool Intro
+Use this page when you need fixtures across rounds, weeks, courts, or venues. Add teams, choose league fixtures, then review home/away balance, time slots, and export options before sharing the schedule.
 
-Generate a complete match schedule for any number of teams or players. No signup needed. Copy the fixture list, print it, or export it as CSV. Works for leagues, tournaments, and round-robin formats.
+## Generate a Fixture Generator first
 
-## How To Use It
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-1. Enter the number of teams or players (2–100).
-2. Choose single or double round-robin.
-3. Add optional venue names, court numbers, or time slots.
-4. Click "Generate Fixtures."
-5. Copy the schedule, open print view, or download CSV.
+## Fixture Generator home-away and fixture review
 
-## Example
+League fixtures are useful when matches happen over days or weeks instead of one bracket session. After generating the list, review whether home and away labels, venue use, and rest timing make sense for the league you are running.
 
-**8 teams, single round-robin** produces 28 matches across 7 rounds. Each team plays once per round. The generator assigns home/away status automatically. If you have 4 courts, you can schedule 2 matches per round.
+## Example fixture generator workflow
 
-## What The Results Mean
+Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
 
-Each row shows: round number, home team, away team, venue (if set), and date/time (if set). The schedule ensures every team plays every other team exactly once (single) or twice (double). Byes appear automatically when you have an odd number of teams.
+## Fixture Generator checks before publishing
 
-## Common Mistakes
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-- **Forgetting byes** – With 5 teams, each round has 2 matches and 1 bye. The generator handles this.
-- **Wrong round count** – 6 teams need 5 rounds for single round-robin, not 6.
-- **Missing venues** – Add venues only if you have multiple courts. Leave blank for a single venue.
+## Export the fixture generator
 
-## Common Questions
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-**How do you make a league schedule?**  
-Enter your team count, choose round-robin, and click generate. The tool creates a balanced schedule with home/away rotation.
+## Fixture Generator questions organizers ask
 
-**What is a fixture list?**  
-A fixture list shows all matches in a competition: who plays whom, when, and where. It includes round numbers and venue assignments.
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
-**How do home and away games work?**  
-In double round-robin, each pair plays twice – once home, once away. Single round-robin assigns home/away alternately across rounds.
+**What is a bye?**  
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-**How many rounds are needed?**  
-For N teams: N-1 rounds (single) or 2(N-1) rounds (double). Odd numbers add a bye per round.
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-**Can I export a league schedule?**  
-Yes. Use the CSV export button or copy the table directly. Print view formats it for paper.
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-## Related Tools
-
-- [Bracket Generator](/bracket-generator/)
-- [Team Scheduler](/team-scheduler/)
-- [Tournament Manager](/tournament-manager/)
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

@@ -19,7 +19,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"Chess Tournament Schedule Maker","item":"https://example.com/chess-tournament-schedule-maker/"}]},{"@type":"WebPage","@id":"https://example.com/chess-tournament-schedule-maker/#webpage","url":"https://example.com/chess-tournament-schedule-maker/","name":"Chess Tournament Schedule Maker","headline":"Chess Tournament Schedule Maker","description":"Use this chess tournament schedule maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/chess-tournament-schedule-maker/#app","name":"Chess Tournament Schedule Maker","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/chess-tournament-schedule-maker/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]},{"@type":"FAQPage","@id":"https://example.com/chess-tournament-schedule-maker/#faq","mainEntity":[{"@type":"Question","name":"How do you make a tournament bracket?","acceptedAnswer":{"@type":"Answer","text":"Enter the number of players, choose Single or Double Elimination, and the tool draws the bracket with all pairings and byes."}},{"@type":"Question","name":"How do you seed a bracket?","acceptedAnswer":{"@type":"Answer","text":"Enter seeds manually (1 = strongest). The tool places them so top seeds meet later. If you skip seeding, pairings are random."}},{"@type":"Question","name":"What is a bye?","acceptedAnswer":{"@type":"Answer","text":"A free pass when the number of players isn’t a power of 2 (elimination) or is odd (round robin). That player doesn’t play that round."}},{"@type":"Question","name":"How many games are in a single elimination bracket?","acceptedAnswer":{"@type":"Answer","text":"N – 1 games, where N = number of players. Example: 8 players = 7 games."}},{"@type":"Question","name":"What is the difference between single and double elimination?","acceptedAnswer":{"@type":"Answer","text":"Single elimination: one loss and you’re out. Double elimination: you get a second chance in a losers’ bracket. Double elimination runs about twice as many rounds."}}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"Chess Tournament Schedule Maker","item":"https://example.com/chess-tournament-schedule-maker/"}]},{"@type":"WebPage","@id":"https://example.com/chess-tournament-schedule-maker/#webpage","url":"https://example.com/chess-tournament-schedule-maker/","name":"Chess Tournament Schedule Maker","headline":"Chess Tournament Schedule Maker","description":"Use this chess tournament schedule maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/chess-tournament-schedule-maker/#app","name":"Chess Tournament Schedule Maker","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/chess-tournament-schedule-maker/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]}]}</script>
 </head>
 <body>
   <header class="site-header">
@@ -53,6 +53,7 @@ Panthers</textarea>
       <div class="control-grid">
         <label>Format
           <select data-mode>
+            
             
             
             <option value="league_schedule">League fixtures</option>
@@ -92,45 +93,25 @@ Panthers</textarea>
     </div>
   </section>
     <article class="content-body">
-      <p>Generate round-robin or elimination pairings, assign venues and time slots, and export a printable fixture list—no signup required.</p>
-<h2>How To Use It</h2>
-<ol>
-<li>Enter the number of players or teams.</li>
-<li>Choose <strong>Round Robin</strong> (everyone plays everyone) or <strong>Single/Double Elimination</strong>.</li>
-<li>Optionally add courts, venues, or time slots.</li>
-<li>Click <strong>Generate Schedule</strong>.</li>
-<li>Print, copy, or download as CSV.</li>
-</ol>
-<p>Works for odd numbers too—byes are added automatically.</p>
-<h2>Example</h2>
-<p>8 players, Round Robin, 2 courts.</p>
-<ul>
-<li><strong>Round 1</strong>: Player 1 vs Player 8 (Court A), Player 2 vs Player 7 (Court B)</li>
-<li><strong>Round 2</strong>: Player 1 vs Player 7 (Court B), Player 8 vs Player 6 (Court A)</li>
-<li>…continues until all 7 rounds are complete.</li>
-</ul>
-<p>Each player gets one game per round. Byes appear as “BYE” in the schedule.</p>
-<h2>What The Results Mean</h2>
-<ul>
-<li><strong>Round number</strong>: the playing session.</li>
-<li><strong>Pairing</strong>: who plays whom.</li>
-<li><strong>Venue/Court</strong>: where the game happens.</li>
-<li><strong>Time slot</strong>: when the game starts.</li>
-<li><strong>Bye</strong>: a player sits out that round (only with odd numbers).</li>
-</ul>
-<p>The <strong>Fairness Summary</strong> shows each player’s number of games, byes, and color balance (if applicable).</p>
-<h2>Common Mistakes</h2>
-<ul>
-<li><strong>Forgetting odd numbers</strong>: The tool handles byes automatically, but a player with a bye gets no game that round.</li>
-<li><strong>Too many rounds</strong>: Round Robin with 20 players = 19 rounds. Consider Swiss or elimination for large fields.</li>
-<li><strong>Ignoring venue limits</strong>: If you have 2 courts but 4 games per round, the tool will warn you.</li>
-</ul>
-<h2>Common Questions</h2>
-<p><strong>How do you make a tournament bracket?</strong> Enter the number of players, choose Single or Double Elimination, and the tool draws the bracket with all pairings and byes.</p>
-<p><strong>How do you seed a bracket?</strong> Enter seeds manually (1 = strongest). The tool places them so top seeds meet later. If you skip seeding, pairings are random.</p>
-<p><strong>What is a bye?</strong> A free pass when the number of players isn’t a power of 2 (elimination) or is odd (round robin). That player doesn’t play that round.</p>
-<p><strong>How many games are in a single elimination bracket?</strong> N – 1 games, where N = number of players. Example: 8 players = 7 games.</p>
-<p><strong>What is the difference between single and double elimination?</strong> Single elimination: one loss and you’re out. Double elimination: you get a second chance in a losers’ bracket. Double elimination runs about twice as many rounds.</p>
+      <p>Use this page when you need fixtures across rounds, weeks, courts, or venues. Add teams, choose league fixtures, then review home/away balance, time slots, and export options before sharing the schedule.</p>
+<h2>Generate a Chess Tournament Schedule Maker first</h2>
+<p>Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.</p>
+<h2>Chess Tournament Schedule Maker home-away and fixture review</h2>
+<p>League fixtures are useful when matches happen over days or weeks instead of one bracket session. After generating the list, review whether home and away labels, venue use, and rest timing make sense for the league you are running.</p>
+<h2>Run a chess tournament schedule maker in the real setting</h2>
+<p>For chess tournament schedule maker, the format is only part of the job. Check whether courts, tables, rooms, boards, or stations are actually available at the same time. If players need warmup time or equipment changes, increase the match length before exporting.</p>
+<h2>Example chess tournament schedule maker workflow</h2>
+<p>Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.</p>
+<h2>Chess Tournament Schedule Maker checks before publishing</h2>
+<p>Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.</p>
+<h2>Export the chess tournament schedule maker</h2>
+<p>Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.</p>
+<h2>Chess Tournament Schedule Maker questions organizers ask</h2>
+<p><strong>How do I make this schedule?</strong> Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.</p>
+<p><strong>What is a bye?</strong> A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.</p>
+<p><strong>Can I use this instead of a spreadsheet?</strong> Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.</p>
+<p><strong>How should I check fairness?</strong> Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.</p>
+<p><strong>Can I print the schedule?</strong> Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.</p>
     </article>
     <section class="link-band" aria-labelledby="related-heading">
     <h2 id="related-heading">Related planning pages</h2>

@@ -1,78 +1,23 @@
-# Tool Intro
+# How To Seed A Tournament Bracket
 
-Need a fair tournament bracket fast? Our free bracket generator creates seeded brackets in seconds. No signup required. Just enter your teams or players, choose your format, and get a printable bracket with byes handled automatically.
+Users need fair seeding rules and examples. This guide focuses on the decision an organizer has to make before using a generator: format, byes, seeding, courts, time, and what to check before publishing.
 
-# How To Use It
+## What seeding does
 
-1. Enter your teams or players (up to 64)
-2. Choose your seeding method (random, skill-based, or manual)
-3. Select bracket size (4, 8, 16, 32, or 64)
-4. Add courts or venues if needed
-5. Set time slots for each match
-6. Click "Generate Bracket"
+Seeding controls where teams or players start in a bracket. The usual goal is to avoid top entrants meeting too early while still keeping the bracket understandable.
 
-The tool handles odd numbers of teams by adding byes automatically. You can edit seeds, swap matchups, or regenerate anytime.
+## Manual seed or random shuffle
 
-# Example
+Use manual seeding when you know rankings, league standings, or prior results. Use shuffle when the event is casual and you want a random starting order. Do not call a random draw seeded unless ranking actually happened.
 
-**8-team basketball tournament**
+## Check the first round
 
-Teams: Lakers, Celtics, Warriors, Bulls, Heat, Spurs, Nets, Knicks
+After generating, look at the first-round matchups. If the two strongest teams meet immediately, adjust the order before publishing. If the event is casual, announce that the draw was random.
 
-Seeds:
-1. Lakers (best record)
-2. Celtics
-3. Warriors
-4. Bulls
-5. Heat
-6. Spurs
-7. Nets
-8. Knicks (worst record)
+## Seeding questions
 
-Generated bracket:
-- Quarterfinal 1: Lakers vs Knicks
-- Quarterfinal 2: Celtics vs Nets
-- Quarterfinal 3: Warriors vs Spurs
-- Quarterfinal 4: Bulls vs Heat
+**How do you seed a bracket?**  
+Rank entrants first, then place them so high seeds are separated until later rounds.
 
-# What The Results Mean
-
-Your bracket shows:
-- **Matchups**: Which teams play each round
-- **Byes**: Empty slots for odd team counts
-- **Time slots**: When each match happens
-- **Courts**: Where each match is played
-- **Fairness summary**: Seeding quality score
-
-The bracket updates automatically when you change seeds or add teams.
-
-# Common Mistakes
-
-- **Wrong bracket size**: Use the next power of 2 (8 teams = 8-team bracket, not 6)
-- **Ignoring byes**: Byes go to top seeds automatically
-- **No time buffer**: Add 15 minutes between matches for overruns
-- **Manual spreadsheet errors**: Our generator avoids seeding mistakes
-
-# Common Questions
-
-**What is the simplest rule?**
-Seed 1 plays seed 8, seed 2 plays seed 7, and so on. Top seeds get byes in odd-team brackets.
-
-**When should I use this format?**
-Single-elimination seeded brackets work best for tournaments with 4-64 teams where you need a clear winner in 1-2 days.
-
-**What mistakes should I avoid?**
-Don't mix skill levels randomly. Don't forget byes for odd teams. Don't schedule matches too close together.
-
-**Can I use a generator instead of a spreadsheet?**
-Yes. Our generator is faster and prevents seeding errors. No formulas needed.
-
-**What should I print or export?**
-Use the print view for wall brackets. Export CSV for sharing or editing. Copy the schedule link to share online.
-
-# Related Tools
-
-- Round Robin Generator
-- Double Elimination Bracket
-- Team Scheduler
-- Tournament Standings Tracker
+**Should I randomize seeds?**  
+Only if the event does not need ranking. Randomization is simpler but less protective for strong entrants.

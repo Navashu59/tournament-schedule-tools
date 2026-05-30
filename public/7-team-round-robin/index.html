@@ -19,7 +19,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"7 Team Round Robin","item":"https://example.com/7-team-round-robin/"}]},{"@type":"WebPage","@id":"https://example.com/7-team-round-robin/#webpage","url":"https://example.com/7-team-round-robin/","name":"7 Team Round Robin","headline":"7 Team Round Robin","description":"Use this 7 team round robin to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/7-team-round-robin/#app","name":"7 Team Round Robin","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/7-team-round-robin/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]},{"@type":"FAQPage","@id":"https://example.com/7-team-round-robin/#faq","mainEntity":[{"@type":"Question","name":"Why does a 7-team round robin have 21 games?","acceptedAnswer":{"@type":"Answer","text":"Each team plays every other team once. The formula is n(n-1)/2, so 7×6/2 = 21."}},{"@type":"Question","name":"How is the bye determined each round?","acceptedAnswer":{"@type":"Answer","text":"The tool uses a standard cyclic algorithm. Team 1 is fixed, and the other teams rotate positions. The team that doesn't have an opponent in a given round gets the bye."}},{"@type":"Question","name":"Can I use this for a double round robin?","acceptedAnswer":{"@type":"Answer","text":"Yes, run the tool twice. The first pass gives you one schedule. Run it again with reversed home/away to get the second half. You'll have 42 games over 14 rounds."}},{"@type":"Question","name":"What if I have more than 3 venues?","acceptedAnswer":{"@type":"Answer","text":"The tool will assign games to all available venues in each round. With 4 venues, you'll have 3 games running and 1 empty venue per round."}},{"@type":"Question","name":"Is the CSV file editable?","acceptedAnswer":{"@type":"Answer","text":"Yes. Open it in any spreadsheet software. You can reorder columns, add scores, or print custom reports. The raw data includes round number, team names, venue, and time."}},{"@type":"Question","name":"Does the schedule account for travel time?","acceptedAnswer":{"@type":"Answer","text":"No. The tool assumes all venues are at the same location. If teams travel between venues, adjust your time slots manually after export."}}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"7 Team Round Robin","item":"https://example.com/7-team-round-robin/"}]},{"@type":"WebPage","@id":"https://example.com/7-team-round-robin/#webpage","url":"https://example.com/7-team-round-robin/","name":"7 Team Round Robin","headline":"7 Team Round Robin","description":"Use this 7 team round robin to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/7-team-round-robin/#app","name":"7 Team Round Robin","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/7-team-round-robin/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]}]}</script>
 </head>
 <body>
   <header class="site-header">
@@ -52,6 +52,7 @@ Eagles</textarea>
       <div class="control-grid">
         <label>Format
           <select data-mode>
+            
             
             <option value="round_robin">Round robin</option>
             
@@ -91,41 +92,23 @@ Eagles</textarea>
     </div>
   </section>
     <article class="content-body">
-      <p>You have seven teams and need a schedule where every team plays each other exactly once, with one team resting each round. This page shows you how to generate a fair 7-team round robin with rotating byes, 21 total games, and seven rounds of play.</p>
-<h2>How To Use It</h2>
-<ol>
-<li><strong>Enter team names</strong> – Type each of your seven teams into the tool. If you leave the default &quot;Team 1&quot; through &quot;Team 7&quot;, the schedule will still work.</li>
-<li><strong>Select mode</strong> – Choose <strong>round_robin</strong> from the dropdown. This ensures the bye rotates evenly.</li>
-<li><strong>Set venue details</strong> – If you have multiple courts or fields, specify the number. The tool will assign games to available venues.</li>
-<li><strong>Add time slots</strong> – Enter the first start time and match length. The tool spaces games based on your slot duration.</li>
-<li><strong>Generate</strong> – Click to create the schedule. You&#39;ll see a table with round number, matchups, venue, and time.</li>
-<li><strong>Export</strong> – Use the <strong>Print</strong> button for a paper copy, or <strong>CSV</strong> to open in Excel or Google Sheets.</li>
-</ol>
-<h2>Example</h2>
-<p>Suppose your teams are: Eagles, Falcons, Hawks, Owls, Ravens, Swans, and Vultures. After generating, Round 1 might look like this:</p>
-<p>| Round | Game | Team A | Team B | Venue | Time | |-------|------|--------|--------|-------|------| | 1 | 1 | Eagles | Falcons | Court 1 | 9:00 AM | | 1 | 2 | Hawks | Owls | Court 2 | 9:00 AM | | 1 | 3 | Ravens | Swans | Court 3 | 9:00 AM | | 1 | *Bye* | Vultures | – | – | – |</p>
-<p>Each subsequent round, the bye moves to a different team. By Round 7, every team has had exactly one bye.</p>
-<h2>What The Results Mean</h2>
-<ul>
-<li><strong>21 games total</strong> – Each of the 7 teams plays 6 games (7 teams × 6 games / 2 = 21 matchups).</li>
-<li><strong>7 rounds</strong> – One round per week or day. In each round, 3 games happen simultaneously (if you have 3 venues) and 1 team sits out.</li>
-<li><strong>Rotating bye</strong> – The bye shifts one position each round. No team gets two byes in a row, and no team waits longer than any other.</li>
-<li><strong>Fairness</strong> – The schedule is balanced: every team plays the same number of games, and the bye rotation prevents any team from having an advantage or disadvantage.</li>
-</ul>
-<h2>Common Mistakes</h2>
-<ul>
-<li><strong>Forgetting the bye</strong> – With 7 teams, you cannot schedule all teams every round. One team must rest. The tool handles this automatically.</li>
-<li><strong>Using 7 rounds for 8 teams</strong> – A 7-team round robin needs exactly 7 rounds. If you have 8 teams, you need a different format (7 rounds would leave one team idle each round, but with 8 teams you&#39;d have 4 games per round and no byes).</li>
-<li><strong>Ignoring venue limits</strong> – If you only have 2 courts, the tool will schedule 2 games per round and spread the third game to a later time slot. Check your venue count before generating.</li>
-<li><strong>Not exporting before editing</strong> – If you manually change a matchup in the printed schedule, the bye rotation breaks. Always re-generate if you need adjustments.</li>
-</ul>
-<h2>Common Questions</h2>
-<p><strong>Why does a 7-team round robin have 21 games?</strong> Each team plays every other team once. The formula is n(n-1)/2, so 7×6/2 = 21.</p>
-<p><strong>How is the bye determined each round?</strong> The tool uses a standard cyclic algorithm. Team 1 is fixed, and the other teams rotate positions. The team that doesn&#39;t have an opponent in a given round gets the bye.</p>
-<p><strong>Can I use this for a double round robin?</strong> Yes, run the tool twice. The first pass gives you one schedule. Run it again with reversed home/away to get the second half. You&#39;ll have 42 games over 14 rounds.</p>
-<p><strong>What if I have more than 3 venues?</strong> The tool will assign games to all available venues in each round. With 4 venues, you&#39;ll have 3 games running and 1 empty venue per round.</p>
-<p><strong>Is the CSV file editable?</strong> Yes. Open it in any spreadsheet software. You can reorder columns, add scores, or print custom reports. The raw data includes round number, team names, venue, and time.</p>
-<p><strong>Does the schedule account for travel time?</strong> No. The tool assumes all venues are at the same location. If teams travel between venues, adjust your time slots manually after export.</p>
+      <p>Use this page when you need a 7-team round robin schedule where every team faces every other team once. The scheduler keeps the working schedule at the top, then the notes below explain rounds, byes, court limits, time slots, CSV export, and the checks an organizer should make before sharing it.</p>
+<h2>Generate a 7 Team Round Robin first</h2>
+<p>Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.</p>
+<h2>7 Team Round Robin rounds and byes</h2>
+<p>Round robin means every participant plays every other participant. A 7-team round robin has 21 total matchups. If the participant count is odd, one team sits out each round. That bye is normal, not an error.</p>
+<h2>Example 7-team setup</h2>
+<p>Paste 7 names into the participant box, keep the suggested format, set the number of courts or venues, and generate the schedule. With multiple courts, matches in the same round can run at the same time. With one court, treat the rows as a sequential order and check the total event length before announcing it.</p>
+<h2>7 Team Round Robin checks before publishing</h2>
+<p>Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.</p>
+<h2>Export the 7 team round robin</h2>
+<p>Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.</p>
+<h2>7 Team Round Robin questions organizers ask</h2>
+<p><strong>How do I make this schedule?</strong> Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.</p>
+<p><strong>What is a bye?</strong> A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.</p>
+<p><strong>Can I use this instead of a spreadsheet?</strong> Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.</p>
+<p><strong>How should I check fairness?</strong> Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.</p>
+<p><strong>Can I print the schedule?</strong> Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.</p>
     </article>
     <section class="link-band" aria-labelledby="related-heading">
     <h2 id="related-heading">Related planning pages</h2>

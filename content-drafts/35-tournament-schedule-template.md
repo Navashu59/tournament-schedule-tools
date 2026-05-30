@@ -1,59 +1,36 @@
 # Tournament Schedule Template
 
-You need a tournament schedule template that works for your event—whether it's a single-elimination bracket, round-robin pool, or full league schedule. You don't want to spend hours formatting spreadsheets or fixing byes. This page shows you how to use our live generator to get a printable or CSV-ready schedule in seconds, then explains what every good schedule template must include.
+Use this page when you need a tournament schedule that is easier to trust than a hand-built spreadsheet. Enter participants, choose the format, set courts and timing, then generate a schedule you can review, print, copy, or export.
 
-## How To Use It
+## Generate a Tournament Schedule Template first
 
-1. **Select your tournament type** from the three modes: single elimination, round robin, or league schedule.
-2. **Enter the number of participants** (teams or players). For single elimination, the generator automatically calculates byes to fill the bracket to the next power of two (e.g., 6 teams → 2 byes).
-3. **Set your time slots and venues** (optional but recommended). Define how many courts or fields you have and the start time for each round.
-4. **Click "Generate Schedule"** – you'll see a clean table with round numbers, matchups, and assigned time/venue slots.
-5. **Export or print** – use the "Print" button for a paper-friendly version, or "Download CSV" to open in Excel or Google Sheets for further customization.
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-**Pro tip:** If you need to reseed after a round (e.g., for a consolation bracket), generate a new single-elimination schedule and manually swap the losing teams into the lower bracket.
+## Example tournament schedule template workflow
 
-## Example
+Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
 
-**Scenario:** 5 teams, round-robin, 2 courts, 30-minute matches starting at 9:00 AM.
+## Tournament Schedule Template checks before publishing
 
-| Round | Court 1 (9:00 AM) | Court 2 (9:30 AM) |
-|-------|-------------------|-------------------|
-| 1     | Team A vs Team B  | Team C vs Team D  |
-| 2     | Team A vs Team C  | Team D vs Team E  |
-| 3     | Team B vs Team E  | Team A vs Team D  |
-| 4     | Team C vs Team E  | Team B vs Team D  |
-| 5     | Team A vs Team E  | Team B vs Team C  |
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-Each team plays 4 matches. No byes needed. The schedule is balanced so no team has back-to-back matches.
+## Export the tournament schedule template
 
-## What The Results Mean
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-- **Byes** – In single elimination, a bye means a team automatically advances to the next round without playing. The generator places byes in the first round to avoid empty slots later.
-- **Time slots** – Each match is assigned a specific start time based on your input. If you have multiple venues, matches run in parallel.
-- **Fairness** – In round robins, the generator uses a standard cyclic algorithm so every team plays an equal number of matches (or as close as possible with odd numbers). For leagues, it avoids scheduling the same team twice in one day.
+## Tournament Schedule Template questions organizers ask
 
-**CSV export** includes columns: Round, Match, Team 1, Team 2, Venue, Time, Status (scheduled/bye).
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
-## Common Mistakes
+**What is a bye?**  
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-- **Forgetting byes in single elimination** – If you have 6 teams, you need 2 byes. Without them, the bracket won't fill correctly. Our generator handles this automatically.
-- **Overlapping time slots** – If you have 4 teams and 1 court, don't schedule two matches at the same time. The generator prevents this if you set the correct venue count.
-- **Ignoring venue capacity** – If you enter more courts than you actually have, the printed template will not match the event. Always double-check venue availability before sharing the schedule.
-- **Using a template that doesn't print cleanly** – Many online templates break when printed. Our print view collapses unnecessary columns and uses a single-page layout for standard paper sizes.
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-## Common Questions
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-**Can I edit the schedule after generating it?**  
-Yes. Download the CSV and modify it in Excel or Google Sheets. The generator gives you a starting point, not a locked file.
-
-**What if I have an odd number of teams in round robin?**  
-The generator adds a "bye" round for the team that sits out. For example, 5 teams means each round one team has no match. The schedule still ensures every team plays the same number of matches.
-
-**Does the template handle double elimination?**  
-This tool currently supports single elimination, round robin, and league schedules. For double elimination, use the single-elimination generator for the winners' bracket, then manually create a losers' bracket using the same template.
-
-**How do I print without cutting off columns?**  
-Use the "Print" button, not your browser's print command. The print view automatically fits the schedule to one page width, with landscape orientation for larger brackets.
-
-**Is the schedule fair for all teams?**  
-Yes. The round-robin algorithm uses a circle method to rotate opponents evenly. For leagues, it spreads matches across different time slots to avoid giving any team a consistent advantage.
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

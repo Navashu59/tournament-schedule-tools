@@ -1,53 +1,44 @@
 # Classroom Tournament Bracket
 
-**Tool Intro**
+Use this page when you need a tournament schedule that is easier to trust than a hand-built spreadsheet. Enter participants, choose the format, set courts and timing, then generate a schedule you can review, print, copy, or export.
 
-Set up a classroom tournament bracket in seconds. Enter your students or teams, choose single or double elimination, and get a printable bracket with matchups, byes, and time slots. No signup required.
+## Generate a Classroom Tournament Bracket first
 
-**How To Use It**
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-1. Enter team or player names (one per line).
-2. Choose single or double elimination.
-3. Add optional time slots or venue names (e.g., "Court A", "Round 1").
-4. Click "Generate Bracket".
-5. Use **Print View**, **Copy Schedule**, or **CSV Export** to share.
+## Classroom Tournament Bracket bracket structure
 
-**Example**
+Single elimination means a team is out after one loss. The total played matches are usually one fewer than the number of entrants. If the entrant count is not a clean bracket size, the tool adds byes so the bracket can move into the next round.
 
-You have 7 students for a spelling bee. Enter their names. The tool adds one bye in Round 1. You see a 4-game first round, then semifinals and a final. Print it and hand it out.
+## Run a classroom tournament bracket in the real setting
 
-**What The Results Mean**
+For classroom tournament bracket, the format is only part of the job. Check whether courts, tables, rooms, boards, or stations are actually available at the same time. If players need warmup time or equipment changes, increase the match length before exporting.
 
-- **Bracket Tree**: Shows who plays whom, and when.
-- **Byes**: Empty slots for odd-numbered entries (they advance automatically).
-- **Fairness Summary**: Explains seeding logic and bye placement.
-- **Schedule Table**: Lists each match with round, venue, and time.
+## Example classroom tournament bracket workflow
 
-**Common Mistakes**
+Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
 
-- Forgetting to account for byes when you have an odd number of teams.
-- Using double elimination when you only have 20 minutes of class time.
-- Not using the print view before class starts.
+## Classroom Tournament Bracket checks before publishing
 
-**Common Questions**
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-**How do you make a tournament bracket?**
-Enter your teams, pick elimination type, and click generate. The tool builds the bracket for you.
+## Export the classroom tournament bracket
 
-**How do you seed a bracket?**
-Enter teams in order of strength (best first). The tool places them so top seeds don't meet until later rounds.
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-**What is a bye?**
-A free pass to the next round. Needed when the number of teams isn't a power of 2 (e.g., 7 teams needs 1 bye).
+## Classroom Tournament Bracket questions organizers ask
 
-**How many games are in a single elimination bracket?**
-Number of teams minus 1. For 8 teams, that's 7 games.
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
-**What is the difference between single and double elimination?**
-Single elimination: lose once, you're out. Double elimination: lose twice before elimination. Double takes about twice as many rounds.
+**What is a bye?**  
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-**Related Tools**
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-- [Round Robin Generator](/round-robin-generator/)
-- [Team Scheduler](/team-scheduler/)
-- [Seating Chart Maker](/seating-chart-maker/)
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
+
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

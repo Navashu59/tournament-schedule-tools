@@ -1,55 +1,40 @@
 # 10 Team Round Robin
 
-## Tool Intro
+Use this page when you need a 10-team round robin schedule where every team faces every other team once. The scheduler keeps the working schedule at the top, then the notes below explain rounds, byes, court limits, time slots, CSV export, and the checks an organizer should make before sharing it.
 
-Set up a 10-team round robin schedule instantly. No signup needed. Enter your team names, pick your rounds, and get a printable schedule with balanced home/away matchups. Works for leagues, tournaments, or any group needing every team to play each other once.
+## Generate a 10 Team Round Robin first
 
-## How To Use It
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-1. Enter your 10 team names (or use defaults).
-2. Choose number of rounds (9 for a full round robin).
-3. Click "Generate Schedule."
-4. Print, copy, or export as CSV.
+## 10 Team Round Robin rounds and byes
 
-## Example
+Round robin means every participant plays every other participant. A 10-team round robin has 45 total matchups. If the participant count is odd, one team sits out each round. That bye is normal, not an error.
 
-**Teams:** Eagles, Falcons, Hawks, Owls, Ravens, Robins, Swans, Jays, Doves, Crows
+## Example 10-team setup
 
-**Round 1:** Eagles vs Falcons, Hawks vs Owls, Ravens vs Robins, Swans vs Jays, Doves vs Crows
+Paste 10 names into the participant box, keep the suggested format, set the number of courts or venues, and generate the schedule. With multiple courts, matches in the same round can run at the same time. With one court, treat the rows as a sequential order and check the total event length before announcing it.
 
-**Round 2:** Falcons vs Hawks, Owls vs Ravens, Robins vs Swans, Jays vs Doves, Crows vs Eagles
+## 10 Team Round Robin checks before publishing
 
-Each team plays once per round. After 9 rounds, every team has faced every other team exactly once.
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-## What The Results Mean
+## Export the 10 team round robin
 
-The schedule shows each round with 5 matchups. Every team gets one bye per round (since 10 teams means 5 games per round). The "Fairness Summary" shows each team has balanced home/away games. Use the "Copy Schedule" button to paste into a spreadsheet or the "Print View" for a clean paper copy.
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-## Common Mistakes
+## 10 Team Round Robin questions organizers ask
 
-- **Adding 11 teams:** This tool is for exactly 10 teams. For 11, use the 11-team round robin tool.
-- **Expecting 10 rounds:** A full 10-team round robin needs 9 rounds. Each team plays 9 games.
-- **Forgetting byes:** With an even number of teams, no byes occur. Each team plays every round.
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
-## Common Questions
+**What is a bye?**  
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-**How do you make a round robin schedule for 10 teams?**
-Enter team names, set rounds to 9, and generate. The tool uses a standard circle method to rotate matchups so no repeats occur.
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-**How many games are in a 10-team round robin?**
-45 games total (9 rounds × 5 games per round). Each team plays 9 games.
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-**What happens with an odd number of teams?**
-This tool requires exactly 10 teams. For odd numbers, use the 11-team tool which adds a "bye" team each round.
-
-**How do you avoid repeat matchups?**
-The circle rotation method ensures each team plays every other team exactly once across 9 rounds.
-
-**How do you assign courts or time slots?**
-After generating, use the "Copy Schedule" to paste into a spreadsheet. Add columns for "Court 1," "Court 2," etc., or assign time slots manually. The print view also works for posting on a wall.
-
-## Related Tools
-
-- [11 Team Round Robin](/11-team-round-robin/)
-- [9 Team Round Robin](/9-team-round-robin/)
-- [12 Team Round Robin](/12-team-round-robin/)
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

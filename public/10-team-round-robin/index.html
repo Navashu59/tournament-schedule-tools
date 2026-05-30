@@ -19,7 +19,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"10 Team Round Robin","item":"https://example.com/10-team-round-robin/"}]},{"@type":"WebPage","@id":"https://example.com/10-team-round-robin/#webpage","url":"https://example.com/10-team-round-robin/","name":"10 Team Round Robin","headline":"10 Team Round Robin","description":"Use this 10 team round robin to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/10-team-round-robin/#app","name":"10 Team Round Robin","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/10-team-round-robin/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]},{"@type":"FAQPage","@id":"https://example.com/10-team-round-robin/#faq","mainEntity":[{"@type":"Question","name":"How do you make a round robin schedule for 10 teams?","acceptedAnswer":{"@type":"Answer","text":"Enter team names, set rounds to 9, and generate. The tool uses a standard circle method to rotate matchups so no repeats occur."}},{"@type":"Question","name":"How many games are in a 10-team round robin?","acceptedAnswer":{"@type":"Answer","text":"45 games total (9 rounds × 5 games per round). Each team plays 9 games."}},{"@type":"Question","name":"What happens with an odd number of teams?","acceptedAnswer":{"@type":"Answer","text":"This tool requires exactly 10 teams. For odd numbers, use the 11-team tool which adds a \"bye\" team each round."}},{"@type":"Question","name":"How do you avoid repeat matchups?","acceptedAnswer":{"@type":"Answer","text":"The circle rotation method ensures each team plays every other team exactly once across 9 rounds."}},{"@type":"Question","name":"How do you assign courts or time slots?","acceptedAnswer":{"@type":"Answer","text":"After generating, use the \"Copy Schedule\" to paste into a spreadsheet. Add columns for \"Court 1,\" \"Court 2,\" etc., or assign time slots manually. The print view also works for posting on a wall."}}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"10 Team Round Robin","item":"https://example.com/10-team-round-robin/"}]},{"@type":"WebPage","@id":"https://example.com/10-team-round-robin/#webpage","url":"https://example.com/10-team-round-robin/","name":"10 Team Round Robin","headline":"10 Team Round Robin","description":"Use this 10 team round robin to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/10-team-round-robin/#app","name":"10 Team Round Robin","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/10-team-round-robin/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]}]}</script>
 </head>
 <body>
   <header class="site-header">
@@ -55,6 +55,7 @@ Bears</textarea>
       <div class="control-grid">
         <label>Format
           <select data-mode>
+            
             
             <option value="round_robin">Round robin</option>
             
@@ -94,34 +95,23 @@ Bears</textarea>
     </div>
   </section>
     <article class="content-body">
-      <h2>Tool Intro</h2>
-<p>Set up a 10-team round robin schedule instantly. No signup needed. Enter your team names, pick your rounds, and get a printable schedule with balanced home/away matchups. Works for leagues, tournaments, or any group needing every team to play each other once.</p>
-<h2>How To Use It</h2>
-<ol>
-<li>Enter your 10 team names (or use defaults).</li>
-<li>Choose number of rounds (9 for a full round robin).</li>
-<li>Click &quot;Generate Schedule.&quot;</li>
-<li>Print, copy, or export as CSV.</li>
-</ol>
-<h2>Example</h2>
-<p><strong>Teams:</strong> Eagles, Falcons, Hawks, Owls, Ravens, Robins, Swans, Jays, Doves, Crows</p>
-<p><strong>Round 1:</strong> Eagles vs Falcons, Hawks vs Owls, Ravens vs Robins, Swans vs Jays, Doves vs Crows</p>
-<p><strong>Round 2:</strong> Falcons vs Hawks, Owls vs Ravens, Robins vs Swans, Jays vs Doves, Crows vs Eagles</p>
-<p>Each team plays once per round. After 9 rounds, every team has faced every other team exactly once.</p>
-<h2>What The Results Mean</h2>
-<p>The schedule shows each round with 5 matchups. Every team gets one bye per round (since 10 teams means 5 games per round). The &quot;Fairness Summary&quot; shows each team has balanced home/away games. Use the &quot;Copy Schedule&quot; button to paste into a spreadsheet or the &quot;Print View&quot; for a clean paper copy.</p>
-<h2>Common Mistakes</h2>
-<ul>
-<li><strong>Adding 11 teams:</strong> This tool is for exactly 10 teams. For 11, use the 11-team round robin tool.</li>
-<li><strong>Expecting 10 rounds:</strong> A full 10-team round robin needs 9 rounds. Each team plays 9 games.</li>
-<li><strong>Forgetting byes:</strong> With an even number of teams, no byes occur. Each team plays every round.</li>
-</ul>
-<h2>Common Questions</h2>
-<p><strong>How do you make a round robin schedule for 10 teams?</strong> Enter team names, set rounds to 9, and generate. The tool uses a standard circle method to rotate matchups so no repeats occur.</p>
-<p><strong>How many games are in a 10-team round robin?</strong> 45 games total (9 rounds × 5 games per round). Each team plays 9 games.</p>
-<p><strong>What happens with an odd number of teams?</strong> This tool requires exactly 10 teams. For odd numbers, use the 11-team tool which adds a &quot;bye&quot; team each round.</p>
-<p><strong>How do you avoid repeat matchups?</strong> The circle rotation method ensures each team plays every other team exactly once across 9 rounds.</p>
-<p><strong>How do you assign courts or time slots?</strong> After generating, use the &quot;Copy Schedule&quot; to paste into a spreadsheet. Add columns for &quot;Court 1,&quot; &quot;Court 2,&quot; etc., or assign time slots manually. The print view also works for posting on a wall.</p>
+      <p>Use this page when you need a 10-team round robin schedule where every team faces every other team once. The scheduler keeps the working schedule at the top, then the notes below explain rounds, byes, court limits, time slots, CSV export, and the checks an organizer should make before sharing it.</p>
+<h2>Generate a 10 Team Round Robin first</h2>
+<p>Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.</p>
+<h2>10 Team Round Robin rounds and byes</h2>
+<p>Round robin means every participant plays every other participant. A 10-team round robin has 45 total matchups. If the participant count is odd, one team sits out each round. That bye is normal, not an error.</p>
+<h2>Example 10-team setup</h2>
+<p>Paste 10 names into the participant box, keep the suggested format, set the number of courts or venues, and generate the schedule. With multiple courts, matches in the same round can run at the same time. With one court, treat the rows as a sequential order and check the total event length before announcing it.</p>
+<h2>10 Team Round Robin checks before publishing</h2>
+<p>Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.</p>
+<h2>Export the 10 team round robin</h2>
+<p>Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.</p>
+<h2>10 Team Round Robin questions organizers ask</h2>
+<p><strong>How do I make this schedule?</strong> Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.</p>
+<p><strong>What is a bye?</strong> A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.</p>
+<p><strong>Can I use this instead of a spreadsheet?</strong> Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.</p>
+<p><strong>How should I check fairness?</strong> Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.</p>
+<p><strong>Can I print the schedule?</strong> Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.</p>
     </article>
     <section class="link-band" aria-labelledby="related-heading">
     <h2 id="related-heading">Related planning pages</h2>

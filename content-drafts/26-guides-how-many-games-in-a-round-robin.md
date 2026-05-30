@@ -1,56 +1,30 @@
-# Tool Intro
+# How Many Games In A Round Robin
 
-Need to know how many games a round robin tournament needs? Use our free scheduler. Enter your number of teams, pick a format, and get a complete schedule instantly. No signup required.
+Users need the round robin match formula and examples. This guide focuses on the decision an organizer has to make before using a generator: format, byes, seeding, courts, time, and what to check before publishing.
 
-# How To Use It
+## Start with the round robin rule
 
-1. Enter the number of teams or players (2 to 100).
-2. Choose single or double round robin.
-3. Add court/venue names and time slots (optional).
-4. Click "Generate Schedule."
+A round robin schedule works when every team or player should face every other participant. The key question is not just how many matches exist, but whether you have enough courts, time, and rest between rounds.
 
-The tool handles odd numbers automatically by adding a "bye" round.
+## Count matches before choosing it
 
-# Example
+For n participants, a single round robin has n x (n - 1) / 2 matches. Six teams need 15 matches. Eight teams need 28 matches. If that number is too high for your venue, use pool play or a bracket instead.
 
-**8 teams, single round robin**  
-Formula: `n × (n-1) / 2` → `8 × 7 / 2 = 28 games`  
-The tool creates a 7-round schedule with 4 games per round.
+## Handle odd teams with byes
 
-# What The Results Mean
+Odd participant counts create one bye in each round. That is normal. What matters is whether byes are distributed evenly and whether one team gets an awkward rest pattern compared with the others.
 
-- **Total games**: The number of matches every team must play.
-- **Rounds**: How many game days or sessions you need.
-- **Byes**: If you have an odd number, one team rests each round.
-- **Fairness summary**: Shows each team plays the same number of games.
+## Use the generator, then review
 
-Use the **print view** for a paper copy, or export to CSV for spreadsheets. The **copy schedule** button lets you paste it into an email or doc.
+Open the round robin generator, enter the teams, set courts and match length, and export the schedule. Before publishing, check total event time, repeated matchups, bye count, and whether teams are moving between courts too often.
 
-# Common Mistakes
+## How Many Games In A Round Robin questions
 
-- **Forgetting byes**: With 7 teams, you get 21 games, not 28. The tool adds byes automatically.
-- **Double counting**: The formula `n × (n-1) / 2` already accounts for each pair playing once. Don't multiply by 2 unless you want home-and-away.
-- **Ignoring venue limits**: If you have only 2 courts, the tool can't schedule 4 games per round. Set your venue count first.
+**How many rounds are in a round robin?**  
+With an even number of participants, usually n - 1 rounds. With an odd number, a bye is added and the schedule still rotates through n rounds.
 
-# Common Questions
+**What is the fairest round robin schedule?**  
+One where every team plays the same number of matches, byes are balanced, and court or venue use does not create an obvious advantage.
 
-**What is the simplest rule?**  
-For a single round robin: `n × (n-1) / 2`. For double: `n × (n-1)`.
-
-**When should I use this format?**  
-When every team needs to play every other team at least once. Common for leagues, group stages, and small tournaments.
-
-**What mistakes should I avoid?**  
-Don't use a round robin for more than 20 teams—it creates too many games. Use a knockout or group stage instead.
-
-**Can I use a generator instead of a spreadsheet?**  
-Yes. Our tool is faster and handles byes, venues, and time slots automatically. No formulas needed.
-
-**What should I print or export?**  
-Print the schedule view for the venue wall. Export CSV for your league spreadsheet. Use copy schedule to share in chat or email.
-
-# Related Tools
-
-- [Round Robin Generator](/tools/round-robin-generator/)
-- [Tournament Bracket Generator](/tools/tournament-bracket/)
-- [League Standings Calculator](/tools/league-standings/)
+**Can I export it to Excel?**  
+Yes. Generate the schedule and use CSV export for Excel or Google Sheets.

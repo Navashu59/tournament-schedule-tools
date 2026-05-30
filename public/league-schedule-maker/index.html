@@ -19,7 +19,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"League Schedule Maker","item":"https://example.com/league-schedule-maker/"}]},{"@type":"WebPage","@id":"https://example.com/league-schedule-maker/#webpage","url":"https://example.com/league-schedule-maker/","name":"League Schedule Maker","headline":"League Schedule Maker","description":"Use this league schedule maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/league-schedule-maker/#app","name":"League Schedule Maker","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/league-schedule-maker/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]},{"@type":"FAQPage","@id":"https://example.com/league-schedule-maker/#faq","mainEntity":[{"@type":"Question","name":"How do you make a league schedule?","acceptedAnswer":{"@type":"Answer","text":"Enter team names, choose rounds, click generate. The tool creates a round-robin fixture list with home/away balance."}},{"@type":"Question","name":"What is a fixture list?","acceptedAnswer":{"@type":"Answer","text":"A table showing which teams play each other, when, and where, across all rounds of a season."}},{"@type":"Question","name":"How do home and away games work?","acceptedAnswer":{"@type":"Answer","text":"Each pair plays twice: once at each team's venue. The tool flips home/away each round."}},{"@type":"Question","name":"How many rounds are needed?","acceptedAnswer":{"@type":"Answer","text":"For a double round-robin: (number of teams - 1) × 2. For 6 teams, that's 10 rounds."}},{"@type":"Question","name":"Can I export a league schedule?","acceptedAnswer":{"@type":"Answer","text":"Yes. Use the Copy Schedule button for plain text, CSV Export for spreadsheets, or Print View for a clean paper copy."}}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"League Schedule Maker","item":"https://example.com/league-schedule-maker/"}]},{"@type":"WebPage","@id":"https://example.com/league-schedule-maker/#webpage","url":"https://example.com/league-schedule-maker/","name":"League Schedule Maker","headline":"League Schedule Maker","description":"Use this league schedule maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/league-schedule-maker/#app","name":"League Schedule Maker","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/league-schedule-maker/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]}]}</script>
 </head>
 <body>
   <header class="site-header">
@@ -53,6 +53,7 @@ Panthers</textarea>
       <div class="control-grid">
         <label>Format
           <select data-mode>
+            
             
             
             <option value="league_schedule">League fixtures</option>
@@ -92,42 +93,23 @@ Panthers</textarea>
     </div>
   </section>
     <article class="content-body">
-      <p>Create a balanced fixture list for any sport or league in seconds. No signup required.</p>
-<h2>How To Use It</h2>
-<ol>
-<li>Enter team or player names (one per line)</li>
-<li>Set number of rounds (default = double round-robin)</li>
-<li>Add venues or time slots (optional)</li>
-<li>Click &quot;Generate Schedule&quot;</li>
-</ol>
-<p>The tool handles even and odd numbers of teams automatically. Odd counts get byes.</p>
-<h2>Example</h2>
-<p><strong>Teams:</strong> Lions, Tigers, Bears, Wolves <strong>Rounds:</strong> 2 (home and away) <strong>Venues:</strong> Field A, Field B</p>
-<p><strong>Round 1:</strong></p>
-<ul>
-<li>Lions vs Tigers (Field A)</li>
-<li>Bears vs Wolves (Field B)</li>
-</ul>
-<p><strong>Round 2:</strong></p>
-<ul>
-<li>Tigers vs Lions (Field B)</li>
-<li>Wolves vs Bears (Field A)</li>
-</ul>
-<h2>What The Results Mean</h2>
-<p>Each row shows: round number, home team, away team, venue, and time slot. The schedule guarantees every team plays each other the same number of times. Home/away balance is automatic for even rounds.</p>
-<p><strong>Fairness summary</strong> appears below the table: total games per team, home/away count, and bye rounds.</p>
-<h2>Common Mistakes</h2>
-<ul>
-<li><strong>Odd teams without byes</strong> – the tool adds byes automatically. Don&#39;t skip teams.</li>
-<li><strong>Too few rounds</strong> – for a double round-robin with 8 teams, you need 14 rounds. The tool warns you.</li>
-<li><strong>Duplicate venue conflicts</strong> – assign unique time slots per venue if teams share a court.</li>
-</ul>
-<h2>Common Questions</h2>
-<p><strong>How do you make a league schedule?</strong> Enter team names, choose rounds, click generate. The tool creates a round-robin fixture list with home/away balance.</p>
-<p><strong>What is a fixture list?</strong> A table showing which teams play each other, when, and where, across all rounds of a season.</p>
-<p><strong>How do home and away games work?</strong> Each pair plays twice: once at each team&#39;s venue. The tool flips home/away each round.</p>
-<p><strong>How many rounds are needed?</strong> For a double round-robin: (number of teams - 1) × 2. For 6 teams, that&#39;s 10 rounds.</p>
-<p><strong>Can I export a league schedule?</strong> Yes. Use the <strong>Copy Schedule</strong> button for plain text, <strong>CSV Export</strong> for spreadsheets, or <strong>Print View</strong> for a clean paper copy.</p>
+      <p>Use this page when you need fixtures across rounds, weeks, courts, or venues. Add teams, choose league fixtures, then review home/away balance, time slots, and export options before sharing the schedule.</p>
+<h2>Generate a League Schedule Maker first</h2>
+<p>Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.</p>
+<h2>League Schedule Maker home-away and fixture review</h2>
+<p>League fixtures are useful when matches happen over days or weeks instead of one bracket session. After generating the list, review whether home and away labels, venue use, and rest timing make sense for the league you are running.</p>
+<h2>Example league schedule maker workflow</h2>
+<p>Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.</p>
+<h2>League Schedule Maker checks before publishing</h2>
+<p>Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.</p>
+<h2>Export the league schedule maker</h2>
+<p>Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.</p>
+<h2>League Schedule Maker questions organizers ask</h2>
+<p><strong>How do I make this schedule?</strong> Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.</p>
+<p><strong>What is a bye?</strong> A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.</p>
+<p><strong>Can I use this instead of a spreadsheet?</strong> Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.</p>
+<p><strong>How should I check fairness?</strong> Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.</p>
+<p><strong>Can I print the schedule?</strong> Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.</p>
     </article>
     <section class="link-band" aria-labelledby="related-heading">
     <h2 id="related-heading">Related planning pages</h2>

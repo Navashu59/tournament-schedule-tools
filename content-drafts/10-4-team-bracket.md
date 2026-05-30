@@ -1,52 +1,40 @@
 # 4 Team Bracket
 
-## Tool Intro
+Use this page when you need a 4-team bracket quickly and still want to understand the match count, round structure, seeding, byes, print view, and CSV output. Enter the teams first, then review the generated schedule before publishing it for a real event.
 
-Set up a 4 team bracket in seconds. No signup, no fluff. Enter your team names, pick single or double elimination, and get a printable schedule with time slots and venues.
+## Generate a 4 Team Bracket first
 
-## How To Use It
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-1. Enter 4 team or player names.
-2. Choose single or double elimination.
-3. Add optional time slots, courts, or venues.
-4. Click generate. Your bracket appears instantly.
-5. Print, copy the schedule, or export to CSV.
+## 4 Team Bracket bracket structure
 
-## Example
+Single elimination means a team is out after one loss. With 4 teams, expect 3 played matches if every match produces one advancing team. If the entrant count is not a clean bracket size, the tool adds byes so the bracket can move into the next round.
 
-Four teams: Aces, Bears, Cubs, Ducks. Single elimination. Two semifinals at 10am and 11am on Court 1 and Court 2. Final at 2pm on Court 1. The tool shows matchups, winners advance, and a third-place game if you want it.
+## Example 4-team setup
 
-## What The Results Mean
+Paste 4 names into the participant box, keep the suggested format, set the number of courts or venues, and generate the schedule. With multiple courts, matches in the same round can run at the same time. With one court, treat the rows as a sequential order and check the total event length before announcing it.
 
-- **Single elimination:** 3 games total. Winner of each game advances. One loss and you're out.
-- **Double elimination:** 6-7 games. A loser's bracket gives everyone a second chance. The bracket shows which teams are in winners, losers, or eliminated.
-- **Byes:** If you have 3 teams, one gets a bye (automatic win) in round one. The tool marks it clearly.
+## 4 Team Bracket checks before publishing
 
-## Common Mistakes
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-- **Forgetting a third-place game:** Single elimination with 4 teams leaves 2 teams with one loss. Add a consolation match if needed.
-- **Wrong elimination type:** Double elimination doubles the games. Use single for quick tournaments, double for fairness.
-- **No time buffer:** Games run long. Add 15-20 minutes between time slots.
+## Export the 4 team bracket
 
-## Common Questions
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-**How do you make a tournament bracket?**  
-Enter team names, choose elimination type, set time slots and venues, then generate. Print or export.
+## 4 Team Bracket questions organizers ask
 
-**How do you seed a bracket?**  
-Rank teams 1-4. 1 plays 4, 2 plays 3 in semifinals. The tool lets you assign seeds manually.
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
 **What is a bye?**  
-A bye means a team advances without playing. Happens with odd numbers. For 3 teams, one team gets a first-round bye.
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-**How many games are in a single elimination bracket?**  
-For 4 teams: 3 games. Formula: teams minus 1.
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-**What is the difference between single and double elimination?**  
-Single: one loss and you're out. Double: first loss sends you to a loser's bracket; you're out after two losses.
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-## Related Tools
-
-- [8 Team Bracket](/8-team-bracket/)
-- [16 Team Bracket](/16-team-bracket/)
-- [Round Robin Generator](/round-robin-generator/)
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

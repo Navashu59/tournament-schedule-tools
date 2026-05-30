@@ -1,49 +1,44 @@
 # Cornhole Bracket Maker
 
-## Tool Intro
-Set up a cornhole tournament in minutes. Enter your players or teams, pick single or double elimination, and get a printable bracket with match lists—no signup required.
+Use this page when you need a tournament schedule that is easier to trust than a hand-built spreadsheet. Enter participants, choose the format, set courts and timing, then generate a schedule you can review, print, copy, or export.
 
-## How To Use It
-1. Enter team or player names (one per line).
-2. Choose single or double elimination.
-3. Add courts, venues, or time slots if needed.
-4. Click "Generate Bracket."
-5. Print, export as CSV, or copy the schedule.
+## Generate a Cornhole Bracket Maker first
 
-Works for any number of teams—odd or even. Byes are added automatically.
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-## Example
-You have 7 teams for a single elimination tournament. Enter them, click generate. The bracket shows the first round with one bye (Team 1 gets a free pass to round 2). The match list shows all games in order, with court assignments if you set them.
+## Cornhole Bracket Maker bracket structure
 
-## What The Results Mean
-- **Bracket view**: Shows the tournament tree. Byes are marked clearly.
-- **Match list**: Every game in sequence, with winners advancing.
-- **Fairness summary**: Explains how byes were assigned (usually to top seeds).
-- **Print view**: Clean layout for paper or PDF.
+Single elimination means a team is out after one loss. The total played matches are usually one fewer than the number of entrants. If the entrant count is not a clean bracket size, the tool adds byes so the bracket can move into the next round.
 
-## Common Mistakes
-- **Forgetting to set court limits**: If you have 2 courts but 4 first-round games, the tool won't schedule them all at once. Add time slots to fix this.
-- **Ignoring byes**: With an odd number of teams, byes are unavoidable. The tool assigns them fairly, but you can manually adjust seeding before generating.
-- **Not using CSV export**: For large tournaments, export the match list to share with players or update scores.
+## Run a cornhole bracket maker in the real setting
 
-## Common Questions
+For cornhole bracket maker, the format is only part of the job. Check whether courts, tables, rooms, boards, or stations are actually available at the same time. If players need warmup time or equipment changes, increase the match length before exporting.
 
-**How do you make a tournament bracket?**  
-Enter your teams, choose elimination type, and generate. The tool creates the bracket and match list automatically.
+## Example cornhole bracket maker workflow
 
-**How do you seed a bracket?**  
-Enter teams in order of seed (1 = best). The tool places them to avoid top seeds meeting early.
+Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
+
+## Cornhole Bracket Maker checks before publishing
+
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
+
+## Export the cornhole bracket maker
+
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
+
+## Cornhole Bracket Maker questions organizers ask
+
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
 **What is a bye?**  
-A free pass to the next round for one team when the number of teams isn't a power of 2 (e.g., 7 teams means 1 bye).
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-**How many games are in a single elimination bracket?**  
-Number of teams minus 1. For 8 teams, that's 7 games.
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-**What is the difference between single and double elimination?**  
-Single elimination: lose once, you're out. Double elimination: lose once, you go to a losers' bracket; lose twice, you're out.
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-## Related Tools
-- Round Robin Generator
-- Tournament Score Tracker
-- Team Scheduler
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

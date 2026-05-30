@@ -1,55 +1,44 @@
 # Pickleball Round Robin Generator
 
-## Tool Intro
+Use this page when each team or player should face every other participant. The generator builds rounds, handles odd counts with byes, assigns courts and times, and gives you a schedule that can be copied, printed, or exported.
 
-Generate a fair pickleball round robin schedule in seconds. No signup needed. Enter your players, choose courts and time slots, and get a printable schedule with balanced partners and opponents.
+## Generate a Pickleball Round Robin Generator first
 
-## How To Use It
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-1. Enter player names (or team names).
-2. Set number of courts and time slots.
-3. Click "Generate Schedule."
-4. View, print, or export as CSV.
+## Pickleball Round Robin Generator rounds and byes
 
-Works for any number of players—even odd counts. Byes are added automatically.
+Round robin means every participant plays every other participant. The matchup count is n times n minus 1 divided by 2. If the participant count is odd, one team sits out each round. That bye is normal, not an error.
 
-## Example
+## Run a pickleball round robin generator in the real setting
 
-**Input:** 8 players, 2 courts, 4 rounds.  
-**Output:** Each player plays 4 games, partners rotate, no repeat matchups until round 5.
+For pickleball round robin generator, the format is only part of the job. Check whether courts, tables, rooms, boards, or stations are actually available at the same time. If players need warmup time or equipment changes, increase the match length before exporting.
 
-## What The Results Mean
+## Example pickleball round robin generator workflow
 
-- **Round:** One set of games played simultaneously.
-- **Court:** Where each game happens.
-- **Bye:** Player sits out that round (shown as "Bye").
-- **Fairness summary:** Shows how many times each player paired with or faced everyone else.
+Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
 
-## Common Mistakes
+## Pickleball Round Robin Generator checks before publishing
 
-- Entering an odd number of players without expecting byes. The tool handles this—just add all players.
-- Forgetting to set enough rounds. Minimum rounds = (players - 1) for full rotation.
-- Not checking the fairness summary. Use it to spot unbalanced pairings.
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-## Common Questions
+## Export the pickleball round robin generator
 
-**How do you make a round robin schedule?**  
-Enter players, set rounds and courts, generate. The tool balances partners and opponents automatically.
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-**How many games are in a round robin?**  
-For N players: N*(N-1)/2 games total. With courts, divide by courts per round.
+## Pickleball Round Robin Generator questions organizers ask
 
-**What happens with an odd number of teams?**  
-One player gets a bye each round. The tool schedules byes so everyone sits out equally.
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
-**How do you avoid repeat matchups?**  
-The generator uses a cyclic algorithm. Repeat matchups only happen if you run more rounds than (players - 1).
+**What is a bye?**  
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-**How do you assign courts or time slots?**  
-Enter court names (e.g., "Court 1", "Court 2") and time slots (e.g., "9:00 AM", "10:00 AM"). The schedule maps games to them.
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-## Related Tools
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-- [Pickleball Tournament Bracket Generator](/pickleball-tournament-bracket-generator/)
-- [Pickleball Team Generator](/pickleball-team-generator/)
-- [Round Robin Generator (general)](/round-robin-generator/)
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

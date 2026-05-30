@@ -1,58 +1,40 @@
 # 8 Team Bracket
 
-## Tool Intro
+Use this page when you need a 8-team bracket quickly and still want to understand the match count, round structure, seeding, byes, print view, and CSV output. Enter the teams first, then review the generated schedule before publishing it for a real event.
 
-Set up an 8 team bracket in seconds. Enter names, pick your format, and get a printable schedule. No signup needed.
+## Generate a 8 Team Bracket first
 
-## How To Use It
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-1. Enter 8 team or player names.
-2. Choose single or double elimination.
-3. Add time slots, courts, or venues (optional).
-4. Click generate. Your bracket appears instantly.
-5. Print, copy, or export as CSV.
+## 8 Team Bracket bracket structure
 
-If you have fewer than 8 teams, the tool adds byes automatically.
+Single elimination means a team is out after one loss. With 8 teams, expect 7 played matches if every match produces one advancing team. If the entrant count is not a clean bracket size, the tool adds byes so the bracket can move into the next round.
 
-## Example
+## Example 8-team setup
 
-You run a weekend ping-pong tournament with 8 players. Enter names, set 4 time slots, and the tool seeds them 1v8, 4v5, 3v6, 2v7. Quarterfinals play first, then semifinals, then a final. You print the bracket and post it on the wall.
+Paste 8 names into the participant box, keep the suggested format, set the number of courts or venues, and generate the schedule. With multiple courts, matches in the same round can run at the same time. With one court, treat the rows as a sequential order and check the total event length before announcing it.
 
-## What The Results Mean
+## 8 Team Bracket checks before publishing
 
-- **Quarterfinals**: 4 matches, winners advance.
-- **Semifinals**: 2 matches, winners go to final.
-- **Final**: 1 match decides champion.
-- **Single elimination**: 7 total games.
-- **Double elimination**: 14-15 games (includes a loser's bracket and possible if-necessary final).
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-The bracket shows match order, winners' paths, and any bye slots.
+## Export the 8 team bracket
 
-## Common Mistakes
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-- **Forgetting byes**: If you have 7 teams, one gets a bye. The tool handles this, but don't manually skip a round.
-- **Wrong seeding**: Random seeding can stack strong players early. Use the tool's seed option to balance.
-- **Ignoring time slots**: Without them, matches may overlap. Add venues or times to keep things on track.
+## 8 Team Bracket questions organizers ask
 
-## Common Questions
-
-**How do you make a tournament bracket?**  
-Enter your teams into the tool, choose elimination type, and generate. Print or export.
-
-**How do you seed a bracket?**  
-Rank teams 1-8 by skill or record. The tool places 1 vs 8, 2 vs 7, etc. This keeps top players apart until later rounds.
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
 **What is a bye?**  
-A free pass to the next round. Used when the number of teams isn't a power of 2 (e.g., 7 teams gets 1 bye).
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-**How many games are in a single elimination bracket?**  
-7 games for 8 teams. Formula: teams minus 1.
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-**What is the difference between single and double elimination?**  
-Single: lose once, you're out. Double: lose once, you drop to a loser's bracket; lose twice, you're out. Double elimination gives more games and a fairer result.
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-## Related Tools
-
-- [4 Team Bracket](/4-team-bracket/)
-- [16 Team Bracket](/16-team-bracket/)
-- [Bracket Generator](/bracket-generator/)
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

@@ -1,6 +1,6 @@
 # Tournament Schedule Tools Status
 
-Updated: 2026-05-29
+Updated: 2026-05-30
 
 ## Current State
 
@@ -51,6 +51,7 @@ The first launch includes:
 - Page-level meta tags and JSON-LD schema
 - Browser-side tournament scheduler with:
   - single elimination brackets
+  - practical double elimination planning rows
   - round robin schedules
   - league-style fixtures
   - byes for odd or non-power-of-two counts
@@ -97,6 +98,28 @@ These pages strengthen the round robin schedule, fixture, pool play, template, a
   - round robin page generation works
   - mobile `/tools/` has no horizontal overflow
   - no browser console errors
+
+## 2026-05-30 Content and Tool Consistency Cleanup
+
+The site was adjusted after a DeepSeek Reasoner assistant audit and Codex review.
+
+Changed:
+
+- Rewrote all 38 content drafts to reduce repeated AI-template structure.
+- Replaced generic headings like `How To Use It`, `Example`, `What The Results Mean`, and `Common Mistakes` with page-specific headings tied to the exact keyword and organizer scenario.
+- Added more SERP/PAA-aligned coverage around byes, match count, court/venue constraints, time slots, export/print workflows, and final organizer review.
+- Softened absolute fairness language. Pages now explain that fairness summaries help identify problems, not guarantee perfect real-world fairness.
+- Added a basic `double_elimination` tool mode and generated planning rows for the double elimination page.
+- Expanded About, How It Works, and Contact trust copy so the site explains scope, limits, and how to report scheduling problems.
+
+Post-change verification:
+
+- `npm run build` passed.
+- 46 HTML files generated.
+- 45 sitemap URLs generated.
+- Internal link check found 0 broken local links.
+- JSON-LD parsed on every HTML page.
+- Repeated-H2 audit no longer shows duplicated tool-page content frameworks; the only repeated empty pattern is static/support pages without content H2 extraction.
 
 ## Next Steps
 

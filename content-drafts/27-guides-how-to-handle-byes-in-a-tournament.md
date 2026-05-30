@@ -1,52 +1,23 @@
-# How to Handle Byes in a Tournament
+# How To Handle Byes In A Tournament
 
-## Tool Intro
+Users need to understand byes when participant counts do not fit the format. This guide focuses on the decision an organizer has to make before using a generator: format, byes, seeding, courts, time, and what to check before publishing.
 
-When your tournament has an odd number of teams or players, byes are unavoidable. Instead of manually juggling brackets, use our free scheduler. No signup required. Enter your participants, and the tool automatically assigns byes so every round stays balanced.
+## What a bye means
 
-## How To Use It
+A bye is a scheduled non-playing slot. In a bracket, it usually moves a participant into the next round. In round robin, it means one participant rests because the count is odd.
 
-1. Go to the scheduler and enter your participants (teams or players).
-2. Select the round-robin or bracket format.
-3. The tool will insert byes where needed.
-4. Review the generated schedule. You can edit match times, courts, venues, or time slots directly.
-5. Use **print view** for a clean paper copy, **CSV export** for spreadsheets, or **copy schedule** to paste into an email.
+## When byes are unavoidable
 
-## Example
+Byes appear when the participant count does not fit the format cleanly. Five teams in round robin need one bye per round. Six teams in a single elimination bracket need two byes to reach an eight-slot bracket.
 
-You have 7 teams in a round-robin. The scheduler creates 7 rounds. Each round has 3 matches and 1 bye. Team 5 gets a bye in round 1, Team 2 in round 2, and so on. Every team gets exactly one bye.
+## How to make byes feel fair
 
-## What The Results Mean
+Do not only count byes. Look at timing. A bye before a final can feel different from a bye in the first round. For casual events, explain the rule before play starts so nobody thinks the schedule is being changed mid-event.
 
-- **Bye count**: Each team gets the same number of byes (usually one per round-robin cycle).
-- **Fairness summary**: The tool shows which teams rest when, so no one gets an unfair advantage.
-- **Schedule**: Matches are listed with assigned courts, venues, and time slots. Byes are marked clearly.
+## Bye questions
 
-## Common Mistakes
+**Is a bye a win?**  
+In a bracket, it usually advances a participant without playing. In round robin, it is simply a rest round.
 
-- **Giving one team multiple byes early**: This lets them rest while others play consecutive matches. The tool avoids this.
-- **Forgetting to assign venues**: Byes don’t need a court, but matches do. Always check court availability.
-- **Using a spreadsheet manually**: It’s error-prone. A generator handles odd numbers and fairness automatically.
-
-## Common Questions
-
-**What is the simplest rule for byes?**  
-In a round-robin, each team gets one bye per cycle. In a bracket, byes go to the highest seeds in the first round.
-
-**When should I use this format?**  
-Use round-robin when every team should play each other. Use brackets for elimination tournaments with odd participant counts.
-
-**What mistakes should I avoid?**  
-Don’t assign byes randomly. Always balance rest periods. Avoid giving the same team multiple byes in a row.
-
-**Can I use a generator instead of a spreadsheet?**  
-Yes. Our tool handles odd numbers, fairness, and exports. No signup needed.
-
-**What should I print or export?**  
-Use **print view** for a clean schedule. Use **CSV export** for editing in Excel. Use **copy schedule** to share online.
-
-## Related Tools
-
-- Round Robin Generator
-- Bracket Generator
-- Team Scheduler with Venues
+**Are byes unfair?**  
+They can feel unfair if they are hidden or uneven. They are easier to accept when the format requires them and the distribution is clear.

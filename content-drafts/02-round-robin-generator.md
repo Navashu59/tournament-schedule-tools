@@ -1,59 +1,40 @@
 # Round Robin Generator
 
-Create a fair schedule where every team or player faces each other exactly once. No signup needed—just enter your list and generate a balanced round robin in seconds.
+Use this page when each team or player should face every other participant. The generator builds rounds, handles odd counts with byes, assigns courts and times, and gives you a schedule that can be copied, printed, or exported.
 
-## How To Use It
+## Generate a Round Robin Generator first
 
-1. Enter your teams or players (one per line).
-2. Choose number of courts or venues (optional).
-3. Click "Generate Schedule."
-4. Print, copy, or export as CSV.
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-Works for any number of participants—even odd counts.
+## Round Robin Generator rounds and byes
 
-## Example
+Round robin means every participant plays every other participant. The matchup count is n times n minus 1 divided by 2. If the participant count is odd, one team sits out each round. That bye is normal, not an error.
 
-**Teams:** A, B, C, D
+## Example round robin generator workflow
 
-**Generated schedule (3 rounds):**
-- Round 1: A vs B, C vs D
-- Round 2: A vs C, B vs D
-- Round 3: A vs D, B vs C
+Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
 
-Each team plays 3 matches. No repeats.
+## Round Robin Generator checks before publishing
 
-## What The Results Mean
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-- **Rounds:** Each round contains simultaneous matches.
-- **Byes:** With odd teams, one team sits out each round.
-- **Fairness:** Every participant has the same number of matches (or one fewer if odd).
-- **Courts/Time Slots:** Assign venues to rounds—each match gets a unique slot.
+## Export the round robin generator
 
-## Common Mistakes
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-- **Forgetting byes:** Odd teams need a bye each round. The tool handles this automatically.
-- **Using too few rounds:** A full round robin requires N-1 rounds (N teams). Don't skip rounds.
-- **Mixing up home/away:** This generator creates neutral matchups. Add home/away manually if needed.
+## Round Robin Generator questions organizers ask
 
-## Common Questions
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
-**How do you make a round robin schedule?**  
-Enter your participants. The tool pairs them using a standard circle method, rotating one team each round. No repeats.
+**What is a bye?**  
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-**How many games are in a round robin?**  
-N × (N-1) / 2. For 8 teams: 28 games. For 6 teams: 15 games.
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-**What happens with an odd number of teams?**  
-One team gets a bye each round. The tool assigns byes fairly so no team sits out twice before others do.
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-**How do you avoid repeat matchups?**  
-The circle method ensures each pair meets once. The tool never duplicates.
-
-**How do you assign courts or time slots?**  
-Enter your venue count. The tool spreads matches across available courts, minimizing wait time.
-
-## Related Tools
-
-- [Tournament Bracket Generator](/tournament-bracket-generator/)
-- [Team Scheduler](/team-scheduler/)
-- [League Standings Calculator](/league-standings-calculator/)
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

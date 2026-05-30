@@ -1,59 +1,40 @@
 # Double Elimination Bracket Generator
 
-## Tool Intro
+Use this page when one loss should not remove a team immediately. The tool creates a practical winners-bracket outline plus a losers-bracket planning section so you can map the event, assign courts, and export a working match list. Review the result carefully before using it for a formal tournament because double-elimination rules vary by event.
 
-Plan a tournament where teams need two losses to be out. Enter your participants, pick a bracket size, and get a ready-to-use schedule. No signup needed.
+## Generate a Double Elimination Bracket Generator first
 
-## How To Use It
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-1. Enter team or player names (one per line).
-2. Click "Generate Bracket."
-3. View the full double elimination layout with winners and losers brackets.
-4. Use the print view, copy the schedule, or export as CSV.
+## Double Elimination Bracket Generator winners and losers bracket
 
-Works with any number of participants. Odd count? Byes fill the gaps automatically.
+Double elimination gives entrants a second path after their first loss. The generated list separates winners-bracket matches from losers-bracket planning rows and ends with a grand final. Use it as an organizer checklist, then confirm your event's reset rule, grand-final rule, and venue timing before publishing.
 
-## Example
+## Example double elimination bracket generator workflow
 
-8 teams: A, B, C, D, E, F, G, H.
+Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
 
-- Round 1: 4 matches in winners bracket. 4 teams advance, 4 drop to losers bracket.
-- Losers bracket: those 4 teams play each other. 2 survive.
-- Winners bracket continues until one undefeated team remains.
-- Grand final: winners bracket champ vs losers bracket champ. If losers bracket champ wins, a second match decides the title.
+## Double Elimination Bracket Generator checks before publishing
 
-## What The Results Mean
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-- **Winners bracket**: teams with zero losses.
-- **Losers bracket**: teams with one loss—still alive.
-- **Grand final**: two possible matches if the losers bracket winner beats the winners bracket winner.
-- **Byes**: automatic wins for empty slots, shown clearly in the bracket.
+## Export the double elimination bracket generator
 
-## Common Mistakes
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-- **Forgetting double elimination needs more rounds** than single elimination. Plan for extra time.
-- **Ignoring byes** with odd team counts—they affect fairness. Our generator places them evenly.
-- **Not assigning venues or time slots** early. Use the CSV export to add courts and times before printing.
+## Double Elimination Bracket Generator questions organizers ask
 
-## Common Questions
-
-**How do you make a tournament bracket?**  
-Enter participants into the generator. It creates the matchups and rounds automatically. No manual drawing.
-
-**How do you seed a bracket?**  
-Rank teams before entering. Enter them in order (1 = strongest). The generator places seeds to keep top teams apart early.
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
 **What is a bye?**  
-A free pass to the next round when there aren't enough opponents. Common with odd team counts.
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-**How many games are in a single elimination bracket?**  
-N – 1 games, where N is the number of teams. Example: 8 teams = 7 games.
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-**What is the difference between single and double elimination?**  
-Single elimination: one loss and you're out. Double elimination: two losses to be eliminated. Double elimination has more games and a losers bracket.
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-## Related Tools
-
-- [Single Elimination Bracket Generator](/single-elimination-bracket-generator/)
-- [Round Robin Schedule Generator](/round-robin-schedule-generator/)
-- [Tournament Seeding Tool](/tournament-seeding-tool/)
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

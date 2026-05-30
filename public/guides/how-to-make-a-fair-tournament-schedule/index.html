@@ -19,7 +19,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"How To Make A Fair Tournament Schedule","item":"https://example.com/guides/how-to-make-a-fair-tournament-schedule/"}]},{"@type":"Article","@id":"https://example.com/guides/how-to-make-a-fair-tournament-schedule/#webpage","url":"https://example.com/guides/how-to-make-a-fair-tournament-schedule/","name":"How To Make A Fair Tournament Schedule","headline":"How To Make A Fair Tournament Schedule","description":"How To Make A Fair Tournament Schedule: a practical guide for planning fair tournaments, brackets, round robins, byes, and schedules.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"FAQPage","@id":"https://example.com/guides/how-to-make-a-fair-tournament-schedule/#faq","mainEntity":[{"@type":"Question","name":"What is the simplest rule for a fair schedule?","acceptedAnswer":{"@type":"Answer","text":"Every team plays the same number of matches and gets the same number of byes. In a round-robin, that means each team plays every other team exactly once."}},{"@type":"Question","name":"When should I use a round-robin vs. a bracket?","acceptedAnswer":{"@type":"Answer","text":"Round-robin is best when you have time for everyone to play everyone (e.g., a league). Brackets are better for elimination tournaments with limited time."}},{"@type":"Question","name":"What mistakes should I avoid?","acceptedAnswer":{"@type":"Answer","text":"Don't manually create a schedule for odd-numbered teams—you'll end up with unfair byes. Don't forget to assign courts if you have multiple venues."}},{"@type":"Question","name":"Can I use a generator instead of a spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Yes. A generator handles fairness rules, byes, and court assignments automatically. Spreadsheets are error-prone and slow."}},{"@type":"Question","name":"What should I print or export?","acceptedAnswer":{"@type":"Answer","text":"Print the schedule view or export as CSV. Include the round, match, court, and time. The fairness summary is useful for reference but not needed on the wall."}}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"How To Make A Fair Tournament Schedule","item":"https://example.com/guides/how-to-make-a-fair-tournament-schedule/"}]},{"@type":"Article","@id":"https://example.com/guides/how-to-make-a-fair-tournament-schedule/#webpage","url":"https://example.com/guides/how-to-make-a-fair-tournament-schedule/","name":"How To Make A Fair Tournament Schedule","headline":"How To Make A Fair Tournament Schedule","description":"How To Make A Fair Tournament Schedule: a practical guide for planning fair tournaments, brackets, round robins, byes, and schedules.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"}]}</script>
 </head>
 <body>
   <header class="site-header">
@@ -39,42 +39,18 @@
     </section>
     <section class="guide-summary"><p>Users need practical rules for fairness, byes, courts, and repeat matchups.</p><a class="primary-link" href="/tournament-schedule-maker/">Open the schedule maker</a></section>
     <article class="content-body">
-      <h2>Tool Intro</h2>
-<p>Stop guessing who plays whom. Use our free <a href="/tournament-schedule-maker/">tournament schedule generator</a> to create a balanced round-robin or bracket schedule in seconds. No signup required. Just enter your teams or players, pick your format, and get a printable schedule with byes, court assignments, and time slots handled automatically.</p>
-<h2>How To Use It</h2>
-<ol>
-<li>Go to the <a href="/tournament-schedule-maker/">schedule generator</a>.</li>
-<li>Enter the number of teams or players (odd numbers work fine—byes are added automatically).</li>
-<li>Choose round-robin (everyone plays everyone) or bracket (single/double elimination).</li>
-<li>Set the number of courts or venues and the time per match.</li>
-<li>Click &quot;Generate Schedule.&quot;</li>
-<li>Review the fairness summary. Adjust if needed.</li>
-<li>Print, copy the schedule, or export as CSV.</li>
-</ol>
-<h2>Example</h2>
-<p><strong>Scenario:</strong> 5 teams, 1 court, round-robin.</p>
-<p>The generator creates 10 matches over 5 rounds. Each round has 2 matches and 1 bye. Team A plays Team B in Round 1, Team C gets a bye. By Round 5, every team has played 4 matches and had 1 bye. No team plays twice in the same round. The schedule is printed and posted on the venue wall.</p>
-<h2>What The Results Mean</h2>
-<ul>
-<li><strong>Round:</strong> The time slot or day.</li>
-<li><strong>Match:</strong> The two opponents.</li>
-<li><strong>Bye:</strong> A team that rests that round.</li>
-<li><strong>Court/Venue:</strong> Where the match happens.</li>
-<li><strong>Fairness Summary:</strong> Shows each team&#39;s number of matches, byes, and rest gaps. A fair schedule means no team plays back-to-back matches or gets more than one bye in a row.</li>
-</ul>
-<h2>Common Mistakes</h2>
-<ul>
-<li><strong>Ignoring byes:</strong> With an odd number of teams, a bye is required each round. Don&#39;t try to squeeze in an extra match.</li>
-<li><strong>Repeating matchups:</strong> In a round-robin, each pair plays once. The generator prevents duplicates.</li>
-<li><strong>Overlapping courts:</strong> If you have 2 courts, you can run 2 matches per round. The generator assigns courts automatically.</li>
-<li><strong>Forgetting to print:</strong> Use the print view or CSV export to share the schedule. Don&#39;t rely on memory.</li>
-</ul>
-<h2>Common Questions</h2>
-<p><strong>What is the simplest rule for a fair schedule?</strong> Every team plays the same number of matches and gets the same number of byes. In a round-robin, that means each team plays every other team exactly once.</p>
-<p><strong>When should I use a round-robin vs. a bracket?</strong> Round-robin is best when you have time for everyone to play everyone (e.g., a league). Brackets are better for elimination tournaments with limited time.</p>
-<p><strong>What mistakes should I avoid?</strong> Don&#39;t manually create a schedule for odd-numbered teams—you&#39;ll end up with unfair byes. Don&#39;t forget to assign courts if you have multiple venues.</p>
-<p><strong>Can I use a generator instead of a spreadsheet?</strong> Yes. A generator handles fairness rules, byes, and court assignments automatically. Spreadsheets are error-prone and slow.</p>
-<p><strong>What should I print or export?</strong> Print the schedule view or export as CSV. Include the round, match, court, and time. The fairness summary is useful for reference but not needed on the wall.</p>
+      <p>Users need practical rules for fairness, byes, courts, and repeat matchups. This guide focuses on the decision an organizer has to make before using a generator: format, byes, seeding, courts, time, and what to check before publishing.</p>
+<h2>Define fair before building the schedule</h2>
+<p>A fair tournament schedule is not just a list with no duplicate matches. It should make the format clear, distribute byes visibly, respect court or venue limits, and avoid avoidable rest-time problems.</p>
+<h2>Use match count and bye count as the first checks</h2>
+<p>Every participant should have the expected number of matches for the format. If byes exist, they should be explainable and as balanced as the format allows. Odd team counts are not a problem by themselves; hidden or uneven byes are the problem.</p>
+<h2>Check courts, timing, and rest</h2>
+<p>A schedule can be mathematically correct and still hard to run. Check whether the venue has enough courts, whether matches overlap correctly, and whether a team is forced to play back-to-back while another team gets a long break.</p>
+<h2>Publish a schedule people can read</h2>
+<p>Before sharing, make sure each row includes round, matchup, court or venue, and time. If you export to CSV, open it once in Excel or Google Sheets to confirm the columns are readable.</p>
+<h2>Fair schedule questions</h2>
+<p><strong>What makes a tournament schedule fair?</strong> Balanced match count, clear byes, reasonable rest, and court assignments that do not create an obvious advantage.</p>
+<p><strong>Can a generator replace organizer judgment?</strong> No. A generator gives you a strong draft. The organizer still checks rules, venue limits, and final communication.</p>
     </article>
     <section class="link-band" aria-labelledby="related-heading">
     <h2 id="related-heading">Related planning pages</h2>

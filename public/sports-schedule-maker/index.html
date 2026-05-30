@@ -19,7 +19,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"Sports Schedule Maker","item":"https://example.com/sports-schedule-maker/"}]},{"@type":"WebPage","@id":"https://example.com/sports-schedule-maker/#webpage","url":"https://example.com/sports-schedule-maker/","name":"Sports Schedule Maker","headline":"Sports Schedule Maker","description":"Use this sports schedule maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/sports-schedule-maker/#app","name":"Sports Schedule Maker","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/sports-schedule-maker/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]},{"@type":"FAQPage","@id":"https://example.com/sports-schedule-maker/#faq","mainEntity":[{"@type":"Question","name":"Can I make a schedule for 7 teams with 3 venues?","acceptedAnswer":{"@type":"Answer","text":"Yes. The tool adds byes automatically. With 7 teams and 3 venues (6 time slots), one team gets a bye each week. Byes rotate so no team sits out twice before others."}},{"@type":"Question","name":"How does the tool handle doubleheaders?","acceptedAnswer":{"@type":"Answer","text":"It doesn't by default. If you need doubleheaders (e.g., two games per team per week), generate a League schedule, then manually duplicate matchups for the same week. Or run two separate schedules (one for each game slot)."}},{"@type":"Question","name":"Does it work for tournaments with multiple divisions?","acceptedAnswer":{"@type":"Answer","text":"Yes. Create separate schedules per division. Use the CSV export to combine them into one master file."}},{"@type":"Question","name":"Can I edit a schedule after generating it?","acceptedAnswer":{"@type":"Answer","text":"Yes. Click any matchup to swap home/away, change the venue, or move it to a different time slot. The tool recalculates fairness after edits."}},{"@type":"Question","name":"Is there a limit on teams or venues?","acceptedAnswer":{"@type":"Answer","text":"No. The tool handles up to 100 teams and 50 venues. For larger leagues, use the CSV export to manage data offline."}}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"Sports Schedule Maker","item":"https://example.com/sports-schedule-maker/"}]},{"@type":"WebPage","@id":"https://example.com/sports-schedule-maker/#webpage","url":"https://example.com/sports-schedule-maker/","name":"Sports Schedule Maker","headline":"Sports Schedule Maker","description":"Use this sports schedule maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/sports-schedule-maker/#app","name":"Sports Schedule Maker","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/sports-schedule-maker/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]}]}</script>
 </head>
 <body>
   <header class="site-header">
@@ -53,6 +53,7 @@ Panthers</textarea>
       <div class="control-grid">
         <label>Format
           <select data-mode>
+            
             
             <option value="round_robin">Round robin</option>
             <option value="league_schedule">League fixtures</option>
@@ -92,61 +93,23 @@ Panthers</textarea>
     </div>
   </section>
     <article class="content-body">
-      <p>You&#39;re a coach or league organizer. You have 12 teams, 4 fields, and 8 weeks to play. You need a schedule that gives every team a fair number of home games, avoids back-to-back matchups, and prints cleanly for parents. You don&#39;t want to spend hours in a spreadsheet.</p>
-<p>This tool does it in under 60 seconds.</p>
-<h2>How To Use It</h2>
-<ol>
-<li><strong>Choose your mode</strong> – Select <strong>League Schedule</strong> (fixed number of weeks, teams play once per week) or <strong>Round Robin</strong> (every team plays every other team exactly once or twice).</li>
-</ol>
-<ol>
-<li><strong>Enter teams</strong> – Type or paste team names. For youth leagues, use division names (e.g., &quot;U10 Red,&quot; &quot;U10 Blue&quot;).</li>
-</ol>
-<ol>
-<li><strong>Set venues and time slots</strong> – Enter how many fields, courts, or gyms are available, then set the first start time and match length.</li>
-</ol>
-<ol>
-<li><strong>Set schedule length</strong> – For League mode, choose number of weeks. For Round Robin, the tool calculates the minimum number of rounds.</li>
-</ol>
-<ol>
-<li><strong>Toggle fairness options</strong> – Check &quot;Balance home/away&quot; to ensure each team gets roughly equal home games. Check &quot;Avoid repeat matchups in consecutive weeks&quot; for youth leagues where families dislike playing the same team twice in a row.</li>
-</ol>
-<ol>
-<li><strong>Generate</strong> – Click the button. Review the schedule. Adjust any matchups manually if needed.</li>
-</ol>
-<ol>
-<li><strong>Export</strong> – Print directly or download as CSV to share via email or upload to your league website.</li>
-</ol>
-<h2>Example</h2>
-<p><strong>Input:</strong></p>
-<ul>
-<li>Mode: League Schedule</li>
-<li>Teams: Bears, Lions, Tigers, Wolves, Eagles, Hawks</li>
-<li>Venues: North Field (10 AM, 11 AM), South Field (10 AM, 11 AM)</li>
-<li>Weeks: 5</li>
-<li>Fair home/away: Yes</li>
-</ul>
-<p><strong>Output (Week 1):</strong> | Time | Venue | Home | Away | |------|-------|------|------| | 10 AM | North Field | Bears | Lions | | 11 AM | North Field | Tigers | Wolves | | 10 AM | South Field | Eagles | Hawks | | 11 AM | South Field | (bye) | (bye) |</p>
-<p>Each week rotates venues and home/away status. Byes appear automatically when team count is odd or venue slots are limited.</p>
-<h2>What The Results Mean</h2>
-<ul>
-<li><strong>Bye weeks</strong> – A team with no game that week. The tool spreads byes evenly so no team sits out twice while others play every week.</li>
-<li><strong>Venue rotation</strong> – Each team plays at different venues over the season, not stuck on the same field every week.</li>
-<li><strong>Home/away balance</strong> – For a 10-week season with 8 teams, each team gets 4 or 5 home games. The tool flags any imbalance so you can swap manually.</li>
-<li><strong>Repeat matchups</strong> – In League mode, teams may play each other twice. The tool spaces these out by at least 2 weeks.</li>
-</ul>
-<h2>Common Mistakes</h2>
-<ul>
-<li><strong>Too many teams per venue</strong> – If you have 8 teams but only 2 fields with 1 time slot each, you&#39;ll get 4 byes per week. Add more time slots or venues.</li>
-<li><strong>Forgetting to set time slots</strong> – Without time slots, the tool assigns random times. Always define your available slots first.</li>
-<li><strong>Not checking fairness</strong> – The default schedule may give one team 3 home games in a row. Always toggle &quot;Balance home/away&quot; before generating.</li>
-<li><strong>Using Round Robin for fixed-week leagues</strong> – Round Robin forces every team to play each other, which may exceed your season length. Use League mode for fixed-week schedules.</li>
-</ul>
-<h2>Common Questions</h2>
-<p><strong>Can I make a schedule for 7 teams with 3 venues?</strong> Yes. The tool adds byes automatically. With 7 teams and 3 venues (6 time slots), one team gets a bye each week. Byes rotate so no team sits out twice before others.</p>
-<p><strong>How does the tool handle doubleheaders?</strong> It doesn&#39;t by default. If you need doubleheaders (e.g., two games per team per week), generate a League schedule, then manually duplicate matchups for the same week. Or run two separate schedules (one for each game slot).</p>
-<p><strong>Does it work for tournaments with multiple divisions?</strong> Yes. Create separate schedules per division. Use the CSV export to combine them into one master file.</p>
-<p><strong>Can I edit a schedule after generating it?</strong> Yes. Click any matchup to swap home/away, change the venue, or move it to a different time slot. The tool recalculates fairness after edits.</p>
-<p><strong>Is there a limit on teams or venues?</strong> No. The tool handles up to 100 teams and 50 venues. For larger leagues, use the CSV export to manage data offline.</p>
+      <p>Use this page when each team or player should face every other participant. The generator builds rounds, handles odd counts with byes, assigns courts and times, and gives you a schedule that can be copied, printed, or exported.</p>
+<h2>Generate a Sports Schedule Maker first</h2>
+<p>Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.</p>
+<h2>Sports Schedule Maker rounds and byes</h2>
+<p>Round robin means every participant plays every other participant. The matchup count is n times n minus 1 divided by 2. If the participant count is odd, one team sits out each round. That bye is normal, not an error.</p>
+<h2>Example sports schedule maker workflow</h2>
+<p>Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.</p>
+<h2>Sports Schedule Maker checks before publishing</h2>
+<p>Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.</p>
+<h2>Export the sports schedule maker</h2>
+<p>Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.</p>
+<h2>Sports Schedule Maker questions organizers ask</h2>
+<p><strong>How do I make this schedule?</strong> Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.</p>
+<p><strong>What is a bye?</strong> A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.</p>
+<p><strong>Can I use this instead of a spreadsheet?</strong> Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.</p>
+<p><strong>How should I check fairness?</strong> Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.</p>
+<p><strong>Can I print the schedule?</strong> Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.</p>
     </article>
     <section class="link-band" aria-labelledby="related-heading">
     <h2 id="related-heading">Related planning pages</h2>

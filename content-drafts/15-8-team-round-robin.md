@@ -1,46 +1,40 @@
 # 8 Team Round Robin
 
-## Tool Intro
-Generate a balanced 8 team round robin schedule instantly. No signup needed. Every team plays each other once. Use the print view, CSV export, or copy the schedule to your clipboard.
+Use this page when you need a 8-team round robin schedule where every team faces every other team once. The scheduler keeps the working schedule at the top, then the notes below explain rounds, byes, court limits, time slots, CSV export, and the checks an organizer should make before sharing it.
 
-## How To Use It
-1. Enter team names (optional – defaults to Team 1–8).
-2. Click "Generate Schedule."
-3. Choose print view, CSV export, or copy schedule.
+## Generate a 8 Team Round Robin first
 
-## Example
-Teams: Eagles, Falcons, Hawks, Owls, Ravens, Robins, Swans, Wrens  
-Result: 7 rounds, 4 matches per round. Round 1: Eagles vs Falcons, Hawks vs Owls, Ravens vs Robins, Swans vs Wrens.
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-## What The Results Mean
-- **Rounds:** 7 total (each team plays once per round).
-- **Matches:** 28 total (n*(n-1)/2 = 8*7/2).
-- **Fairness:** Each team gets equal home/away balance (4 home, 3 away or vice versa).
-- **Byes:** None with 8 teams. If you have 7, one team sits out each round.
+## 8 Team Round Robin rounds and byes
 
-## Common Mistakes
-- **Forgetting byes:** With 7 teams, add a "bye" slot per round.
-- **Uneven court/time slots:** The schedule assigns matches to rounds, not specific venues. You must map rounds to courts/times yourself.
-- **Repeat matchups:** The round robin algorithm ensures no repeats.
+Round robin means every participant plays every other participant. A 8-team round robin has 28 total matchups. If the participant count is odd, one team sits out each round. That bye is normal, not an error.
 
-## Common Questions
+## Example 8-team setup
 
-**How do you make a round robin schedule?**  
-List all teams, pair them in a circle, then rotate one team each round. Our tool does this automatically.
+Paste 8 names into the participant box, keep the suggested format, set the number of courts or venues, and generate the schedule. With multiple courts, matches in the same round can run at the same time. With one court, treat the rows as a sequential order and check the total event length before announcing it.
 
-**How many games are in a round robin?**  
-For 8 teams: 28 games. Formula: n*(n-1)/2.
+## 8 Team Round Robin checks before publishing
 
-**What happens with an odd number of teams?**  
-One team gets a bye each round. Total rounds = number of teams. Total games = n*(n-1)/2.
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-**How do you avoid repeat matchups?**  
-The round robin algorithm rotates opponents so each pair meets exactly once.
+## Export the 8 team round robin
 
-**How do you assign courts or time slots?**  
-The schedule outputs rounds. You assign each match within a round to a court/time slot manually.
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-## Related Tools
-- [7 Team Round Robin](/7-team-round-robin/)
-- [9 Team Round Robin](/9-team-round-robin/)
-- [Round Robin Generator](/round-robin-generator/)
+## 8 Team Round Robin questions organizers ask
+
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
+
+**What is a bye?**  
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
+
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
+
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
+
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

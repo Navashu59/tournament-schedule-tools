@@ -1,61 +1,40 @@
 # Tournament Fixture Generator
 
-You are running a tournament and need a match list that shows exactly who plays whom, when, and where. You need to share it with players, print it for venue walls, and adjust it when courts or time slots change. This tool generates a fixture list you can export, print, and edit—no login or sign-up required.
+Use this page when each team or player should face every other participant. The generator builds rounds, handles odd counts with byes, assigns courts and times, and gives you a schedule that can be copied, printed, or exported.
 
-## How To Use It
+## Generate a Tournament Fixture Generator first
 
-1. **Enter your participants** – Type or paste player names (one per line). For team tournaments, enter team names.
-2. **Choose a mode** – Select **League Schedule** (each participant plays every other participant once) or **Round Robin** (each participant plays every other participant a set number of times).
-3. **Set courts and time slots** – Add the number of courts/venues available and the time slots per day (e.g., 3 courts, 4 time slots per day).
-4. **Handle byes** – If you have an odd number of participants, the tool automatically adds byes (a free round for one participant). Byes are marked clearly in the fixture list.
-5. **Generate fixtures** – Click the button. The tool creates a round-by-round fixture list with dates, rounds, courts, and time slots.
-6. **Export or print** – Use the **Print** button for a clean, printer-friendly version. Use **CSV** to download a spreadsheet you can edit in Excel or Google Sheets.
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-## Example
+## Tournament Fixture Generator rounds and byes
 
-**Input:**  
-- Participants: Team A, Team B, Team C, Team D  
-- Mode: League Schedule  
-- Courts: 2  
-- Time slots: 10:00 AM, 11:00 AM  
+Round robin means every participant plays every other participant. The matchup count is n times n minus 1 divided by 2. If the participant count is odd, one team sits out each round. That bye is normal, not an error.
 
-**Output (first round):**  
-| Round | Court 1 (10:00 AM) | Court 2 (11:00 AM) |  
-|-------|-------------------|-------------------|  
-| 1     | Team A vs Team B  | Team C vs Team D  |  
-| 2     | Team A vs Team C  | Team B vs Team D  |  
-| 3     | Team A vs Team D  | Team B vs Team C  |  
+## Example tournament fixture generator workflow
 
-Each round uses all courts and time slots. Byes appear as "BYE" in the fixture list.
+Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
 
-## What The Results Mean
+## Tournament Fixture Generator checks before publishing
 
-- **Round** – The sequence of matches. Each round uses all available courts and time slots.  
-- **Bye** – A participant with no match in that round. The tool assigns byes evenly so no participant gets more byes than others.  
-- **Court/Venue** – The physical location where the match is played. You can rename courts (e.g., Court A, Field 1, Table 3).  
-- **Time slot** – The scheduled start time for the match. The tool fills all slots before moving to the next day.  
-- **Fairness** – The tool balances home/away (if applicable) and avoids scheduling the same participant twice in one round.
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-## Common Mistakes
+## Export the tournament fixture generator
 
-- **Forgetting to set courts/time slots** – Without them, the tool cannot assign matches to specific times or locations. Always enter at least one court and one time slot.  
-- **Using too many participants for available slots** – If you have 10 participants but only 1 court and 1 time slot, the tournament will take many rounds. Increase courts or time slots to shorten the schedule.  
-- **Not checking for byes** – With an odd number of participants, byes are unavoidable. The tool marks them clearly; do not delete them from the list.  
-- **Editing the CSV incorrectly** – If you edit the CSV and re-import it, the tool may not recognize your changes. Use the CSV only for printing or sharing, not for re-importing.
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-## Common Questions
+## Tournament Fixture Generator questions organizers ask
 
-**How do I handle byes in the fixture list?**  
-Byes appear as "BYE" in the match column. That participant does not play that round. The tool ensures no participant gets more than one bye per cycle.
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
-**Can I change courts or time slots after generating fixtures?**  
-Yes. Go back to the settings, adjust the number of courts or time slots, and regenerate. The tool recalculates the entire schedule.
+**What is a bye?**  
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-**Does the tool support double round-robin?**  
-Yes. Select **Round Robin** mode and set the number of rounds to 2. Each pair plays twice (once home, once away if applicable).
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-**Can I print the fixture list without the tool interface?**  
-Yes. Click **Print** to open a clean, printer-friendly version. Use your browser’s print function (Ctrl+P or Cmd+P) to save as PDF or print.
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-**How do I export to CSV?**  
-Click **CSV**. A file downloads with columns for Round, Court, Time Slot, Participant 1, Participant 2, and Bye (if applicable). Open it in Excel or Google Sheets to edit or share.
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

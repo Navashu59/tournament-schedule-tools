@@ -1,49 +1,40 @@
 # 12 Team Round Robin
 
-## Tool Intro
-Generate a balanced 12-team round robin schedule instantly. No signup needed. Every team plays each other once. Export to CSV, print, or copy the schedule.
+Use this page when you need a 12-team round robin schedule where every team faces every other team once. The scheduler keeps the working schedule at the top, then the notes below explain rounds, byes, court limits, time slots, CSV export, and the checks an organizer should make before sharing it.
 
-## How To Use It
-1. Enter your 12 team names.
-2. Choose your season start date.
-3. Set number of courts or venues (optional).
-4. Click "Generate Schedule."
-5. Export, print, or copy the result.
+## Generate a 12 Team Round Robin first
 
-## Example
-Teams: Lions, Tigers, Bears, Wolves, Eagles, Hawks, Foxes, Owls, Rams, Bulls, Pumas, Vipers.  
-Season: 11 weeks, 1 match per team per week.  
-Output: Week 1 – Lions vs Tigers, Bears vs Wolves, Eagles vs Hawks, Foxes vs Owls, Rams vs Bulls, Pumas vs Vipers. Each week rotates matchups until all teams have played each other.
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-## What The Results Mean
-- **Total matches:** 66 (12 teams × 11 rounds ÷ 2).
-- **Rounds:** 11 rounds if even teams; 12 rounds if odd (one team gets a bye each round).
-- **Fairness:** Each team plays every other team exactly once. Home/away balance is automatic in a single round robin.
-- **Byes:** With 12 teams, no byes. With 11 teams, one bye per round.
+## 12 Team Round Robin rounds and byes
 
-## Common Mistakes
-- **Adding a 13th team mid-season:** Regenerate the schedule from scratch.
-- **Forgetting to set venue capacity:** If you have 2 courts, you can only schedule 2 matches per time slot.
-- **Assuming double round robin:** This tool generates a single round robin. For home-and-away, run it twice.
+Round robin means every participant plays every other participant. A 12-team round robin has 66 total matchups. If the participant count is odd, one team sits out each round. That bye is normal, not an error.
 
-## Common Questions
+## Example 12-team setup
 
-**How do you make a round robin schedule?**  
-List all teams. Pair them round by round using a fixed rotation algorithm. This tool does it for you.
+Paste 12 names into the participant box, keep the suggested format, set the number of courts or venues, and generate the schedule. With multiple courts, matches in the same round can run at the same time. With one court, treat the rows as a sequential order and check the total event length before announcing it.
 
-**How many games are in a round robin?**  
-For 12 teams: 66 games (n × (n-1) / 2).
+## 12 Team Round Robin checks before publishing
 
-**What happens with an odd number of teams?**  
-One team gets a bye each round. The schedule still ensures every team plays each other once.
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-**How do you avoid repeat matchups?**  
-The algorithm ensures each pair meets exactly once. No manual checking needed.
+## Export the 12 team round robin
 
-**How do you assign courts or time slots?**  
-Enter your available courts/venues when generating. The tool assigns matches to slots automatically.
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-## Related Tools
-- [8 Team Round Robin](/8-team-round-robin/)
-- [16 Team Round Robin](/16-team-round-robin/)
-- [Double Round Robin Generator](/double-round-robin/)
+## 12 Team Round Robin questions organizers ask
+
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
+
+**What is a bye?**  
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
+
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
+
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
+
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

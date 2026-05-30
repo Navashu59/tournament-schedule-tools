@@ -19,7 +19,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"Tournament Fixture Generator","item":"https://example.com/tournament-fixture-generator/"}]},{"@type":"WebPage","@id":"https://example.com/tournament-fixture-generator/#webpage","url":"https://example.com/tournament-fixture-generator/","name":"Tournament Fixture Generator","headline":"Tournament Fixture Generator","description":"Use this tournament fixture generator to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/tournament-fixture-generator/#app","name":"Tournament Fixture Generator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/tournament-fixture-generator/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]},{"@type":"FAQPage","@id":"https://example.com/tournament-fixture-generator/#faq","mainEntity":[{"@type":"Question","name":"How do I handle byes in the fixture list?","acceptedAnswer":{"@type":"Answer","text":"Byes appear as \"BYE\" in the match column. That participant does not play that round. The tool ensures no participant gets more than one bye per cycle."}},{"@type":"Question","name":"Can I change courts or time slots after generating fixtures?","acceptedAnswer":{"@type":"Answer","text":"Yes. Go back to the settings, adjust the number of courts or time slots, and regenerate. The tool recalculates the entire schedule."}},{"@type":"Question","name":"Does the tool support double round-robin?","acceptedAnswer":{"@type":"Answer","text":"Yes. Select Round Robin mode and set the number of rounds to 2. Each pair plays twice (once home, once away if applicable)."}},{"@type":"Question","name":"Can I print the fixture list without the tool interface?","acceptedAnswer":{"@type":"Answer","text":"Yes. Click Print to open a clean, printer-friendly version. Use your browser’s print function (Ctrl+P or Cmd+P) to save as PDF or print."}},{"@type":"Question","name":"How do I export to CSV?","acceptedAnswer":{"@type":"Answer","text":"Click CSV. A file downloads with columns for Round, Court, Time Slot, Participant 1, Participant 2, and Bye (if applicable). Open it in Excel or Google Sheets to edit or share."}}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"Tournament Fixture Generator","item":"https://example.com/tournament-fixture-generator/"}]},{"@type":"WebPage","@id":"https://example.com/tournament-fixture-generator/#webpage","url":"https://example.com/tournament-fixture-generator/","name":"Tournament Fixture Generator","headline":"Tournament Fixture Generator","description":"Use this tournament fixture generator to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/tournament-fixture-generator/#app","name":"Tournament Fixture Generator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/tournament-fixture-generator/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]}]}</script>
 </head>
 <body>
   <header class="site-header">
@@ -53,6 +53,7 @@ Panthers</textarea>
       <div class="control-grid">
         <label>Format
           <select data-mode>
+            
             
             <option value="round_robin">Round robin</option>
             <option value="league_schedule">League fixtures</option>
@@ -92,47 +93,23 @@ Panthers</textarea>
     </div>
   </section>
     <article class="content-body">
-      <p>You are running a tournament and need a match list that shows exactly who plays whom, when, and where. You need to share it with players, print it for venue walls, and adjust it when courts or time slots change. This tool generates a fixture list you can export, print, and edit—no login or sign-up required.</p>
-<h2>How To Use It</h2>
-<ol>
-<li><strong>Enter your participants</strong> – Type or paste player names (one per line). For team tournaments, enter team names.</li>
-<li><strong>Choose a mode</strong> – Select <strong>League Schedule</strong> (each participant plays every other participant once) or <strong>Round Robin</strong> (each participant plays every other participant a set number of times).</li>
-<li><strong>Set courts and time slots</strong> – Add the number of courts/venues available and the time slots per day (e.g., 3 courts, 4 time slots per day).</li>
-<li><strong>Handle byes</strong> – If you have an odd number of participants, the tool automatically adds byes (a free round for one participant). Byes are marked clearly in the fixture list.</li>
-<li><strong>Generate fixtures</strong> – Click the button. The tool creates a round-by-round fixture list with dates, rounds, courts, and time slots.</li>
-<li><strong>Export or print</strong> – Use the <strong>Print</strong> button for a clean, printer-friendly version. Use <strong>CSV</strong> to download a spreadsheet you can edit in Excel or Google Sheets.</li>
-</ol>
-<h2>Example</h2>
-<p><strong>Input:</strong></p>
-<ul>
-<li>Participants: Team A, Team B, Team C, Team D</li>
-<li>Mode: League Schedule</li>
-<li>Courts: 2</li>
-<li>Time slots: 10:00 AM, 11:00 AM</li>
-</ul>
-<p><strong>Output (first round):</strong> | Round | Court 1 (10:00 AM) | Court 2 (11:00 AM) | |-------|-------------------|-------------------| | 1     | Team A vs Team B  | Team C vs Team D  | | 2     | Team A vs Team C  | Team B vs Team D  | | 3     | Team A vs Team D  | Team B vs Team C  |</p>
-<p>Each round uses all courts and time slots. Byes appear as &quot;BYE&quot; in the fixture list.</p>
-<h2>What The Results Mean</h2>
-<ul>
-<li><strong>Round</strong> – The sequence of matches. Each round uses all available courts and time slots.</li>
-<li><strong>Bye</strong> – A participant with no match in that round. The tool assigns byes evenly so no participant gets more byes than others.</li>
-<li><strong>Court/Venue</strong> – The physical location where the match is played. You can rename courts (e.g., Court A, Field 1, Table 3).</li>
-<li><strong>Time slot</strong> – The scheduled start time for the match. The tool fills all slots before moving to the next day.</li>
-<li><strong>Fairness</strong> – The tool balances home/away (if applicable) and avoids scheduling the same participant twice in one round.</li>
-</ul>
-<h2>Common Mistakes</h2>
-<ul>
-<li><strong>Forgetting to set courts/time slots</strong> – Without them, the tool cannot assign matches to specific times or locations. Always enter at least one court and one time slot.</li>
-<li><strong>Using too many participants for available slots</strong> – If you have 10 participants but only 1 court and 1 time slot, the tournament will take many rounds. Increase courts or time slots to shorten the schedule.</li>
-<li><strong>Not checking for byes</strong> – With an odd number of participants, byes are unavoidable. The tool marks them clearly; do not delete them from the list.</li>
-<li><strong>Editing the CSV incorrectly</strong> – If you edit the CSV and re-import it, the tool may not recognize your changes. Use the CSV only for printing or sharing, not for re-importing.</li>
-</ul>
-<h2>Common Questions</h2>
-<p><strong>How do I handle byes in the fixture list?</strong> Byes appear as &quot;BYE&quot; in the match column. That participant does not play that round. The tool ensures no participant gets more than one bye per cycle.</p>
-<p><strong>Can I change courts or time slots after generating fixtures?</strong> Yes. Go back to the settings, adjust the number of courts or time slots, and regenerate. The tool recalculates the entire schedule.</p>
-<p><strong>Does the tool support double round-robin?</strong> Yes. Select <strong>Round Robin</strong> mode and set the number of rounds to 2. Each pair plays twice (once home, once away if applicable).</p>
-<p><strong>Can I print the fixture list without the tool interface?</strong> Yes. Click <strong>Print</strong> to open a clean, printer-friendly version. Use your browser’s print function (Ctrl+P or Cmd+P) to save as PDF or print.</p>
-<p><strong>How do I export to CSV?</strong> Click <strong>CSV</strong>. A file downloads with columns for Round, Court, Time Slot, Participant 1, Participant 2, and Bye (if applicable). Open it in Excel or Google Sheets to edit or share.</p>
+      <p>Use this page when each team or player should face every other participant. The generator builds rounds, handles odd counts with byes, assigns courts and times, and gives you a schedule that can be copied, printed, or exported.</p>
+<h2>Generate a Tournament Fixture Generator first</h2>
+<p>Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.</p>
+<h2>Tournament Fixture Generator rounds and byes</h2>
+<p>Round robin means every participant plays every other participant. The matchup count is n times n minus 1 divided by 2. If the participant count is odd, one team sits out each round. That bye is normal, not an error.</p>
+<h2>Example tournament fixture generator workflow</h2>
+<p>Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.</p>
+<h2>Tournament Fixture Generator checks before publishing</h2>
+<p>Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.</p>
+<h2>Export the tournament fixture generator</h2>
+<p>Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.</p>
+<h2>Tournament Fixture Generator questions organizers ask</h2>
+<p><strong>How do I make this schedule?</strong> Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.</p>
+<p><strong>What is a bye?</strong> A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.</p>
+<p><strong>Can I use this instead of a spreadsheet?</strong> Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.</p>
+<p><strong>How should I check fairness?</strong> Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.</p>
+<p><strong>Can I print the schedule?</strong> Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.</p>
     </article>
     <section class="link-band" aria-labelledby="related-heading">
     <h2 id="related-heading">Related planning pages</h2>

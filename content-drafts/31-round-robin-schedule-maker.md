@@ -1,67 +1,40 @@
 # Round Robin Schedule Maker
 
-You have 8 teams, 2 courts, and 3 hours to run a tournament. You need a schedule that tells you exactly which team plays whom, on which court, at what time, and who sits out each round. This tool generates that complete schedule—not just matchups.
+Use this page when each team or player should face every other participant. The generator builds rounds, handles odd counts with byes, assigns courts and times, and gives you a schedule that can be copied, printed, or exported.
 
-## How To Use It
+## Generate a Round Robin Schedule Maker first
 
-1. **Enter teams** – Type or paste team names, one per line. Use the real team names so the printed schedule is ready to share.
-2. **Set venues** – Enter the number of courts or playing fields available. Default is 1.
-3. **Set time per round** – Enter minutes per match (e.g., 30). The tool calculates total time.
-4. **Select start time** – Choose when the first round begins (e.g., 9:00 AM).
-5. **Click "Generate Schedule"** – The tool produces a full grid with rounds, courts, times, and byes.
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-**Fair byes**: When you have an odd number of teams, one team sits out each round. The tool rotates the bye so no team sits twice before all others have sat once.
+## Round Robin Schedule Maker rounds and byes
 
-## Example
+Round robin means every participant plays every other participant. The matchup count is n times n minus 1 divided by 2. If the participant count is odd, one team sits out each round. That bye is normal, not an error.
 
-**Input**: 5 teams (Red, Blue, Green, Yellow, Orange), 2 courts, 30-minute rounds, start 10:00 AM.
+## Example round robin schedule maker workflow
 
-**Output**:
+Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
 
-| Round | Time     | Court 1      | Court 2      | Bye     |
-|-------|----------|--------------|--------------|---------|
-| 1     | 10:00 AM | Red vs Blue  | Green vs Yellow | Orange  |
-| 2     | 10:30 AM | Red vs Green | Blue vs Orange | Yellow  |
-| 3     | 11:00 AM | Red vs Yellow| Green vs Orange | Blue    |
-| 4     | 11:30 AM | Red vs Orange| Yellow vs Blue | Green   |
-| 5     | 12:00 PM | Green vs Blue| Yellow vs Orange | Red     |
+## Round Robin Schedule Maker checks before publishing
 
-Each team plays 4 matches. Every team gets exactly one bye round.
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-## What The Results Mean
+## Export the round robin schedule maker
 
-- **Round** – One complete set of matches where every team either plays or has a bye.
-- **Court/venue** – The specific location where a match happens. If you have 2 courts, 2 matches happen simultaneously.
-- **Time** – When the round starts. All matches in a round start at the same time.
-- **Bye** – The team that does not play this round. Only appears with odd team counts.
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-**Total rounds**: For N teams, you get N-1 rounds (if N is even) or N rounds (if N is odd). Each team plays N-1 matches.
+## Round Robin Schedule Maker questions organizers ask
 
-**Total time**: Rounds × minutes per round. Example: 5 rounds × 30 minutes = 2.5 hours.
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
-## Common Mistakes
+**What is a bye?**  
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-- **Using an even number of teams but expecting byes** – Byes only happen with odd team counts. With even teams, every team plays every round.
-- **Forgetting venue limits** – If a round has more matches than available courts, some matches need later time slots. Always match the generated court assignments to your actual space.
-- **Ignoring the bye rotation** – The tool rotates byes fairly. Do not manually reassign byes or you will create unfair rest periods.
-- **Printing without checking time** – The schedule includes start times. Verify your first round time matches your actual start.
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-## Common Questions
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-**How many rounds do I need for 12 teams?**  
-11 rounds if 12 teams (even). 12 rounds if 13 teams (odd). Each team plays 11 matches.
-
-**What if I have more teams than courts?**  
-The tool schedules as many matches per round as you have courts. Extra teams wait for later rounds. For example, 10 teams with 2 courts = 5 rounds (each round has 2 matches, 4 teams play, 0 byes).
-
-**Can I export the schedule?**  
-Yes. Use the **Print** button for a clean paper copy. Use **CSV export** to open in Excel or Google Sheets. CSV includes round, time, court, team 1, team 2, and bye (if any).
-
-**Is the schedule fair for all teams?**  
-Yes. The tool uses a standard circle method (Berger tables) that ensures every team plays every other team exactly once. Byes rotate evenly. No team gets two byes before another gets one.
-
-**What if I need to add or remove a team after generating?**  
-Regenerate the schedule. The tool recalculates all matchups and byes from scratch. Do not manually edit the output—it will break the round-robin balance.
-
-**Can I set custom match durations per round?**  
-Yes. Enter minutes per round in the "Time per round" field. All rounds use the same duration. If you need variable times (e.g., finals longer), generate the schedule and adjust manually after export.
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

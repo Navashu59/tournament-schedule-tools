@@ -1,57 +1,44 @@
-### Tool Intro
+# Esports Bracket Maker
 
-Set up a seeded single-elimination bracket for your esports tournament in seconds. No signup, no spreadsheets—just enter your teams or players, and get a printable schedule with time slots, venues, and a fairness summary. Works for odd numbers, byes, and any game title.
+Use this page when you need a tournament schedule that is easier to trust than a hand-built spreadsheet. Enter participants, choose the format, set courts and timing, then generate a schedule you can review, print, copy, or export.
 
-### How To Use It
+## Generate a Esports Bracket Maker first
 
-1. **Enter participants** – Type or paste team names. Add up to 64.
-2. **Set seeds** – Drag to reorder. Top seed faces lowest seed in round one.
-3. **Add details** – Pick date, time per match, and venue/court names.
-4. **Generate** – Click “Create Bracket.” Your bracket appears instantly.
-5. **Export or print** – Use CSV export to edit in Sheets, or hit Print View for a clean PDF.
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-### Example
+## Esports Bracket Maker bracket structure
 
-You run a 7-team *Valorant* tournament.  
-- Enter: “Team Alpha,” “Bolt,” “Cipher,” “Dusk,” “Echo,” “Frost,” “Grim.”  
-- Seed: Alpha (1), Bolt (2), Cipher (3), Dusk (4), Echo (5), Frost (6), Grim (7).  
-- Set 8 PM matches, 45 min each, one venue.  
-- Result: 3 first-round matches (Alpha gets a bye), then semis and final. Total 6 games.
+Single elimination means a team is out after one loss. The total played matches are usually one fewer than the number of entrants. If the entrant count is not a clean bracket size, the tool adds byes so the bracket can move into the next round.
 
-### What The Results Mean
+## Run a esports bracket maker in the real setting
 
-- **Byes** – Top seed(s) skip round one when team count isn’t a power of 2.  
-- **Match order** – Sorted by seed rank, not random. Higher seeds play later rounds.  
-- **Fairness summary** – Shows if any team gets an extra rest advantage.  
-- **Schedule** – Each match has a start time, venue, and round label.
+For esports bracket maker, the format is only part of the job. Check whether courts, tables, rooms, boards, or stations are actually available at the same time. If players need warmup time or equipment changes, increase the match length before exporting.
 
-### Common Mistakes
+## Example esports bracket maker workflow
 
-- **Wrong seed order** – If you paste in random order, the bracket won’t be fair. Always drag to seed 1–N.  
-- **Ignoring byes** – With 5 teams, 3 byes appear. That’s normal—don’t delete them.  
-- **Overlapping times** – If matches run back-to-back in one venue, the tool auto-staggers. Don’t manually shift times.  
-- **Forgetting CSV export** – Print View is great for display, but CSV lets you tweak times in a spreadsheet.
+Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
 
-### Common Questions
+## Esports Bracket Maker checks before publishing
 
-**How do you make a tournament bracket?**  
-Enter team names, set seeds, choose single or double elimination, and click generate. The tool handles all matchups and byes.
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-**How do you seed a bracket?**  
-Rank teams 1 to N. The tool pairs 1 vs last, 2 vs second-last, etc. This keeps top seeds apart until later rounds.
+## Export the esports bracket maker
+
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
+
+## Esports Bracket Maker questions organizers ask
+
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
 **What is a bye?**  
-A free pass to the next round. Given to top seeds when the number of teams isn’t a power of 2 (e.g., 7 teams → 1 bye).
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-**How many games are in a single elimination bracket?**  
-N – 1, where N = number of teams. Example: 8 teams → 7 games. 16 teams → 15 games.
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-**What is the difference between single and double elimination?**  
-Single: lose once, you’re out. Double: losers drop to a lower bracket and can still win the final.
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-### Related Tools
-
-- [Double Elimination Bracket Maker](/double-elimination-bracket-maker/)  
-- [Round Robin Generator](/round-robin-generator/)  
-- [Swiss System Scheduler](/swiss-system-scheduler/)  
-- [Tournament Schedule Exporter](/tournament-schedule-exporter/)
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

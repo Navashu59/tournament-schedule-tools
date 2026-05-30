@@ -105,7 +105,7 @@
       "page_type": "tool",
       "user_problem": "Users need to understand or plan a bracket where teams are eliminated after two losses.",
       "tool_modes": [
-        "single_elimination"
+        "double_elimination"
       ],
       "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
     },

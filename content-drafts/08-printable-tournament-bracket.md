@@ -1,48 +1,40 @@
-# Tool Intro
+# Printable Tournament Bracket
 
-Set up a single-elimination bracket that prints cleanly. Enter teams or players, pick a start time, and get a ready-to-print schedule. No signup needed.
+Use this page when you need a tournament schedule that is easier to trust than a hand-built spreadsheet. Enter participants, choose the format, set courts and timing, then generate a schedule you can review, print, copy, or export.
 
-# How To Use It
+## Generate a Printable Tournament Bracket first
 
-1. Enter team or player names (one per line).
-2. Set the match duration and start time.
-3. Add courts or venues if needed.
-4. Click "Generate Bracket."
-5. Use the print view or export as CSV.
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-# Example
+## Printable Tournament Bracket bracket structure
 
-You have 7 teams for a Saturday tournament. Enter all 7 names. The tool adds one bye (a free pass) so the bracket fills to 8 slots. Team 1 gets the bye. The first round has 3 matches. The second round has 2 matches (one is the bye team vs. a winner). The final has 1 match.
+Single elimination means a team is out after one loss. The total played matches are usually one fewer than the number of entrants. If the entrant count is not a clean bracket size, the tool adds byes so the bracket can move into the next round.
 
-# What The Results Mean
+## Example printable tournament bracket workflow
 
-The bracket shows each round, match time, and assigned court. Byes appear as empty slots. The print view removes navigation so it fits on one page. CSV export gives you the same data in a spreadsheet.
+Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
 
-# Common Mistakes
+## Printable Tournament Bracket checks before publishing
 
-- **Odd number of teams**: The tool adds byes automatically. You don't need to remove a team.
-- **Forgetting time slots**: Without them, matches show "TBD." Add start times to keep the schedule on track.
-- **Not using print view**: The regular page has extra elements. Use the print button for a clean bracket.
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-# Common Questions
+## Export the printable tournament bracket
 
-**How do you make a tournament bracket?**  
-Enter team names, set match duration, and generate. The tool creates a single-elimination bracket with rounds and times.
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-**How do you seed a bracket?**  
-List teams in order of strength (1 = strongest). The tool places them so the strongest meet in the final. For 8 teams: 1 vs. 8, 4 vs. 5, 3 vs. 6, 2 vs. 7.
+## Printable Tournament Bracket questions organizers ask
+
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
 **What is a bye?**  
-A free pass to the next round. Needed when the number of teams isn't a power of 2 (e.g., 7 teams needs 1 bye).
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-**How many games are in a single elimination bracket?**  
-N - 1, where N is the number of teams. For 8 teams: 7 games. For 16 teams: 15 games.
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-**What is the difference between single and double elimination?**  
-Single elimination: lose once, you're out. Double elimination: lose once, you drop to a losers' bracket; lose twice, you're out.
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-# Related Tools
-
-- [Round Robin Generator](/round-robin-generator/) – every team plays every other team.
-- [Double Elimination Bracket](/double-elimination-bracket/) – two-loss elimination.
-- [Team Scheduler](/team-scheduler/) – assign teams to courts and time slots.
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

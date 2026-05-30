@@ -1,52 +1,36 @@
 # Tournament Schedule Maker
 
-Create brackets, round robin schedules, and league fixtures in one place. No signup needed.
+Use this page when you need a tournament schedule that is easier to trust than a hand-built spreadsheet. Enter participants, choose the format, set courts and timing, then generate a schedule you can review, print, copy, or export.
 
-## How To Use It
+## Generate a Tournament Schedule Maker first
 
-1. Enter team or player names (one per line).
-2. Choose format: single elimination, double elimination, or round robin.
-3. Set number of courts, venues, or time slots (optional).
-4. Click "Generate Schedule."
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-Get a printable bracket, match list, and fairness summary instantly.
+## Example tournament schedule maker workflow
 
-## Example
+Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
 
-8 teams, single elimination. The tool generates a bracket with 7 matches across 3 rounds. Each match shows the scheduled court and time. Print it or copy the schedule as CSV.
+## Tournament Schedule Maker checks before publishing
 
-## What The Results Mean
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-- **Bracket view**: Shows the path to the winner. Byes appear as empty slots for odd numbers of teams.
-- **Match list**: Every game with round, court, and time.
-- **Fairness summary**: For round robins, shows each team plays the same number of matches. For elimination, shows seeding logic.
-- **CSV export**: Download or copy the schedule to share.
+## Export the tournament schedule maker
 
-## Common Mistakes
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-- **Odd number of teams**: Byes are added automatically. One team sits out the first round.
-- **Forgetting time slots**: Without them, the tool assigns default times. Add your own for real events.
-- **Ignoring seeding**: Random seeding is default. Manually order teams to avoid top players meeting early.
+## Tournament Schedule Maker questions organizers ask
 
-## Common Questions
-
-**How do you make a tournament bracket?**  
-Enter your teams, choose single or double elimination, and click generate. The bracket appears instantly.
-
-**How do you seed a bracket?**  
-List teams in order of strength (1 = strongest). The tool places them so the top seed meets the bottom seed last.
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
 **What is a bye?**  
-A free pass to the next round. Needed when the number of teams isn't a power of 2 (e.g., 5 teams = 3 byes in round 1).
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-**How many games are in a single elimination bracket?**  
-Number of teams minus 1. For 8 teams, that's 7 games.
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-**What is the difference between single and double elimination?**  
-Single elimination: one loss and you're out. Double elimination: a second bracket for losers; you need two losses to be eliminated.
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-## Related Tools
-
-- [Bracket Generator](/bracket-generator/)
-- [Round Robin Generator](/round-robin-generator/)
-- [League Fixture Maker](/league-fixture-maker/)
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

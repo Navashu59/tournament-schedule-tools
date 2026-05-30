@@ -29,7 +29,9 @@ const trustPages = [
     description: "Tournament Schedule Tools helps organizers make fair brackets, round robin schedules, fixtures, and printable match lists without spreadsheet errors.",
     body: [
       "Tournament Schedule Tools is built for people who have to run real events: teachers, office organizers, coaches, club admins, PE staff, and casual tournament hosts.",
-      "The site focuses on practical scheduling problems: byes, odd participant counts, court limits, match order, print views, and clean exports. Every core page starts with a usable tool before adding explanations."
+      "The site focuses on practical scheduling problems: byes, odd participant counts, court limits, match order, print views, and clean exports. Every core page starts with a usable tool before adding explanations.",
+      "The project is intentionally narrow. It does not try to be a full league-management platform with registrations, payments, or standings accounts. Its job is to help an organizer turn a list of teams into a schedule that can be reviewed and shared.",
+      "Generated schedules should still be checked before a real event. Venue rules, tie-breakers, eligibility, late arrivals, and sport-specific rules can change what a final schedule should look like."
     ]
   },
   {
@@ -39,7 +41,8 @@ const trustPages = [
     body: [
       "Round robin schedules use a rotation method so each participant faces every other participant once. Odd participant counts receive a bye each round.",
       "Single elimination brackets expand to the next power of two, then assign byes where needed. Time slots and courts are assigned from the match order so the schedule can be copied, printed, or exported.",
-      "Fairness checks count games, byes, court use, and home or away balance where the format supports it."
+      "Double elimination pages create a practical winners-bracket outline plus losers-bracket planning rows. Formal double-elimination events may still need custom rules for bracket resets, finals format, and seeding.",
+      "Fairness checks count games, byes, court use, and home or away balance where the format supports it. These checks help organizers spot problems; they do not replace final review."
     ]
   },
   {
@@ -65,7 +68,8 @@ const trustPages = [
     title: "Contact",
     description: "Contact Tournament Schedule Tools for corrections, feature ideas, and site feedback.",
     body: [
-      "For launch, keep support simple: collect corrections, bug reports, missing formats, and requests for sport-specific schedule pages.",
+      "Use this page after launch to report corrections, bug reports, missing formats, and requests for sport-specific schedule pages.",
+      "Helpful reports include the page URL, number of teams, selected format, court count, start time, match length, and what looked wrong in the generated schedule.",
       "Recommended contact inbox: replace this placeholder after the domain is finalized."
     ]
   }
@@ -383,6 +387,7 @@ function toolHtml(page) {
         <label>Format
           <select data-mode>
             ${modes.includes("single_elimination") ? '<option value="single_elimination">Single elimination</option>' : ""}
+            ${modes.includes("double_elimination") ? '<option value="double_elimination">Double elimination</option>' : ""}
             ${modes.includes("round_robin") ? '<option value="round_robin">Round robin</option>' : ""}
             ${modes.includes("league_schedule") ? '<option value="league_schedule">League fixtures</option>' : ""}
           </select>
@@ -649,6 +654,18 @@ function appJs() {
     return matches;
   }
 
+  function doubleElimination(names) {
+    const winnerBracket = singleElimination(names).map((match) => ({ ...match, round: "Winners " + match.round }));
+    const activeFirstRound = winnerBracket.filter((match) => match.round === "Winners Round 1" && match.away !== "BYE").length;
+    const loserMatches = [];
+    const loserCount = Math.max(2, activeFirstRound);
+    for (let i = 0; i < loserCount; i += 2) {
+      loserMatches.push({ round: "Losers Round 1", home: "Loser " + (i + 1), away: i + 2 <= loserCount ? "Loser " + (i + 2) : "BYE" });
+    }
+    loserMatches.push({ round: "Grand Final", home: "Winners bracket winner", away: "Losers bracket winner" });
+    return winnerBracket.concat(loserMatches);
+  }
+
   function roundRobin(names, league = false) {
     const list = names.length % 2 ? names.concat("BYE") : names.slice();
     const rounds = [];
@@ -714,7 +731,11 @@ function appJs() {
     const courts = Math.max(1, Number(by(root, "[data-courts]").value) || 1);
     const length = Math.max(5, Number(by(root, "[data-length]").value) || 30);
     const start = by(root, "[data-start]").value || "09:00";
-    const raw = mode === "single_elimination" ? singleElimination(names) : roundRobin(names, mode === "league_schedule");
+    const raw = mode === "single_elimination"
+      ? singleElimination(names)
+      : mode === "double_elimination"
+        ? doubleElimination(names)
+        : roundRobin(names, mode === "league_schedule");
     const matches = assignSlots(raw, courts, start, length);
     root.__matches = matches;
     renderTable(root, matches);

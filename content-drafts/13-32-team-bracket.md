@@ -1,45 +1,40 @@
 # 32 Team Bracket
 
-## Tool Intro
-Build a printable 32-team bracket in seconds. No signup needed. Enter your teams, set match times and venues, then export or print.
+Use this page when you need a 32-team bracket quickly and still want to understand the match count, round structure, seeding, byes, print view, and CSV output. Enter the teams first, then review the generated schedule before publishing it for a real event.
 
-## How To Use It
-1. Enter team names (or leave blank for generic slots).
-2. Set match duration, time slots, and venues.
-3. Click generate. Your bracket appears instantly.
-4. Use **Print View** for a clean page. Export as **CSV** or **copy the schedule** to share.
+## Generate a 32 Team Bracket first
 
-## Example
-You run a weekend soccer tournament with 32 youth teams. Enter each team name, set 20-minute matches, assign 4 fields. The tool creates a single elimination bracket with time slots and field assignments for every round.
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-## What The Results Mean
-- **Bracket tree**: Shows all matchups from Round 1 to the final.
-- **Schedule table**: Lists each match with time, venue, and participants.
-- **Fairness summary**: Notes if any team gets a bye (only needed if you have fewer than 32 teams).
+## 32 Team Bracket bracket structure
 
-## Common Mistakes
-- **Odd number of teams**: If you have 31 teams, the tool adds one bye. You must decide which team gets it (usually the top seed).
-- **Ignoring time slots**: Without setting match duration, your schedule may overlap. Always set realistic times.
-- **Forgetting venues**: If you have multiple courts or fields, assign them in the setup to avoid confusion.
+Single elimination means a team is out after one loss. With 32 teams, expect 31 played matches if every match produces one advancing team. If the entrant count is not a clean bracket size, the tool adds byes so the bracket can move into the next round.
 
-## Common Questions
+## Example 32-team setup
 
-**How do you make a tournament bracket?**  
-Enter your teams, choose single or double elimination, set match times and venues. The tool generates the bracket and schedule automatically.
+Paste 32 names into the participant box, keep the suggested format, set the number of courts or venues, and generate the schedule. With multiple courts, matches in the same round can run at the same time. With one court, treat the rows as a sequential order and check the total event length before announcing it.
 
-**How do you seed a bracket?**  
-Rank teams 1–32 before entering them. The tool places the #1 seed against the #32 seed, #2 vs #31, and so on.
+## 32 Team Bracket checks before publishing
+
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
+
+## Export the 32 team bracket
+
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
+
+## 32 Team Bracket questions organizers ask
+
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
 **What is a bye?**  
-A bye means a team advances without playing. It happens when you have fewer than 32 teams. The tool adds byes to fill the bracket.
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-**How many games are in a single elimination bracket?**  
-31 games total. Each match eliminates one team until one remains.
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-**What is the difference between single and double elimination?**  
-Single elimination: lose once, you're out. Double elimination: you get a second chance in a losers bracket. The tool supports both.
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-## Related Tools
-- [16 Team Bracket](/16-team-bracket/)
-- [64 Team Bracket](/64-team-bracket/)
-- [Double Elimination Bracket](/double-elimination-bracket/)
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

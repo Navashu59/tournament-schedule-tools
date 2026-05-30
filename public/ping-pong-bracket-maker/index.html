@@ -19,7 +19,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"Ping Pong Bracket Maker","item":"https://example.com/ping-pong-bracket-maker/"}]},{"@type":"WebPage","@id":"https://example.com/ping-pong-bracket-maker/#webpage","url":"https://example.com/ping-pong-bracket-maker/","name":"Ping Pong Bracket Maker","headline":"Ping Pong Bracket Maker","description":"Use this ping pong bracket maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/ping-pong-bracket-maker/#app","name":"Ping Pong Bracket Maker","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/ping-pong-bracket-maker/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]},{"@type":"FAQPage","@id":"https://example.com/ping-pong-bracket-maker/#faq","mainEntity":[{"@type":"Question","name":"How do you make a tournament bracket?","acceptedAnswer":{"@type":"Answer","text":"Enter your players, choose elimination type, and generate. The tool creates the bracket and schedule instantly."}},{"@type":"Question","name":"How do you seed a bracket?","acceptedAnswer":{"@type":"Answer","text":"Seeding places top players apart so they meet later. Enter names in ranked order, and the tool seeds them automatically."}},{"@type":"Question","name":"What is a bye?","acceptedAnswer":{"@type":"Answer","text":"A bye means a player advances without playing. It happens when the number of players isn't a power of 2 (e.g., 5 players = 3 byes)."}},{"@type":"Question","name":"How many games are in a single elimination bracket?","acceptedAnswer":{"@type":"Answer","text":"Number of players minus 1. For 8 players, that's 7 games."}},{"@type":"Question","name":"What is the difference between single and double elimination?","acceptedAnswer":{"@type":"Answer","text":"Single elimination: one loss and you're out. Double elimination: you drop to a losers' bracket after your first loss and can still win."}}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://example.com/#organization","name":"Tournament Schedule Tools","url":"https://example.com/"},{"@type":"WebSite","@id":"https://example.com/#website","name":"Tournament Schedule Tools","url":"https://example.com/","publisher":{"@id":"https://example.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://example.com/tools/"},{"@type":"ListItem","position":3,"name":"Ping Pong Bracket Maker","item":"https://example.com/ping-pong-bracket-maker/"}]},{"@type":"WebPage","@id":"https://example.com/ping-pong-bracket-maker/#webpage","url":"https://example.com/ping-pong-bracket-maker/","name":"Ping Pong Bracket Maker","headline":"Ping Pong Bracket Maker","description":"Use this ping pong bracket maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://example.com/#website"},"publisher":{"@id":"https://example.com/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://example.com/ping-pong-bracket-maker/#app","name":"Ping Pong Bracket Maker","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://example.com/ping-pong-bracket-maker/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]}]}</script>
 </head>
 <body>
   <header class="site-header">
@@ -54,6 +54,7 @@ Panthers</textarea>
         <label>Format
           <select data-mode>
             <option value="single_elimination">Single elimination</option>
+            
             
             
           </select>
@@ -92,43 +93,25 @@ Panthers</textarea>
     </div>
   </section>
     <article class="content-body">
-      <h2>Tool Intro</h2>
-<p>Set up a ping pong tournament in seconds. Enter your players or teams, pick single or double elimination, and get a printable bracket with no signup required. Handles odd numbers, byes, and multiple courts.</p>
-<h2>How To Use It</h2>
-<ol>
-<li>Enter player or team names (one per line).</li>
-<li>Choose <strong>Single Elimination</strong> or <strong>Double Elimination</strong>.</li>
-<li>Add optional time slots and court numbers.</li>
-<li>Click <strong>Generate Bracket</strong>.</li>
-<li>Print, copy the schedule, or export as CSV.</li>
-</ol>
-<h2>Example</h2>
-<p><strong>8 players, single elimination, 2 courts:</strong></p>
-<ul>
-<li>Round 1: 4 matches (Courts A &amp; B)</li>
-<li>Round 2: 2 matches</li>
-<li>Final: 1 match</li>
-</ul>
-<p>Total: 7 matches. The bracket shows who plays whom, when, and where.</p>
-<h2>What The Results Mean</h2>
-<ul>
-<li><strong>Bracket view</strong>: Shows the tournament tree with winners advancing.</li>
-<li><strong>Schedule table</strong>: Lists each match with round, court, and time.</li>
-<li><strong>Fairness summary</strong>: Notes if any player gets a bye and why.</li>
-<li><strong>CSV export</strong>: Download for spreadsheets or printing.</li>
-</ul>
-<h2>Common Mistakes</h2>
-<ul>
-<li><strong>Forgetting byes</strong>: With an odd number of players, some get a first-round bye. The tool adds them automatically.</li>
-<li><strong>Wrong elimination type</strong>: Single elimination is one loss and out. Double elimination gives a second chance.</li>
-<li><strong>Skipping time slots</strong>: Without them, the bracket shows match order but no specific times.</li>
-</ul>
-<h2>Common Questions</h2>
-<p><strong>How do you make a tournament bracket?</strong> Enter your players, choose elimination type, and generate. The tool creates the bracket and schedule instantly.</p>
-<p><strong>How do you seed a bracket?</strong> Seeding places top players apart so they meet later. Enter names in ranked order, and the tool seeds them automatically.</p>
-<p><strong>What is a bye?</strong> A bye means a player advances without playing. It happens when the number of players isn&#39;t a power of 2 (e.g., 5 players = 3 byes).</p>
-<p><strong>How many games are in a single elimination bracket?</strong> Number of players minus 1. For 8 players, that&#39;s 7 games.</p>
-<p><strong>What is the difference between single and double elimination?</strong> Single elimination: one loss and you&#39;re out. Double elimination: you drop to a losers&#39; bracket after your first loss and can still win.</p>
+      <p>Use this page when you need a tournament schedule that is easier to trust than a hand-built spreadsheet. Enter participants, choose the format, set courts and timing, then generate a schedule you can review, print, copy, or export.</p>
+<h2>Generate a Ping Pong Bracket Maker first</h2>
+<p>Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.</p>
+<h2>Ping Pong Bracket Maker bracket structure</h2>
+<p>Single elimination means a team is out after one loss. The total played matches are usually one fewer than the number of entrants. If the entrant count is not a clean bracket size, the tool adds byes so the bracket can move into the next round.</p>
+<h2>Run a ping pong bracket maker in the real setting</h2>
+<p>For ping pong bracket maker, the format is only part of the job. Check whether courts, tables, rooms, boards, or stations are actually available at the same time. If players need warmup time or equipment changes, increase the match length before exporting.</p>
+<h2>Example ping pong bracket maker workflow</h2>
+<p>Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.</p>
+<h2>Ping Pong Bracket Maker checks before publishing</h2>
+<p>Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.</p>
+<h2>Export the ping pong bracket maker</h2>
+<p>Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.</p>
+<h2>Ping Pong Bracket Maker questions organizers ask</h2>
+<p><strong>How do I make this schedule?</strong> Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.</p>
+<p><strong>What is a bye?</strong> A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.</p>
+<p><strong>Can I use this instead of a spreadsheet?</strong> Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.</p>
+<p><strong>How should I check fairness?</strong> Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.</p>
+<p><strong>Can I print the schedule?</strong> Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.</p>
     </article>
     <section class="link-band" aria-labelledby="related-heading">
     <h2 id="related-heading">Related planning pages</h2>

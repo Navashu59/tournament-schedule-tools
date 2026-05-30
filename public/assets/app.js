@@ -34,6 +34,18 @@
     return matches;
   }
 
+  function doubleElimination(names) {
+    const winnerBracket = singleElimination(names).map((match) => ({ ...match, round: "Winners " + match.round }));
+    const activeFirstRound = winnerBracket.filter((match) => match.round === "Winners Round 1" && match.away !== "BYE").length;
+    const loserMatches = [];
+    const loserCount = Math.max(2, activeFirstRound);
+    for (let i = 0; i < loserCount; i += 2) {
+      loserMatches.push({ round: "Losers Round 1", home: "Loser " + (i + 1), away: i + 2 <= loserCount ? "Loser " + (i + 2) : "BYE" });
+    }
+    loserMatches.push({ round: "Grand Final", home: "Winners bracket winner", away: "Losers bracket winner" });
+    return winnerBracket.concat(loserMatches);
+  }
+
   function roundRobin(names, league = false) {
     const list = names.length % 2 ? names.concat("BYE") : names.slice();
     const rounds = [];
@@ -99,7 +111,11 @@
     const courts = Math.max(1, Number(by(root, "[data-courts]").value) || 1);
     const length = Math.max(5, Number(by(root, "[data-length]").value) || 30);
     const start = by(root, "[data-start]").value || "09:00";
-    const raw = mode === "single_elimination" ? singleElimination(names) : roundRobin(names, mode === "league_schedule");
+    const raw = mode === "single_elimination"
+      ? singleElimination(names)
+      : mode === "double_elimination"
+        ? doubleElimination(names)
+        : roundRobin(names, mode === "league_schedule");
     const matches = assignSlots(raw, courts, start, length);
     root.__matches = matches;
     renderTable(root, matches);

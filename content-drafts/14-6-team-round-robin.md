@@ -1,54 +1,40 @@
 # 6 Team Round Robin
 
-## Tool Intro
-Generate a fair 6 team round robin schedule instantly. No signup needed. Every team plays each other once. You get a balanced schedule with rounds, matchups, and built-in byes.
+Use this page when you need a 6-team round robin schedule where every team faces every other team once. The scheduler keeps the working schedule at the top, then the notes below explain rounds, byes, court limits, time slots, CSV export, and the checks an organizer should make before sharing it.
 
-## How To Use It
-1. Enter your 6 team names.
-2. Click "Generate Schedule."
-3. Copy the schedule, export to CSV, or print it.
-4. Assign courts or time slots to each round.
+## Generate a 6 Team Round Robin first
 
-## Example
-**Teams:** A, B, C, D, E, F  
-**Rounds:** 5  
-**Total Games:** 15  
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-Round 1: A vs B, C vs D, E vs F  
-Round 2: A vs C, D vs E, B vs F  
-Round 3: A vs D, E vs B, C vs F  
-Round 4: A vs E, B vs C, D vs F  
-Round 5: A vs F, C vs E, B vs D  
+## 6 Team Round Robin rounds and byes
 
-## What The Results Mean
-- **Rounds:** Each round has 3 games. One team gets a bye per round.
-- **Matchups:** Every team plays 5 games total.
-- **Fairness:** No team plays twice in one round. No repeat matchups.
+Round robin means every participant plays every other participant. A 6-team round robin has 15 total matchups. If the participant count is odd, one team sits out each round. That bye is normal, not an error.
 
-## Common Mistakes
-- **Forgetting byes:** With 6 teams, one team sits out each round. That's normal.
-- **Overlapping games:** Assign one court or time slot per game in each round.
-- **Wrong total games:** 6 teams = 15 games. If you get more, something's off.
+## Example 6-team setup
 
-## Common Questions
+Paste 6 names into the participant box, keep the suggested format, set the number of courts or venues, and generate the schedule. With multiple courts, matches in the same round can run at the same time. With one court, treat the rows as a sequential order and check the total event length before announcing it.
 
-**How do you make a round robin schedule?**  
-List all teams. Pair them so each team plays every other team exactly once. Use a round-robin algorithm to rotate matchups.
+## 6 Team Round Robin checks before publishing
 
-**How many games are in a round robin?**  
-For 6 teams: 15 games. Formula: n × (n-1) / 2 = 6 × 5 / 2 = 15.
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-**What happens with an odd number of teams?**  
-One team gets a bye each round. The total rounds equal the number of teams.
+## Export the 6 team round robin
 
-**How do you avoid repeat matchups?**  
-The algorithm ensures each pair plays once. Never manually reorder rounds.
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-**How do you assign courts or time slots?**  
-Label each game in a round as Court 1, Court 2, Court 3. Or assign time slots like 9 AM, 10 AM, 11 AM.
+## 6 Team Round Robin questions organizers ask
 
-## Related Tools
-- 4 Team Round Robin
-- 8 Team Round Robin
-- 10 Team Round Robin
-- Single Elimination Bracket
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
+
+**What is a bye?**  
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
+
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
+
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
+
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.

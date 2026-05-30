@@ -1,53 +1,40 @@
 # Pool Play Schedule Generator
 
-You have 12 teams, three courts, and four hours before bracket play starts. Every team needs to play at least three games, but you can't have one team playing twice while another sits idle. That's the problem this tool solves.
+Use this page when each team or player should face every other participant. The generator builds rounds, handles odd counts with byes, assigns courts and times, and gives you a schedule that can be copied, printed, or exported.
 
-Pool play divides teams into smaller round-robin groups. Each team plays every other team in its pool exactly once. The schedule generator creates a balanced set of matches so you can move directly to playoffs or elimination rounds.
+## Generate a Pool Play Schedule Generator first
 
-## How To Use It
+Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
-1. **Enter total teams** (4 to 48). The tool automatically calculates pool sizes.
-2. **Select pool size** (3, 4, 5, or 6 teams per pool). Uneven pools? Choose "Auto-balance" to distribute teams evenly.
-3. **Set courts or venues** (1 to 12). The tool assigns matches to available courts.
-4. **Set time slots** (optional). Enter match duration and total time available. The tool generates start times.
-5. **Click "Generate Schedule"**. Results appear in a table below.
+## Pool Play Schedule Generator rounds and byes
 
-**Output options:** Print directly or download as CSV. The CSV includes pool name, match number, home team, away team, court, and time slot.
+Round robin means every participant plays every other participant. The matchup count is n times n minus 1 divided by 2. If the participant count is odd, one team sits out each round. That bye is normal, not an error.
 
-## Example
+## Example pool play schedule generator workflow
 
-**Input:** 16 teams, 4 pools of 4, 2 courts, 3-hour window, 30-minute matches.
+Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
 
-**Output:**
-- Pool A: Teams 1-4. Match 1: Team 1 vs Team 2 (Court 1, 9:00 AM). Match 2: Team 3 vs Team 4 (Court 2, 9:00 AM). Match 3: Team 1 vs Team 3 (Court 1, 9:30 AM). And so on until every team in Pool A has played three matches.
-- Pools B, C, D follow the same pattern, staggered across courts and times.
+## Pool Play Schedule Generator checks before publishing
 
-## What The Results Mean
+Do not treat any generated schedule as final without a quick review. Check participant spelling, repeated matchups, bye distribution, court availability, start time, match length, and whether the format fits the event rules. The fairness summary is a warning system, not a promise of perfect fairness.
 
-- **Byes:** In odd-numbered pools (3 or 5 teams), one team sits out each round. The tool marks these as "BYE" and adjusts the schedule so no team has consecutive byes.
-- **Fairness:** The tool uses a cyclic algorithm. Each team gets equal rest between matches, and no team plays more than one match per round.
-- **Playoff handoff:** The final column shows "Playoff seed" based on pool standings (wins, then point differential). The schedule ends with enough buffer time for bracket seeding.
+## Export the pool play schedule generator
 
-## Common Mistakes
+Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
 
-- **Forgetting byes in odd pools.** A 3-team pool has one bye per round. The tool handles this, but you must account for the extra round in your total time.
-- **Overloading courts.** If you have 6 teams in one pool and 2 courts, expect 5 rounds. The tool warns you if time is insufficient.
-- **Ignoring time slots.** Without setting match duration, the tool assumes continuous play. Always enter your actual time window.
-- **Mixing pool sizes manually.** Let the tool auto-balance unless you have a specific reason for uneven pools (e.g., 5-team and 4-team pools).
+## Pool Play Schedule Generator questions organizers ask
 
-## Common Questions
+**How do I make this schedule?**  
+Enter teams or players one per line, choose the format, set courts and timing, then generate the schedule.
 
-**What if I have an odd number of teams?**  
-The tool creates pools of 3 or 5. A 3-team pool has 3 matches per team (2 games, 1 bye). A 5-team pool has 5 matches per team (4 games, 1 bye). The schedule remains balanced.
+**What is a bye?**  
+A bye is a round where a participant does not play. It appears when the number of entrants does not divide cleanly into the format.
 
-**How does the tool ensure fairness?**  
-It uses a round-robin algorithm that rotates teams so each team plays the same number of matches, with equal rest intervals. Court assignments rotate to avoid home-court advantage.
+**Can I use this instead of a spreadsheet?**  
+Yes for the first draft and many small events. For official events, export the CSV and do a final organizer review.
 
-**Can I export to CSV?**  
-Yes. Click "Download CSV" for a file with columns: Pool, Match#, Home, Away, Court, Time. Open in any spreadsheet app.
+**How should I check fairness?**  
+Use the fairness summary as a warning system. Check match count, byes, court use, timing, and rest patterns before publishing because no generator can account for every real-world condition.
 
-**What happens after pool play?**  
-The tool outputs standings (wins, losses, point differential). Use these to seed your bracket. The schedule includes a 15-minute buffer after the last match for seeding.
-
-**Does it work for single-elimination after pools?**  
-Yes. The schedule ends with a "Playoff seed" column. Copy these seeds into your bracket tool. The tool does not generate bracket matches.
+**Can I print the schedule?**  
+Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.
