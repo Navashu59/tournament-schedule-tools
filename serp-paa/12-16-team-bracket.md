@@ -1,4 +1,4 @@
-# SERP/PAA Framework - 16 Team Bracket
+# SERP/PAA Mature Launch Framework - 16 Team Bracket
 
 ## Keyword
 
@@ -8,37 +8,35 @@
 
 Users need a sixteen-team bracket with proper rounds and seeds.
 
-## SERP Gap Method
+## Semrush evidence
 
-Before final publishing, inspect Google top 3, PAA, related searches, and any tool widgets for this exact keyword. Do not copy competitor phrasing. Use the page's own scheduling tool context.
+- march madness (1830000 searches/mo)
+- ncaa tournament (673000 searches/mo)
+- march madness bracket (450000 searches/mo)
+- ncaa (368000 searches/mo)
+- ncaa bracket (301000 searches/mo)
+- march madness schedule (201000 searches/mo)
+- march madness scores (135000 searches/mo)
+- bracket (74000 searches/mo)
+- final four 2025 (74000 searches/mo)
+- march madness games (74000 searches/mo)
 
-## Expected Top Competitor Coverage
+## Required SERP/PAA coverage
 
-- Basic generator or explanation
-- Format-specific instructions
-- Printing or sharing claims
-- Limited handling of odd teams, byes, courts, or fairness
+- How to make this schedule or bracket.
+- What happens with byes or odd participant counts.
+- How many matches or rounds are needed where relevant.
+- How to print, copy, or export the result.
+- What fairness or organizer checks should happen before publishing.
 
-## Differentiation To Include
+## Mature-launch content modules
 
-- Put the tool first
-- Explain byes and odd participant handling where relevant
-- Show print / CSV / copy output
-- Mention fairness or constraints if the page involves schedules
-- Link to related scheduler/bracket pages
+- Tool first for tool pages; decision framework first for guide pages.
+- Specific example tied to the keyword.
+- Edge cases: byes, venues/courts, timing, seeding, rest patterns.
+- Export/print workflow.
+- Links to core scheduler, bracket, round robin, and relevant guide pages.
 
-## PAA / FAQ Targets
+## Tool capability check
 
-- How do you make a tournament bracket?
-- How do you seed a bracket?
-- What is a bye?
-- How many games are in a single elimination bracket?
-- What is the difference between single and double elimination?
-
-## Related Searches To Check
-
-- 16 team bracket free
-- 16 team bracket printable
-- 16 team bracket no signup
-- 16 team bracket template
-- 16 team bracket excel
+- single_elimination

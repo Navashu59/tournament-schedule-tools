@@ -121,6 +121,34 @@ Post-change verification:
 - JSON-LD parsed on every HTML page.
 - Repeated-H2 audit no longer shows duplicated tool-page content frameworks; the only repeated empty pattern is static/support pages without content H2 extraction.
 
+## 2026-06-01 Mature Launch Pass
+
+Goal: move the site from minimum launch readiness to mature first-launch readiness, so Google can more quickly understand the tournament scheduling authority field after the production domain is connected.
+
+Changed:
+
+- Verified Semrush API access from `/Users/bluepha/seo-revenue-system/.env`.
+- Saved page-level Semrush keyword evidence to `research/semrush-page-keyword-evidence-2026-06-01.json`.
+- Added `planning/mature-launch-inventory.md` as the working inventory for mature-launch gaps.
+- Refreshed every page-level `serp-paa/*.md` brief with Semrush related keywords, required PAA coverage, mature-launch modules, and tool capability checks.
+- Added participant summary output to generated schedules:
+  - games
+  - byes
+  - home rows
+  - away rows
+  - back-to-back count
+- Added a fifth fairness metric for back-to-back matches.
+- Added mature-launch content modules to all 38 content draft pages, including search intent, related searches, organizer checks, byes, court/venue constraints, timing, export/print, and format-specific review notes.
+
+Post-change verification:
+
+- `npm run build` passed.
+- `node --check public/assets/app.js` passed.
+- 46 HTML files generated.
+- 45 sitemap URLs generated.
+- Internal link check found 0 broken local links.
+- JSON-LD parsed on every HTML page.
+
 ## Next Steps
 
 1. Choose and buy the production domain. First choice: `tournamentscheduletools.com`.

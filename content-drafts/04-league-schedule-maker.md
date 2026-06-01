@@ -38,3 +38,11 @@ Use the fairness summary as a warning system. Check match count, byes, court use
 
 **Can I print the schedule?**  
 Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.
+
+## What this league schedule maker page covers
+
+Use this page to turn a participant list into a practical schedule. The page should help with format choice, court or venue limits, start time, match length, CSV export, and final review before publishing.
+
+## Searches this page is built to answer
+
+Related searches include tournament draw creator, round robin, schedule maker, red robin timings, free schedule maker, knockout web. The useful coverage is a working generator plus organizer checks that prevent spreadsheet-style mistakes.

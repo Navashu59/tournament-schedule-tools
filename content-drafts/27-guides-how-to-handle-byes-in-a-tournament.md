@@ -21,3 +21,11 @@ In a bracket, it usually advances a participant without playing. In round robin,
 
 **Are byes unfair?**  
 They can feel unfair if they are hidden or uneven. They are easier to accept when the format requires them and the distribution is clear.
+
+## How this guide supports the scheduler
+
+Use this guide before publishing a real event schedule. The practical decision is whether the format, byes, seeding, venue limits, and timing rules make sense before you export or print the schedule. Link back to the matching generator when you are ready to build the schedule.
+
+## Searches this guide is built to answer
+
+Related searches include related tournament schedule searches. The useful coverage is not a generic definition; it is a clear organizer decision framework with examples, edge cases, and links to the right scheduling tool.

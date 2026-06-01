@@ -38,3 +38,11 @@ Use the fairness summary as a warning system. Check match count, byes, court use
 
 **Can I print the schedule?**  
 Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.
+
+## What this double elimination bracket generator page covers
+
+Use this page to plan a double-elimination event where one loss should not immediately remove a participant. Review winners bracket rows, losers bracket rows, grand final assumptions, court timing, and reset rules before treating the schedule as final.
+
+## Searches this page is built to answer
+
+Related searches include bracket, bracket maker, bracket generator, tournament draw creator, tournament bracket, tournament bracket maker. The important gap is clarity: double elimination needs more explanation than a single bracket because losers bracket and final reset rules vary by event.

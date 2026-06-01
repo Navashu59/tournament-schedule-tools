@@ -1,28 +1,42 @@
-# 7 Team Round Robin SERP/PAA Framework
+# SERP/PAA Mature Launch Framework - 7 Team Round Robin
 
-Keyword: 7 team round robin
-URL: /7-team-round-robin/
+## Keyword
 
-## Search Intent
+7 team round robin
+
+## Intent
 
 Users need a 7-team round robin schedule where byes rotate fairly across seven rounds.
 
-## SERP Content Frame To Cover
+## Semrush evidence
 
-- Put the usable scheduler before long explanations.
-- Explain the specific event scenario behind this keyword.
-- Include a concrete example schedule or count.
-- Cover byes, odd participant counts, courts or venues, time slots, exports, and printing when relevant.
-- Link to adjacent bracket, fixture, round robin, and fairness pages.
+- bracket maker (33100 searches/mo)
+- bracket generator (18100 searches/mo)
+- tournament draw creator (18100 searches/mo)
+- round robin (14800 searches/mo)
+- tournament bracket maker (14800 searches/mo)
+- bracket creator (12100 searches/mo)
+- tournament bracket generator (8100 searches/mo)
+- red robin timings (6600 searches/mo)
+- round robin meaning (6600 searches/mo)
+- tournament software (4400 searches/mo)
 
-## People Also Ask Targets
+## Required SERP/PAA coverage
 
-- How do I make a 7 team round robin?
-- How many games or rounds are needed?
-- What happens with an odd number of teams?
-- Can I print or export the schedule?
-- How do I avoid unfair byes or repeat matchups?
+- How to make this schedule or bracket.
+- What happens with byes or odd participant counts.
+- How many matches or rounds are needed where relevant.
+- How to print, copy, or export the result.
+- What fairness or organizer checks should happen before publishing.
 
-## Differentiation
+## Mature-launch content modules
 
-This page should not be a generic definition page. It should show a working scheduling result and explain the constraints an organizer needs to check before using it at a real event.
+- Tool first for tool pages; decision framework first for guide pages.
+- Specific example tied to the keyword.
+- Edge cases: byes, venues/courts, timing, seeding, rest patterns.
+- Export/print workflow.
+- Links to core scheduler, bracket, round robin, and relevant guide pages.
+
+## Tool capability check
+
+- round_robin

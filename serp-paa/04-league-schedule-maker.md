@@ -1,4 +1,4 @@
-# SERP/PAA Framework - League Schedule Maker
+# SERP/PAA Mature Launch Framework - League Schedule Maker
 
 ## Keyword
 
@@ -8,37 +8,35 @@ league schedule maker
 
 Users need a fixture list across weeks or rounds with home/away and venue/time options.
 
-## SERP Gap Method
+## Semrush evidence
 
-Before final publishing, inspect Google top 3, PAA, related searches, and any tool widgets for this exact keyword. Do not copy competitor phrasing. Use the page's own scheduling tool context.
+- tournament draw creator (18100 searches/mo)
+- round robin (14800 searches/mo)
+- schedule maker (14800 searches/mo)
+- red robin timings (6600 searches/mo)
+- free schedule maker (4400 searches/mo)
+- knockout web (4400 searches/mo)
+- league lobster (4400 searches/mo)
+- league of legends timetable (4400 searches/mo)
+- lobster drawing (4400 searches/mo)
+- gaming bracket maker (3600 searches/mo)
 
-## Expected Top Competitor Coverage
+## Required SERP/PAA coverage
 
-- Basic generator or explanation
-- Format-specific instructions
-- Printing or sharing claims
-- Limited handling of odd teams, byes, courts, or fairness
+- How to make this schedule or bracket.
+- What happens with byes or odd participant counts.
+- How many matches or rounds are needed where relevant.
+- How to print, copy, or export the result.
+- What fairness or organizer checks should happen before publishing.
 
-## Differentiation To Include
+## Mature-launch content modules
 
-- Put the tool first
-- Explain byes and odd participant handling where relevant
-- Show print / CSV / copy output
-- Mention fairness or constraints if the page involves schedules
-- Link to related scheduler/bracket pages
+- Tool first for tool pages; decision framework first for guide pages.
+- Specific example tied to the keyword.
+- Edge cases: byes, venues/courts, timing, seeding, rest patterns.
+- Export/print workflow.
+- Links to core scheduler, bracket, round robin, and relevant guide pages.
 
-## PAA / FAQ Targets
+## Tool capability check
 
-- How do you make a league schedule?
-- What is a fixture list?
-- How do home and away games work?
-- How many rounds are needed?
-- Can I export a league schedule?
-
-## Related Searches To Check
-
-- league schedule maker free
-- league schedule maker printable
-- league schedule maker no signup
-- league schedule maker template
-- league schedule maker excel
+- league_schedule

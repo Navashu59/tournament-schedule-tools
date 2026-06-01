@@ -688,32 +688,41 @@ function appJs() {
   }
 
   function fairness(matches, names) {
-    const stats = Object.fromEntries(names.map((name) => [name, { games: 0, byes: 0, home: 0, away: 0 }]));
+    const stats = Object.fromEntries(names.map((name) => [name, { games: 0, byes: 0, home: 0, away: 0, courts: {}, lastIndex: -10, backToBack: 0 }]));
     const courts = {};
-    for (const match of matches) {
+    matches.forEach((match, index) => {
       courts[match.court] = (courts[match.court] || 0) + 1;
-      if (stats[match.home]) {
-        match.away === "BYE" ? stats[match.home].byes++ : stats[match.home].games++;
-        stats[match.home].home++;
+      for (const side of ["home", "away"]) {
+        const name = match[side];
+        if (!stats[name]) continue;
+        if (match.away === "BYE" && side === "home") stats[name].byes++;
+        else if (match.away !== "BYE") stats[name].games++;
+        stats[name][side]++;
+        stats[name].courts[match.court] = (stats[name].courts[match.court] || 0) + 1;
+        if (index - stats[name].lastIndex === 1) stats[name].backToBack++;
+        stats[name].lastIndex = index;
       }
-      if (stats[match.away]) {
-        stats[match.away].games++;
-        stats[match.away].away++;
-      }
-    }
-    const games = Object.values(stats).map((s) => s.games);
-    const byes = Object.values(stats).map((s) => s.byes);
-    return [
-      ["Matches", matches.filter((m) => m.away !== "BYE").length],
-      ["Rounds", new Set(matches.map((m) => m.round)).size],
-      ["Game spread", Math.max(...games) - Math.min(...games)],
-      ["Bye spread", Math.max(...byes) - Math.min(...byes)]
-    ];
+    });
+    const values = Object.values(stats);
+    const games = values.map((s) => s.games);
+    const byes = values.map((s) => s.byes);
+    const backToBack = values.reduce((sum, s) => sum + s.backToBack, 0);
+    return {
+      metrics: [
+        ["Matches", matches.filter((m) => m.away !== "BYE").length],
+        ["Rounds", new Set(matches.map((m) => m.round)).size],
+        ["Game spread", Math.max(...games) - Math.min(...games)],
+        ["Bye spread", Math.max(...byes) - Math.min(...byes)],
+        ["Back-to-back", backToBack]
+      ],
+      stats
+    };
   }
 
-  function renderTable(root, matches) {
+  function renderTable(root, matches, stats) {
     const rows = matches.map((m) => "<tr><td>" + m.round + "</td><td>" + m.home + "</td><td>" + m.away + "</td><td>" + m.court + "</td><td>" + m.time + "</td></tr>").join("");
-    by(root, "[data-results]").innerHTML = "<table><thead><tr><th>Round</th><th>Home</th><th>Away</th><th>Court</th><th>Time</th></tr></thead><tbody>" + rows + "</tbody></table>";
+    const summary = stats ? "<h3>Participant summary</h3><table><thead><tr><th>Participant</th><th>Games</th><th>Byes</th><th>Home</th><th>Away</th><th>Back-to-back</th></tr></thead><tbody>" + Object.entries(stats).map(([name,s]) => "<tr><td>" + name + "</td><td>" + s.games + "</td><td>" + s.byes + "</td><td>" + s.home + "</td><td>" + s.away + "</td><td>" + s.backToBack + "</td></tr>").join("") + "</tbody></table>" : "";
+    by(root, "[data-results]").innerHTML = "<h3>Match list</h3><table><thead><tr><th>Round</th><th>Home</th><th>Away</th><th>Court</th><th>Time</th></tr></thead><tbody>" + rows + "</tbody></table>" + summary;
   }
 
   function toCsv(matches) {
@@ -738,9 +747,9 @@ function appJs() {
         : roundRobin(names, mode === "league_schedule");
     const matches = assignSlots(raw, courts, start, length);
     root.__matches = matches;
-    renderTable(root, matches);
-    const metrics = fairness(matches, names);
-    by(root, "[data-fairness]").innerHTML = metrics.map(([label, value]) => "<div class='metric'><strong>" + value + "</strong><span>" + label + "</span></div>").join("");
+    const fairnessReport = fairness(matches, names);
+    renderTable(root, matches, fairnessReport.stats);
+    by(root, "[data-fairness]").innerHTML = fairnessReport.metrics.map(([label, value]) => "<div class='metric'><strong>" + value + "</strong><span>" + label + "</span></div>").join("");
     by(root, "[data-summary-pill]").textContent = matches.length + " rows";
     by(root, "[data-status]").textContent = "Schedule generated. Review byes, court limits, and timing before publishing.";
   }

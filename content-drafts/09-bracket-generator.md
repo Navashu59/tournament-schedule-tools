@@ -38,3 +38,11 @@ Use the fairness summary as a warning system. Check match count, byes, court use
 
 **Can I print the schedule?**  
 Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.
+
+## What this bracket generator page covers
+
+Use this page when you need a knockout bracket with clear rounds, byes, seed order, print output, and CSV export. The generated schedule is a strong draft; final organizers should still review participant order and venue timing.
+
+## Searches this page is built to answer
+
+Related searches include ncaa bracket, bracket, espn bracket, espn bracket challenge, bracket maker, espn college basketball. The common need is quick bracket creation plus enough explanation to understand byes, match count, and printable output.

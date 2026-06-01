@@ -1,4 +1,4 @@
-# SERP/PAA Framework - Tournament Bracket Maker
+# SERP/PAA Mature Launch Framework - Tournament Bracket Maker
 
 ## Keyword
 
@@ -8,37 +8,35 @@ tournament bracket maker
 
 Users need a quick elimination bracket with seeds, byes, print, and export.
 
-## SERP Gap Method
+## Semrush evidence
 
-Before final publishing, inspect Google top 3, PAA, related searches, and any tool widgets for this exact keyword. Do not copy competitor phrasing. Use the page's own scheduling tool context.
+- bracket (74000 searches/mo)
+- bracket maker (33100 searches/mo)
+- tournament (27100 searches/mo)
+- playoff predictor (22200 searches/mo)
+- bracket generator (18100 searches/mo)
+- nba predictions (18100 searches/mo)
+- tournament draw creator (18100 searches/mo)
+- march madness brackets (14800 searches/mo)
+- tournament bracket (14800 searches/mo)
+- bracket creator (12100 searches/mo)
 
-## Expected Top Competitor Coverage
+## Required SERP/PAA coverage
 
-- Basic generator or explanation
-- Format-specific instructions
-- Printing or sharing claims
-- Limited handling of odd teams, byes, courts, or fairness
+- How to make this schedule or bracket.
+- What happens with byes or odd participant counts.
+- How many matches or rounds are needed where relevant.
+- How to print, copy, or export the result.
+- What fairness or organizer checks should happen before publishing.
 
-## Differentiation To Include
+## Mature-launch content modules
 
-- Put the tool first
-- Explain byes and odd participant handling where relevant
-- Show print / CSV / copy output
-- Mention fairness or constraints if the page involves schedules
-- Link to related scheduler/bracket pages
+- Tool first for tool pages; decision framework first for guide pages.
+- Specific example tied to the keyword.
+- Edge cases: byes, venues/courts, timing, seeding, rest patterns.
+- Export/print workflow.
+- Links to core scheduler, bracket, round robin, and relevant guide pages.
 
-## PAA / FAQ Targets
+## Tool capability check
 
-- How do you make a tournament bracket?
-- How do you seed a bracket?
-- What is a bye?
-- How many games are in a single elimination bracket?
-- What is the difference between single and double elimination?
-
-## Related Searches To Check
-
-- tournament bracket maker free
-- tournament bracket maker printable
-- tournament bracket maker no signup
-- tournament bracket maker template
-- tournament bracket maker excel
+- single_elimination

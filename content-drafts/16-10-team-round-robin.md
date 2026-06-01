@@ -38,3 +38,11 @@ Use the fairness summary as a warning system. Check match count, byes, court use
 
 **Can I print the schedule?**  
 Yes. Generate the schedule, then use the Print button or export CSV for a printable spreadsheet.
+
+## What this 10 team round robin page covers
+
+Use this page when every participant should face every other participant. The schedule should make rounds, byes, court assignments, and rest patterns visible enough that an organizer can catch problems before sharing it.
+
+## Searches this page is built to answer
+
+Related searches include round robin, round robin meaning, round robin tournament, meaning round robin, round-robin, what is round robin. The shared intent is practical scheduling: how many rounds are needed, what happens with odd teams, whether the result can be printed or exported, and how to avoid duplicate matchups.

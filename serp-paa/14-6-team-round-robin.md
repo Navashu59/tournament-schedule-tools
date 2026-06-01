@@ -1,4 +1,4 @@
-# SERP/PAA Framework - 6 Team Round Robin
+# SERP/PAA Mature Launch Framework - 6 Team Round Robin
 
 ## Keyword
 
@@ -8,37 +8,35 @@
 
 Users need a fair six-team round robin schedule.
 
-## SERP Gap Method
+## Semrush evidence
 
-Before final publishing, inspect Google top 3, PAA, related searches, and any tool widgets for this exact keyword. Do not copy competitor phrasing. Use the page's own scheduling tool context.
+- bracket maker (33100 searches/mo)
+- bracket generator (18100 searches/mo)
+- tournament draw creator (18100 searches/mo)
+- round robin (14800 searches/mo)
+- tournament bracket (14800 searches/mo)
+- tournament bracket maker (14800 searches/mo)
+- bracket creator (12100 searches/mo)
+- tournament bracket generator (8100 searches/mo)
+- red robin timings (6600 searches/mo)
+- round robin meaning (6600 searches/mo)
 
-## Expected Top Competitor Coverage
+## Required SERP/PAA coverage
 
-- Basic generator or explanation
-- Format-specific instructions
-- Printing or sharing claims
-- Limited handling of odd teams, byes, courts, or fairness
+- How to make this schedule or bracket.
+- What happens with byes or odd participant counts.
+- How many matches or rounds are needed where relevant.
+- How to print, copy, or export the result.
+- What fairness or organizer checks should happen before publishing.
 
-## Differentiation To Include
+## Mature-launch content modules
 
-- Put the tool first
-- Explain byes and odd participant handling where relevant
-- Show print / CSV / copy output
-- Mention fairness or constraints if the page involves schedules
-- Link to related scheduler/bracket pages
+- Tool first for tool pages; decision framework first for guide pages.
+- Specific example tied to the keyword.
+- Edge cases: byes, venues/courts, timing, seeding, rest patterns.
+- Export/print workflow.
+- Links to core scheduler, bracket, round robin, and relevant guide pages.
 
-## PAA / FAQ Targets
+## Tool capability check
 
-- How do you make a round robin schedule?
-- How many games are in a round robin?
-- What happens with an odd number of teams?
-- How do you avoid repeat matchups?
-- How do you assign courts or time slots?
-
-## Related Searches To Check
-
-- 6 team round robin free
-- 6 team round robin printable
-- 6 team round robin no signup
-- 6 team round robin template
-- 6 team round robin excel
+- round_robin
