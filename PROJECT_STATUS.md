@@ -166,3 +166,39 @@ Post-change verification:
    - sport/use-case pages
    - guide pages
 7. Use SERP/PAA gap optimization only after baseline impressions appear, unless a page has obvious quality or usability issues.
+
+## 2026-06-01 Production Domain Deployment
+
+Production domain selected:
+
+```text
+tournamentscheduletools.org
+```
+
+Completed:
+
+- Rebuilt `public/` with `SITE_ORIGIN=https://tournamentscheduletools.org`.
+- Confirmed no `https://example.com` remains in generated output.
+- Added Cloudflare Pages workflow at `.github/workflows/deploy-cloudflare-pages.yml`.
+- Added `scripts/cloudflare-postdeploy.js` to configure DNS records and custom domains when the Cloudflare token has the required permissions.
+- Added `_redirects` generation for `www.tournamentscheduletools.org` to redirect to `https://tournamentscheduletools.org`.
+- Pushed production-domain build to GitHub.
+- GitHub Actions created the Cloudflare Pages project `tournament-schedule-tools`.
+- GitHub Actions deployed the site to Cloudflare Pages.
+
+Current Cloudflare Pages preview:
+
+```text
+https://f2eb1d2b.tournament-schedule-tools.pages.dev
+```
+
+Blocked / pending:
+
+- Cloudflare DNS zone creation is pending because the current API token does not have `account zone create` permission.
+- Custom domain attachment for `tournamentscheduletools.org` and `www.tournamentscheduletools.org` is pending until the DNS zone exists.
+- Namecheap nameserver change is pending until Cloudflare returns the zone nameservers.
+- GSC property setup and sitemap submission are pending until the domain is live and verifiable.
+
+Next step:
+
+Update the Cloudflare API token with zone creation and DNS edit permissions, or manually add `tournamentscheduletools.org` as a Cloudflare zone, then rerun the `Deploy Cloudflare Pages` workflow.
