@@ -209,3 +209,56 @@ Blocked / pending:
 Next step:
 
 Update the Cloudflare API token with zone creation and DNS edit permissions, or manually add `tournamentscheduletools.org` as a Cloudflare zone, then rerun the `Deploy Cloudflare Pages` workflow.
+
+## 2026-06-01 Production Launch Completed
+
+The production launch is now complete.
+
+Live URLs:
+
+```text
+https://tournamentscheduletools.org/
+https://www.tournamentscheduletools.org/
+```
+
+Cloudflare state:
+
+- The domain `tournamentscheduletools.org` is active in Cloudflare.
+- Nameservers are managed by Cloudflare:
+  - `pearl.ns.cloudflare.com`
+  - `yoxall.ns.cloudflare.com`
+- Cloudflare Pages project: `tournament-schedule-tools`.
+- Production DNS is configured with DNS-only CNAME records to Cloudflare Pages:
+  - `tournamentscheduletools.org` -> `tournament-schedule-tools.pages.dev`
+  - `www.tournamentscheduletools.org` -> `tournament-schedule-tools.pages.dev`
+- GitHub Actions deploys the site and runs the Cloudflare post-deploy setup.
+
+Live verification:
+
+- `https://tournamentscheduletools.org/` returns HTTP 200.
+- `https://www.tournamentscheduletools.org/` returns HTTP 200.
+- `https://tournamentscheduletools.org/robots.txt` loads and references the production sitemap.
+- `https://tournamentscheduletools.org/sitemap.xml` loads with production canonical URLs.
+
+Google Search Console:
+
+- Domain property added and verified: `sc-domain:tournamentscheduletools.org`.
+- DNS verification TXT record:
+
+  ```text
+  google-site-verification=-6WfSeGbMeqKJNfVdbpalV1o8abb8MtdFtS_XNyUe-E
+  ```
+
+- Sitemap submitted:
+
+  ```text
+  https://tournamentscheduletools.org/sitemap.xml
+  ```
+
+- GSC sitemap status on 2026-06-01: `成功`.
+- GSC discovered pages from sitemap on 2026-06-01: `45`.
+
+Known follow-up:
+
+- The generated `_redirects` file does not currently force `www.tournamentscheduletools.org` to 301 redirect to the bare domain on Cloudflare Pages custom domains. This is not blocking indexing because all canonicals and sitemap URLs use the bare domain, but a Cloudflare Redirect Rule should be added later if strict host canonicalization is required.
+- Start the 14-30 day post-launch observation window before making large content changes.
