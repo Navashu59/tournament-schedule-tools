@@ -40,3 +40,53 @@ Users need a ten-team round robin schedule across rounds.
 ## Tool capability check
 
 - round_robin
+
+## Real Google SERP Snapshot - 2026-06-01
+
+Captured: 2026-06-01
+
+## Top Organic Results
+
+1. 10 Team Round Robin Generator - https://scheduler.leaguelobster.com/round-robin-generator/10-team-round-robin/
+2. 10 Team Round Robin Printable Tournament Bracket - https://www.printyourbrackets.com/10teamroundrobin.html
+3. 10 Team Round Robin Generator | LeagueLobster - https://bostonstrikers.com/schedule-maker/round-robin-generator/10-team-round-robin/
+4. Round-robin tournament - https://en.wikipedia.org/wiki/Round-robin_tournament
+5. Best Tournament Format for 10 Teams (with Examples) - https://kb.score7.io/blog/guides/best-tournament-format-for-10-teams
+
+## People Also Ask Captured
+
+- None captured in this snapshot.
+
+## Related Searches Captured
+
+- Read more
+- 10 team round robin bracket
+- 10 team round robin scores
+- 12 team round robin
+- 9 team round robin
+- 10 team round robin schedule
+- 10 team round robin schedule generator
+- 10 team round robin 4 courts
+
+## Competitor Structure Notes
+
+### Competitor 1: scheduler.leaguelobster.com
+
+- Title: 10 Team Round Robin Generator | LeagueLobster
+- H1: 10 Team Round Robin Generator
+- H2 themes: Generate an interactive 10 team round robin schedule
+- Interactive elements: inputs 9, buttons 6, tables 0
+
+### Competitor 2: printyourbrackets.com
+
+- Title: 10 Team Round Robin Printable Tournament Bracket
+- H1: n/a
+- H2 themes: FREE Online Tournament Manager | Poster Size Brackets | Football Square Scratch-Offs | Large Football Squares | NEW! | Tournament Brackets | Office Pools | Game Brackets
+- Interactive elements: inputs 0, buttons 0, tables 4
+
+### Competitor 3: bostonstrikers.com
+
+- Title: 10 Team Round Robin Generator | LeagueLobster
+- H1: 10 Team Round Robin Generator
+- H2 themes: Generate an interactive 10 team round robin schedule
+- Interactive elements: inputs 6, buttons 5, tables 0

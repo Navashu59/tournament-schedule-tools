@@ -40,3 +40,46 @@ Users need a knockout bracket where one loss eliminates a team.
 ## Tool capability check
 
 - single_elimination
+
+## Real Google SERP Snapshot - 2026-06-01
+
+Captured: 2026-06-01
+
+## Top Organic Results
+
+1. Tournament Bracket Generator - https://challonge.com/tournament/bracket_generator
+2. Free Bracket Generator - https://www.freebracketgenerator.com/
+3. Bracket HQ | Bracket Maker - https://brackethq.com/
+4. Single Elimination Tournament Brackets - Printable - https://www.printyourbrackets.com/single-elimination-tournament-brackets.html
+5. Tournament Bracket Generator - https://scheduler.leaguelobster.com/bracket-generator/
+
+## People Also Ask Captured
+
+- None captured in this snapshot.
+
+## Related Searches Captured
+
+- Read more
+- Free single elimination bracket generator
+- Double elimination bracket generator
+- Free bracket generator
+- Tournament bracket generator
+- Free double elimination bracket generator
+- Single elimination bracket generator pdf
+- Tournament bracket template
+
+## Competitor Structure Notes
+
+### Competitor 1: challonge.com
+
+- Title: Tournament Bracket Generator - Challonge
+- H1: Tournament Bracket Generator WIZARD VIEWFORM VIEW
+- H2 themes: n/a
+- Interactive elements: inputs 5, buttons 5, tables 0
+
+### Competitor 2: brackethq.com
+
+- Title: Bracket HQ | Bracket Maker
+- H1: Bracket HQ
+- H2 themes: The Bracket Maker Headquarters
+- Interactive elements: inputs 0, buttons 0, tables 0

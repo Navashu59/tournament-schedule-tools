@@ -40,3 +40,53 @@ Users need a small four-team bracket quickly.
 ## Tool capability check
 
 - single_elimination
+
+## Real Google SERP Snapshot - 2026-06-01
+
+Captured: 2026-06-01
+
+## Top Organic Results
+
+1. 4 Team Single Elimination Printable Tournament ... - https://www.printyourbrackets.com/4teamsingleelimination.html
+2. Tournament Bracket Generator - https://challonge.com/tournament/bracket_generator
+3. 4 Team Single Elimination Bracket [Printable] - https://carrom.com/blogs/brackets/4-team-single-elimination-bracket?srsltid=AfmBOooGJgvUlmklpx6jNyPbZ5jNO_-6jHBwPHbtXj23wazTPbHcsaR_
+4. Tournament Bracket Templates — 4, 8, 16, 32, and 64 Teams - https://kb.score7.io/blog/guides/tournament-bracket-template
+5. 4 Team Round Robin Generator - https://bracketmaker.app/round-robin/4-team/
+
+## People Also Ask Captured
+
+- None captured in this snapshot.
+
+## Related Searches Captured
+
+- Read more
+- 4 team Bracket double elimination
+- 4 team bracket Round Robin
+- 4 team bracket printable
+- 4 team bracket single elimination
+- 4 team bracket generator
+- 4 Team bracket with 3rd place Game
+- 4 team single elimination bracket fillable
+
+## Competitor Structure Notes
+
+### Competitor 1: printyourbrackets.com
+
+- Title: 4 Team Single Elimination Printable Tournament Bracket
+- H1: n/a
+- H2 themes: FREE Online Tournament Manager | Poster Size Brackets | Football Square Scratch-Offs | Large Football Squares | NEW! | Tournament Brackets | Office Pools | Game Brackets
+- Interactive elements: inputs 0, buttons 0, tables 3
+
+### Competitor 2: challonge.com
+
+- Title: Tournament Bracket Generator - Challonge
+- H1: Tournament Bracket Generator WIZARD VIEWFORM VIEW
+- H2 themes: n/a
+- Interactive elements: inputs 5, buttons 5, tables 0
+
+### Competitor 3: carrom.com
+
+- Title: 4 Team Single Elimination Bracket [Printable]
+- H1: 4 TEAM SINGLE ELIMINATION BRACKET
+- H2 themes: WHAT IS A 4-TEAM SINGLE ELIMINATION BRACKET? | USING THE DOWNLOADABLE BRACKET | SCHEDULING MATCHES | DIFFERENT WAYS TO DRAW | HOW TO HANDLE TIEBREAKERS | DEALING WITH ELIMINATIONS GRACEFULLY | USING SINGLE ELIMINATION BRACKETS FOR NOK HOCKEY TOURNAMENTS | ALL TOURNAMENT BRACKETS FOR DOWNLOAD
+- Interactive elements: inputs 3, buttons 14, tables 0
