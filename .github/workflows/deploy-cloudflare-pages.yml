@@ -13,6 +13,7 @@ jobs:
       SITE_DOMAIN: tournamentscheduletools.org
       SITE_ORIGIN: https://tournamentscheduletools.org
       CLOUDFLARE_PAGES_PROJECT: tournament-schedule-tools
+      GSC_VERIFY_TXT: google-site-verification=-6WfSeGbMeqKJNfVdbpalV1o8abb8MtdFtS_XNyUe-E
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:
