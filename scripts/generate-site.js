@@ -542,7 +542,7 @@ function renderPage(page) {
   const body = `<main>
     <section class="hero compact">
       <div>
-        <p class="eyebrow">${esc(page.cluster)} ${page.page_type}</p>
+        <p class="eyebrow">${esc(page.cluster === page.page_type ? page.cluster : `${page.cluster} ${page.page_type}`)}</p>
         <h1>${esc(page.title)}</h1>
         <p>${esc(userProblemText(page.user_problem))}</p>
       </div>
