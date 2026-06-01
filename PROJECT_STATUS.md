@@ -189,13 +189,20 @@ Completed:
 Current Cloudflare Pages preview:
 
 ```text
-https://f2eb1d2b.tournament-schedule-tools.pages.dev
+https://206293c0.tournament-schedule-tools.pages.dev
+```
+
+Cloudflare Pages custom domains:
+
+```text
+tournamentscheduletools.org added
+www.tournamentscheduletools.org added
 ```
 
 Blocked / pending:
 
 - Cloudflare DNS zone creation is pending because the current API token does not have `account zone create` permission.
-- Custom domain attachment for `tournamentscheduletools.org` and `www.tournamentscheduletools.org` is pending until the DNS zone exists.
+- Cloudflare DNS records for `tournamentscheduletools.org` and `www.tournamentscheduletools.org` are pending until the DNS zone exists.
 - Namecheap nameserver change is pending until Cloudflare returns the zone nameservers.
 - GSC property setup and sitemap submission are pending until the domain is live and verifiable.
 
