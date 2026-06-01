@@ -688,6 +688,9 @@ ${urls.map((url) => `  <url><loc>${canonical(url)}</loc><lastmod>2026-05-28</las
 Allow: /
 Sitemap: ${siteOrigin}/sitemap.xml
 `);
+  if (siteOrigin === "https://tournamentscheduletools.org") {
+    fs.writeFileSync(path.join(publicDir, "_redirects"), `https://www.tournamentscheduletools.org/* https://tournamentscheduletools.org/:splat 301\n`);
+  }
   fs.writeFileSync(path.join(publicDir, "404.html"), layout({
     title: "Page Not Found",
     description: "The page could not be found. Open the tools index to find a tournament scheduler or guide.",
