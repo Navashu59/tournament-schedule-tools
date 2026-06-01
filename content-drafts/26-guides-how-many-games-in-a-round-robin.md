@@ -1,49 +1,40 @@
 # How Many Games In A Round Robin
 
-Users need the round robin match formula and examples. This guide focuses on the decision an organizer has to make before using a generator: format, byes, seeding, courts, time, and what to check before publishing.
+A single round robin has one matchup for every possible pair of participants. The formula is n x (n - 1) / 2, where n is the number of teams or players.
 
-## Start with the round robin rule
+## Round robin game counts
 
-A round robin schedule works when every team or player should face every other participant. The key question is not just how many matches exist, but whether you have enough courts, time, and rest between rounds.
+- 4 teams: 6 games
+- 5 teams: 10 games
+- 6 teams: 15 games
+- 7 teams: 21 games
+- 8 teams: 28 games
+- 10 teams: 45 games
+- 12 teams: 66 games
 
-## Count matches before choosing it
+## Why the formula works
 
-For n participants, a single round robin has n x (n - 1) / 2 matches. Six teams need 15 matches. Eight teams need 28 matches. If that number is too high for your venue, use pool play or a bracket instead.
+Each participant can play n - 1 opponents. Multiplying n by n - 1 counts every matchup twice, once from each participant's side. Dividing by 2 leaves the actual number of games.
 
-## Handle odd teams with byes
+## Rounds are different from games
 
-Odd participant counts create one bye in each round. That is normal. What matters is whether byes are distributed evenly and whether one team gets an awkward rest pattern compared with the others.
+Games are total matchups. Rounds are the blocks of time needed to run them. Six teams need 15 games across 5 rounds. Seven teams need 21 games across 7 rounds because one team has a bye each round.
 
-## Use the generator, then review
+## Estimate your event time
 
-Open the round robin generator, enter the teams, set courts and match length, and export the schedule. Before publishing, check total event time, repeated matchups, bye count, and whether teams are moving between courts too often.
+First calculate matches per round, then divide by courts. If eight teams create four matches per round and you have two courts, each round needs two match slots. With 25-minute matches, each round needs about 50 minutes before breaks.
 
-## How Many Games In A Round Robin questions
+## When the count is too high
 
-**How many rounds are in a round robin?**  
-With an even number of participants, usually n - 1 rounds. With an odd number, a bye is added and the schedule still rotates through n rounds.
+If the number of games is too large, use pools, shorten match length, add courts, or switch to a bracket. Do not force a full round robin if the schedule becomes too long for the venue.
 
-**What is the fairest round robin schedule?**  
-One where every team plays the same number of matches, byes are balanced, and court or venue use does not create an obvious advantage.
+## Quick answers
 
-**Can I export it to Excel?**  
-Yes. Generate the schedule and use CSV export for Excel or Google Sheets.
+**How many games are in an 8-team round robin?**
+28 games.
 
-## How this guide supports the scheduler
+**How many games are in a 10-team round robin?**
+45 games.
 
-Use this guide before publishing a real event schedule. The practical decision is whether the format, byes, seeding, venue limits, and timing rules make sense before you export or print the schedule. Link back to the matching generator when you are ready to build the schedule.
-
-## Searches this guide is built to answer
-
-Related searches include related tournament schedule searches. The useful coverage is not a generic definition; it is a clear organizer decision framework with examples, edge cases, and links to the right scheduling tool.
-
-## Final checks before using this guide
-
-This guide is most useful when it helps an organizer make a decision they can explain to participants. Before using the advice in a real event, check these points:
-
-- **Format fit:** Confirm the format matches the number of teams, available time, and fairness expectations.
-- **Participant review:** Check spelling, duplicate names, late additions, and whether manual seeding or random order is more appropriate.
-- **Venue limits:** Confirm court count, start time, match length, breaks, and any teams that cannot play back-to-back.
-- **Publishable output:** Keep a printable version and an editable CSV or spreadsheet version so last-minute changes do not break the event.
-
-Related planning tasks often include YouTube, View all, Round robin tournament, How many games in a round robin baseball, Round robin 4 teams how many games, so it helps to decide whether the reader needs a generator, a printable template, or a format guide before publishing anything. A good tournament plan should be easy to explain, not just mathematically valid.
+**Does a double round robin double the games?**
+Yes. Each pair plays twice, so an 8-team double round robin has 56 games.

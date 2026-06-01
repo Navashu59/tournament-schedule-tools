@@ -193,12 +193,96 @@ function pageDescription(page) {
   return (page.page_type === "guide" ? base.guide : base.tool).slice(0, 158);
 }
 
+function userProblemText(value) {
+  return String(value || "")
+    .replace(/^Users need to /, "Use this when you need to ")
+    .replace(/^Users need /, "Use this when you need ")
+    .replace(/^Users want /, "Use this when you want ")
+    .replace(/^Tournament organizers need /, "Use this when organizers need ")
+    .replace(/^Pickleball organizers need /, "Use this when pickleball organizers need ")
+    .replace(/^Cornhole event organizers need /, "Use this when cornhole organizers need ")
+    .replace(/^Ping pong organizers need /, "Use this when ping pong organizers need ")
+    .replace(/^Esports organizers need /, "Use this when esports organizers need ");
+}
+
 function pagePath(page) {
   return page.url;
 }
 
 function canonical(url) {
   return `${siteOrigin}${url}`;
+}
+
+function sampleRowsFor(page) {
+  const countMatch = String(page.slug || "").match(/^(\d+)-team/);
+  const teams = defaultParticipants(page);
+  const count = countMatch ? Number(countMatch[1]) : Math.min(8, teams.length);
+  const sampleTeams = teams.slice(0, Math.max(4, Math.min(count, 8)));
+  const mode = (page.tool_modes || ["single_elimination"])[0];
+  if (mode === "round_robin" || page.cluster === "size") {
+    return {
+      label: `${sampleTeams.length}-team round robin preview`,
+      note: "The live tool will regenerate this table with your teams, courts, start time, and match length.",
+      metrics: [
+        ["Rounds", sampleTeams.length % 2 === 0 ? sampleTeams.length - 1 : sampleTeams.length],
+        ["Courts", 2],
+        ["Byes", sampleTeams.length % 2 === 0 ? 0 : sampleTeams.length],
+        ["Export", "CSV"]
+      ],
+      rows: [
+        ["Round 1", sampleTeams[0], sampleTeams.at(-1), "Court 1", "09:00"],
+        ["Round 1", sampleTeams[1], sampleTeams.at(-2), "Court 2", "09:00"],
+        ["Round 2", sampleTeams[0], sampleTeams.at(-2), "Court 1", "09:30"],
+        ["Round 2", sampleTeams.at(-1), sampleTeams.at(-3) || sampleTeams[2], "Court 2", "09:30"]
+      ]
+    };
+  }
+  if (mode === "double_elimination") {
+    return {
+      label: "Double elimination preview",
+      note: "The live tool creates winners-bracket rows plus losers-bracket planning rows for review.",
+      metrics: [["Entrants", sampleTeams.length], ["Minimum losses", 2], ["Courts", 2], ["Export", "CSV"]],
+      rows: [
+        ["Winners R1", sampleTeams[0], sampleTeams.at(-1), "Court 1", "09:00"],
+        ["Winners R1", sampleTeams[1], sampleTeams.at(-2), "Court 2", "09:00"],
+        ["Losers R1", "Loser match 1", "Loser match 2", "Court 1", "09:30"],
+        ["Winners R2", "Winner match 1", "Winner match 2", "Court 2", "09:30"]
+      ]
+    };
+  }
+  if (mode === "league_schedule") {
+    return {
+      label: "League fixture preview",
+      note: "Use league fixtures when matches are spread across dates instead of one short bracket session.",
+      metrics: [["Fixtures", 4], ["Rounds", 2], ["Venues", 2], ["Export", "CSV"]],
+      rows: [
+        ["Week 1", sampleTeams[0], sampleTeams[1], "Venue 1", "09:00"],
+        ["Week 1", sampleTeams[2], sampleTeams[3], "Venue 2", "09:00"],
+        ["Week 2", sampleTeams[0], sampleTeams[2], "Venue 1", "09:30"],
+        ["Week 2", sampleTeams[1], sampleTeams[3], "Venue 2", "09:30"]
+      ]
+    };
+  }
+  return {
+    label: `${sampleTeams.length}-team bracket preview`,
+    note: "The live tool will place byes automatically when the entrant count does not fill the bracket cleanly.",
+    metrics: [["Entrants", sampleTeams.length], ["Rounds", Math.ceil(Math.log2(sampleTeams.length))], ["Byes", Math.pow(2, Math.ceil(Math.log2(sampleTeams.length))) - sampleTeams.length], ["Export", "CSV"]],
+    rows: [
+      ["Round 1", sampleTeams[0], sampleTeams.at(-1), "Court 1", "09:00"],
+      ["Round 1", sampleTeams[1], sampleTeams.at(-2), "Court 2", "09:00"],
+      ["Semifinal", "Winner match 1", "Winner match 2", "Court 1", "09:30"],
+      ["Final", "Winner semifinal 1", "Winner semifinal 2", "Court 1", "10:00"]
+    ]
+  };
+}
+
+function sampleOutputHtml(page) {
+  const sample = sampleRowsFor(page);
+  return `<div class="sample-output" aria-label="${esc(sample.label)}">
+    <p><strong>${esc(sample.label)}</strong> ${esc(sample.note)}</p>
+    <div class="fairness-grid static-metrics">${sample.metrics.map(([label, value]) => `<div class="metric"><strong>${esc(value)}</strong><span>${esc(label)}</span></div>`).join("")}</div>
+    <table><thead><tr><th>Round</th><th>Home</th><th>Away</th><th>Court</th><th>Time</th></tr></thead><tbody>${sample.rows.map((row) => `<tr>${row.map((cell) => `<td>${esc(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table>
+  </div>`;
 }
 
 function nav(currentUrl = "") {
@@ -422,7 +506,7 @@ function toolHtml(page) {
         <span data-summary-pill>Ready</span>
       </div>
       <div data-fairness class="fairness-grid"></div>
-      <div data-results class="results-table"></div>
+      <div data-results class="results-table">${sampleOutputHtml(page)}</div>
     </div>
   </section>`;
 }
@@ -445,7 +529,7 @@ function relatedPages(page) {
   const chosen = [...sameCluster, ...core].filter((item, index, arr) => arr.findIndex((x) => x.url === item.url) === index).slice(0, 5);
   return `<section class="link-band" aria-labelledby="related-heading">
     <h2 id="related-heading">Related planning pages</h2>
-    <div class="link-grid">${chosen.map((item) => `<a href="${item.url}"><strong>${item.title}</strong><span>${esc(item.user_problem)}</span></a>`).join("")}</div>
+    <div class="link-grid">${chosen.map((item) => `<a href="${item.url}"><strong>${item.title}</strong><span>${esc(userProblemText(item.user_problem))}</span></a>`).join("")}</div>
   </section>`;
 }
 
@@ -454,13 +538,13 @@ function renderPage(page) {
   const content = markdownToHtml(markdown);
   const intro = page.page_type === "tool"
     ? toolHtml(page)
-    : `<section class="guide-summary"><p>${esc(page.user_problem)}</p><a class="primary-link" href="/tournament-schedule-maker/">Open the schedule maker</a></section>`;
+    : `<section class="guide-summary"><p>${esc(userProblemText(page.user_problem))}</p><a class="primary-link" href="/tournament-schedule-maker/">Open the schedule maker</a></section>`;
   const body = `<main>
     <section class="hero compact">
       <div>
         <p class="eyebrow">${esc(page.cluster)} ${page.page_type}</p>
         <h1>${esc(page.title)}</h1>
-        <p>${esc(page.user_problem)}</p>
+        <p>${esc(userProblemText(page.user_problem))}</p>
       </div>
     </section>
     ${intro}
@@ -492,7 +576,7 @@ function renderHome() {
     ${toolHtml({ slug: "home", tool_modes: ["single_elimination", "round_robin", "league_schedule"] })}
     <section class="section-wrap">
       <h2>Start with the format you need</h2>
-      <div class="card-grid">${top.map((page) => `<a class="page-card" href="${page.url}"><span>${esc(page.cluster)}</span><strong>${esc(page.title)}</strong><p>${esc(page.user_problem)}</p></a>`).join("")}</div>
+      <div class="card-grid">${top.map((page) => `<a class="page-card" href="${page.url}"><span>${esc(page.cluster)}</span><strong>${esc(page.title)}</strong><p>${esc(userProblemText(page.user_problem))}</p></a>`).join("")}</div>
     </section>
     <section class="section-wrap two-col">
       <div>
@@ -538,7 +622,7 @@ function renderToolsIndex() {
     </section>
     ${groups.map((group) => `<section class="section-wrap">
       <h2>${esc(group)} pages</h2>
-      <div class="card-grid">${pages.filter((p) => p.cluster === group).map((page) => `<a class="page-card" href="${page.url}"><span>${esc(page.page_type)}</span><strong>${esc(page.title)}</strong><p>${esc(page.user_problem)}</p></a>`).join("")}</div>
+      <div class="card-grid">${pages.filter((p) => p.cluster === group).map((page) => `<a class="page-card" href="${page.url}"><span>${esc(page.page_type)}</span><strong>${esc(page.title)}</strong><p>${esc(userProblemText(page.user_problem))}</p></a>`).join("")}</div>
     </section>`).join("")}
   </main>`;
   const schema = {

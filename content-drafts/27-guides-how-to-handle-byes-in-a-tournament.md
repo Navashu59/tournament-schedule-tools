@@ -1,42 +1,30 @@
 # How To Handle Byes In A Tournament
 
-Users need to understand byes when participant counts do not fit the format. This guide focuses on the decision an organizer has to make before using a generator: format, byes, seeding, courts, time, and what to check before publishing.
+A bye is a scheduled round where a participant does not play. It is not automatically unfair. It becomes a problem when the rule is hidden, uneven, or placed where it creates a clear advantage.
 
-## What a bye means
+## Why byes happen
 
-A bye is a scheduled non-playing slot. In a bracket, it usually moves a participant into the next round. In round robin, it means one participant rests because the count is odd.
+Byes appear when the participant count does not fit the format. Five teams in a round robin need one bye each round. Six teams in a single elimination bracket need two byes to fill an eight-slot bracket.
 
-## When byes are unavoidable
+## Byes in round robin
 
-Byes appear when the participant count does not fit the format cleanly. Five teams in round robin need one bye per round. Six teams in a single elimination bracket need two byes to reach an eight-slot bracket.
+In round robin, a bye means rest. The important check is distribution: each participant should receive the same number of byes when the format allows it. Also check timing, because a late bye can feel different from an early bye.
 
-## How to make byes feel fair
+## Byes in elimination brackets
 
-Do not only count byes. Look at timing. A bye before a final can feel different from a bye in the first round. For casual events, explain the rule before play starts so nobody thinks the schedule is being changed mid-event.
+In a bracket, a bye usually advances a participant to the next round without playing. Seeded events often give byes to higher seeds. Casual events should explain whether byes were assigned randomly or by entered order.
 
-## Bye questions
+## How to explain byes to players
 
-**Is a bye a win?**  
-In a bracket, it usually advances a participant without playing. In round robin, it is simply a rest round.
+Tell participants why byes exist before play starts. A simple note is enough: "We have seven teams, so one team rests each round. The schedule rotates the bye." That prevents the bye from looking like a mid-event adjustment.
 
-**Are byes unfair?**  
-They can feel unfair if they are hidden or uneven. They are easier to accept when the format requires them and the distribution is clear.
+## Quick answers
 
-## How this guide supports the scheduler
+**Is a bye a win?**
+In a bracket, it usually advances the participant. In round robin, it is just a rest round.
 
-Use this guide before publishing a real event schedule. The practical decision is whether the format, byes, seeding, venue limits, and timing rules make sense before you export or print the schedule. Link back to the matching generator when you are ready to build the schedule.
+**Are byes unfair?**
+They can be fair if the format requires them and the distribution is visible.
 
-## Searches this guide is built to answer
-
-Related searches include related tournament schedule searches. The useful coverage is not a generic definition; it is a clear organizer decision framework with examples, edge cases, and links to the right scheduling tool.
-
-## Final checks before using this guide
-
-This guide is most useful when it helps an organizer make a decision they can explain to participants. Before using the advice in a real event, check these points:
-
-- **Format fit:** Confirm the format matches the number of teams, available time, and fairness expectations.
-- **Participant review:** Check spelling, duplicate names, late additions, and whether manual seeding or random order is more appropriate.
-- **Venue limits:** Confirm court count, start time, match length, breaks, and any teams that cannot play back-to-back.
-- **Publishable output:** Keep a printable version and an editable CSV or spreadsheet version so last-minute changes do not break the event.
-
-Related planning tasks often include Explain seeding in tournaments, Tell me more about requesting a bye, List tournament rules for byes, 35 answers, How to handle byes in a tournament reddit, so it helps to decide whether the reader needs a generator, a printable template, or a format guide before publishing anything. A good tournament plan should be easy to explain, not just mathematically valid.
+**Should top seeds get byes?**
+In seeded brackets, often yes. In casual events, random or entered order may be easier to explain.

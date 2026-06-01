@@ -1,46 +1,34 @@
 # How To Make A Fair Tournament Schedule
 
-Users need practical rules for fairness, byes, courts, and repeat matchups. This guide focuses on the decision an organizer has to make before using a generator: format, byes, seeding, courts, time, and what to check before publishing.
+A fair schedule is not just mathematically valid. It should be explainable, readable, and realistic for the venue. Players should understand why they play when they play, where they go next, and how byes or seeds were assigned.
 
-## Define fair before building the schedule
+## Define fairness for this event
 
-A fair tournament schedule is not just a list with no duplicate matches. It should make the format clear, distribute byes visibly, respect court or venue limits, and avoid avoidable rest-time problems.
+Fairness can mean different things: equal match count, balanced byes, protected seeds, equal rest, no repeated opponents, or equal court use. Pick the most important fairness rule before generating the schedule.
 
-## Use match count and bye count as the first checks
+## Check match count and byes first
 
-Every participant should have the expected number of matches for the format. If byes exist, they should be explainable and as balanced as the format allows. Odd team counts are not a problem by themselves; hidden or uneven byes are the problem.
+Every participant should have the expected number of matches for the chosen format. If byes exist, they should be visible and explainable. Odd team counts are not a problem by themselves; hidden byes are the problem.
 
-## Check courts, timing, and rest
+## Check courts and rest
 
-A schedule can be mathematically correct and still hard to run. Check whether the venue has enough courts, whether matches overlap correctly, and whether a team is forced to play back-to-back while another team gets a long break.
+A schedule can be correct and still hard to run. Look for back-to-back matches, one team always changing courts, or a court sitting idle while another court is overloaded.
 
-## Publish a schedule people can read
+## Make the output readable
 
-Before sharing, make sure each row includes round, matchup, court or venue, and time. If you export to CSV, open it once in Excel or Google Sheets to confirm the columns are readable.
+Each row should show round, matchup, court or venue, and time. If players cannot tell where they go next, the schedule is not ready to publish.
 
-## Fair schedule questions
+## Review one real example
 
-**What makes a tournament schedule fair?**  
-Balanced match count, clear byes, reasonable rest, and court assignments that do not create an obvious advantage.
+For eight teams on two courts with 30-minute matches, a round robin has 28 matches across 7 rounds. That is a long event. A single elimination bracket has 7 matches and is much faster, but gives no second chance. The fair choice depends on the event goal.
 
-**Can a generator replace organizer judgment?**  
-No. A generator gives you a strong draft. The organizer still checks rules, venue limits, and final communication.
+## Quick answers
 
-## How this guide supports the scheduler
+**What makes a tournament schedule fair?**
+Clear rules, balanced match count, visible byes, reasonable rest, and court assignments that do not create an obvious advantage.
 
-Use this guide before publishing a real event schedule. The practical decision is whether the format, byes, seeding, venue limits, and timing rules make sense before you export or print the schedule. Link back to the matching generator when you are ready to build the schedule.
+**Can a generator replace organizer judgment?**
+No. A generator gives a strong draft. The organizer still checks venue limits, format rules, and final communication.
 
-## Searches this guide is built to answer
-
-Related searches include related tournament schedule searches. The useful coverage is not a generic definition; it is a clear organizer decision framework with examples, edge cases, and links to the right scheduling tool.
-
-## Final checks before using this guide
-
-This guide is most useful when it helps an organizer make a decision they can explain to participants. Before using the advice in a real event, check these points:
-
-- **Format fit:** Confirm the format matches the number of teams, available time, and fairness expectations.
-- **Participant review:** Check spelling, duplicate names, late additions, and whether manual seeding or random order is more appropriate.
-- **Venue limits:** Confirm court count, start time, match length, breaks, and any teams that cannot play back-to-back.
-- **Publishable output:** Keep a printable version and an editable CSV or spreadsheet version so last-minute changes do not break the event.
-
-Related planning tasks often include How to make a fair tournament schedule template, Tournament fixture generator, Free sports schedule generator online, Tournament schedule generator free, Tournament bracket generator, so it helps to decide whether the reader needs a generator, a printable template, or a format guide before publishing anything. A good tournament plan should be easy to explain, not just mathematically valid.
+**What should I check before publishing?**
+Names, duplicate matchups, byes, seed order, court count, start time, match length, and whether the table is easy to read.

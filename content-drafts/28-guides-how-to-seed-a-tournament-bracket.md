@@ -1,42 +1,34 @@
 # How To Seed A Tournament Bracket
 
-Users need fair seeding rules and examples. This guide focuses on the decision an organizer has to make before using a generator: format, byes, seeding, courts, time, and what to check before publishing.
+Seeding decides where teams or players start in a bracket. The goal is usually to keep the strongest entrants from meeting too early while still making the draw easy to explain.
 
-## What seeding does
+## Start with a ranking source
 
-Seeding controls where teams or players start in a bracket. The usual goal is to avoid top entrants meeting too early while still keeping the bracket understandable.
+Use standings, previous results, ratings, qualifying times, or organizer judgment. If you do not have a ranking source, call the draw random rather than seeded.
 
-## Manual seed or random shuffle
+## Separate the top seeds
 
-Use manual seeding when you know rankings, league standings, or prior results. Use shuffle when the event is casual and you want a random starting order. Do not call a random draw seeded unless ranking actually happened.
+In a simple bracket, seed 1 and seed 2 should be on opposite sides. Seeds 3 and 4 should also be separated so the strongest entrants are not stacked into one path.
+
+## Handle byes clearly
+
+If the bracket has byes, decide whether top seeds receive them or whether byes follow the entered order. For competitive events, top seeds often receive byes. For casual events, random byes may be easier to accept.
 
 ## Check the first round
 
-After generating, look at the first-round matchups. If the two strongest teams meet immediately, adjust the order before publishing. If the event is casual, announce that the draw was random.
+Before publishing, scan the first round for obvious problems: top entrants meeting immediately, duplicate names, a missing participant, or a bye assigned in a way you cannot explain.
 
-## Seeding questions
+## Manual seeding vs shuffle
 
-**How do you seed a bracket?**  
-Rank entrants first, then place them so high seeds are separated until later rounds.
+Use manual seeding when rank matters. Use shuffle when the event is casual. Do not mix the two unless you can explain the rule, such as seeded top four and random remaining entrants.
 
-**Should I randomize seeds?**  
-Only if the event does not need ranking. Randomization is simpler but less protective for strong entrants.
+## Quick answers
 
-## How this guide supports the scheduler
+**What does seed 1 mean?**
+Seed 1 is the highest-ranked entrant according to the ranking method you chose.
 
-Use this guide before publishing a real event schedule. The practical decision is whether the format, byes, seeding, venue limits, and timing rules make sense before you export or print the schedule. Link back to the matching generator when you are ready to build the schedule.
+**Should I randomize a bracket?**
+Yes for casual events. No for events where rankings or standings should protect stronger entrants.
 
-## Searches this guide is built to answer
-
-Related searches include related tournament schedule searches. The useful coverage is not a generic definition; it is a clear organizer decision framework with examples, edge cases, and links to the right scheduling tool.
-
-## Final checks before using this guide
-
-This guide is most useful when it helps an organizer make a decision they can explain to participants. Before using the advice in a real event, check these points:
-
-- **Format fit:** Confirm the format matches the number of teams, available time, and fairness expectations.
-- **Participant review:** Check spelling, duplicate names, late additions, and whether manual seeding or random order is more appropriate.
-- **Venue limits:** Confirm court count, start time, match length, breaks, and any teams that cannot play back-to-back.
-- **Publishable output:** Keep a printable version and an editable CSV or spreadsheet version so last-minute changes do not break the event.
-
-Related planning tasks often include View all, How to seed a tournament bracket template, Bracket seeding 16 teams, Tournament bracket generator, Bracket maker, so it helps to decide whether the reader needs a generator, a printable template, or a format guide before publishing anything. A good tournament plan should be easy to explain, not just mathematically valid.
+**Where should byes go?**
+Seeded brackets usually give byes to higher seeds. Casual brackets can assign them by draw or entered order.

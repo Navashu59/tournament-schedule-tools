@@ -1,49 +1,38 @@
 # How To Make A Round Robin Schedule
 
-Users need to understand round robin scheduling before or after using the generator. This guide focuses on the decision an organizer has to make before using a generator: format, byes, seeding, courts, time, and what to check before publishing.
+A round robin works when the point of the event is comparison, not quick elimination. Every team or player faces every other participant once, so the winner is based on a full set of matchups rather than one bracket path.
 
-## Start with the round robin rule
+## Step 1: Count the matches
 
-A round robin schedule works when every team or player should face every other participant. The key question is not just how many matches exist, but whether you have enough courts, time, and rest between rounds.
+Use n x (n - 1) / 2. Six teams create 15 matches. Eight teams create 28 matches. Ten teams create 45 matches. If that total does not fit your courts, time, or attention span, split the field into pools or use a bracket.
 
-## Count matches before choosing it
+## Step 2: Count the rounds
 
-For n participants, a single round robin has n x (n - 1) / 2 matches. Six teams need 15 matches. Eight teams need 28 matches. If that number is too high for your venue, use pool play or a bracket instead.
+An even number of teams usually needs n - 1 rounds. An odd number needs n rounds because one participant has a bye each round. For seven teams, plan for seven rounds and three matches per active round.
 
-## Handle odd teams with byes
+## Step 3: Add courts and time
 
-Odd participant counts create one bye in each round. That is normal. What matters is whether byes are distributed evenly and whether one team gets an awkward rest pattern compared with the others.
+Divide matches in each round across your available courts. With eight teams, each round has four matches. On two courts, each round needs two time slots. At 30 minutes per match, one round takes about an hour before breaks.
 
-## Use the generator, then review
+## Step 4: Check the first two rounds
 
-Open the round robin generator, enter the teams, set courts and match length, and export the schedule. Before publishing, check total event time, repeated matchups, bye count, and whether teams are moving between courts too often.
+After generating the schedule, check Round 1 and Round 2 before reviewing the whole table. Look for duplicate pairings, repeated byes, or one participant moving courts every round while others stay still.
 
-## How To Make A Round Robin Schedule questions
+## Example: 8 teams, 2 courts
 
-**How many rounds are in a round robin?**  
-With an even number of participants, usually n - 1 rounds. With an odd number, a bye is added and the schedule still rotates through n rounds.
+Eight teams need 7 rounds and 28 total matches. With two courts and 30-minute matches, each round takes two match slots. That makes the playing time about 7 hours before breaks, setup, finals, or delays.
 
-**What is the fairest round robin schedule?**  
-One where every team plays the same number of matches, byes are balanced, and court or venue use does not create an obvious advantage.
+## When not to use round robin
 
-**Can I export it to Excel?**  
-Yes. Generate the schedule and use CSV export for Excel or Google Sheets.
+Avoid a full round robin when the field is large, the venue time is short, or the event needs a quick winner. In those cases, use pool play, single elimination, or a smaller bracket.
 
-## How this guide supports the scheduler
+## Quick answers
 
-Use this guide before publishing a real event schedule. The practical decision is whether the format, byes, seeding, venue limits, and timing rules make sense before you export or print the schedule. Link back to the matching generator when you are ready to build the schedule.
+**How many games are in a round robin?**
+Use n x (n - 1) / 2 for a single round robin.
 
-## Searches this guide is built to answer
+**What happens with an odd number of teams?**
+One participant has a bye each round. The schedule should rotate those byes as evenly as possible.
 
-Related searches include related tournament schedule searches. The useful coverage is not a generic definition; it is a clear organizer decision framework with examples, edge cases, and links to the right scheduling tool.
-
-## Final checks before using this guide
-
-This guide is most useful when it helps an organizer make a decision they can explain to participants. Before using the advice in a real event, check these points:
-
-- **Format fit:** Confirm the format matches the number of teams, available time, and fairness expectations.
-- **Participant review:** Check spelling, duplicate names, late additions, and whether manual seeding or random order is more appropriate.
-- **Venue limits:** Confirm court count, start time, match length, breaks, and any teams that cannot play back-to-back.
-- **Publishable output:** Keep a printable version and an editable CSV or spreadsheet version so last-minute changes do not break the event.
-
-Related planning tasks often include YouTube, View all, Our Round Robin Generator, How to make a round robin schedule template, Round robin tournament formula, so it helps to decide whether the reader needs a generator, a printable template, or a format guide before publishing anything. A good tournament plan should be easy to explain, not just mathematically valid.
+**Can I make it in a spreadsheet?**
+Yes, but a generator is faster for avoiding duplicate pairings and checking byes. Export CSV afterward if you need spreadsheet edits.
