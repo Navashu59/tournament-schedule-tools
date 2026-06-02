@@ -260,5 +260,32 @@ Google Search Console:
 
 Known follow-up:
 
-- The generated `_redirects` file does not currently force `www.tournamentscheduletools.org` to 301 redirect to the bare domain on Cloudflare Pages custom domains. This is not blocking indexing because all canonicals and sitemap URLs use the bare domain, but a Cloudflare Redirect Rule should be added later if strict host canonicalization is required.
 - Start the 14-30 day post-launch observation window before making large content changes.
+
+## 2026-06-02 Cloudflare SEO Canonicalization
+
+Completed:
+
+- Added an active Cloudflare Redirect Rule:
+
+  ```text
+  SEO canonical redirect: www to tournamentscheduletools.org
+  ```
+
+- Rule behavior:
+
+  ```text
+  https://www.tournamentscheduletools.org/* -> https://tournamentscheduletools.org/${1}
+  ```
+
+- The redirect uses HTTP `301` and preserves the query string.
+- Updated the `www.tournamentscheduletools.org` DNS CNAME to `proxied: true` so the Cloudflare Redirect Rule can run.
+- Kept the apex `tournamentscheduletools.org` CNAME as DNS-only to preserve the stable Cloudflare Pages deployment path.
+
+Verification:
+
+- `https://www.tournamentscheduletools.org/` returns `301` to `https://tournamentscheduletools.org/`.
+- `https://www.tournamentscheduletools.org/some-path/?x=1` returns `301` to `https://tournamentscheduletools.org/some-path/?x=1`.
+- `https://tournamentscheduletools.org/` remains HTTP `200`.
+- `http://tournamentscheduletools.org/` returns `301` to `https://tournamentscheduletools.org/`.
+- `http://www.tournamentscheduletools.org/test?x=1` resolves through HTTPS and then to the bare-domain canonical URL.
