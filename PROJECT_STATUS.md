@@ -339,3 +339,41 @@ Hold / merge instead of creating duplicate pages:
 - `pool play format` and `pool play tournament format` should merge into `/guides/pool-play-vs-bracket-play/`.
 - `how to organize a tournament` and `how to run a tournament` should merge into `/guides/tournament-checklist/`.
 - `tournament bye rules`, `how do byes work in a tournament`, `bracket seeding examples`, and `tournament seeding examples` should update existing byes/seeding guides instead of creating duplicate pages.
+
+## 2026-06-02 Support Page Batch 1 and Batch 2 Implementation
+
+Completed:
+
+- Confirmed DeepSeek deputy availability for SERP gap, data strategy, English content drafts, and fact-risk review.
+- Implemented Batch 1 support pages:
+  - `/guides/swiss-tournament-format/`
+  - `/guides/how-to-make-a-tournament-bracket/`
+  - `/guides/consolation-bracket/`
+- Implemented Batch 2 support pages:
+  - `/guides/tournament-formats/`
+  - `/guides/pool-play-vs-bracket-play/`
+  - `/guides/tournament-checklist/`
+- Added page-map entries, content drafts, content briefs, and SERP/question-gap notes for all six pages.
+- Updated the generator so page-level `date_published` and `date_modified` values are used in Article schema.
+- Updated sitemap generation so each page can carry its own `lastmod`.
+
+Verification:
+
+- `node --check scripts/generate-site.js` passed.
+- `SITE_ORIGIN=https://tournamentscheduletools.org npm run build` passed.
+- Generated 51 index pages.
+- New support pages have canonical URLs, FAQ schema, Article schema, and 2026-06-02 published/modified dates.
+- `sitemap.xml` includes all six new support pages with `lastmod` 2026-06-02.
+- Internal local link validation passed.
+- Playwright visual QA through system Chrome passed on desktop `1366x900` and mobile `390x844`:
+  - no horizontal overflow
+  - H1 present
+  - FAQ section present
+  - no browser console errors
+
+Fact-risk controls:
+
+- Swiss content avoids claiming one official pairing algorithm across sports, games, and platforms.
+- Bracket content avoids claiming seeded byes are mandatory.
+- Consolation content distinguishes consolation brackets from double elimination and third-place playoffs.
+- Checklist content does not promise registration, payment, live standings, or result-management features.

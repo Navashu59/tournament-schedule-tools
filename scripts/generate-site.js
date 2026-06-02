@@ -363,6 +363,8 @@ function extractFaq(markdown) {
 }
 
 function schemaForPage(page, markdown) {
+  const datePublished = page.date_published || "2026-05-28";
+  const dateModified = page.date_modified || datePublished;
   const graph = [
     {
       "@type": "Organization",
@@ -391,8 +393,8 @@ function schemaForPage(page, markdown) {
       description: pageDescription(page),
       isPartOf: { "@id": `${siteOrigin}/#website` },
       publisher: { "@id": `${siteOrigin}/#organization` },
-      datePublished: "2026-05-28",
-      dateModified: "2026-05-28"
+      datePublished,
+      dateModified
     }
   ];
 
@@ -678,10 +680,15 @@ function writeAssets() {
 }
 
 function writeSupportFiles() {
-  const urls = ["/", "/tools/", ...pages.map((p) => p.url), ...trustPages.map((p) => p.url)];
+  const urlEntries = [
+    { url: "/", lastmod: "2026-05-28" },
+    { url: "/tools/", lastmod: "2026-05-28" },
+    ...pages.map((p) => ({ url: p.url, lastmod: p.date_modified || "2026-05-28" })),
+    ...trustPages.map((p) => ({ url: p.url, lastmod: "2026-05-28" }))
+  ];
   fs.writeFileSync(path.join(publicDir, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((url) => `  <url><loc>${canonical(url)}</loc><lastmod>2026-05-28</lastmod></url>`).join("\n")}
+${urlEntries.map((entry) => `  <url><loc>${canonical(entry.url)}</loc><lastmod>${entry.lastmod}</lastmod></url>`).join("\n")}
 </urlset>
 `);
   fs.writeFileSync(path.join(publicDir, "robots.txt"), `User-agent: *
