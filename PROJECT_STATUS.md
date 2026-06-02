@@ -377,3 +377,19 @@ Fact-risk controls:
 - Bracket content avoids claiming seeded byes are mandatory.
 - Consolation content distinguishes consolation brackets from double elimination and third-place playoffs.
 - Checklist content does not promise registration, payment, live standings, or result-management features.
+
+Deployment:
+
+- Git commit pushed:
+
+  ```text
+  e0dd20d feat: add tournament support page batches
+  ```
+
+- GitHub Actions run completed successfully:
+
+  ```text
+  26830666022 Deploy Cloudflare Pages
+  ```
+
+- Live URL checks returned HTTP 200 for all six new support pages and `sitemap.xml`.
