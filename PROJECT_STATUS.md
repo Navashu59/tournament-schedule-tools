@@ -289,3 +289,53 @@ Verification:
 - `https://tournamentscheduletools.org/` remains HTTP `200`.
 - `http://tournamentscheduletools.org/` returns `301` to `https://tournamentscheduletools.org/`.
 - `http://www.tournamentscheduletools.org/test?x=1` resolves through HTTPS and then to the bare-domain canonical URL.
+
+## 2026-06-02 Support Page Authority Plan
+
+Completed:
+
+- Ran Semrush US validation for support-page candidates and saved the raw evidence:
+
+  ```text
+  research/support-page-keyword-validation-2026-06-02.json
+  ```
+
+- Checked GSC performance for `tournamentscheduletools.org` over the last 28 days:
+
+  ```text
+  clicks: 0
+  impressions: 0
+  ctr: 0%
+  average position: 0
+  ```
+
+  This is expected because the site was launched and sitemap-submitted on 2026-06-01.
+
+- Reviewed live SERP/PAA gap signals for tournament formats, pool play, double elimination, Swiss format, consolation bracket, tournament checklist, and bracket how-to topics.
+- Used DeepSeek as data/strategy deputy for support-page prioritization and cannibalization review.
+- Saved the mature support-page plan:
+
+  ```text
+  planning/support-page-authority-plan-2026-06-02.md
+  ```
+
+Planned support-page batches:
+
+- Batch 1:
+  - `/guides/swiss-tournament-format/`
+  - `/guides/how-to-make-a-tournament-bracket/`
+  - `/guides/consolation-bracket/`
+- Batch 2:
+  - `/guides/tournament-formats/`
+  - `/guides/pool-play-vs-bracket-play/`
+  - `/guides/tournament-checklist/`
+- Batch 3:
+  - `/guides/how-double-elimination-works/`
+  - `/guides/round-robin-tiebreakers/`
+  - optional `/guides/third-place-playoff/`
+
+Hold / merge instead of creating duplicate pages:
+
+- `pool play format` and `pool play tournament format` should merge into `/guides/pool-play-vs-bracket-play/`.
+- `how to organize a tournament` and `how to run a tournament` should merge into `/guides/tournament-checklist/`.
+- `tournament bye rules`, `how do byes work in a tournament`, `bracket seeding examples`, and `tournament seeding examples` should update existing byes/seeding guides instead of creating duplicate pages.
