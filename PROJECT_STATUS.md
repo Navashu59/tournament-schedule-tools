@@ -393,3 +393,39 @@ Deployment:
   ```
 
 - Live URL checks returned HTTP 200 for all six new support pages and `sitemap.xml`.
+
+## 2026-06-03 Support Page Batch 3 Implementation
+
+Completed:
+
+- Implemented the remaining Batch 3 support pages:
+  - `/guides/how-double-elimination-works/`
+  - `/guides/round-robin-tiebreakers/`
+  - `/guides/third-place-playoff/`
+- Added page-map entries, content drafts, content briefs, and SERP/question-gap notes for all three pages.
+- Updated `planning/page-map.json` `page_count` to 47.
+- Used DeepSeek as review deputy for factual risk, cannibalization, and intent coverage.
+- Applied DeepSeek review fixes:
+  - added double-elimination match-count/reset caveats,
+  - clarified official-rule priority for round robin tie-breakers,
+  - added three-way tie and messy-result handling,
+  - narrowed third-place playoff language around double-elimination lower paths,
+  - added scheduling choices and optional/required notes for third-place games.
+
+Verification:
+
+- `node --check scripts/generate-site.js` passed.
+- `SITE_ORIGIN=https://tournamentscheduletools.org npm run build` passed.
+- Generated 54 index pages.
+- Internal local link validation passed.
+- JSON-LD parse validation passed.
+- New support pages are included in `sitemap.xml` with `lastmod` 2026-06-03.
+- Playwright visual QA through system Chrome passed on desktop `1366x900` and mobile `390x844`:
+  - no horizontal overflow,
+  - one H1 per page,
+  - FAQ section present,
+  - no browser console errors.
+
+Deployment:
+
+- Pending commit, push, and live URL checks.

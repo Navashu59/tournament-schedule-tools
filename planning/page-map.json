@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-05-28",
-  "page_count": 38,
+  "page_count": 47,
   "pages": [
     {
       "rank": 1,
@@ -667,6 +667,51 @@
       "date_published": "2026-06-02",
       "date_modified": "2026-06-02",
       "content_angle": "Make the page useful even without search traffic by giving organizers a clear workflow from participant list to published schedule."
+    },
+    {
+      "rank": 45,
+      "title": "How Double Elimination Works",
+      "keyword": "how double elimination works",
+      "slug": "guides-how-double-elimination-works",
+      "url": "/guides/how-double-elimination-works/",
+      "cluster": "guide",
+      "volume": 20,
+      "page_type": "guide",
+      "user_problem": "Organizers need to understand winners brackets, losers brackets, finals resets, and extra match count before using double elimination.",
+      "tool_modes": [],
+      "date_published": "2026-06-03",
+      "date_modified": "2026-06-03",
+      "content_angle": "Explain double elimination in organizer terms, with clear caveats around grand final reset rules and event-specific variants."
+    },
+    {
+      "rank": 46,
+      "title": "Round Robin Tiebreakers",
+      "keyword": "round robin tiebreakers",
+      "slug": "guides-round-robin-tiebreakers",
+      "url": "/guides/round-robin-tiebreakers/",
+      "cluster": "guide",
+      "volume": null,
+      "page_type": "guide",
+      "user_problem": "Organizers need a fair tie-breaker order for round robin standings before teams finish with the same record.",
+      "tool_modes": [],
+      "date_published": "2026-06-03",
+      "date_modified": "2026-06-03",
+      "content_angle": "Teach common tie-breaker options without claiming one universal official order across sports, leagues, or games."
+    },
+    {
+      "rank": 47,
+      "title": "Third Place Playoff",
+      "keyword": "third place playoff",
+      "slug": "guides-third-place-playoff",
+      "url": "/guides/third-place-playoff/",
+      "cluster": "guide",
+      "volume": 40,
+      "page_type": "guide",
+      "user_problem": "Organizers need to decide whether a third-place game is worth adding after the semifinals.",
+      "tool_modes": [],
+      "date_published": "2026-06-03",
+      "date_modified": "2026-06-03",
+      "content_angle": "Keep the page short and specific: explain bronze games, consolation differences, schedule impact, and when to skip it."
     }
   ]
 }
