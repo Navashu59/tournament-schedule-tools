@@ -428,4 +428,26 @@ Verification:
 
 Deployment:
 
-- Pending commit, push, and live URL checks.
+- Git commit pushed:
+
+  ```text
+  c97eeb0 feat: add tournament support page batch 3
+  ```
+
+- GitHub Actions run completed successfully:
+
+  ```text
+  26896260288 Deploy Cloudflare Pages
+  ```
+
+- Cloudflare Pages deployment URL:
+
+  ```text
+  https://f022c064.tournament-schedule-tools.pages.dev
+  ```
+
+- Live URL checks with browser user agent returned HTTP 200:
+  - `https://tournamentscheduletools.org/guides/how-double-elimination-works/`
+  - `https://tournamentscheduletools.org/guides/round-robin-tiebreakers/`
+  - `https://tournamentscheduletools.org/guides/third-place-playoff/`
+  - `https://tournamentscheduletools.org/sitemap.xml`

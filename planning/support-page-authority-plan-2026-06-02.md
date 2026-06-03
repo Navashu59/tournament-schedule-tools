@@ -93,4 +93,4 @@ Do not create duplicate pages for these existing guide intents unless GSC later 
 | Batch 1 implementation | Done 2026-06-02 | Codex + DeepSeek review |
 | Batch 2 implementation | Done 2026-06-02 | Codex + DeepSeek review |
 | Batch 3 implementation | Done 2026-06-03 | Codex + DeepSeek review |
-| Deployment | In progress 2026-06-03 | Codex |
+| Deployment | Done 2026-06-03 | Codex |
