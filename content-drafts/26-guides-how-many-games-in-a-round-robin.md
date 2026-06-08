@@ -2,7 +2,7 @@
 
 A single round robin has one matchup for every possible pair of participants. The formula is n x (n - 1) / 2, where n is the number of teams or players.
 
-## Round robin game counts
+## How to calculate round robin games
 
 - 4 teams: 6 games
 - 5 teams: 10 games
@@ -14,23 +14,23 @@ A single round robin has one matchup for every possible pair of participants. Th
 
 For a double round robin, double those totals because each pair plays twice. For example, 6 teams make 15 games in a single round robin and 30 games in a double round robin.
 
-## Why the formula works
+## Why the n x (n - 1) / 2 formula works
 
 Each participant can play n - 1 opponents. Multiplying n by n - 1 counts every matchup twice, once from each participant's side. Dividing by 2 leaves the actual number of games.
 
-## Rounds are different from games
+## What is the difference between round robin games and rounds?
 
 Games are total matchups. Rounds are the blocks of time needed to run them. Six teams need 15 games across 5 rounds. Seven teams need 21 games across 7 rounds because one team has a bye each round.
 
 Even team counts usually need n - 1 rounds. Odd team counts usually need n rounds because one participant is idle each round. That means a 5-team round robin has 10 games across 5 rounds, while a 6-team round robin has 15 games across 5 rounds.
 
-## Estimate your event time
+## How long a round robin schedule will take
 
 First calculate matches per round, then divide by courts. If eight teams create four matches per round and you have two courts, each round needs two match slots. With 25-minute matches, each round needs about 50 minutes before breaks.
 
 Add setup time, finals or placement games, and buffer time for late starts. A spreadsheet-style game count is useful, but the venue schedule is what determines whether the format is realistic.
 
-## When the count is too high
+## When to use pools instead of a full round robin
 
 If the number of games is too large, use pools, shorten match length, add courts, or switch to a bracket. Do not force a full round robin if the schedule becomes too long for the venue.
 

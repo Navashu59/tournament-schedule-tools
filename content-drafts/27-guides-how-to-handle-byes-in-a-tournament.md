@@ -2,19 +2,19 @@
 
 A bye is a scheduled round where a participant does not play. It is not automatically unfair. It becomes a problem when the rule is hidden, uneven, or placed where it creates a clear advantage.
 
-## Why byes happen
+## When a tournament needs a bye
 
 Byes appear when the participant count does not fit the format. Five teams in a round robin need one bye each round. Six teams in a single elimination bracket need two byes to fill an eight-slot bracket.
 
 For elimination brackets, calculate byes with this rule: next clean bracket size minus actual entrants. A 5-team bracket needs 3 byes, a 6-team bracket needs 2 byes, and a 12-team bracket needs 4 byes. For round robin schedules with an odd number of teams, one team rests each round.
 
-## Byes in round robin
+## How odd-team round robins rotate rest rounds
 
 In round robin, a bye means rest. The important check is distribution: each participant should receive the same number of byes when the format allows it. Also check timing, because a late bye can feel different from an early bye.
 
 Odd-team round robins should rotate the bye. With 7 teams, there are 7 rounds and each team should normally receive one bye. If one team has two byes or no byes, the schedule needs another review unless there is a known withdrawal or custom rule.
 
-## Byes in elimination brackets
+## Where byes go in a seeded bracket
 
 In a bracket, a bye usually advances a participant to the next round without playing. Seeded events often give byes to higher seeds. Casual events should explain whether byes were assigned randomly or by entered order.
 
@@ -28,7 +28,7 @@ The most common mistake is hiding byes inside a bracket image. Label them clearl
 - **9 teams, single elimination:** 7 byes are needed to fill a 16-slot bracket, so consider pools or a preliminary play-in round if that feels too bye-heavy.
 - **7 teams, round robin:** 7 rounds with 1 bye each round.
 
-## How to explain byes to players
+## How to explain tournament byes to players
 
 Tell participants why byes exist before play starts. A simple note is enough: "We have seven teams, so one team rests each round. The schedule rotates the bye." That prevents the bye from looking like a mid-event adjustment.
 
