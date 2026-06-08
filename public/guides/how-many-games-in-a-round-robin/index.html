@@ -19,7 +19,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://tournamentscheduletools.org/#organization","name":"Tournament Schedule Tools","url":"https://tournamentscheduletools.org/"},{"@type":"WebSite","@id":"https://tournamentscheduletools.org/#website","name":"Tournament Schedule Tools","url":"https://tournamentscheduletools.org/","publisher":{"@id":"https://tournamentscheduletools.org/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tournamentscheduletools.org/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://tournamentscheduletools.org/tools/"},{"@type":"ListItem","position":3,"name":"How Many Games In A Round Robin","item":"https://tournamentscheduletools.org/guides/how-many-games-in-a-round-robin/"}]},{"@type":"Article","@id":"https://tournamentscheduletools.org/guides/how-many-games-in-a-round-robin/#webpage","url":"https://tournamentscheduletools.org/guides/how-many-games-in-a-round-robin/","name":"How Many Games In A Round Robin","headline":"How Many Games In A Round Robin","description":"How Many Games In A Round Robin: a practical guide for planning fair tournaments, brackets, round robins, byes, and schedules.","isPartOf":{"@id":"https://tournamentscheduletools.org/#website"},"publisher":{"@id":"https://tournamentscheduletools.org/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://tournamentscheduletools.org/#organization","name":"Tournament Schedule Tools","url":"https://tournamentscheduletools.org/"},{"@type":"WebSite","@id":"https://tournamentscheduletools.org/#website","name":"Tournament Schedule Tools","url":"https://tournamentscheduletools.org/","publisher":{"@id":"https://tournamentscheduletools.org/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tournamentscheduletools.org/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://tournamentscheduletools.org/guides/"},{"@type":"ListItem","position":3,"name":"How Many Games In A Round Robin","item":"https://tournamentscheduletools.org/guides/how-many-games-in-a-round-robin/"}]},{"@type":"Article","@id":"https://tournamentscheduletools.org/guides/how-many-games-in-a-round-robin/#webpage","url":"https://tournamentscheduletools.org/guides/how-many-games-in-a-round-robin/","name":"How Many Games In A Round Robin","headline":"How Many Games In A Round Robin","description":"How Many Games In A Round Robin: a practical guide for planning fair tournaments, brackets, round robins, byes, and schedules.","isPartOf":{"@id":"https://tournamentscheduletools.org/#website"},"publisher":{"@id":"https://tournamentscheduletools.org/#organization"},"datePublished":"2026-05-28","dateModified":"2026-06-09"}]}</script>
 </head>
 <body>
   <header class="site-header">
@@ -27,7 +27,7 @@
       <span class="brand-mark">TS</span>
       <span>Tournament Schedule Tools</span>
     </a>
-    <nav class="site-nav" aria-label="Main navigation"><a  href="/">Home</a><a  href="/tools/">Tools</a><a  href="/tournament-schedule-maker/">Schedule Maker</a><a  href="/round-robin-generator/">Round Robin</a><a  href="/tournament-bracket-maker/">Bracket Maker</a><a  href="/guides/how-to-make-a-fair-tournament-schedule/">Fair Scheduling</a></nav>
+    <nav class="site-nav" aria-label="Main navigation"><a  href="/">Home</a><a  href="/tools/">Tools</a><a  href="/guides/">Guides</a><a  href="/tournament-schedule-maker/">Schedule Maker</a><a  href="/round-robin-generator/">Round Robin</a><a  href="/tournament-bracket-maker/">Bracket Maker</a><a  href="/guides/how-to-make-a-fair-tournament-schedule/">Fair Scheduling</a></nav>
   </header>
   <main>
     <section class="hero compact">
@@ -50,18 +50,32 @@
 <li>10 teams: 45 games</li>
 <li>12 teams: 66 games</li>
 </ul>
+<p>For a double round robin, double those totals because each pair plays twice. For example, 6 teams make 15 games in a single round robin and 30 games in a double round robin.</p>
 <h2>Why the formula works</h2>
 <p>Each participant can play n - 1 opponents. Multiplying n by n - 1 counts every matchup twice, once from each participant&#39;s side. Dividing by 2 leaves the actual number of games.</p>
 <h2>Rounds are different from games</h2>
 <p>Games are total matchups. Rounds are the blocks of time needed to run them. Six teams need 15 games across 5 rounds. Seven teams need 21 games across 7 rounds because one team has a bye each round.</p>
+<p>Even team counts usually need n - 1 rounds. Odd team counts usually need n rounds because one participant is idle each round. That means a 5-team round robin has 10 games across 5 rounds, while a 6-team round robin has 15 games across 5 rounds.</p>
 <h2>Estimate your event time</h2>
 <p>First calculate matches per round, then divide by courts. If eight teams create four matches per round and you have two courts, each round needs two match slots. With 25-minute matches, each round needs about 50 minutes before breaks.</p>
+<p>Add setup time, finals or placement games, and buffer time for late starts. A spreadsheet-style game count is useful, but the venue schedule is what determines whether the format is realistic.</p>
 <h2>When the count is too high</h2>
 <p>If the number of games is too large, use pools, shorten match length, add courts, or switch to a bracket. Do not force a full round robin if the schedule becomes too long for the venue.</p>
+<p>Pools are often the clean compromise. Instead of one 12-team round robin with 66 games, split into two 6-team pools for 30 pool games total, then run semifinals and a final. That reduces total matches while still giving teams several guaranteed games.</p>
+<h2>Quick formula table</h2>
+<ul>
+<li><strong>Single round robin games:</strong> n x (n - 1) / 2.</li>
+<li><strong>Double round robin games:</strong> n x (n - 1).</li>
+<li><strong>Even-team rounds:</strong> n - 1.</li>
+<li><strong>Odd-team rounds:</strong> n, with one bye each round.</li>
+<li><strong>Matches per round:</strong> even n is n / 2; odd n is (n - 1) / 2.</li>
+</ul>
 <h2>Quick answers</h2>
 <p><strong>How many games are in an 8-team round robin?</strong> 28 games.</p>
 <p><strong>How many games are in a 10-team round robin?</strong> 45 games.</p>
 <p><strong>Does a double round robin double the games?</strong> Yes. Each pair plays twice, so an 8-team double round robin has 56 games.</p>
+<p><strong>How many rounds are in a 7-team round robin?</strong> Seven rounds, with one team resting each round.</p>
+<p><strong>What if the round robin has too many games?</strong> Use pools, add courts, shorten match length, or switch to a bracket or hybrid pool-to-bracket format.</p>
     </article>
     <section class="link-band" aria-labelledby="related-heading">
     <h2 id="related-heading">Related planning pages</h2>

@@ -6,7 +6,7 @@ const publicDir = path.join(root, "public");
 const siteOrigin = (process.env.SITE_ORIGIN || "https://example.com").replace(/\/$/, "");
 const siteName = "Tournament Schedule Tools";
 const pages = JSON.parse(fs.readFileSync(path.join(root, "planning", "page-map.json"), "utf8")).pages;
-const validLocalUrls = new Set(["/", "/tools/", ...pages.map((page) => page.url)]);
+const validLocalUrls = new Set(["/", "/tools/", "/guides/", ...pages.map((page) => page.url)]);
 const hrefAliases = new Map([
   ["/schedule-maker/", "/tournament-schedule-maker/"],
   ["/tools/tournament-schedule-generator/", "/tournament-schedule-maker/"],
@@ -289,6 +289,7 @@ function nav(currentUrl = "") {
   const items = [
     ["/", "Home"],
     ["/tools/", "Tools"],
+    ["/guides/", "Guides"],
     ["/tournament-schedule-maker/", "Schedule Maker"],
     ["/round-robin-generator/", "Round Robin"],
     ["/tournament-bracket-maker/", "Bracket Maker"],
@@ -381,7 +382,7 @@ function schemaForPage(page, markdown) {
     },
     breadcrumbSchema([
       { name: "Home", url: "/" },
-      page.page_type === "guide" ? { name: "Guides", url: "/tools/" } : { name: "Tools", url: "/tools/" },
+      page.page_type === "guide" ? { name: "Guides", url: "/guides/" } : { name: "Tools", url: "/tools/" },
       { name: page.title, url: page.url }
     ]),
     {
@@ -428,12 +429,13 @@ function schemaForPage(page, markdown) {
 }
 
 function layout({ title, description, url, body, schema, currentUrl = "" }) {
+  const fullTitle = title === siteName ? siteName : `${title} | ${siteName}`;
   return `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${esc(title)} | ${siteName}</title>
+  <title>${esc(fullTitle)}</title>
   <meta name="description" content="${esc(description)}">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="${canonical(url)}">
@@ -603,7 +605,7 @@ function renderHome() {
     ]
   };
   return layout({
-    title: "Tournament Schedule Maker",
+    title: "Tournament Schedule Tools",
     description: "Create fair tournament brackets, round robin schedules, league fixtures, byes, court assignments, print views, and CSV exports.",
     url: "/",
     currentUrl: "/",
@@ -640,6 +642,44 @@ function renderToolsIndex() {
     description: "Browse tournament schedule makers, bracket generators, round robin pages, fixture tools, and planning guides.",
     url: "/tools/",
     currentUrl: "/tools/",
+    body,
+    schema
+  });
+}
+
+function renderGuidesIndex() {
+  const guidePages = pages.filter((p) => p.page_type === "guide");
+  const groups = [
+    ["Start Here", guidePages.filter((p) => [42, 44, 30].includes(p.rank))],
+    ["Brackets and Seeding", guidePages.filter((p) => [40, 28, 27, 29, 45, 41, 47].includes(p.rank))],
+    ["Round Robin and Pool Play", guidePages.filter((p) => [25, 26, 46, 43, 39].includes(p.rank))]
+  ];
+  const body = `<main>
+    <section class="hero compact">
+      <div>
+        <p class="eyebrow">Tournament guides</p>
+        <h1>Plan the format, rules, byes, seeds, and schedule before you publish.</h1>
+        <p>Use these guides when the tool output needs a tournament rule decision: format choice, seeded brackets, byes, round robin match counts, pool play, Swiss events, and double elimination finals.</p>
+      </div>
+    </section>
+    ${groups.map(([label, items]) => `<section class="section-wrap">
+      <h2>${esc(label)}</h2>
+      <div class="card-grid">${items.map((page) => `<a class="page-card" href="${page.url}"><span>${esc(page.keyword)}</span><strong>${esc(page.title)}</strong><p>${esc(userProblemText(page.user_problem))}</p></a>`).join("")}</div>
+    </section>`).join("")}
+  </main>`;
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "CollectionPage", "@id": `${siteOrigin}/guides/#webpage`, url: `${siteOrigin}/guides/`, name: "Tournament planning guides", description: "Tournament format, bracket, seeding, bye, round robin, pool play, Swiss, and checklist guides." },
+      breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Guides", url: "/guides/" }]),
+      { "@type": "ItemList", itemListElement: guidePages.map((p, i) => ({ "@type": "ListItem", position: i + 1, url: canonical(p.url), name: p.title })) }
+    ]
+  };
+  return layout({
+    title: "Tournament Planning Guides",
+    description: "Read practical tournament guides for bracket seeding, byes, round robin game counts, pool play, Swiss formats, double elimination, and event checklists.",
+    url: "/guides/",
+    currentUrl: "/guides/",
     body,
     schema
   });
@@ -683,6 +723,7 @@ function writeSupportFiles() {
   const urlEntries = [
     { url: "/", lastmod: "2026-05-28" },
     { url: "/tools/", lastmod: "2026-05-28" },
+    { url: "/guides/", lastmod: "2026-06-09" },
     ...pages.map((p) => ({ url: p.url, lastmod: p.date_modified || "2026-05-28" })),
     ...trustPages.map((p) => ({ url: p.url, lastmod: "2026-05-28" }))
   ];
@@ -878,7 +919,8 @@ ensureCleanDir(publicDir);
 writeAssets();
 fs.writeFileSync(path.join(publicDir, "index.html"), renderHome());
 writeFile("/tools/", renderToolsIndex());
+writeFile("/guides/", renderGuidesIndex());
 for (const page of pages) writeFile(pagePath(page), renderPage(page));
 for (const page of trustPages) writeFile(page.url, renderTrustPage(page));
 writeSupportFiles();
-console.log(`Generated ${pages.length + trustPages.length + 2} index pages at ${publicDir}`);
+console.log(`Generated ${pages.length + trustPages.length + 3} index pages at ${publicDir}`);

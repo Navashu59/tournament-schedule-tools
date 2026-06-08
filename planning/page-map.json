@@ -392,7 +392,8 @@
       "tool_modes": [
         "round_robin"
       ],
-      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
+      "date_modified": "2026-06-09"
     },
     {
       "rank": 27,
@@ -407,7 +408,8 @@
       "tool_modes": [
         "league_schedule"
       ],
-      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
+      "date_modified": "2026-06-09"
     },
     {
       "rank": 28,
@@ -422,7 +424,8 @@
       "tool_modes": [
         "single_elimination"
       ],
-      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
+      "date_modified": "2026-06-09"
     },
     {
       "rank": 29,
@@ -437,7 +440,8 @@
       "tool_modes": [
         "single_elimination"
       ],
-      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
+      "date_modified": "2026-06-09"
     },
     {
       "rank": 30,
@@ -712,6 +716,24 @@
       "date_published": "2026-06-03",
       "date_modified": "2026-06-03",
       "content_angle": "Keep the page short and specific: explain bronze games, consolation differences, schedule impact, and when to skip it."
+    },
+    {
+      "rank": 48,
+      "title": "Playoff Bracket Maker",
+      "keyword": "playoff bracket maker",
+      "slug": "playoff-bracket-maker",
+      "url": "/playoff-bracket-maker/",
+      "cluster": "format",
+      "volume": 480,
+      "page_type": "tool",
+      "user_problem": "Organizers need to turn a ranked field into a playoff bracket with seeds, byes, time slots, and a printable match list.",
+      "tool_modes": [
+        "single_elimination",
+        "double_elimination"
+      ],
+      "date_published": "2026-06-09",
+      "date_modified": "2026-06-09",
+      "content_angle": "Capture playoff bracket maker intent without copying generic bracket pages: focus on taking standings into a seeded playoff, bye placement, finals path, and publish-ready output."
     }
   ]
 }

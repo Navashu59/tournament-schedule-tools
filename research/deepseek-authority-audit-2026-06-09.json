@@ -1,0 +1,32 @@
+{
+  "status": 200,
+  "generated_at": "2026-06-08T18:34:35.691Z",
+  "response": {
+    "id": "f198b6c1-13ba-4e80-8ee0-9d24f11a57c2",
+    "object": "chat.completion",
+    "created": 1780943668,
+    "model": "deepseek-v4-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"P0\": {\n    \"site_architecture\": [\n      \"Ensure all pages are indexable and not blocked by robots.txt or noindex tags.\",\n      \"Fix any broken internal links and redirect chains.\",\n      \"Implement a clear silo structure: /tools/, /guides/, /sports/.\"\n    ],\n    \"technical\": [\n      \"Add structured data (BreadcrumbList, FAQPage, HowTo) to tool pages.\",\n      \"Improve page speed (compress images, minify CSS/JS, enable caching).\",\n      \"Ensure mobile-friendliness and responsive design.\"\n    ],\n    \"on_page\": [\n      \"Optimize title tags and meta descriptions with primary keywords (e.g., 'Bracket Generator - Free, No Signup').\",\n      \"Add H1 tags with target keywords per page.\",\n      \"Include internal links to related tools and guides.\"\n    ]\n  },\n  \"P1\": {\n    \"topic_authority\": [\n      \"Create a comprehensive 'Tournament Scheduling Guide' hub linking to all tools and guides.\",\n      \"Expand 'Round Robin Generator' page with schedule examples, tie-breaking rules, and printable formats.\",\n      \"Add 'Double Elimination Bracket' page with detailed explanation, seeding, and printable bracket.\",\n      \"Write 'Swiss System Tournament Guide' covering pairing, tie-breaks, and when to use.\",\n      \"Develop 'Playoff Bracket vs Round Robin' comparison page targeting 'tournament format' queries.\"\n    ],\n    \"avoid_cannibalization\": [\n      \"Merge 'bracket generator' and 'tournament bracket maker' into one canonical page with variants.\",\n      \"Differentiate 'league schedule maker' from 'tournament schedule maker' by audience (recurring vs single event).\",\n      \"Use canonical tags and 301 redirects for duplicate content.\"\n    ]\n  },\n  \"draft_sections\": {\n    \"seeding\": \"Explain seeding methods (random, snake, merit-based) and provide examples for 8/16/32 teams. Include a table of seeding positions for bracket fairness.\",\n    \"byes\": \"Define byes, calculate number needed (next power of 2 minus teams), and show placement in bracket. Include a diagram for 5-team bracket.\",\n    \"round_robin\": \"Describe round-robin scheduling, number of rounds (n-1), and use of circle method. Provide a 4-team schedule table and link to generator.\",\n    \"single_vs_double\": \"Compare single-elimination (fast, one loss) vs double-elimination (forgiving, more games). Include pros/cons and when to use each.\",\n    \"playoff_bracket\": \"Explain bracket structure, seeding, and progression. Show a 8-team bracket diagram with matchups and winners path.\"\n  }\n}"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 314,
+      "completion_tokens": 582,
+      "total_tokens": 896,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 314
+    },
+    "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402"
+  }
+}

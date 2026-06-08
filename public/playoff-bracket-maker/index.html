@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Playoff Bracket Maker | Tournament Schedule Tools</title>
+  <meta name="description" content="Use this playoff bracket maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://tournamentscheduletools.org/playoff-bracket-maker/">
+  <meta name="theme-color" content="#17463a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tournament Schedule Tools">
+  <meta property="og:title" content="Playoff Bracket Maker">
+  <meta property="og:description" content="Use this playoff bracket maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta property="og:url" content="https://tournamentscheduletools.org/playoff-bracket-maker/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Playoff Bracket Maker">
+  <meta name="twitter:description" content="Use this playoff bracket maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://tournamentscheduletools.org/#organization","name":"Tournament Schedule Tools","url":"https://tournamentscheduletools.org/"},{"@type":"WebSite","@id":"https://tournamentscheduletools.org/#website","name":"Tournament Schedule Tools","url":"https://tournamentscheduletools.org/","publisher":{"@id":"https://tournamentscheduletools.org/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tournamentscheduletools.org/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://tournamentscheduletools.org/tools/"},{"@type":"ListItem","position":3,"name":"Playoff Bracket Maker","item":"https://tournamentscheduletools.org/playoff-bracket-maker/"}]},{"@type":"WebPage","@id":"https://tournamentscheduletools.org/playoff-bracket-maker/#webpage","url":"https://tournamentscheduletools.org/playoff-bracket-maker/","name":"Playoff Bracket Maker","headline":"Playoff Bracket Maker","description":"Use this playoff bracket maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://tournamentscheduletools.org/#website"},"publisher":{"@id":"https://tournamentscheduletools.org/#organization"},"datePublished":"2026-06-09","dateModified":"2026-06-09"},{"@type":"WebApplication","@id":"https://tournamentscheduletools.org/playoff-bracket-maker/#app","name":"Playoff Bracket Maker","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://tournamentscheduletools.org/playoff-bracket-maker/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Tournament Schedule Tools home">
+      <span class="brand-mark">TS</span>
+      <span>Tournament Schedule Tools</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation"><a  href="/">Home</a><a  href="/tools/">Tools</a><a  href="/guides/">Guides</a><a  href="/tournament-schedule-maker/">Schedule Maker</a><a  href="/round-robin-generator/">Round Robin</a><a  href="/tournament-bracket-maker/">Bracket Maker</a><a  href="/guides/how-to-make-a-fair-tournament-schedule/">Fair Scheduling</a></nav>
+  </header>
+  <main>
+    <section class="hero compact">
+      <div>
+        <p class="eyebrow">format tool</p>
+        <h1>Playoff Bracket Maker</h1>
+        <p>Organizers need to turn a ranked field into a playoff bracket with seeds, byes, time slots, and a printable match list.</p>
+      </div>
+    </section>
+    <section class="tool-shell" data-tool data-default-mode="single_elimination">
+    <div class="tool-panel">
+      <div class="field-block">
+        <label for="participants-playoff-bracket-maker">Teams or players</label>
+        <textarea id="participants-playoff-bracket-maker" data-participants rows="8">Falcons
+Lions
+Tigers
+Sharks
+Rangers
+Wolves
+Eagles
+Panthers</textarea>
+      </div>
+      <div class="control-grid">
+        <label>Format
+          <select data-mode>
+            <option value="single_elimination">Single elimination</option>
+            <option value="double_elimination">Double elimination</option>
+            
+            
+          </select>
+        </label>
+        <label>Courts or venues
+          <input data-courts type="number" min="1" max="24" value="2">
+        </label>
+        <label>Start time
+          <input data-start type="time" value="09:00">
+        </label>
+        <label>Match length
+          <input data-length type="number" min="5" max="240" value="30">
+        </label>
+        <label>Seeding
+          <select data-seeding>
+            <option value="manual">Use entered order</option>
+            <option value="shuffle">Randomize first</option>
+          </select>
+        </label>
+      </div>
+      <div class="actions">
+        <button class="primary" data-generate type="button">Generate schedule</button>
+        <button data-copy type="button">Copy</button>
+        <button data-csv type="button">CSV</button>
+        <button data-print type="button">Print</button>
+      </div>
+      <p class="tool-note" data-status>Enter one participant per line. The tool handles byes and court assignment.</p>
+    </div>
+    <div class="result-panel" aria-live="polite">
+      <div class="result-head">
+        <h2>Generated schedule</h2>
+        <span data-summary-pill>Ready</span>
+      </div>
+      <div data-fairness class="fairness-grid"></div>
+      <div data-results class="results-table"><div class="sample-output" aria-label="8-team bracket preview">
+    <p><strong>8-team bracket preview</strong> The live tool will place byes automatically when the entrant count does not fill the bracket cleanly.</p>
+    <div class="fairness-grid static-metrics"><div class="metric"><strong>8</strong><span>Entrants</span></div><div class="metric"><strong>3</strong><span>Rounds</span></div><div class="metric"><strong>0</strong><span>Byes</span></div><div class="metric"><strong>CSV</strong><span>Export</span></div></div>
+    <table><thead><tr><th>Round</th><th>Home</th><th>Away</th><th>Court</th><th>Time</th></tr></thead><tbody><tr><td>Round 1</td><td>Falcons</td><td>Panthers</td><td>Court 1</td><td>09:00</td></tr><tr><td>Round 1</td><td>Lions</td><td>Eagles</td><td>Court 2</td><td>09:00</td></tr><tr><td>Semifinal</td><td>Winner match 1</td><td>Winner match 2</td><td>Court 1</td><td>09:30</td></tr><tr><td>Final</td><td>Winner semifinal 1</td><td>Winner semifinal 2</td><td>Court 1</td><td>10:00</td></tr></tbody></table>
+  </div></div>
+    </div>
+  </section>
+    <article class="content-body">
+      <p>Use this playoff bracket maker when the regular season, pool stage, or qualifying round is finished and you need a clear playoff path. Enter the teams in seed order, choose single or double elimination, set courts and times, then generate a bracket schedule you can review, print, copy, or export.</p>
+<h2>Start with the playoff seed list</h2>
+<p>Put seed 1 first, seed 2 second, and continue down the list. If your playoff field comes from pool play, standings, or a league table, confirm the tie-breaker order before you paste teams into the tool. A playoff bracket is much easier to defend when every seed has a visible source.</p>
+<h2>Choose single elimination or double elimination</h2>
+<p>Use single elimination when the playoff needs to finish quickly or when one loss should end a team&#39;s run. Use double elimination when the event has enough time and teams expect a second chance. Double elimination needs more rows, clearer labels, and a finals rule that everyone understands before play starts.</p>
+<h2>How playoff byes work</h2>
+<p>Playoff brackets often need byes when the field is not a clean power of two. A 6-team playoff fits into an 8-slot bracket, so two entrants advance without a first-round match. Seeded playoffs usually give those byes to the highest seeds. Casual playoffs can use a random draw, but the rule should be announced before the bracket is published.</p>
+<h2>Review the path to the final</h2>
+<p>After generating the bracket, check that top seeds are separated, byes are visible, and the final path is easy to follow. Also scan time slots and courts so one team is not asked to play back-to-back when another team has a long rest unless your event rules allow it.</p>
+<h2>Print, copy, or export the playoff bracket</h2>
+<p>Use Print for a wall sheet or score table. Use Copy when you need to paste matchups into an email or chat. Use CSV when you want to edit the bracket schedule in a spreadsheet, add officials, or track results outside the browser.</p>
+<h2>Playoff bracket maker questions organizers ask</h2>
+<p><strong>What is the best playoff bracket for 8 teams?</strong> An 8-team single elimination playoff is the simplest option: quarterfinals, semifinals, and final. If every team needs a second chance, use double elimination and plan extra time.</p>
+<p><strong>Should top seeds get byes in a playoff bracket?</strong> In a seeded playoff, yes, that is usually the cleanest rule. If the event is casual, random byes can work, but players should know that before the draw.</p>
+<p><strong>Can I make a playoff bracket from pool play results?</strong> Yes. Rank teams by the pool rules first, including tie-breakers, then paste the playoff seeds into the tool in order.</p>
+<h2>Final check before publishing</h2>
+<ul>
+<li><strong>Seed source:</strong> Standings, pool results, qualifying order, or a stated random draw.</li>
+<li><strong>Bye rule:</strong> Highest seeds, random draw, or entered order.</li>
+<li><strong>Format:</strong> Single elimination for speed, double elimination for a second chance.</li>
+<li><strong>Schedule:</strong> Court count, start time, match length, breaks, and possible back-to-back matches.</li>
+<li><strong>Output:</strong> Print once or export CSV and scan the bracket before sending it to teams.</li>
+</ul>
+    </article>
+    <section class="link-band" aria-labelledby="related-heading">
+    <h2 id="related-heading">Related planning pages</h2>
+    <div class="link-grid"><a href="/single-elimination-bracket-generator/"><strong>Single Elimination Bracket Generator</strong><span>Use this when you need a knockout bracket where one loss eliminates a team.</span></a><a href="/double-elimination-bracket-generator/"><strong>Double Elimination Bracket Generator</strong><span>Use this when you need to understand or plan a bracket where teams are eliminated after two losses.</span></a><a href="/pool-play-schedule-generator/"><strong>Pool Play Schedule Generator</strong><span>Use this when organizers need fair pool play schedules before playoffs or elimination rounds.</span></a><a href="/tournament-schedule-maker/"><strong>Tournament Schedule Maker</strong><span>Use this when you need one place to make brackets, round robin schedules, league fixtures, and printable match lists.</span></a><a href="/round-robin-generator/"><strong>Round Robin Generator</strong><span>Use this when you need each team or player to face every other participant with fair byes and clear rounds.</span></a></div>
+  </section>
+  </main>
+  <footer class="site-footer">
+    <div>
+      <strong>Tournament Schedule Tools</strong>
+      <p>Fair brackets, round robins, fixtures, byes, print views, and exports for real events.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="/about/">About</a>
+      <a href="/how-it-works/">How it works</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </footer>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

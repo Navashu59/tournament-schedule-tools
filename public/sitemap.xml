@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://tournamentscheduletools.org/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/tools/</loc><lastmod>2026-05-28</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/guides/</loc><lastmod>2026-06-09</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/tournament-schedule-maker/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/round-robin-generator/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/tournament-bracket-maker/</loc><lastmod>2026-05-28</lastmod></url>
@@ -27,10 +28,10 @@
   <url><loc>https://tournamentscheduletools.org/classroom-tournament-bracket/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/office-tournament-bracket/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/guides/how-to-make-a-round-robin-schedule/</loc><lastmod>2026-05-28</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/guides/how-many-games-in-a-round-robin/</loc><lastmod>2026-05-28</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/guides/how-to-handle-byes-in-a-tournament/</loc><lastmod>2026-05-28</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/guides/how-to-seed-a-tournament-bracket/</loc><lastmod>2026-05-28</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/guides/single-elimination-vs-double-elimination/</loc><lastmod>2026-05-28</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/guides/how-many-games-in-a-round-robin/</loc><lastmod>2026-06-09</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/guides/how-to-handle-byes-in-a-tournament/</loc><lastmod>2026-06-09</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/guides/how-to-seed-a-tournament-bracket/</loc><lastmod>2026-06-09</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/guides/single-elimination-vs-double-elimination/</loc><lastmod>2026-06-09</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/guides/how-to-make-a-fair-tournament-schedule/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/round-robin-schedule-maker/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/tournament-fixture-generator/</loc><lastmod>2026-05-28</lastmod></url>
@@ -49,6 +50,7 @@
   <url><loc>https://tournamentscheduletools.org/guides/how-double-elimination-works/</loc><lastmod>2026-06-03</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/guides/round-robin-tiebreakers/</loc><lastmod>2026-06-03</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/guides/third-place-playoff/</loc><lastmod>2026-06-03</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/playoff-bracket-maker/</loc><lastmod>2026-06-09</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/about/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/how-it-works/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/privacy/</loc><lastmod>2026-05-28</lastmod></url>
