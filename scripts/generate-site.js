@@ -5,6 +5,7 @@ const root = path.resolve(__dirname, "..");
 const publicDir = path.join(root, "public");
 const siteOrigin = (process.env.SITE_ORIGIN || "https://example.com").replace(/\/$/, "");
 const siteName = "Tournament Schedule Tools";
+const gaMeasurementId = process.env.GA_MEASUREMENT_ID || "G-FRBEHZZ2T5";
 const pages = JSON.parse(fs.readFileSync(path.join(root, "planning", "page-map.json"), "utf8")).pages;
 const validLocalUrls = new Set(["/", "/tools/", "/guides/", ...pages.map((page) => page.url)]);
 const hrefAliases = new Map([
@@ -51,7 +52,7 @@ const trustPages = [
     description: "Privacy notes for Tournament Schedule Tools.",
     body: [
       "The scheduling tools run in your browser. Participant names you enter are used to generate the schedule on the page and are not required to create an account.",
-      "If analytics or hosting logs are added after launch, they should be used to understand aggregate page performance, not to collect sensitive tournament data."
+      "The site uses Google Analytics and basic hosting logs to understand aggregate page performance, device types, referrers, and popular tools. Analytics is not used to collect sensitive tournament data or participant lists."
     ]
   },
   {
@@ -451,6 +452,8 @@ function layout({ title, description, url, body, schema, currentUrl = "" }) {
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","${gaMeasurementId}",{anonymize_ip:true});</script>
   ${jsonLd(schema)}
 </head>
 <body>
