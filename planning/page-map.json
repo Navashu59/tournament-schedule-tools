@@ -77,7 +77,8 @@
       "tool_modes": [
         "league_schedule"
       ],
-      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
+      "date_modified": "2026-06-15"
     },
     {
       "rank": 6,
@@ -425,7 +426,7 @@
         "single_elimination"
       ],
       "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
-      "date_modified": "2026-06-09"
+      "date_modified": "2026-06-15"
     },
     {
       "rank": 29,
@@ -487,7 +488,8 @@
         "league_schedule",
         "round_robin"
       ],
-      "content_angle": "Position fixtures as the practical match list for organizers who care about dates, rounds, courts, and exports."
+      "content_angle": "Position fixtures as the practical match list for organizers who care about dates, rounds, courts, and exports.",
+      "date_modified": "2026-06-15"
     },
     {
       "rank": 33,

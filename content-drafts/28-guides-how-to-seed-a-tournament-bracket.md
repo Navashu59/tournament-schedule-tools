@@ -2,19 +2,23 @@
 
 Seeding decides where teams or players start in a bracket. The goal is usually to keep the strongest entrants from meeting too early while still making the draw easy to explain.
 
+## What is seeding in a tournament bracket?
+
+Seeding for a tournament means ranking entrants before the bracket or fixture list is built. The seed order should come from a source you can explain: standings, qualifying results, ratings, a previous round, or a random draw for casual events. Once the order is set, use the bracket or [tournament fixture generator](/tournament-fixture-generator/) without reshuffling it.
+
 ## Which ranking source should decide the seeds?
 
 Use standings, previous results, ratings, qualifying times, or organizer judgment. If you do not have a ranking source, call the draw random rather than seeded.
 
 Write the source down before you build the bracket. For example: "Seeds are based on pool record, then point differential, then head-to-head." That short rule matters more than a perfect-looking bracket because it prevents arguments after teams see their path.
 
-## How to keep top seeds apart in a bracket
+## How do I seed a tournament bracket fairly?
 
 In a simple bracket, seed 1 and seed 2 should be on opposite sides. Seeds 3 and 4 should also be separated so the strongest entrants are not stacked into one path.
 
 For an 8-team bracket, the common pattern is 1 vs 8, 4 vs 5 on one side, and 2 vs 7, 3 vs 6 on the other side. For a 16-team bracket, keep the top four seeds in separate quarters where possible. Do not promise this as a universal official rule; some sports and leagues use their own bracket placement rules.
 
-## When seeded brackets need byes
+## Where do byes go in a seeded bracket?
 
 If the bracket has byes, decide whether top seeds receive them or whether byes follow the entered order. For competitive events, top seeds often receive byes. For casual events, random byes may be easier to accept.
 
@@ -26,13 +30,21 @@ Before publishing, scan the first round for obvious problems: top entrants meeti
 
 Also check rest and venue constraints. A seeded bracket can still feel unfair if one side has back-to-back matches while the other side has long breaks, or if the best seeds all play on the same court with different conditions.
 
+### How to seed a tournament bracket step by step
+
+1. Choose the ranking source before teams see the bracket.
+2. Sort entrants from seed 1 downward.
+3. Place the highest seeds apart so they cannot meet too early.
+4. Assign byes according to the rule you announced.
+5. Review Round 1 for duplicate names, unfair early matchups, and venue conflicts.
+
 ## Should a bracket be seeded or random?
 
 Use manual seeding when rank matters. Use shuffle when the event is casual. Do not mix the two unless you can explain the rule, such as seeded top four and random remaining entrants.
 
 One practical hybrid is "protect the top seeds, randomize the rest." That can work for office, classroom, or club events where a few entrants are clearly stronger but the rest of the field does not have reliable rankings.
 
-## Seed list examples
+## What are common seed list examples?
 
 - **4 teams:** 1 vs 4, 2 vs 3.
 - **8 teams:** 1 vs 8, 4 vs 5, 2 vs 7, 3 vs 6.
@@ -41,7 +53,7 @@ One practical hybrid is "protect the top seeds, randomize the rest." That can wo
 
 Use these as planning examples, then adjust if your sport, league, or tournament software has a required official seed placement.
 
-## Quick answers
+## Common Questions
 
 **What does seed 1 mean?**
 Seed 1 is the highest-ranked entrant according to the ranking method you chose.
