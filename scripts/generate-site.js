@@ -619,16 +619,38 @@ function renderHome() {
 
 function renderToolsIndex() {
   const groups = [...new Set(pages.map((p) => p.cluster))];
+  const priorityUrls = [
+    "/round-robin-generator/",
+    "/fixture-generator/",
+    "/tournament-schedule-maker/",
+    "/double-elimination-bracket-generator/",
+    "/pool-play-schedule-generator/"
+  ];
+  const priorityPages = priorityUrls.map((url) => pages.find((p) => p.url === url)).filter(Boolean);
+  const groupNotes = {
+    core: "Start here when you need the main schedule workflow: generate matchups, assign venues or courts, print, copy, or export CSV.",
+    format: "Use these when the tournament format is already decided and you need a bracket or schedule for that format.",
+    export: "Use these pages when the output needs to be printed, copied, or edited outside the browser.",
+    size: "Use fixed team-count pages when you want exact rounds, total games, and bye behavior for a specific field size.",
+    sport: "Use sport-specific pages when the event has familiar organizer constraints such as courts, tables, fields, or casual bracket rules.",
+    guide: "Use guides when you need to decide rules before generating the final schedule."
+  };
   const body = `<main>
     <section class="hero compact">
       <div>
         <p class="eyebrow">Tools and guides</p>
-        <h1>Choose the schedule page that matches your event.</h1>
-        <p>Use a core tool first, then open format, size, sport, and guide pages when you need a specific planning detail.</p>
+        <h1>Choose the tournament scheduler that matches your event.</h1>
+        <p>Start with a generator when you need a schedule now, or open a guide when you need to decide byes, match counts, seeding, or bracket format first.</p>
       </div>
+    </section>
+    <section class="section-wrap">
+      <h2>Most used tournament scheduling tools</h2>
+      <p>These pages cover the highest-intent jobs: round robin schedules, fixture lists, tournament schedules, double elimination brackets, and pool play schedules.</p>
+      <div class="card-grid">${priorityPages.map((page) => `<a class="page-card" href="${page.url}"><span>${esc(page.keyword)}</span><strong>${esc(page.title)}</strong><p>${esc(userProblemText(page.user_problem))}</p></a>`).join("")}</div>
     </section>
     ${groups.map((group) => `<section class="section-wrap">
       <h2>${esc(group)} pages</h2>
+      <p>${esc(groupNotes[group] || "Choose the page that matches the tournament job you need to solve.")}</p>
       <div class="card-grid">${pages.filter((p) => p.cluster === group).map((page) => `<a class="page-card" href="${page.url}"><span>${esc(page.page_type)}</span><strong>${esc(page.title)}</strong><p>${esc(userProblemText(page.user_problem))}</p></a>`).join("")}</div>
     </section>`).join("")}
   </main>`;
@@ -725,8 +747,8 @@ function writeAssets() {
 function writeSupportFiles() {
   const urlEntries = [
     { url: "/", lastmod: "2026-05-28" },
-    { url: "/tools/", lastmod: "2026-05-28" },
-    { url: "/guides/", lastmod: "2026-06-09" },
+    { url: "/tools/", lastmod: "2026-07-04" },
+    { url: "/guides/", lastmod: "2026-07-04" },
     ...pages.map((p) => ({ url: p.url, lastmod: p.date_modified || "2026-05-28" })),
     ...trustPages.map((p) => ({ url: p.url, lastmod: "2026-05-28" }))
   ];

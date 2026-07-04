@@ -10,6 +10,16 @@ Enter one team or player per line, choose the format that matches your event, th
 
 Round robin means every participant plays every other participant. The matchup count is n times n minus 1 divided by 2. If the participant count is odd, one team sits out each round. That bye is normal, not an error.
 
+## How do I make a round robin schedule online?
+
+Enter the teams, keep round robin selected, set courts or venues, then generate the schedule. The output gives you rounds, matchups, court or venue labels, and start times so you can review the event before printing or exporting it.
+
+If you are not sure whether a full round robin is realistic, check the match count first. Eight teams need 28 games. Ten teams need 45 games. If that is too long for the venue, consider pools or a bracket instead of forcing a full all-play-all schedule.
+
+## Can I make a printable round robin schedule?
+
+Yes. Use Print for a clean event copy, CSV for Excel or Google Sheets, and Copy when you need to paste the schedule into an email, chat, or registration message. Before printing, check that every team appears in the expected number of rounds and that byes rotate correctly for odd team counts.
+
 ## Review rounds, byes, and rest
 
 Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.

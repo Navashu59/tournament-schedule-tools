@@ -2,6 +2,12 @@
 
 A third-place playoff is a match that decides who finishes third, usually between the two semifinal losers. It can make awards and rankings clearer, but it also adds another match to the schedule.
 
+## Should a tournament include a third-place playoff?
+
+Use a third-place playoff when third place affects medals, points, seeding, qualification, or player expectations. Skip it when the result does not matter or the schedule is already tight.
+
+If you are building a bracket first, create the main path with the [Tournament Bracket Maker](/tournament-bracket-maker/) and then decide whether the semifinal losers need one more placement match.
+
 ## What a third-place playoff is
 
 In a single elimination bracket, the semifinal winners advance to the final. The semifinal losers are usually out of the title race.
@@ -55,6 +61,12 @@ Tell entrants:
 - whether warmup and rest time are included
 
 For a printable bracket, use the [Single Elimination Bracket Generator](/single-elimination-bracket-generator/) and add the third-place match as a separate placement row during organizer review.
+
+## Where should the third-place game go in the bracket schedule?
+
+The safest option is to list it before the final or on another court at the same time as the final. Running it after the final can work, but only if players and spectators are likely to stay.
+
+Tell semifinal losers before the event whether the match is required, optional, or used only for awards. A surprise bronze match after elimination is one of the easiest ways to create confusion.
 
 ## Place it before, after, or beside the final
 

@@ -2,6 +2,12 @@
 
 A single round robin has one matchup for every possible pair of participants. The formula is n x (n - 1) / 2, where n is the number of teams or players.
 
+## How many games are in a round robin? Quick answer
+
+Use n x (n - 1) / 2 for a single round robin. If you have 8 teams, the math is 8 x 7 / 2, so the schedule has 28 games. If you have 10 teams, the schedule has 45 games.
+
+Use the [Round Robin Generator](/round-robin-generator/) when you want the match list, rounds, byes, courts, and start times generated from your actual team names.
+
 ## How to calculate round robin games
 
 - 4 teams: 6 games
@@ -23,6 +29,12 @@ Each participant can play n - 1 opponents. Multiplying n by n - 1 counts every m
 Games are total matchups. Rounds are the blocks of time needed to run them. Six teams need 15 games across 5 rounds. Seven teams need 21 games across 7 rounds because one team has a bye each round.
 
 Even team counts usually need n - 1 rounds. Odd team counts usually need n rounds because one participant is idle each round. That means a 5-team round robin has 10 games across 5 rounds, while a 6-team round robin has 15 games across 5 rounds.
+
+## How many courts do I need for a round robin?
+
+Courts do not change the number of games. They change how quickly you can finish the schedule. An 8-team round robin still has 28 games whether you have one court or four courts.
+
+To estimate time, divide matches per round by available courts, then multiply by match length. Four matches in a round on two courts need two time slots. With 25-minute matches, that round needs about 50 minutes before breaks.
 
 ## How long a round robin schedule will take
 

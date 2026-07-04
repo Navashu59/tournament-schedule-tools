@@ -2,6 +2,12 @@
 
 Round robin standings are easy until two or more teams finish with the same record. A fair tournament needs a tie-breaker order before the first match, not after everyone sees the results.
 
+## What tiebreakers should a round robin use?
+
+A practical casual-event order is match record, head-to-head, point or game differential, points or games scored, fewest allowed, then a playoff or random draw only if the event allows it. Official leagues and schools may require a different order, so use their rulebook first.
+
+Use the [Round Robin Generator](/round-robin-generator/) for the match schedule, then attach the chosen tie-breaker order to the event rules before scores start coming in.
+
 ## Set the rule before play starts
 
 Tie-breakers can change who advances, who receives a seed, or who wins a group. That makes them sensitive. Publish the order before play starts so teams know how standings will be decided.

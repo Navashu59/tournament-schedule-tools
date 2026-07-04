@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="/assets/styles.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRBEHZZ2T5"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FRBEHZZ2T5",{anonymize_ip:true});</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://tournamentscheduletools.org/#organization","name":"Tournament Schedule Tools","url":"https://tournamentscheduletools.org/"},{"@type":"WebSite","@id":"https://tournamentscheduletools.org/#website","name":"Tournament Schedule Tools","url":"https://tournamentscheduletools.org/","publisher":{"@id":"https://tournamentscheduletools.org/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tournamentscheduletools.org/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://tournamentscheduletools.org/tools/"},{"@type":"ListItem","position":3,"name":"7 Team Round Robin","item":"https://tournamentscheduletools.org/7-team-round-robin/"}]},{"@type":"WebPage","@id":"https://tournamentscheduletools.org/7-team-round-robin/#webpage","url":"https://tournamentscheduletools.org/7-team-round-robin/","name":"7 Team Round Robin","headline":"7 Team Round Robin","description":"Use this 7 team round robin to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://tournamentscheduletools.org/#website"},"publisher":{"@id":"https://tournamentscheduletools.org/#organization"},"datePublished":"2026-05-28","dateModified":"2026-05-28"},{"@type":"WebApplication","@id":"https://tournamentscheduletools.org/7-team-round-robin/#app","name":"7 Team Round Robin","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://tournamentscheduletools.org/7-team-round-robin/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://tournamentscheduletools.org/#organization","name":"Tournament Schedule Tools","url":"https://tournamentscheduletools.org/"},{"@type":"WebSite","@id":"https://tournamentscheduletools.org/#website","name":"Tournament Schedule Tools","url":"https://tournamentscheduletools.org/","publisher":{"@id":"https://tournamentscheduletools.org/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tournamentscheduletools.org/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://tournamentscheduletools.org/tools/"},{"@type":"ListItem","position":3,"name":"7 Team Round Robin","item":"https://tournamentscheduletools.org/7-team-round-robin/"}]},{"@type":"WebPage","@id":"https://tournamentscheduletools.org/7-team-round-robin/#webpage","url":"https://tournamentscheduletools.org/7-team-round-robin/","name":"7 Team Round Robin","headline":"7 Team Round Robin","description":"Use this 7 team round robin to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://tournamentscheduletools.org/#website"},"publisher":{"@id":"https://tournamentscheduletools.org/#organization"},"datePublished":"2026-05-28","dateModified":"2026-07-04"},{"@type":"WebApplication","@id":"https://tournamentscheduletools.org/7-team-round-robin/#app","name":"7 Team Round Robin","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://tournamentscheduletools.org/7-team-round-robin/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]}]}</script>
 </head>
 <body>
   <header class="site-header">
@@ -103,6 +103,23 @@ Eagles</textarea>
 <p>Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.</p>
 <h2>7 Team Round Robin rounds and byes</h2>
 <p>Round robin means every participant plays every other participant. A 7-team round robin has 21 total matchups. If the participant count is odd, one team sits out each round. That bye is normal, not an error.</p>
+<h2>How many games are in a 7 team round robin?</h2>
+<p>A 7-team round robin has 21 games. Each team plays 6 games, one against every other team, and each team has one bye because the field has an odd number of teams.</p>
+<p>The schedule needs 7 rounds. Each round has 3 games and 1 bye. If you have three courts, one full round can run at the same time. If you have one court, the 21 games must run one after another, so match length matters.</p>
+<h2>7 team round robin schedule example</h2>
+<p>Use this example to check the shape of the schedule before you enter real team names:</p>
+<ul>
+<li>Round 1: 1 vs 6, 2 vs 5, 3 vs 4, 7 bye.</li>
+<li>Round 2: 7 vs 5, 1 vs 4, 2 vs 3, 6 bye.</li>
+<li>Round 3: 6 vs 4, 7 vs 3, 1 vs 2, 5 bye.</li>
+<li>Round 4: 5 vs 3, 6 vs 2, 7 vs 1, 4 bye.</li>
+<li>Round 5: 4 vs 2, 5 vs 1, 6 vs 7, 3 bye.</li>
+<li>Round 6: 3 vs 1, 4 vs 7, 5 vs 6, 2 bye.</li>
+<li>Round 7: 2 vs 7, 3 vs 6, 4 vs 5, 1 bye.</li>
+</ul>
+<p>The generated tool output will use your team names, courts, and start time. Use the example above as a quick audit: every pair should appear once, and every team should have one bye.</p>
+<h2>How do byes work with 7 teams?</h2>
+<p>One team rests in each round. That bye should rotate so no team gets two rest rounds and no team plays every round. If the bye order feels unfair for your venue, regenerate or change the entered order before publishing the final schedule.</p>
 <h2>Example 7-team setup</h2>
 <p>Paste 7 names into the participant box, keep the suggested format, set the number of courts or venues, and generate the schedule. With multiple courts, matches in the same round can run at the same time. With one court, treat the rows as a sequential order and check the total event length before announcing it.</p>
 <h2>Print or export the round robin schedule</h2>

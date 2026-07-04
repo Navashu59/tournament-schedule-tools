@@ -17,7 +17,8 @@
         "round_robin",
         "league_schedule"
       ],
-      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
+      "date_modified": "2026-07-04"
     },
     {
       "rank": 2,
@@ -32,7 +33,8 @@
       "tool_modes": [
         "round_robin"
       ],
-      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
+      "date_modified": "2026-07-04"
     },
     {
       "rank": 3,
@@ -78,7 +80,7 @@
         "league_schedule"
       ],
       "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
-      "date_modified": "2026-06-15"
+      "date_modified": "2026-07-04"
     },
     {
       "rank": 6,
@@ -108,7 +110,8 @@
       "tool_modes": [
         "double_elimination"
       ],
-      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
+      "date_modified": "2026-07-04"
     },
     {
       "rank": 8,
@@ -394,7 +397,7 @@
         "round_robin"
       ],
       "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
-      "date_modified": "2026-06-09"
+      "date_modified": "2026-07-04"
     },
     {
       "rank": 27,
@@ -410,7 +413,7 @@
         "league_schedule"
       ],
       "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
-      "date_modified": "2026-06-09"
+      "date_modified": "2026-07-04"
     },
     {
       "rank": 28,
@@ -457,7 +460,8 @@
       "tool_modes": [
         "league_schedule"
       ],
-      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules."
+      "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
+      "date_modified": "2026-07-04"
     },
     {
       "rank": 31,
@@ -505,7 +509,8 @@
         "league_schedule",
         "round_robin"
       ],
-      "content_angle": "Focus on youth leagues, recreational sports, venues, repeat matchups, and fair home/away planning."
+      "content_angle": "Focus on youth leagues, recreational sports, venues, repeat matchups, and fair home/away planning.",
+      "date_modified": "2026-07-04"
     },
     {
       "rank": 34,
@@ -567,7 +572,8 @@
       "tool_modes": [
         "round_robin"
       ],
-      "content_angle": "Show how seven participants create seven rounds, twenty-one games, and one bye per participant."
+      "content_angle": "Show how seven participants create seven rounds, twenty-one games, and one bye per participant.",
+      "date_modified": "2026-07-04"
     },
     {
       "rank": 38,
@@ -686,7 +692,7 @@
       "user_problem": "Organizers need to understand winners brackets, losers brackets, finals resets, and extra match count before using double elimination.",
       "tool_modes": [],
       "date_published": "2026-06-03",
-      "date_modified": "2026-06-03",
+      "date_modified": "2026-07-04",
       "content_angle": "Explain double elimination in organizer terms, with clear caveats around grand final reset rules and event-specific variants."
     },
     {
@@ -701,7 +707,7 @@
       "user_problem": "Organizers need a fair tie-breaker order for round robin standings before teams finish with the same record.",
       "tool_modes": [],
       "date_published": "2026-06-03",
-      "date_modified": "2026-06-03",
+      "date_modified": "2026-07-04",
       "content_angle": "Teach common tie-breaker options without claiming one universal official order across sports, leagues, or games."
     },
     {
@@ -716,7 +722,7 @@
       "user_problem": "Organizers need to decide whether a third-place game is worth adding after the semifinals.",
       "tool_modes": [],
       "date_published": "2026-06-03",
-      "date_modified": "2026-06-03",
+      "date_modified": "2026-07-04",
       "content_angle": "Keep the page short and specific: explain bronze games, consolation differences, schedule impact, and when to skip it."
     },
     {

@@ -2,6 +2,12 @@
 
 A bye is a scheduled round where a participant does not play. It is not automatically unfair. It becomes a problem when the rule is hidden, uneven, or placed where it creates a clear advantage.
 
+## How do byes work in a tournament?
+
+A bye either gives a bracket entrant a free pass to the next round or gives a round robin participant a rest round. The format matters. In a bracket, byes usually exist because the field does not fill a clean bracket size. In a round robin, byes usually exist because the field has an odd number of teams.
+
+Use the [Tournament Schedule Maker](/tournament-schedule-maker/) when you need to see the byes in the actual schedule before sharing it.
+
 ## When a tournament needs a bye
 
 Byes appear when the participant count does not fit the format. Five teams in a round robin need one bye each round. Six teams in a single elimination bracket need two byes to fill an eight-slot bracket.
@@ -13,6 +19,12 @@ For elimination brackets, calculate byes with this rule: next clean bracket size
 In round robin, a bye means rest. The important check is distribution: each participant should receive the same number of byes when the format allows it. Also check timing, because a late bye can feel different from an early bye.
 
 Odd-team round robins should rotate the bye. With 7 teams, there are 7 rounds and each team should normally receive one bye. If one team has two byes or no byes, the schedule needs another review unless there is a known withdrawal or custom rule.
+
+## What is the fairest way to assign byes?
+
+For seeded elimination brackets, give byes to the highest seeds if that is the published rule. For casual brackets, random assignment or entered order is easier to explain. For odd-team round robins, rotate the bye so every team rests once before any team rests twice.
+
+The fairest method is the one you can explain before the first match. Do not change bye placement after players have seen the bracket unless a team withdraws or the field changes.
 
 ## Where byes go in a seeded bracket
 

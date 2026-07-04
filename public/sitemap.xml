@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://tournamentscheduletools.org/</loc><lastmod>2026-05-28</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/tools/</loc><lastmod>2026-05-28</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/guides/</loc><lastmod>2026-06-09</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/tournament-schedule-maker/</loc><lastmod>2026-05-28</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/round-robin-generator/</loc><lastmod>2026-05-28</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/tools/</loc><lastmod>2026-07-04</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/guides/</loc><lastmod>2026-07-04</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/tournament-schedule-maker/</loc><lastmod>2026-07-04</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/round-robin-generator/</loc><lastmod>2026-07-04</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/tournament-bracket-maker/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/league-schedule-maker/</loc><lastmod>2026-05-28</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/fixture-generator/</loc><lastmod>2026-06-15</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/fixture-generator/</loc><lastmod>2026-07-04</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/single-elimination-bracket-generator/</loc><lastmod>2026-05-28</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/double-elimination-bracket-generator/</loc><lastmod>2026-05-28</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/double-elimination-bracket-generator/</loc><lastmod>2026-07-04</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/printable-tournament-bracket/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/bracket-generator/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/4-team-bracket/</loc><lastmod>2026-05-28</lastmod></url>
@@ -28,18 +28,18 @@
   <url><loc>https://tournamentscheduletools.org/classroom-tournament-bracket/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/office-tournament-bracket/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/guides/how-to-make-a-round-robin-schedule/</loc><lastmod>2026-05-28</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/guides/how-many-games-in-a-round-robin/</loc><lastmod>2026-06-09</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/guides/how-to-handle-byes-in-a-tournament/</loc><lastmod>2026-06-09</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/guides/how-many-games-in-a-round-robin/</loc><lastmod>2026-07-04</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/guides/how-to-handle-byes-in-a-tournament/</loc><lastmod>2026-07-04</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/guides/how-to-seed-a-tournament-bracket/</loc><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/guides/single-elimination-vs-double-elimination/</loc><lastmod>2026-06-09</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/guides/how-to-make-a-fair-tournament-schedule/</loc><lastmod>2026-05-28</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/guides/how-to-make-a-fair-tournament-schedule/</loc><lastmod>2026-07-04</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/round-robin-schedule-maker/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/tournament-fixture-generator/</loc><lastmod>2026-06-15</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/sports-schedule-maker/</loc><lastmod>2026-05-28</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/sports-schedule-maker/</loc><lastmod>2026-07-04</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/pool-play-schedule-generator/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/tournament-schedule-template/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/5-team-round-robin/</loc><lastmod>2026-05-28</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/7-team-round-robin/</loc><lastmod>2026-05-28</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/7-team-round-robin/</loc><lastmod>2026-07-04</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/9-team-round-robin/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/guides/swiss-tournament-format/</loc><lastmod>2026-06-02</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/guides/how-to-make-a-tournament-bracket/</loc><lastmod>2026-06-02</lastmod></url>
@@ -47,9 +47,9 @@
   <url><loc>https://tournamentscheduletools.org/guides/tournament-formats/</loc><lastmod>2026-06-02</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/guides/pool-play-vs-bracket-play/</loc><lastmod>2026-06-02</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/guides/tournament-checklist/</loc><lastmod>2026-06-02</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/guides/how-double-elimination-works/</loc><lastmod>2026-06-03</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/guides/round-robin-tiebreakers/</loc><lastmod>2026-06-03</lastmod></url>
-  <url><loc>https://tournamentscheduletools.org/guides/third-place-playoff/</loc><lastmod>2026-06-03</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/guides/how-double-elimination-works/</loc><lastmod>2026-07-04</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/guides/round-robin-tiebreakers/</loc><lastmod>2026-07-04</lastmod></url>
+  <url><loc>https://tournamentscheduletools.org/guides/third-place-playoff/</loc><lastmod>2026-07-04</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/playoff-bracket-maker/</loc><lastmod>2026-06-09</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/about/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://tournamentscheduletools.org/how-it-works/</loc><lastmod>2026-05-28</lastmod></url>

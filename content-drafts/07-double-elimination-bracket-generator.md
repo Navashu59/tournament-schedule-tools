@@ -10,6 +10,18 @@ Enter one team or player per line, choose the format that matches your event, th
 
 Double elimination gives entrants a second path after their first loss. The generated list separates winners-bracket matches from losers-bracket planning rows and ends with a grand final. Use it as an organizer checklist, then confirm your event's reset rule, grand-final rule, and venue timing before publishing.
 
+## How many matches are in a double elimination bracket?
+
+For a standard double elimination bracket with n entrants, plan for about 2n - 2 matches if the winners-bracket finalist wins the grand final. If your event uses an if-necessary reset game, plan for up to 2n - 1 matches.
+
+That means 8 teams usually need 14 or 15 matches, and 16 teams usually need 30 or 31 matches. The exact count can change when byes, modified finals, or shortened losers brackets are used, so treat the formula as a planning estimate and use the generated rows to check venue time.
+
+## How does the losers bracket affect the schedule?
+
+The losers bracket adds more than extra rows. It changes waiting time, court use, and how clearly players understand where to go after a loss. Before you publish, check that each losers-bracket row has a readable label, enough time exists for dependent matches, and the final rule is visible to players and staff.
+
+If the schedule is too long, compare the format with [single elimination vs double elimination](/guides/single-elimination-vs-double-elimination/) before cutting matches manually.
+
 ## Review winners and losers paths
 
 Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
@@ -17,6 +29,12 @@ Start with a rough participant list, generate once, then look for practical prob
 ## Print or export the double elimination bracket
 
 Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
+
+## Can I print or export a double elimination bracket?
+
+Yes. The generated output includes round labels, matchups, courts or venues, and start times. Use CSV when you want to adjust the bracket in a spreadsheet, or Print when you need a wall sheet for check-in, score reporting, or a tournament desk.
+
+The exported schedule is still a planning draft. Review bracket reset rules, losers-bracket labels, and back-to-back matches before sending it to players.
 
 ## Double Elimination Bracket Generator questions organizers ask
 

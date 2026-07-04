@@ -2,6 +2,12 @@
 
 Use this page when each team or player should face every other participant. The generator builds rounds, handles odd counts with byes, assigns courts and times, and gives you a schedule that can be copied, printed, or exported.
 
+## How do I make a sports schedule with fields or courts?
+
+Enter the teams, choose the schedule format, set the number of courts or fields, then generate the match list. The output assigns rounds, matchups, venues, and start times so you can check whether the event fits the space you have.
+
+Use one court or field for a sequential schedule. Use multiple courts when matches in the same round can run at the same time. Always review back-to-back games and rest time before publishing.
+
 ## Build the rotation
 
 Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
@@ -9,6 +15,12 @@ Enter one team or player per line, choose the format that matches your event, th
 ## Sports Schedule Maker rounds and byes
 
 Round robin means every participant plays every other participant. The matchup count is n times n minus 1 divided by 2. If the participant count is odd, one team sits out each round. That bye is normal, not an error.
+
+## What if teams need more than one game?
+
+Use round robin when every team should get several games. Use a bracket when the event needs a clear path to a champion. If the field is large, pool play can be more realistic than one full round robin because it gives teams multiple games without creating too many total matchups.
+
+For match counts and time estimates, start with [How Many Games In A Round Robin](/guides/how-many-games-in-a-round-robin/).
 
 ## Review rounds, byes, and rest
 

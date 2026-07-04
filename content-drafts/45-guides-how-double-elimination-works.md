@@ -2,6 +2,12 @@
 
 Double elimination gives each entrant a second chance because a team or player is usually not eliminated until a second loss. That extra fairness comes with a cost: more matches, a losers bracket, and a final rule that must be clear before the event starts.
 
+## How many losses eliminate a team in double elimination?
+
+In a standard double elimination tournament, the second loss eliminates the team or player. A first loss usually moves the entrant from the winners bracket into the losers bracket. A second loss ends the tournament run.
+
+Use the [Double Elimination Bracket Generator](/double-elimination-bracket-generator/) when you need to map that winners-bracket and losers-bracket path before the event starts.
+
 ## The basic idea
 
 In a standard double elimination tournament, entrants begin in the winners bracket. A first loss moves an entrant into the losers bracket. A second loss removes that entrant from the tournament.
@@ -35,6 +41,12 @@ The final is the part that confuses many organizers. In a strict double eliminat
 If the losers-bracket finalist wins the first final, both finalists now have one loss. Some events then play an extra "if necessary" game, often called a reset game, to decide the champion.
 
 Not every event uses that rule. Some casual events use one grand final to save time. Others use a best-of series or a modified final. The important point is to decide the final format before the bracket starts.
+
+## Do I need a bracket reset game?
+
+Use a reset game if your event is following a strict two-loss rule all the way through the final. Skip it only if your rules say the grand final is one match, a best-of series, or another modified final.
+
+Whatever you choose, publish it before the first round. The reset rule affects venue time, player expectations, and how the winners-bracket finalist understands their advantage.
 
 ## Match count and schedule impact
 
