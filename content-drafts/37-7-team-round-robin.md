@@ -16,6 +16,12 @@ A 7-team round robin has 21 games. Each team plays 6 games, one against every ot
 
 The schedule needs 7 rounds. Each round has 3 games and 1 bye. If you have three courts, one full round can run at the same time. If you have one court, the 21 games must run one after another, so match length matters.
 
+## How long does a 7-team round robin take?
+
+Start with the number of courts. With three courts, each round can run as one time block, so the event needs 7 match blocks plus warmup, breaks, and any final review time. With one court, you need 21 match blocks because each game runs in sequence.
+
+For example, 20-minute matches on one court need at least 420 minutes before breaks. The same event on three courts needs at least 140 minutes before breaks. Add buffer time if players need to move between fields, report scores, or warm up after a bye.
+
 ## 7 team round robin schedule example
 
 Use this example to check the shape of the schedule before you enter real team names:

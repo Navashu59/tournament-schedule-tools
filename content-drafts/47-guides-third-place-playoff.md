@@ -8,6 +8,12 @@ Use a third-place playoff when third place affects medals, points, seeding, qual
 
 If you are building a bracket first, create the main path with the [Tournament Bracket Maker](/tournament-bracket-maker/) and then decide whether the semifinal losers need one more placement match.
 
+## How do I schedule a third-place playoff?
+
+Schedule it as a placement match between the two semifinal losers. Add it before the final, beside the final on another court, or in a clearly labeled slot after both semifinals are complete.
+
+Before publishing, check three details: both semifinal losers have enough rest, the result affects something visible, and players know whether the match is required. If the match needs its own row in a printable event list, build the main schedule with the [Tournament Schedule Maker](/tournament-schedule-maker/) and add the bronze match during final review.
+
 ## What a third-place playoff is
 
 In a single elimination bracket, the semifinal winners advance to the final. The semifinal losers are usually out of the title race.

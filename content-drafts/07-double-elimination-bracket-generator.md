@@ -10,6 +10,12 @@ Enter one team or player per line, choose the format that matches your event, th
 
 Double elimination gives entrants a second path after their first loss. The generated list separates winners-bracket matches from losers-bracket planning rows and ends with a grand final. Use it as an organizer checklist, then confirm your event's reset rule, grand-final rule, and venue timing before publishing.
 
+## Do I need a bracket reset in double elimination?
+
+A strict double-elimination event usually gives the winners-bracket finalist one loss to give. If the losers-bracket finalist wins the first grand final, an if-necessary reset game may be used so the winner also has two losses.
+
+Not every event uses that rule. Some tournaments use one grand final for time, broadcast, or venue reasons. Decide the reset rule before play starts and put it in the schedule notes so players do not learn it at the final.
+
 ## How many matches are in a double elimination bracket?
 
 For a standard double elimination bracket with n entrants, plan for about 2n - 2 matches if the winners-bracket finalist wins the grand final. If your event uses an if-necessary reset game, plan for up to 2n - 1 matches.

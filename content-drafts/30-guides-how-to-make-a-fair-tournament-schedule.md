@@ -26,6 +26,17 @@ Scan the first two rounds and the final rounds. Those are where problems are eas
 
 If the event uses multiple courts, check whether teams move too often or whether one court has a noticeably easier path. If the event uses one court, check whether late-round players get enough rest before semifinals or finals.
 
+## What should I check before publishing a tournament schedule?
+
+Use this short review before you send the schedule to players:
+
+- every participant has the expected number of matches
+- every bye is visible and follows the announced rule
+- no team has an unreasonable back-to-back stretch
+- courts, fields, or tables are used in a way the venue can support
+- seeded teams do not meet earlier than the format allows
+- the printed or copied table tells players where to go next
+
 ## Make the output readable
 
 Each row should show round, matchup, court or venue, and time. If players cannot tell where they go next, the schedule is not ready to publish.

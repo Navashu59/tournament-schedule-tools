@@ -644,8 +644,8 @@ function renderToolsIndex() {
       </div>
     </section>
     <section class="section-wrap">
-      <h2>Most used tournament scheduling tools</h2>
-      <p>These pages cover the highest-intent jobs: round robin schedules, fixture lists, tournament schedules, double elimination brackets, and pool play schedules.</p>
+      <h2>Which tournament schedule tool should I use?</h2>
+      <p>Use the round robin generator when everyone should play everyone, the fixture generator when you need a dated match list, the tournament schedule maker when you are still choosing the format, and the double elimination generator when one loss should not remove a team.</p>
       <div class="card-grid">${priorityPages.map((page) => `<a class="page-card" href="${page.url}"><span>${esc(page.keyword)}</span><strong>${esc(page.title)}</strong><p>${esc(userProblemText(page.user_problem))}</p></a>`).join("")}</div>
     </section>
     ${groups.map((group) => `<section class="section-wrap">

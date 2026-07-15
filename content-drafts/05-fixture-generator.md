@@ -2,6 +2,12 @@
 
 Use this page when you need fixtures across rounds, weeks, courts, or venues. Add teams, choose league fixtures, then review home/away balance, time slots, and export options before sharing the schedule.
 
+## How do I make fixtures online?
+
+Enter one team or player per line, choose the fixture format, then generate the match list. The output gives you rounds, matchups, courts or venues, and time slots so you can copy, print, or export the schedule.
+
+Use fixtures when people need to know who plays whom, when they play, and where the match happens. If you are still deciding the event format, start with the [Tournament Schedule Maker](/tournament-schedule-maker/) first.
+
 ## Fixture generator for teams, venues, and time slots
 
 Use the fixture generator when you need a match list that people can follow in order. It is useful for league nights, club events, school tournaments, and small sports schedules where the organizer needs rounds, venues, and times rather than only a bracket image.
@@ -19,6 +25,8 @@ Enter one team or player per line, choose the format that matches your event, th
 ## How do I create fixtures with home and away balance?
 
 League fixtures are useful when matches happen over days or weeks instead of one bracket session. After generating the list, review whether home and away labels, venue use, and rest timing make sense for the league you are running.
+
+For a small league, scan each team's row after export. No team should be stuck with the same venue pattern, repeated back-to-back games, or a long gap that other teams do not have.
 
 ## Fixture generator vs tournament schedule generator
 

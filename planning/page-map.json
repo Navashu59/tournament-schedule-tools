@@ -80,7 +80,7 @@
         "league_schedule"
       ],
       "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
-      "date_modified": "2026-07-04"
+      "date_modified": "2026-07-15"
     },
     {
       "rank": 6,
@@ -111,7 +111,7 @@
         "double_elimination"
       ],
       "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
-      "date_modified": "2026-07-04"
+      "date_modified": "2026-07-15"
     },
     {
       "rank": 8,
@@ -461,7 +461,7 @@
         "league_schedule"
       ],
       "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
-      "date_modified": "2026-07-04"
+      "date_modified": "2026-07-15"
     },
     {
       "rank": 31,
@@ -573,7 +573,7 @@
         "round_robin"
       ],
       "content_angle": "Show how seven participants create seven rounds, twenty-one games, and one bye per participant.",
-      "date_modified": "2026-07-04"
+      "date_modified": "2026-07-15"
     },
     {
       "rank": 38,
@@ -722,7 +722,7 @@
       "user_problem": "Organizers need to decide whether a third-place game is worth adding after the semifinals.",
       "tool_modes": [],
       "date_published": "2026-06-03",
-      "date_modified": "2026-07-04",
+      "date_modified": "2026-07-15",
       "content_angle": "Keep the page short and specific: explain bronze games, consolation differences, schedule impact, and when to skip it."
     },
     {
