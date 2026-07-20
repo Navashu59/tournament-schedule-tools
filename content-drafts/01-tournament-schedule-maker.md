@@ -12,6 +12,12 @@ Use this page when you are still deciding the format. You can test a round robin
 
 Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
+## How do I create a tournament schedule with times and courts?
+
+Enter teams first, then set the number of courts or fields, the start time, and the match length before generating the final copy. The schedule should show match order, round, venue, and start time so players do not need a separate spreadsheet to understand where to go.
+
+If you are using multiple courts, check the first two rounds for overloaded courts or back-to-back matches. Fixing those issues before printing is easier than changing the schedule after players arrive.
+
 ## Review rounds, byes, and rest
 
 Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
@@ -21,6 +27,10 @@ Start with a rough participant list, generate once, then look for practical prob
 Choose round robin when every team should play every other team. Choose single elimination when the event needs to finish quickly. Choose league fixtures when matches are spread across weeks, sessions, or venues.
 
 If fairness matters more than speed, compare formats before publishing. A full round robin gives more games, but it can overload a venue. A bracket is faster, but players may be done after one loss.
+
+## Can I export the tournament schedule to Excel or Google Sheets?
+
+Yes. Use CSV export when you need to add referee names, field numbers, dates, notes, or manual venue changes. Keep the generated match order intact, then add operational columns in the spreadsheet so the published copy stays easy to audit.
 
 ## Print or export the round robin schedule
 

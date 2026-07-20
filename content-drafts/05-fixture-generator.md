@@ -22,11 +22,21 @@ A fixture list is the practical schedule people follow: match order, round or we
 
 Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
 
+## How do I make a fixture list with dates, courts, or fields?
+
+Start with the match order, then add the real venue constraints before publishing: court count, field names, start time, match length, and breaks. A fixture list is only useful if players can tell where and when they play, not just who the opponent is.
+
+If dates are spread across weeks, export the fixture list to a spreadsheet and add the date column there. Keep the generated round and matchup order intact while you make venue-specific edits.
+
 ## How do I create fixtures with home and away balance?
 
 League fixtures are useful when matches happen over days or weeks instead of one bracket session. After generating the list, review whether home and away labels, venue use, and rest timing make sense for the league you are running.
 
 For a small league, scan each team's row after export. No team should be stuck with the same venue pattern, repeated back-to-back games, or a long gap that other teams do not have.
+
+## Can I create fixtures for an odd number of teams?
+
+Yes. Odd team counts need a bye in each round. The important check is whether the bye rotates fairly, so one team does not repeatedly get the easiest rest slot. Before sharing the fixture list, scan each round and count how often every team sits out.
 
 ## Fixture generator vs tournament schedule generator
 
@@ -41,6 +51,10 @@ Start with a rough participant list, generate once, then look for practical prob
 ### How do I create a round-robin fixture list?
 
 For a round robin, every team should appear against every other team once unless your league uses home-and-away legs. Count the rounds first, then check whether courts, dates, and rest gaps are realistic. Odd team counts need a bye each round, so make sure the bye rotates instead of repeatedly helping or hurting one team.
+
+### How do I avoid duplicate fixtures?
+
+After generating, scan the team pairs rather than only the round numbers. Each pairing should appear once in a single round robin, or twice if you intentionally run home-and-away legs. Duplicate pairings usually mean the participant list had a repeated team name or the format was changed after the first draft.
 
 ## Can I export a fixture list to a spreadsheet?
 

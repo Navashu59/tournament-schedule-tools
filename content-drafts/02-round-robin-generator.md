@@ -10,6 +10,12 @@ Enter one team or player per line, choose the format that matches your event, th
 
 Round robin means every participant plays every other participant. The matchup count is n times n minus 1 divided by 2. If the participant count is odd, one team sits out each round. That bye is normal, not an error.
 
+## How many games are in a round robin tournament?
+
+Use `n x (n - 1) / 2` for a single round robin, where `n` is the number of teams or players. Six teams make 15 games, eight teams make 28 games, and ten teams make 45 games. A double round robin doubles those totals.
+
+Check the game count before you publish. A full round robin can be fair but too long for one day if you have limited courts or short venue time.
+
 ## How do I make a round robin schedule online?
 
 Enter the teams, keep round robin selected, set courts or venues, then generate the schedule. The output gives you rounds, matchups, court or venue labels, and start times so you can review the event before printing or exporting it.
@@ -19,6 +25,10 @@ If you are not sure whether a full round robin is realistic, check the match cou
 ## Can I make a printable round robin schedule?
 
 Yes. Use Print for a clean event copy, CSV for Excel or Google Sheets, and Copy when you need to paste the schedule into an email, chat, or registration message. Before printing, check that every team appears in the expected number of rounds and that byes rotate correctly for odd team counts.
+
+## Can I make a round robin with home and away games?
+
+Use a double round robin if each pair should play twice, once as home and once as away. For casual events, home/away may simply mean first-listed team, court side, or jersey color. For leagues, export to CSV and review each team's sequence so the same team is not always listed away.
 
 ## Review rounds, byes, and rest
 
