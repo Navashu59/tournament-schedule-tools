@@ -187,6 +187,9 @@ function markdownToHtml(markdown) {
 }
 
 function pageDescription(page) {
+  if (page.url === "/guides/third-place-playoff/") {
+    return "What a third-place playoff is, who plays, when to schedule the bronze-medal match, and when a consolation bracket is the better choice.";
+  }
   const base = {
     tool: `Use this ${page.keyword} to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.`,
     guide: `${page.title}: a practical guide for planning fair tournaments, brackets, round robins, byes, and schedules.`
@@ -221,21 +224,19 @@ function sampleRowsFor(page) {
   const sampleTeams = teams.slice(0, Math.max(4, Math.min(count, 8)));
   const mode = (page.tool_modes || ["single_elimination"])[0];
   if (mode === "round_robin" || page.cluster === "size") {
+    const rotation = roundRobinReferenceRows(sampleTeams);
     return {
       label: `${sampleTeams.length}-team round robin preview`,
-      note: "The live tool will regenerate this table with your teams, courts, start time, and match length.",
+      note: countMatch
+        ? `This fixed reference contains all ${count * (count - 1) / 2} matchups. The live tool regenerates it with your names, courts, start time, and match length.`
+        : "The live tool will regenerate this table with your teams, courts, start time, and match length.",
       metrics: [
-        ["Rounds", sampleTeams.length % 2 === 0 ? sampleTeams.length - 1 : sampleTeams.length],
+        ["Rounds", rotation.rounds],
+        ["Games", rotation.rows.filter((row) => row[2] !== "BYE").length],
         ["Courts", 2],
-        ["Byes", sampleTeams.length % 2 === 0 ? 0 : sampleTeams.length],
-        ["Export", "CSV"]
+        ["Byes", rotation.rows.filter((row) => row[2] === "BYE").length]
       ],
-      rows: [
-        ["Round 1", sampleTeams[0], sampleTeams.at(-1), "Court 1", "09:00"],
-        ["Round 1", sampleTeams[1], sampleTeams.at(-2), "Court 2", "09:00"],
-        ["Round 2", sampleTeams[0], sampleTeams.at(-2), "Court 1", "09:30"],
-        ["Round 2", sampleTeams.at(-1), sampleTeams.at(-3) || sampleTeams[2], "Court 2", "09:30"]
-      ]
+      rows: rotation.rows
     };
   }
   if (mode === "double_elimination") {
@@ -275,6 +276,48 @@ function sampleRowsFor(page) {
       ["Final", "Winner semifinal 1", "Winner semifinal 2", "Court 1", "10:00"]
     ]
   };
+}
+
+function roundRobinReferenceRows(teamNames) {
+  const slots = [...teamNames];
+  if (slots.length % 2) slots.push("BYE");
+  const rounds = slots.length - 1;
+  const half = slots.length / 2;
+  const rows = [];
+  for (let round = 0; round < rounds; round++) {
+    for (let index = 0; index < half; index++) {
+      const home = slots[index];
+      const away = slots[slots.length - 1 - index];
+      const hasBye = home === "BYE" || away === "BYE";
+      rows.push([
+        `Round ${round + 1}`,
+        hasBye ? (home === "BYE" ? away : home) : home,
+        hasBye ? "BYE" : away,
+        hasBye ? "Rest" : `Court ${index + 1}`,
+        hasBye ? "-" : "09:00"
+      ]);
+    }
+    slots.splice(1, 0, slots.pop());
+  }
+  return { rounds, rows };
+}
+
+function validateRoundRobinReferences() {
+  for (const count of [5, 6, 7, 8, 9, 10, 12]) {
+    const teams = Array.from({ length: count }, (_, index) => `Team ${index + 1}`);
+    const rotation = roundRobinReferenceRows(teams);
+    const games = rotation.rows.filter((row) => row[2] !== "BYE");
+    const byes = rotation.rows.filter((row) => row[2] === "BYE");
+    const pairs = new Set(games.map((row) => [row[1], row[2]].sort().join("|")));
+    const expectedGames = count * (count - 1) / 2;
+    const expectedRounds = count % 2 ? count : count - 1;
+    if (games.length !== expectedGames || pairs.size !== expectedGames || rotation.rounds !== expectedRounds) {
+      throw new Error(`Invalid ${count}-team round robin reference`);
+    }
+    if ((count % 2 && byes.length !== count) || (count % 2 === 0 && byes.length !== 0)) {
+      throw new Error(`Invalid ${count}-team bye rotation`);
+    }
+  }
 }
 
 function sampleOutputHtml(page) {
@@ -597,6 +640,13 @@ function renderHome() {
         <li>CSV, copy, and print controls are available on tool pages</li>
       </ul>
     </section>
+    <section class="section-wrap">
+      <h2>Worked schedules you can inspect before editing</h2>
+      <div class="card-grid">
+        <a class="page-card" href="/7-team-round-robin/"><span>7 teams</span><strong>7-team round robin schedule</strong><p>See all 21 games, seven rounds, and the rotating bye before replacing the sample names.</p></a>
+        <a class="page-card" href="/double-elimination-bracket-generator/"><span>two-loss format</span><strong>Double elimination bracket generator</strong><p>Plan winners-bracket and losers-bracket paths, then check the final reset rule.</p></a>
+      </div>
+    </section>
   </main>`;
   const schema = {
     "@context": "https://schema.org",
@@ -647,6 +697,7 @@ function renderToolsIndex() {
       <h2>Which tournament schedule tool should I use?</h2>
       <p>Use the round robin generator when everyone should play everyone, the fixture generator when you need a dated match list, the tournament schedule maker when you are still choosing the format, and the double elimination generator when one loss should not remove a team.</p>
       <div class="card-grid">${priorityPages.map((page) => `<a class="page-card" href="${page.url}"><span>${esc(page.keyword)}</span><strong>${esc(page.title)}</strong><p>${esc(userProblemText(page.user_problem))}</p></a>`).join("")}</div>
+      <p><a href="/7-team-round-robin/">Open the complete 7-team round robin reference</a> when you need a fixed odd-team schedule with one bye per round.</p>
     </section>
     ${groups.map((group) => `<section class="section-wrap">
       <h2>${esc(group)} pages</h2>
@@ -691,6 +742,10 @@ function renderGuidesIndex() {
       <h2>${esc(label)}</h2>
       <div class="card-grid">${items.map((page) => `<a class="page-card" href="${page.url}"><span>${esc(page.keyword)}</span><strong>${esc(page.title)}</strong><p>${esc(userProblemText(page.user_problem))}</p></a>`).join("")}</div>
     </section>`).join("")}
+    <section class="section-wrap">
+      <h2>Worked schedule references</h2>
+      <p><a href="/7-team-round-robin/">The 7-team round robin schedule</a> shows every pairing and bye. <a href="/double-elimination-bracket-generator/">The double elimination generator</a> shows how the winners and losers paths affect match order.</p>
+    </section>
   </main>`;
   const schema = {
     "@context": "https://schema.org",
@@ -941,6 +996,7 @@ function appJs() {
 }
 
 ensureCleanDir(publicDir);
+validateRoundRobinReferences();
 writeAssets();
 fs.writeFileSync(path.join(publicDir, "index.html"), renderHome());
 writeFile("/tools/", renderToolsIndex());

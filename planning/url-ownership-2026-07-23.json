@@ -1,0 +1,51 @@
+{
+  "reviewed": "2026-07-23",
+  "policy": "No redirect is approved by this file. Candidate mappings require query, SERP, backlink, and owner-index validation.",
+  "protected": [
+    "/fixture-generator/",
+    "/tournament-schedule-maker/",
+    "/round-robin-generator/",
+    "/tournament-bracket-maker/",
+    "/double-elimination-bracket-generator/",
+    "/7-team-round-robin/",
+    "/guides/third-place-playoff/",
+    "/guides/how-to-make-a-fair-tournament-schedule/",
+    "/guides/round-robin-tiebreakers/",
+    "/guides/how-double-elimination-works/",
+    "/guides/how-many-games-in-a-round-robin/",
+    "/guides/how-to-handle-byes-in-a-tournament/",
+    "/guides/how-to-seed-a-tournament-bracket/"
+  ],
+  "ownerCandidates": {
+    "schedule": ["/tournament-schedule-maker/", "/league-schedule-maker/", "/fixture-generator/"],
+    "roundRobin": ["/round-robin-generator/"],
+    "bracket": ["/tournament-bracket-maker/"],
+    "doubleElimination": ["/double-elimination-bracket-generator/"]
+  },
+  "redirectCandidatesPendingValidation": [
+    ["/tournament-fixture-generator/", "/fixture-generator/"],
+    ["/round-robin-schedule-maker/", "/round-robin-generator/"],
+    ["/bracket-generator/", "/tournament-bracket-maker/"],
+    ["/playoff-bracket-maker/", "/tournament-bracket-maker/"]
+  ],
+  "reviewGroups": {
+    "teamCount": [
+      "/5-team-round-robin/",
+      "/6-team-round-robin/",
+      "/7-team-round-robin/",
+      "/8-team-round-robin/",
+      "/9-team-round-robin/",
+      "/10-team-round-robin/",
+      "/12-team-round-robin/"
+    ],
+    "sportAndUseCase": [
+      "/pickleball-round-robin-generator/",
+      "/cornhole-bracket-maker/",
+      "/ping-pong-bracket-maker/",
+      "/esports-bracket-maker/",
+      "/chess-tournament-schedule-maker/",
+      "/classroom-tournament-bracket/",
+      "/office-tournament-bracket/"
+    ]
+  }
+}

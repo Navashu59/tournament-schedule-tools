@@ -1,118 +1,57 @@
 # Third Place Playoff
 
-A third-place playoff is a match that decides who finishes third, usually between the two semifinal losers. It can make awards and rankings clearer, but it also adds another match to the schedule.
+A third-place playoff is one match between the two semifinal losers. It decides third and fourth place and is also called a bronze-medal match. It is not the same as a consolation bracket, which gives several eliminated entrants additional games.
 
-## Quick answer: should you add a third-place game?
+## Should a tournament have a third-place playoff?
 
-Add a third-place playoff when bronze medals, points, seeding, qualification, or official placement matters. Skip it when third place has no consequence, the venue time is tight, or players are likely to leave after losing a semifinal.
+Add the match when third place affects medals, points, qualification, seeding, or an official final ranking. It can also be worthwhile when players have traveled and the event promises a placement game.
 
-For most school, club, and casual brackets, the decision is practical: if the match gives players a meaningful final placement and fits the schedule, include it from the start. If it only delays the final, leave it out.
+Skip it when third place has no consequence, venue time is tight, or semifinal losers are unlikely to stay. If guaranteed games are the goal, compare the available options in [Tournament Formats](/guides/tournament-formats/) instead of adding one late match by default.
 
-## Should a tournament include a third-place playoff?
+## Who plays in the third-place game?
 
-Use a third-place playoff when third place affects medals, points, seeding, qualification, or player expectations. Skip it when the result does not matter or the schedule is already tight.
+The two semifinal losers play each other. The winner finishes third and the loser finishes fourth.
 
-If you are building a bracket first, create the main path with the [Tournament Bracket Maker](/tournament-bracket-maker/) and then decide whether the semifinal losers need one more placement match.
+Show that path explicitly in the bracket or schedule. If the bracket layout has no connector for the extra game, add a separate row labeled “Third-place game: Semifinal loser 1 vs Semifinal loser 2.”
 
-## How do I schedule a third-place playoff?
+## Is a bronze-medal match different from a third-place playoff?
 
-Schedule it as a placement match between the two semifinal losers. Add it before the final, beside the final on another court, or in a clearly labeled slot after both semifinals are complete.
+Usually, no. “Bronze-medal match” is common in medal events, while “third-place playoff,” “third-place game,” and “placement match” are common in tournament schedules. The format is the same: one extra match between the semifinal losers.
 
-Before publishing, check three details: both semifinal losers have enough rest, the result affects something visible, and players know whether the match is required. If the match needs its own row in a printable event list, build the main schedule with the [Tournament Schedule Maker](/tournament-schedule-maker/) and add the bronze match during final review.
+## What is the difference between a third-place game and a consolation bracket?
 
-## What is the difference between a bronze medal match and a third-place playoff?
+A third-place game decides only third and fourth place. A [Consolation Bracket](/guides/consolation-bracket/) may include several entrants and multiple rounds after losses in the main bracket.
 
-They are usually the same match. "Bronze medal match" is common in medal events, while "third-place playoff" is common in brackets and tournament schedules. In both cases, the two semifinal losers play one extra match to decide third and fourth place.
+Use one placement game when only bronze or third place matters. Use a consolation format when the event wants to guarantee more playing time across a larger part of the field.
 
-If your event does not award medals, call it a third-place game or placement match so players understand why it exists.
+## When should the third-place playoff be scheduled?
 
-## What a third-place playoff is
+Schedule it only after both semifinals are complete. Three common options are:
 
-In a single elimination bracket, the semifinal winners advance to the final. The semifinal losers are usually out of the title race.
+- **Before the final:** keeps the championship match as the last event of the day.
+- **Beside the final:** saves time when another court or table is available.
+- **After the final:** works only when the placement is important enough that players and spectators will stay.
 
-A third-place playoff gives those two semifinal losers one more match. The winner finishes third, and the loser finishes fourth.
+Allow both semifinal losers enough recovery time. Do not place the bronze match immediately after one semifinal if the other player receives a much longer rest.
 
-Use the [Tournament Bracket Maker](/tournament-bracket-maker/) for the main bracket, then decide whether the extra placement match is worth scheduling.
+## How do I add the bronze match to a tournament schedule?
 
-## How it differs from a consolation bracket
+Build the main path with the [Tournament Bracket Maker](/tournament-bracket-maker/), then add one placement row after both semifinals. Use the [Tournament Schedule Maker](/tournament-schedule-maker/) when the match also needs a court and time slot.
 
-A third-place playoff is one placement game. A consolation bracket is broader and may include several losing entrants over multiple rounds.
+Before publishing, confirm:
 
-Use a third-place playoff when you only need to decide bronze or third place. Use a [Consolation Bracket](/guides/consolation-bracket/) when you want more teams or players to keep playing after elimination.
+- who advances into the match;
+- whether participation is required or optional;
+- what the result changes;
+- how much rest each semifinal loser receives;
+- whether the venue has time and space for it.
 
-## When to add one
+## What happens if a team declines the third-place game?
 
-A third-place game is useful when:
+Set the policy before the event. The rules should say whether the other team receives third place, whether both semifinal losers share the same placement, or whether the match is simply removed. Avoid inventing the rule after one side has already left.
 
-- medals, trophies, points, or rankings include third place
-- semifinal losers have traveled and expect another match
-- spectators or participants value a bronze match
-- the event has enough court, field, table, or station time
-- playoff seeding or future qualification depends on third place
+## How should the bracket label semifinal losers?
 
-It can also help youth, school, and club events feel more complete when only two teams reach the final.
+Use direct labels such as “Loser SF1” and “Loser SF2,” then connect both to “Third-place game.” Keep this path visually separate from the championship final so players do not mistake it for another elimination round.
 
-## When to skip it
-
-Skip the match when time is tight or when the result does not matter. A tired third-place game at the end of a long day may not improve the event.
-
-It may also be unnecessary when:
-
-- the event already has consolation matches
-- final placement below second does not matter
-- semifinals and finals already fill the venue schedule
-- players may leave after elimination
-- the bracket uses double elimination or another format where lower-bracket results already define some placement rules
-
-If guaranteed games are the real goal, compare formats in [Tournament Formats](/guides/tournament-formats/) before adding one more match.
-
-## Schedule and communicate it clearly
-
-If you add a third-place playoff, place it on the schedule from the start. Do not surprise semifinal losers after they believe they are finished.
-
-Tell entrants:
-
-- who plays in the third-place game
-- when it will happen
-- whether it affects awards or standings
-- whether it is required or optional
-- whether warmup and rest time are included
-
-For a printable bracket, use the [Single Elimination Bracket Generator](/single-elimination-bracket-generator/) and add the third-place match as a separate placement row during organizer review.
-
-## Where should the third-place game go in the bracket schedule?
-
-The safest option is to list it before the final or on another court at the same time as the final. Running it after the final can work, but only if players and spectators are likely to stay.
-
-Tell semifinal losers before the event whether the match is required, optional, or used only for awards. A surprise bronze match after elimination is one of the easiest ways to create confusion.
-
-## Place it before, after, or beside the final
-
-The easiest timing depends on venue space and audience goals.
-
-Run it before the final when you want the championship match to be the last event of the day. Run it beside the final only if another court or table is available and both matches can be followed properly. Run it after the final only when the third-place result is important enough that players and spectators will stay.
-
-For casual events, decide whether the match is required or optional. If it is optional, also decide how third and fourth place will be recorded if one side leaves or declines to play.
-
-## What should the bracket show for semifinal losers?
-
-Show both semifinal losers flowing into a clearly labeled third-place game, separate from the championship final. If your bracket tool does not draw that extra connector, list the match as a placement row in the schedule: "Third-place game: Semifinal loser 1 vs Semifinal loser 2."
-
-That label matters because players should not have to infer whether they are eliminated or still scheduled to play.
-
-## Common Questions
-
-**Who plays in a third-place playoff?**
-Usually the two semifinal losers play for third place.
-
-**Is a third-place playoff the same as a consolation bracket?**
-No. A third-place playoff is one placement match. A consolation bracket can include more entrants and several rounds.
-
-**Does every tournament need a third-place game?**
-No. Add it only when third place matters and the schedule has enough time.
-
-**Can the third-place game happen before the final?**
-Yes, if the venue schedule allows it. Some organizers place it before the final; others run it on another court at the same time.
-
-**Which page should I use first?**
-Start with [How To Make A Tournament Bracket](/guides/how-to-make-a-tournament-bracket/), then decide whether the third-place match belongs in your schedule.
+For a printable event sheet, generate the main bracket with the [Single Elimination Bracket Generator](/single-elimination-bracket-generator/) and list the third-place game as its own placement row during organizer review.
