@@ -819,6 +819,17 @@ Sitemap: ${siteOrigin}/sitemap.xml
   if (siteOrigin === "https://tournamentscheduletools.org") {
     fs.writeFileSync(path.join(publicDir, "_redirects"), `https://www.tournamentscheduletools.org/* https://tournamentscheduletools.org/:splat 301\n`);
   }
+  fs.writeFileSync(path.join(publicDir, "_worker.js"), `export default {
+  fetch(request, env) {
+    const url = new URL(request.url);
+    if (url.hostname === "www.tournamentscheduletools.org") {
+      url.hostname = "tournamentscheduletools.org";
+      return Response.redirect(url.toString(), 301);
+    }
+    return env.ASSETS.fetch(request);
+  }
+};
+`);
   fs.writeFileSync(path.join(publicDir, "404.html"), layout({
     title: "Page Not Found",
     description: "The page could not be found. Open the tools index to find a tournament scheduler or guide.",
