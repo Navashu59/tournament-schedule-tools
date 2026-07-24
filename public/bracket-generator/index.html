@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bracket Generator | Tournament Schedule Tools</title>
   <meta name="description" content="Use this bracket generator to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="noindex,follow">
   <link rel="canonical" href="https://tournamentscheduletools.org/bracket-generator/">
   <meta name="theme-color" content="#17463a">
   <meta property="og:type" content="website">
@@ -39,7 +39,7 @@
         <p>Use this when you need a generic bracket generator but benefit from format guidance and export options.</p>
       </div>
     </section>
-    <section class="tool-shell" data-tool data-default-mode="single_elimination">
+    <section class="tool-shell" data-audit-exclude data-tool data-default-mode="single_elimination">
     <div class="tool-panel">
       <div class="field-block">
         <label for="participants-bracket-generator">Teams or players</label>
@@ -108,22 +108,9 @@ Panthers</textarea>
 <p>Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.</p>
 <h2>Print or export the bracket</h2>
 <p>Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.</p>
-<h2>Bracket Generator questions organizers ask</h2>
-<p><strong>What happens when the team count is not a power of two?</strong> The bracket needs byes to fill the next clean bracket size. Review who receives those byes before publishing.</p>
-<p><strong>Should I use manual seeding or shuffle?</strong> Use manual seeding when ranking matters. Use shuffle for casual draws.</p>
-<p><strong>What should I check first?</strong> Check seed order, first-round matchups, byes, and whether the path to the final is easy to follow.</p>
-<h2>How to read the generated output</h2>
-<p>The preview above shows the first matches and the path toward later rounds. After entering your teams, check that top seeds do not meet too early and that byes are visible before you print.</p>
-<h2>Final review before you publish</h2>
-<p>Run this review before you share the output:</p>
-<ul>
-<li><strong>Format:</strong> The bracket should make seed order, byes, and the path to the final easy to understand.</li>
-<li><strong>Names:</strong> Remove duplicates and fix spelling before generating the final copy.</li>
-<li><strong>Venue:</strong> Check court count, start time, match length, breaks, and back-to-back matches.</li>
-<li><strong>Publishing:</strong> Print once or export CSV and scan the table before sending it to players.</li>
-</ul>
     </article>
-    <section class="link-band" aria-labelledby="related-heading">
+
+    <section class="link-band" data-audit-exclude aria-labelledby="related-heading">
     <h2 id="related-heading">Related planning pages</h2>
     <div class="link-grid"><a href="/tournament-schedule-maker/"><strong>Tournament Schedule Maker</strong><span>Use this when you need one place to make brackets, round robin schedules, league fixtures, and printable match lists.</span></a><a href="/round-robin-generator/"><strong>Round Robin Generator</strong><span>Use this when you need each team or player to face every other participant with fair byes and clear rounds.</span></a><a href="/tournament-bracket-maker/"><strong>Tournament Bracket Maker</strong><span>Use this when you need a quick elimination bracket with seeds, byes, print, and export.</span></a></div>
   </section>

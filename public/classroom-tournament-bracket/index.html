@@ -39,18 +39,18 @@
         <p>Teachers need quick classroom brackets for games and review activities.</p>
       </div>
     </section>
-    <section class="tool-shell" data-tool data-default-mode="single_elimination">
+    <section class="tool-shell" data-audit-exclude data-tool data-default-mode="single_elimination">
     <div class="tool-panel">
       <div class="field-block">
         <label for="participants-classroom-tournament-bracket">Teams or players</label>
-        <textarea id="participants-classroom-tournament-bracket" data-participants rows="8">Falcons
-Lions
-Tigers
-Sharks
-Rangers
-Wolves
-Eagles
-Panthers</textarea>
+        <textarea id="participants-classroom-tournament-bracket" data-participants rows="8">Team Red
+Team Blue
+Team Green
+Team Gold
+Table 1
+Table 2
+Table 3
+Table 4</textarea>
       </div>
       <div class="control-grid">
         <label>Format
@@ -65,10 +65,10 @@ Panthers</textarea>
           <input data-courts type="number" min="1" max="24" value="2">
         </label>
         <label>Start time
-          <input data-start type="time" value="09:00">
+          <input data-start type="time" value="13:00">
         </label>
         <label>Match length
-          <input data-length type="number" min="5" max="240" value="30">
+          <input data-length type="number" min="5" max="240" value="10">
         </label>
         <label>Seeding
           <select data-seeding>
@@ -83,7 +83,7 @@ Panthers</textarea>
         <button data-csv type="button">CSV</button>
         <button data-print type="button">Print</button>
       </div>
-      <p class="tool-note" data-status>Enter one participant per line. The tool handles byes and court assignment.</p>
+      <p class="tool-note" data-status>Use venues as activity stations. Short rounds work best when instructions and tie rules are explained before the timer starts.</p>
     </div>
     <div class="result-panel" aria-live="polite">
       <div class="result-head">
@@ -94,7 +94,7 @@ Panthers</textarea>
       <div data-results class="results-table"><div class="sample-output" aria-label="8-team bracket preview">
     <p><strong>8-team bracket preview</strong> The live tool will place byes automatically when the entrant count does not fill the bracket cleanly.</p>
     <div class="fairness-grid static-metrics"><div class="metric"><strong>8</strong><span>Entrants</span></div><div class="metric"><strong>3</strong><span>Rounds</span></div><div class="metric"><strong>0</strong><span>Byes</span></div><div class="metric"><strong>CSV</strong><span>Export</span></div></div>
-    <table><thead><tr><th>Round</th><th>Home</th><th>Away</th><th>Court</th><th>Time</th></tr></thead><tbody><tr><td>Round 1</td><td>Falcons</td><td>Panthers</td><td>Court 1</td><td>09:00</td></tr><tr><td>Round 1</td><td>Lions</td><td>Eagles</td><td>Court 2</td><td>09:00</td></tr><tr><td>Semifinal</td><td>Winner match 1</td><td>Winner match 2</td><td>Court 1</td><td>09:30</td></tr><tr><td>Final</td><td>Winner semifinal 1</td><td>Winner semifinal 2</td><td>Court 1</td><td>10:00</td></tr></tbody></table>
+    <table><thead><tr><th>Round</th><th>Home</th><th>Away</th><th>Court</th><th>Time</th></tr></thead><tbody><tr><td>Round 1</td><td>Team Red</td><td>Table 4</td><td>Court 1</td><td>09:00</td></tr><tr><td>Round 1</td><td>Team Blue</td><td>Table 3</td><td>Court 2</td><td>09:00</td></tr><tr><td>Semifinal</td><td>Winner match 1</td><td>Winner match 2</td><td>Court 1</td><td>09:30</td></tr><tr><td>Final</td><td>Winner semifinal 1</td><td>Winner semifinal 2</td><td>Court 1</td><td>10:00</td></tr></tbody></table>
   </div></div>
     </div>
   </section>
@@ -110,22 +110,9 @@ Panthers</textarea>
 <p>Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.</p>
 <h2>Print or export the bracket</h2>
 <p>Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.</p>
-<h2>Classroom Tournament Bracket questions organizers ask</h2>
-<p><strong>What happens when the team count is not a power of two?</strong> The bracket needs byes to fill the next clean bracket size. Review who receives those byes before publishing.</p>
-<p><strong>Should I use manual seeding or shuffle?</strong> Use manual seeding when ranking matters. Use shuffle for casual draws.</p>
-<p><strong>What should I check first?</strong> Check seed order, first-round matchups, byes, and whether the path to the final is easy to follow.</p>
-<h2>How to read the generated output</h2>
-<p>The preview above shows the first matches and the path toward later rounds. After entering your teams, check that top seeds do not meet too early and that byes are visible before you print.</p>
-<h2>Final review before you publish</h2>
-<p>Run this review before you share the output:</p>
-<ul>
-<li><strong>Format:</strong> The bracket should make seed order, byes, and the path to the final easy to understand.</li>
-<li><strong>Names:</strong> Remove duplicates and fix spelling before generating the final copy.</li>
-<li><strong>Venue:</strong> Check court count, start time, match length, breaks, and back-to-back matches.</li>
-<li><strong>Publishing:</strong> Print once or export CSV and scan the table before sending it to players.</li>
-</ul>
     </article>
-    <section class="link-band" aria-labelledby="related-heading">
+<section class="section-wrap"><h2>How do I fit a classroom bracket into one lesson?</h2><p>Subtract setup and cleanup first, then divide the remaining time into short match blocks. Keep a visible waiting task for teams that receive a bye.</p><h3>What makes a classroom bracket easier to supervise?</h3><p>Use fewer simultaneous stations than the number of adults available, publish the tie rule, and avoid elimination if early exits would leave students idle.</p></section>
+    <section class="link-band" data-audit-exclude aria-labelledby="related-heading">
     <h2 id="related-heading">Related planning pages</h2>
     <div class="link-grid"><a href="/pickleball-round-robin-generator/"><strong>Pickleball Round Robin Generator</strong><span>Use this when pickleball organizers need court rotation, byes, and reduced repeat partners or opponents.</span></a><a href="/esports-bracket-maker/"><strong>Esports Bracket Maker</strong><span>Use this when esports organizers need simple seeded brackets for small tournaments.</span></a><a href="/cornhole-bracket-maker/"><strong>Cornhole Bracket Maker</strong><span>Use this when cornhole organizers need printable brackets and match lists.</span></a><a href="/tournament-schedule-maker/"><strong>Tournament Schedule Maker</strong><span>Use this when you need one place to make brackets, round robin schedules, league fixtures, and printable match lists.</span></a><a href="/round-robin-generator/"><strong>Round Robin Generator</strong><span>Use this when you need each team or player to face every other participant with fair byes and clear rounds.</span></a></div>
   </section>

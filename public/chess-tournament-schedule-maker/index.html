@@ -39,18 +39,18 @@
         <p>Chess organizers need pairings, rounds, and printable fixture lists.</p>
       </div>
     </section>
-    <section class="tool-shell" data-tool data-default-mode="league_schedule">
+    <section class="tool-shell" data-audit-exclude data-tool data-default-mode="league_schedule">
     <div class="tool-panel">
       <div class="field-block">
         <label for="participants-chess-tournament-schedule-maker">Teams or players</label>
-        <textarea id="participants-chess-tournament-schedule-maker" data-participants rows="8">Falcons
-Lions
-Tigers
-Sharks
-Rangers
-Wolves
-Eagles
-Panthers</textarea>
+        <textarea id="participants-chess-tournament-schedule-maker" data-participants rows="8">Board 1 Seed
+Knight Club
+Open File
+Passed Pawn
+Endgame
+Kingside
+Queenside
+Time Control</textarea>
       </div>
       <div class="control-grid">
         <label>Format
@@ -62,13 +62,13 @@ Panthers</textarea>
           </select>
         </label>
         <label>Courts or venues
-          <input data-courts type="number" min="1" max="24" value="2">
+          <input data-courts type="number" min="1" max="24" value="4">
         </label>
         <label>Start time
           <input data-start type="time" value="09:00">
         </label>
         <label>Match length
-          <input data-length type="number" min="5" max="240" value="30">
+          <input data-length type="number" min="5" max="240" value="75">
         </label>
         <label>Seeding
           <select data-seeding>
@@ -83,7 +83,7 @@ Panthers</textarea>
         <button data-csv type="button">CSV</button>
         <button data-print type="button">Print</button>
       </div>
-      <p class="tool-note" data-status>Enter one participant per line. The tool handles byes and court assignment.</p>
+      <p class="tool-note" data-status>Each venue is a board. Set match length from the time control plus setup and result-entry time.</p>
     </div>
     <div class="result-panel" aria-live="polite">
       <div class="result-head">
@@ -94,7 +94,7 @@ Panthers</textarea>
       <div data-results class="results-table"><div class="sample-output" aria-label="League fixture preview">
     <p><strong>League fixture preview</strong> Use league fixtures when matches are spread across dates instead of one short bracket session.</p>
     <div class="fairness-grid static-metrics"><div class="metric"><strong>4</strong><span>Fixtures</span></div><div class="metric"><strong>2</strong><span>Rounds</span></div><div class="metric"><strong>2</strong><span>Venues</span></div><div class="metric"><strong>CSV</strong><span>Export</span></div></div>
-    <table><thead><tr><th>Round</th><th>Home</th><th>Away</th><th>Court</th><th>Time</th></tr></thead><tbody><tr><td>Week 1</td><td>Falcons</td><td>Lions</td><td>Venue 1</td><td>09:00</td></tr><tr><td>Week 1</td><td>Tigers</td><td>Sharks</td><td>Venue 2</td><td>09:00</td></tr><tr><td>Week 2</td><td>Falcons</td><td>Tigers</td><td>Venue 1</td><td>09:30</td></tr><tr><td>Week 2</td><td>Lions</td><td>Sharks</td><td>Venue 2</td><td>09:30</td></tr></tbody></table>
+    <table><thead><tr><th>Round</th><th>Home</th><th>Away</th><th>Court</th><th>Time</th></tr></thead><tbody><tr><td>Week 1</td><td>Board 1 Seed</td><td>Knight Club</td><td>Venue 1</td><td>09:00</td></tr><tr><td>Week 1</td><td>Open File</td><td>Passed Pawn</td><td>Venue 2</td><td>09:00</td></tr><tr><td>Week 2</td><td>Board 1 Seed</td><td>Open File</td><td>Venue 1</td><td>09:30</td></tr><tr><td>Week 2</td><td>Knight Club</td><td>Passed Pawn</td><td>Venue 2</td><td>09:30</td></tr></tbody></table>
   </div></div>
     </div>
   </section>
@@ -110,22 +110,9 @@ Panthers</textarea>
 <p>Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.</p>
 <h2>Export the fixture list</h2>
 <p>Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.</p>
-<h2>Chess Tournament Schedule Maker questions organizers ask</h2>
-<p><strong>Is this a bracket or a fixture list?</strong> It is a fixture list. Use it when matches happen across dates, weeks, or sessions rather than a single elimination path.</p>
-<p><strong>Can I edit it in a spreadsheet?</strong> Yes. Export CSV when you need venue-specific changes, date edits, or manual referee assignments.</p>
-<p><strong>What should I check first?</strong> Check repeated opponents, venue availability, and whether a team has an impossible rest pattern.</p>
-<h2>How to read the generated output</h2>
-<p>The preview above is closer to a fixture list than a bracket. After entering teams, check dates or time slots in order, then export CSV if you need to make venue-specific edits in a spreadsheet.</p>
-<h2>Final review before you publish</h2>
-<p>Run this review before you share the output:</p>
-<ul>
-<li><strong>Format:</strong> Each team should get a clear sequence of fixtures with no impossible venue or time conflicts.</li>
-<li><strong>Names:</strong> Remove duplicates and fix spelling before generating the final copy.</li>
-<li><strong>Venue:</strong> Check court count, start time, match length, breaks, and back-to-back matches.</li>
-<li><strong>Publishing:</strong> Print once or export CSV and scan the table before sending it to players.</li>
-</ul>
     </article>
-    <section class="link-band" aria-labelledby="related-heading">
+<section class="section-wrap"><h2>How does the chess time control change the schedule?</h2><p>Build the slot from both players' clock time, any increment, pairing announcements, and result entry. A rapid round and a classical round should not share the same default duration.</p><h3>What is missing from a simple chess schedule?</h3><p>This tool creates round timing and pairings, but it does not calculate Swiss-system standings or tie-breaks. Use official tournament software when those rules are required.</p></section>
+    <section class="link-band" data-audit-exclude aria-labelledby="related-heading">
     <h2 id="related-heading">Related planning pages</h2>
     <div class="link-grid"><a href="/pickleball-round-robin-generator/"><strong>Pickleball Round Robin Generator</strong><span>Use this when pickleball organizers need court rotation, byes, and reduced repeat partners or opponents.</span></a><a href="/esports-bracket-maker/"><strong>Esports Bracket Maker</strong><span>Use this when esports organizers need simple seeded brackets for small tournaments.</span></a><a href="/cornhole-bracket-maker/"><strong>Cornhole Bracket Maker</strong><span>Use this when cornhole organizers need printable brackets and match lists.</span></a><a href="/tournament-schedule-maker/"><strong>Tournament Schedule Maker</strong><span>Use this when you need one place to make brackets, round robin schedules, league fixtures, and printable match lists.</span></a><a href="/round-robin-generator/"><strong>Round Robin Generator</strong><span>Use this when you need each team or player to face every other participant with fair byes and clear rounds.</span></a></div>
   </section>

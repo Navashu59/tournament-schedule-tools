@@ -1,0 +1,37 @@
+{
+  "similarityThreshold": 0.78,
+  "minimumWords": 140,
+  "paragraphMinChars": 100,
+  "maxRepeatedParagraphPages": 3,
+  "maxRepeatedHeadingPages": 8,
+  "ignoredHeadings": [
+    "^Related planning pages$",
+    "^Generated schedule$",
+    "^Build the rotation$",
+    "^Print or export the round robin schedule$",
+    "^Set the bracket entrants$",
+    "^Print or export the bracket$",
+    "^Review seeds, byes, and the path to the final$"
+  ],
+  "ignoredParagraphPatterns": [
+    "^Enter one participant per line\\.",
+    "^Schedules are generated in your browser\\.",
+    "^Enter one team or player per line",
+    "^Use copy when you need to paste",
+    "^Start with a rough participant list"
+    ,"^Use this page when you need a tournament schedule that is easier to trust"
+    ,"^Single elimination means a team is out after one loss"
+    ,"^Use this page when each team or player should face every other participant"
+    ,"^Round robin means every participant plays every other participant"
+  ],
+  "minimumWordExemptPaths": [
+    "^/(about|contact|how-it-works|privacy|terms)/$"
+  ],
+  "allowedPairPatterns": [
+    ["^/(4|8|16|32)-team-bracket/$", "^/(4|8|16|32)-team-bracket/$"],
+    ["^/(5|6|7|8|9|10|12)-team-round-robin/$", "^/(5|6|7|8|9|10|12)-team-round-robin/$"]
+  ],
+  "allowedPairs": [
+    ["/single-elimination-bracket-generator/", "/tournament-bracket-maker/"]
+  ]
+}

@@ -3,10 +3,15 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..");
 const publicDir = path.join(root, "public");
-const siteOrigin = (process.env.SITE_ORIGIN || "https://example.com").replace(/\/$/, "");
+const siteOrigin = (process.env.SITE_ORIGIN || "https://tournamentscheduletools.org").replace(/\/$/, "");
 const siteName = "Tournament Schedule Tools";
+const contentQualityUpdated = "2026-07-24";
 const gaMeasurementId = process.env.GA_MEASUREMENT_ID || "G-FRBEHZZ2T5";
 const pages = JSON.parse(fs.readFileSync(path.join(root, "planning", "page-map.json"), "utf8")).pages;
+const inactivePageUrls = new Set([
+  "/bracket-generator/",
+  "/printable-tournament-bracket/"
+]);
 const validLocalUrls = new Set(["/", "/tools/", "/guides/", ...pages.map((page) => page.url)]);
 const hrefAliases = new Map([
   ["/schedule-maker/", "/tournament-schedule-maker/"],
@@ -472,7 +477,7 @@ function schemaForPage(page, markdown) {
   return { "@context": "https://schema.org", "@graph": graph };
 }
 
-function layout({ title, description, url, body, schema, currentUrl = "" }) {
+function layout({ title, description, url, body, schema, currentUrl = "", robots = "index,follow" }) {
   const fullTitle = title === siteName ? siteName : `${title} | ${siteName}`;
   return `<!doctype html>
 <html lang="en">
@@ -481,7 +486,7 @@ function layout({ title, description, url, body, schema, currentUrl = "" }) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(fullTitle)}</title>
   <meta name="description" content="${esc(description)}">
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="${robots}">
   <link rel="canonical" href="${canonical(url)}">
   <meta name="theme-color" content="#17463a">
   <meta property="og:type" content="website">
@@ -508,10 +513,50 @@ function layout({ title, description, url, body, schema, currentUrl = "" }) {
 </html>`;
 }
 
+const useCaseProfiles = {
+  "esports-bracket-maker": {
+    participants: ["North Seed", "Pixel Forge", "Team Orbit", "Final Boss", "Side Quest", "Overtime", "Blue Queue", "Red Queue"],
+    courts: 4, start: "18:00", length: 45,
+    note: "Each venue represents a game server or match station. Add buffer time for lobby setup, map vetoes, and technical pauses.",
+    content: `<section class="section-wrap"><h2>How should an esports bracket handle match stations and server time?</h2><p>Treat each available station or server lobby as a venue. Match length should include check-in, map selection, and a recovery buffer; a best-of-three block usually needs more than the raw play time.</p><h3>What should be checked before publishing the bracket?</h3><p>Confirm regional time zones, stream matches, seeding rules, disconnect policy, and whether later rounds use a longer series format.</p></section>`
+  },
+  "cornhole-bracket-maker": {
+    participants: ["Oak Street", "Double Bags", "Board Meeting", "Four Bagger", "Backyard Crew", "Slide Shot", "Air Mail", "Lucky Toss"],
+    courts: 3, start: "10:00", length: 20,
+    note: "Use one venue per board set. Leave a short turnover window when teams share bags or scorekeepers.",
+    content: `<section class="section-wrap"><h2>How many cornhole boards do I need for an eight-team bracket?</h2><p>Three board sets can keep the opening round moving while leaving one matchup queued. With one board, use longer published time slots so teams know when to return.</p><h3>Where should a bracket allow warm-up and score reporting time?</h3><p>Add the buffer to match length instead of assuming every game starts immediately after the previous score is reported.</p></section>`
+  },
+  "ping-pong-bracket-maker": {
+    participants: ["Topspin", "Backhand", "Net Edge", "Rally Point", "Side Spin", "Fast Serve", "Deuce", "Match Point"],
+    courts: 2, start: "09:30", length: 25,
+    note: "Each venue is a table. Increase match time for best-of-five games or limited warm-up tables.",
+    content: `<section class="section-wrap"><h2>How long should each table tennis match slot be?</h2><p>A casual best-of-three match may fit a shorter slot; best-of-five play needs more room. Include warm-up and score-reporting time when the same tables run continuously.</p><h3>How do I prevent one player being scheduled on two tables?</h3><p>Review the round order after generation and keep each participant in only one active match per time slot.</p></section>`
+  },
+  "chess-tournament-schedule-maker": {
+    participants: ["Board 1 Seed", "Knight Club", "Open File", "Passed Pawn", "Endgame", "Kingside", "Queenside", "Time Control"],
+    courts: 4, start: "09:00", length: 75,
+    note: "Each venue is a board. Set match length from the time control plus setup and result-entry time.",
+    content: `<section class="section-wrap"><h2>How does the chess time control change the schedule?</h2><p>Build the slot from both players' clock time, any increment, pairing announcements, and result entry. A rapid round and a classical round should not share the same default duration.</p><h3>What is missing from a simple chess schedule?</h3><p>This tool creates round timing and pairings, but it does not calculate Swiss-system standings or tie-breaks. Use official tournament software when those rules are required.</p></section>`
+  },
+  "classroom-tournament-bracket": {
+    participants: ["Team Red", "Team Blue", "Team Green", "Team Gold", "Table 1", "Table 2", "Table 3", "Table 4"],
+    courts: 2, start: "13:00", length: 10,
+    note: "Use venues as activity stations. Short rounds work best when instructions and tie rules are explained before the timer starts.",
+    content: `<section class="section-wrap"><h2>How do I fit a classroom bracket into one lesson?</h2><p>Subtract setup and cleanup first, then divide the remaining time into short match blocks. Keep a visible waiting task for teams that receive a bye.</p><h3>What makes a classroom bracket easier to supervise?</h3><p>Use fewer simultaneous stations than the number of adults available, publish the tie rule, and avoid elimination if early exits would leave students idle.</p></section>`
+  },
+  "office-tournament-bracket": {
+    participants: ["Design", "Support", "Finance", "Sales", "Product", "People", "Operations", "Marketing"],
+    courts: 1, start: "12:00", length: 15,
+    note: "Use one venue for a shared meeting room or game setup. Add breaks when matches must fit around lunch or shifts.",
+    content: `<section class="section-wrap"><h2>How can an office bracket avoid disrupting the workday?</h2><p>Use one predictable venue, publish exact start times, and keep early rounds short. A lunch event needs a stricter finish time than an after-hours social.</p><h3>Should office teams be seeded or randomized?</h3><p>Random order is simple for a social event. Use manual order only when previous results or department balance provide a reason that participants understand.</p></section>`
+  }
+};
+
 function toolHtml(page) {
   const modes = page.tool_modes || ["single_elimination"];
   const participants = defaultParticipants(page);
-  return `<section class="tool-shell" data-tool data-default-mode="${esc(modes[0])}">
+  const profile = useCaseProfiles[page.slug] || {};
+  return `<section class="tool-shell" data-audit-exclude data-tool data-default-mode="${esc(modes[0])}">
     <div class="tool-panel">
       <div class="field-block">
         <label for="participants-${page.slug}">Teams or players</label>
@@ -527,13 +572,13 @@ function toolHtml(page) {
           </select>
         </label>
         <label>Courts or venues
-          <input data-courts type="number" min="1" max="24" value="2">
+          <input data-courts type="number" min="1" max="24" value="${profile.courts || 2}">
         </label>
         <label>Start time
-          <input data-start type="time" value="09:00">
+          <input data-start type="time" value="${profile.start || "09:00"}">
         </label>
         <label>Match length
-          <input data-length type="number" min="5" max="240" value="30">
+          <input data-length type="number" min="5" max="240" value="${profile.length || 30}">
         </label>
         <label>Seeding
           <select data-seeding>
@@ -548,7 +593,7 @@ function toolHtml(page) {
         <button data-csv type="button">CSV</button>
         <button data-print type="button">Print</button>
       </div>
-      <p class="tool-note" data-status>Enter one participant per line. The tool handles byes and court assignment.</p>
+      <p class="tool-note" data-status>${esc(profile.note || "Enter one participant per line. The tool handles byes and court assignment.")}</p>
     </div>
     <div class="result-panel" aria-live="polite">
       <div class="result-head">
@@ -562,6 +607,8 @@ function toolHtml(page) {
 }
 
 function defaultParticipants(page) {
+  const profile = useCaseProfiles[page.slug];
+  if (profile) return profile.participants;
   const match = String(page.slug || "").match(/^(\d+)-team/);
   const count = match ? Number(match[1]) : 8;
   const names = [
@@ -577,14 +624,18 @@ function relatedPages(page) {
   const sameCluster = pages.filter((p) => p.url !== page.url && p.cluster === page.cluster).slice(0, 3);
   const core = pages.filter((p) => p.url !== page.url && ["core", "format"].includes(p.cluster)).slice(0, 3);
   const chosen = [...sameCluster, ...core].filter((item, index, arr) => arr.findIndex((x) => x.url === item.url) === index).slice(0, 5);
-  return `<section class="link-band" aria-labelledby="related-heading">
+  return `<section class="link-band" data-audit-exclude aria-labelledby="related-heading">
     <h2 id="related-heading">Related planning pages</h2>
     <div class="link-grid">${chosen.map((item) => `<a href="${item.url}"><strong>${item.title}</strong><span>${esc(userProblemText(item.user_problem))}</span></a>`).join("")}</div>
   </section>`;
 }
 
 function renderPage(page) {
-  const markdown = fs.readFileSync(slugToDraft(page), "utf8");
+  const markdown = fs.readFileSync(slugToDraft(page), "utf8")
+    .replace(/\n## [^\n]+ questions organizers ask[\s\S]*?(?=\n## |\s*$)/gi, "")
+    .replace(/\n## How to read the generated output[\s\S]*?(?=\n## |\s*$)/gi, "")
+    .replace(/\n## Final review before you publish[\s\S]*?(?=\n## |\s*$)/gi, "")
+    .replace(/\n## Common Questions[\s\S]*?(?=\n## |\s*$)/gi, "");
   const content = markdownToHtml(markdown);
   const intro = page.page_type === "tool"
     ? toolHtml(page)
@@ -601,6 +652,7 @@ function renderPage(page) {
     <article class="content-body">
       ${content}
     </article>
+${useCaseProfiles[page.slug]?.content || ""}
     ${relatedPages(page)}
   </main>`;
   return layout({
@@ -609,7 +661,8 @@ function renderPage(page) {
     url: page.url,
     currentUrl: page.url,
     body,
-    schema: schemaForPage(page, markdown)
+    schema: schemaForPage(page, markdown),
+    robots: inactivePageUrls.has(page.url) ? "noindex,follow" : "index,follow"
   });
 }
 
@@ -804,7 +857,7 @@ function writeSupportFiles() {
     { url: "/", lastmod: "2026-05-28" },
     { url: "/tools/", lastmod: "2026-07-04" },
     { url: "/guides/", lastmod: "2026-07-04" },
-    ...pages.map((p) => ({ url: p.url, lastmod: p.date_modified || "2026-05-28" })),
+    ...pages.filter((p) => !inactivePageUrls.has(p.url)).map((p) => ({ url: p.url, lastmod: contentQualityUpdated })),
     ...trustPages.map((p) => ({ url: p.url, lastmod: "2026-05-28" }))
   ];
   fs.writeFileSync(path.join(publicDir, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>
