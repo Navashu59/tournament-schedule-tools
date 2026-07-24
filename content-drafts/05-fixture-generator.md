@@ -16,7 +16,7 @@ The generated table can be copied, printed, or exported to CSV for spreadsheet e
 
 ## How do I generate a fixture list for a tournament?
 
-A fixture list is the practical schedule people follow: match order, round or week, venue, and time slot. Use this generator when the event needs a shareable list rather than only a bracket path. If you also need seeded tournament rounds, use the [tournament fixture generator](/tournament-fixture-generator/) after you decide the participant order.
+A fixture list is the practical schedule people follow: match order, round or week, venue, and time slot. Use this generator when the event needs a shareable list rather than only a bracket path. If you also need seeded tournament rounds, set the participant order here before generating the fixtures.
 
 ## What should I enter before creating fixtures?
 

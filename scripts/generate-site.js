@@ -10,7 +10,14 @@ const gaMeasurementId = process.env.GA_MEASUREMENT_ID || "G-FRBEHZZ2T5";
 const pages = JSON.parse(fs.readFileSync(path.join(root, "planning", "page-map.json"), "utf8")).pages;
 const inactivePageUrls = new Set([
   "/bracket-generator/",
-  "/printable-tournament-bracket/"
+  "/printable-tournament-bracket/",
+  "/round-robin-schedule-maker/",
+  "/tournament-fixture-generator/"
+]);
+const retiredRedirects = new Map([
+  ["/bracket-generator/", "/tournament-bracket-maker/"],
+  ["/round-robin-schedule-maker/", "/round-robin-generator/"],
+  ["/tournament-fixture-generator/", "/fixture-generator/"]
 ]);
 const validLocalUrls = new Set(["/", "/tools/", "/guides/", ...pages.map((page) => page.url)]);
 const hrefAliases = new Map([
@@ -26,6 +33,7 @@ const hrefAliases = new Map([
   ["/team-generator/", "/round-robin-generator/"],
   ["/team-scheduler/", "/round-robin-generator/"],
   ["/seating-chart-maker/", "/classroom-tournament-bracket/"]
+  , ...retiredRedirects
 ]);
 
 const trustPages = [
@@ -621,8 +629,8 @@ function defaultParticipants(page) {
 }
 
 function relatedPages(page) {
-  const sameCluster = pages.filter((p) => p.url !== page.url && p.cluster === page.cluster).slice(0, 3);
-  const core = pages.filter((p) => p.url !== page.url && ["core", "format"].includes(p.cluster)).slice(0, 3);
+  const sameCluster = pages.filter((p) => p.url !== page.url && p.cluster === page.cluster && !inactivePageUrls.has(p.url)).slice(0, 3);
+  const core = pages.filter((p) => p.url !== page.url && ["core", "format"].includes(p.cluster) && !inactivePageUrls.has(p.url)).slice(0, 3);
   const chosen = [...sameCluster, ...core].filter((item, index, arr) => arr.findIndex((x) => x.url === item.url) === index).slice(0, 5);
   return `<section class="link-band" data-audit-exclude aria-labelledby="related-heading">
     <h2 id="related-heading">Related planning pages</h2>
@@ -755,7 +763,7 @@ function renderToolsIndex() {
     ${groups.map((group) => `<section class="section-wrap">
       <h2>${esc(group)} pages</h2>
       <p>${esc(groupNotes[group] || "Choose the page that matches the tournament job you need to solve.")}</p>
-      <div class="card-grid">${pages.filter((p) => p.cluster === group).map((page) => `<a class="page-card" href="${page.url}"><span>${esc(page.page_type)}</span><strong>${esc(page.title)}</strong><p>${esc(userProblemText(page.user_problem))}</p></a>`).join("")}</div>
+      <div class="card-grid">${pages.filter((p) => p.cluster === group && !inactivePageUrls.has(p.url)).map((page) => `<a class="page-card" href="${page.url}"><span>${esc(page.page_type)}</span><strong>${esc(page.title)}</strong><p>${esc(userProblemText(page.user_problem))}</p></a>`).join("")}</div>
     </section>`).join("")}
   </main>`;
   const schema = {
@@ -763,7 +771,7 @@ function renderToolsIndex() {
     "@graph": [
       { "@type": "CollectionPage", "@id": `${siteOrigin}/tools/#webpage`, url: `${siteOrigin}/tools/`, name: "Tournament tools and guides", description: "All tournament scheduling tools and planning guides." },
       breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools/" }]),
-      { "@type": "ItemList", itemListElement: pages.map((p, i) => ({ "@type": "ListItem", position: i + 1, url: canonical(p.url), name: p.title })) }
+      { "@type": "ItemList", itemListElement: pages.filter((p) => !inactivePageUrls.has(p.url)).map((p, i) => ({ "@type": "ListItem", position: i + 1, url: canonical(p.url), name: p.title })) }
     ]
   };
   return layout({
@@ -870,15 +878,24 @@ Allow: /
 Sitemap: ${siteOrigin}/sitemap.xml
 `);
   if (siteOrigin === "https://tournamentscheduletools.org") {
-    fs.writeFileSync(path.join(publicDir, "_redirects"), `https://www.tournamentscheduletools.org/* https://tournamentscheduletools.org/:splat 301\n`);
+    fs.writeFileSync(path.join(publicDir, "_redirects"), `${[...retiredRedirects].map(([from, to]) => `${from} ${to} 301`).join("\n")}
+https://www.tournamentscheduletools.org/* https://tournamentscheduletools.org/:splat 301
+`);
   }
   fs.writeFileSync(path.join(publicDir, "_worker.js"), `export default {
   fetch(request, env) {
     const url = new URL(request.url);
+    let redirect = false;
     if (url.hostname === "www.tournamentscheduletools.org") {
       url.hostname = "tournamentscheduletools.org";
-      return Response.redirect(url.toString(), 301);
+      redirect = true;
     }
+    const redirects = ${JSON.stringify(Object.fromEntries(retiredRedirects))};
+    if (redirects[url.pathname]) {
+      url.pathname = redirects[url.pathname];
+      redirect = true;
+    }
+    if (redirect) return Response.redirect(url.toString(), 301);
     return env.ASSETS.fetch(request);
   }
 };

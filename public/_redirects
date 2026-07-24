@@ -1,1 +1,4 @@
+/bracket-generator/ /tournament-bracket-maker/ 301
+/round-robin-schedule-maker/ /round-robin-generator/ 301
+/tournament-fixture-generator/ /fixture-generator/ 301
 https://www.tournamentscheduletools.org/* https://tournamentscheduletools.org/:splat 301

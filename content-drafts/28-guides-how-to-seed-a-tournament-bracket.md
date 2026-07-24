@@ -4,7 +4,7 @@ Seeding decides where teams or players start in a bracket. The goal is usually t
 
 ## What is seeding in a tournament bracket?
 
-Seeding for a tournament means ranking entrants before the bracket or fixture list is built. The seed order should come from a source you can explain: standings, qualifying results, ratings, a previous round, or a random draw for casual events. Once the order is set, use the bracket or [tournament fixture generator](/tournament-fixture-generator/) without reshuffling it.
+Seeding for a tournament means ranking entrants before the bracket or fixture list is built. The seed order should come from a source you can explain: standings, qualifying results, ratings, a previous round, or a random draw for casual events. Once the order is set, use the bracket or [fixture generator](/fixture-generator/) without reshuffling it.
 
 ## Which ranking source should decide the seeds?
 

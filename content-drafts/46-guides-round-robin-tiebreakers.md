@@ -123,4 +123,4 @@ Many events first create a mini-table using only matches among the tied teams. I
 It can, but it should be a last resort after published competitive tie-breakers. Tell entrants if a draw or coin flip could be used.
 
 **Where should I generate the schedule?**
-Start with the [Round Robin Schedule Maker](/round-robin-schedule-maker/), then add your tie-breaker order to the event rules.
+Start with the [Round Robin Generator](/round-robin-generator/), then add your tie-breaker order to the event rules.

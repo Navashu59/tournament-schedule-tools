@@ -28,7 +28,7 @@ Decide whether byes go to top seeds, random entrants, or the entered order. Comp
 
 ## Generate and review the bracket
 
-Use the [Tournament Bracket Maker](/tournament-bracket-maker/) or [Bracket Generator](/bracket-generator/) to create the bracket with match rows, courts, times, and export options.
+Use the [Tournament Bracket Maker](/tournament-bracket-maker/) to create the bracket with match rows, courts, times, and export options.
 
 Before sharing it, check:
 
