@@ -22,12 +22,23 @@
     "bracket": ["/tournament-bracket-maker/"],
     "doubleElimination": ["/double-elimination-bracket-generator/"]
   },
-  "redirectCandidatesPendingValidation": [
+  "reviewedRedirectCandidates": [
     ["/tournament-fixture-generator/", "/fixture-generator/"],
     ["/round-robin-schedule-maker/", "/round-robin-generator/"],
     ["/bracket-generator/", "/tournament-bracket-maker/"],
     ["/playoff-bracket-maker/", "/tournament-bracket-maker/"]
   ],
+  "validationOutcome20260724": {
+    "implemented": {
+      "/tournament-fixture-generator/": "/fixture-generator/",
+      "/round-robin-schedule-maker/": "/round-robin-generator/",
+      "/bracket-generator/": "/tournament-bracket-maker/"
+    },
+    "hold": {
+      "/playoff-bracket-maker/": "/tournament-bracket-maker/"
+    },
+    "reason": "The first three URLs are phrase aliases for the same tool task. Playoff bracket remains separate because GSC shows early visibility and its seeded-playoff workflow is distinguishable."
+  },
   "reviewGroups": {
     "teamCount": [
       "/5-team-round-robin/",
