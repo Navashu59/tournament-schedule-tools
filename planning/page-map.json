@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-05-28",
-  "page_count": 47,
+  "page_count": 52,
   "pages": [
     {
       "rank": 1,
@@ -742,6 +742,76 @@
       "date_published": "2026-06-09",
       "date_modified": "2026-06-09",
       "content_angle": "Capture playoff bracket maker intent without copying generic bracket pages: focus on taking standings into a seeded playoff, bye placement, finals path, and publish-ready output."
+    },
+    {
+      "rank": 49,
+      "title": "Soccer Schedule Maker",
+      "keyword": "soccer schedule maker",
+      "slug": "soccer-schedule-maker",
+      "url": "/soccer-schedule-maker/",
+      "cluster": "use-case",
+      "tool_modes": [
+        "league_schedule",
+        "round_robin"
+      ],
+      "user_problem": "Soccer coaches and league organizers need fixture lists with fields, kickoff times, byes, and fair home or away rotation.",
+      "content_angle": "Focus on youth and recreational soccer schedules, field limits, week-by-week fixtures, and printable match lists.",
+      "volume": null,
+      "page_type": "tool",
+      "date_published": "2026-07-28",
+      "date_modified": "2026-07-28"
+    },
+    {
+      "rank": 50,
+      "title": "Basketball Tournament Bracket",
+      "keyword": "basketball tournament bracket",
+      "slug": "basketball-tournament-bracket",
+      "url": "/basketball-tournament-bracket/",
+      "cluster": "use-case",
+      "tool_modes": [
+        "single_elimination",
+        "double_elimination"
+      ],
+      "user_problem": "Basketball organizers need seeded brackets, court assignments, byes, and printable game order for gyms or rec leagues.",
+      "content_angle": "Focus on gyms, court availability, seed placement, consolation decisions, and publish-ready bracket output.",
+      "volume": null,
+      "page_type": "tool",
+      "date_published": "2026-07-28",
+      "date_modified": "2026-07-28"
+    },
+    {
+      "rank": 51,
+      "title": "Volleyball Round Robin Generator",
+      "keyword": "volleyball round robin generator",
+      "slug": "volleyball-round-robin-generator",
+      "url": "/volleyball-round-robin-generator/",
+      "cluster": "use-case",
+      "tool_modes": [
+        "round_robin"
+      ],
+      "user_problem": "Volleyball organizers need pool or round robin schedules with court rotation, byes, and match time blocks.",
+      "content_angle": "Focus on pool play, court assignment, best-of sets, odd-team byes, and playoff handoff.",
+      "volume": null,
+      "page_type": "tool",
+      "date_published": "2026-07-28",
+      "date_modified": "2026-07-28"
+    },
+    {
+      "rank": 52,
+      "title": "Printable Round Robin Schedule",
+      "keyword": "printable round robin schedule",
+      "slug": "printable-round-robin-schedule",
+      "url": "/printable-round-robin-schedule/",
+      "cluster": "export",
+      "tool_modes": [
+        "round_robin"
+      ],
+      "user_problem": "Organizers need a round robin schedule that prints cleanly with rounds, courts, times, and byes visible.",
+      "content_angle": "Capture printable intent by emphasizing print layout, CSV export, copying, and schedule review before posting.",
+      "volume": null,
+      "page_type": "tool",
+      "date_published": "2026-07-28",
+      "date_modified": "2026-07-28"
     }
   ]
 }

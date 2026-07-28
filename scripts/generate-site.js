@@ -5,12 +5,11 @@ const root = path.resolve(__dirname, "..");
 const publicDir = path.join(root, "public");
 const siteOrigin = (process.env.SITE_ORIGIN || "https://tournamentscheduletools.org").replace(/\/$/, "");
 const siteName = "Tournament Schedule Tools";
-const contentQualityUpdated = "2026-07-24";
+const contentQualityUpdated = "2026-07-28";
 const gaMeasurementId = process.env.GA_MEASUREMENT_ID || "G-FRBEHZZ2T5";
 const pages = JSON.parse(fs.readFileSync(path.join(root, "planning", "page-map.json"), "utf8")).pages;
 const inactivePageUrls = new Set([
   "/bracket-generator/",
-  "/printable-tournament-bracket/",
   "/round-robin-schedule-maker/",
   "/tournament-fixture-generator/"
 ]);
@@ -557,6 +556,30 @@ const useCaseProfiles = {
     courts: 1, start: "12:00", length: 15,
     note: "Use one venue for a shared meeting room or game setup. Add breaks when matches must fit around lunch or shifts.",
     content: `<section class="section-wrap"><h2>How can an office bracket avoid disrupting the workday?</h2><p>Use one predictable venue, publish exact start times, and keep early rounds short. A lunch event needs a stricter finish time than an after-hours social.</p><h3>Should office teams be seeded or randomized?</h3><p>Random order is simple for a social event. Use manual order only when previous results or department balance provide a reason that participants understand.</p></section>`
+  },
+  "soccer-schedule-maker": {
+    participants: ["U10 North", "U10 South", "Riverside", "Lakeside", "City FC", "United", "Strikers", "Keepers"],
+    courts: 2, start: "09:00", length: 50,
+    note: "Each venue is a field. Include warmup, halftime, and turnover time before publishing kickoff slots.",
+    content: `<section class="section-wrap"><h2>How should a soccer schedule handle fields and kickoff times?</h2><p>Use one venue per field and set match length from the full field block, not only game time. Youth and rec leagues usually need a small buffer for teams leaving and entering the field.</p><h3>When should soccer events use round robin instead of elimination?</h3><p>Use round robin when teams need guaranteed games. Use an elimination bracket only after pool play or standings decide seeds.</p></section>`
+  },
+  "basketball-tournament-bracket": {
+    participants: ["Court Kings", "Fast Break", "Baseline", "Zone Press", "Hoop City", "Free Throws", "Rebounders", "Downtown"],
+    courts: 2, start: "10:00", length: 40,
+    note: "Each venue is a court. Increase match length when games include warmups, halftime, or scorekeeper setup.",
+    content: `<section class="section-wrap"><h2>How do I schedule a basketball bracket across limited courts?</h2><p>Assign each gym court as a venue and use realistic time blocks. If only one court is available, publish exact start times so teams are not waiting through the whole bracket.</p><h3>Should a basketball tournament include a consolation game?</h3><p>Add a third-place or consolation game when teams travel for the event and expect more than one guaranteed game.</p></section>`
+  },
+  "volleyball-round-robin-generator": {
+    participants: ["Aces", "Block Party", "Setters", "Diggers", "Sideout", "Net Gains", "Servers", "Rotations"],
+    courts: 3, start: "08:30", length: 35,
+    note: "Each venue is a court. Add time for warmups and set changes when matches are best-of-three.",
+    content: `<section class="section-wrap"><h2>How should volleyball pool play be scheduled?</h2><p>Most volleyball pool schedules work like a round robin inside each pool. Keep courts fixed where possible, rotate byes visibly, and publish the playoff handoff rule before pool play starts.</p><h3>What should be checked before printing?</h3><p>Confirm officiating assignments, court numbers, warmup time, and whether match length means one set, timed play, or best-of-three.</p></section>`
+  },
+  "printable-round-robin-schedule": {
+    participants: ["Team 1", "Team 2", "Team 3", "Team 4", "Team 5", "Team 6"],
+    courts: 2, start: "09:00", length: 30,
+    note: "Use Print after generation for a clean match list. CSV is available when you want to edit in a spreadsheet first.",
+    content: `<section class="section-wrap"><h2>What makes a round robin schedule printable?</h2><p>A printable schedule needs round names, participants, byes, venue or court names, and start times in one table. Avoid hiding byes; participants need to know when they are resting.</p><h3>Should I print before or after editing?</h3><p>Generate first, export CSV if you need spreadsheet edits, then print the final version after checking venue names and match length.</p></section>`
   }
 };
 
@@ -599,6 +622,7 @@ function toolHtml(page) {
         <button class="primary" data-generate type="button">Generate schedule</button>
         <button data-copy type="button">Copy</button>
         <button data-csv type="button">CSV</button>
+        <button data-share type="button">Share</button>
         <button data-print type="button">Print</button>
       </div>
       <p class="tool-note" data-status>${esc(profile.note || "Enter one participant per line. The tool handles byes and court assignment.")}</p>
@@ -732,6 +756,7 @@ function renderToolsIndex() {
   const groups = [...new Set(pages.map((p) => p.cluster))];
   const priorityUrls = [
     "/round-robin-generator/",
+    "/printable-round-robin-schedule/",
     "/fixture-generator/",
     "/tournament-schedule-maker/",
     "/double-elimination-bracket-generator/",
@@ -1025,6 +1050,31 @@ function appJs() {
     return ["Round,Home,Away,Court,Time"].concat(matches.map((m) => [m.round, m.home, m.away, m.court, m.time].map((v) => '"' + String(v).replace(/"/g, '""') + '"').join(","))).join("\\n");
   }
 
+  function saveState(root) {
+    const params = new URLSearchParams();
+    params.set("teams", cleanNames(by(root, "[data-participants]").value).join("|"));
+    params.set("mode", by(root, "[data-mode]").value);
+    params.set("courts", by(root, "[data-courts]").value || "1");
+    params.set("start", by(root, "[data-start]").value || "09:00");
+    params.set("length", by(root, "[data-length]").value || "30");
+    params.set("seeding", by(root, "[data-seeding]").value || "manual");
+    return location.origin + location.pathname + "?" + params.toString();
+  }
+
+  function restoreState(root) {
+    const params = new URLSearchParams(location.search);
+    if (!params.has("teams")) return;
+    const teams = params.get("teams").split("|").map((item) => item.trim()).filter(Boolean);
+    if (teams.length >= 2) by(root, "[data-participants]").value = teams.join("\\n");
+    for (const [key, selector] of [["mode", "[data-mode]"], ["courts", "[data-courts]"], ["start", "[data-start]"], ["length", "[data-length]"], ["seeding", "[data-seeding]"]]) {
+      if (!params.has(key)) continue;
+      const field = by(root, selector);
+      if (!field) continue;
+      if (field.tagName === "SELECT" && !Array.from(field.options).some((opt) => opt.value === params.get(key))) continue;
+      field.value = params.get(key);
+    }
+  }
+
   function generate(root) {
     let names = cleanNames(by(root, "[data-participants]").value);
     if (names.length < 2) {
@@ -1070,7 +1120,18 @@ function appJs() {
       a.click();
       URL.revokeObjectURL(url);
     });
+    by(root, "[data-share]").addEventListener("click", async () => {
+      const url = saveState(root);
+      history.replaceState(null, "", url);
+      try {
+        await navigator.clipboard?.writeText(url);
+        by(root, "[data-status]").textContent = "Share link copied. It restores teams, format, courts, and timing on this page.";
+      } catch (error) {
+        by(root, "[data-status]").textContent = "Share link is in the address bar. Copy the URL to restore this schedule later.";
+      }
+    });
     by(root, "[data-print]").addEventListener("click", () => window.print());
+    restoreState(root);
     generate(root);
   });
 })();`;

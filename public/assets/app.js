@@ -109,6 +109,31 @@
     return ["Round,Home,Away,Court,Time"].concat(matches.map((m) => [m.round, m.home, m.away, m.court, m.time].map((v) => '"' + String(v).replace(/"/g, '""') + '"').join(","))).join("\n");
   }
 
+  function saveState(root) {
+    const params = new URLSearchParams();
+    params.set("teams", cleanNames(by(root, "[data-participants]").value).join("|"));
+    params.set("mode", by(root, "[data-mode]").value);
+    params.set("courts", by(root, "[data-courts]").value || "1");
+    params.set("start", by(root, "[data-start]").value || "09:00");
+    params.set("length", by(root, "[data-length]").value || "30");
+    params.set("seeding", by(root, "[data-seeding]").value || "manual");
+    return location.origin + location.pathname + "?" + params.toString();
+  }
+
+  function restoreState(root) {
+    const params = new URLSearchParams(location.search);
+    if (!params.has("teams")) return;
+    const teams = params.get("teams").split("|").map((item) => item.trim()).filter(Boolean);
+    if (teams.length >= 2) by(root, "[data-participants]").value = teams.join("\n");
+    for (const [key, selector] of [["mode", "[data-mode]"], ["courts", "[data-courts]"], ["start", "[data-start]"], ["length", "[data-length]"], ["seeding", "[data-seeding]"]]) {
+      if (!params.has(key)) continue;
+      const field = by(root, selector);
+      if (!field) continue;
+      if (field.tagName === "SELECT" && !Array.from(field.options).some((opt) => opt.value === params.get(key))) continue;
+      field.value = params.get(key);
+    }
+  }
+
   function generate(root) {
     let names = cleanNames(by(root, "[data-participants]").value);
     if (names.length < 2) {
@@ -154,7 +179,18 @@
       a.click();
       URL.revokeObjectURL(url);
     });
+    by(root, "[data-share]").addEventListener("click", async () => {
+      const url = saveState(root);
+      history.replaceState(null, "", url);
+      try {
+        await navigator.clipboard?.writeText(url);
+        by(root, "[data-status]").textContent = "Share link copied. It restores teams, format, courts, and timing on this page.";
+      } catch (error) {
+        by(root, "[data-status]").textContent = "Share link is in the address bar. Copy the URL to restore this schedule later.";
+      }
+    });
     by(root, "[data-print]").addEventListener("click", () => window.print());
+    restoreState(root);
     generate(root);
   });
 })();

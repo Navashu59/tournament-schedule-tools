@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soccer Schedule Maker | Tournament Schedule Tools</title>
+  <meta name="description" content="Use this soccer schedule maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://tournamentscheduletools.org/soccer-schedule-maker/">
+  <meta name="theme-color" content="#17463a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tournament Schedule Tools">
+  <meta property="og:title" content="Soccer Schedule Maker">
+  <meta property="og:description" content="Use this soccer schedule maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta property="og:url" content="https://tournamentscheduletools.org/soccer-schedule-maker/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Soccer Schedule Maker">
+  <meta name="twitter:description" content="Use this soccer schedule maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRBEHZZ2T5"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FRBEHZZ2T5",{anonymize_ip:true});</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://tournamentscheduletools.org/#organization","name":"Tournament Schedule Tools","url":"https://tournamentscheduletools.org/"},{"@type":"WebSite","@id":"https://tournamentscheduletools.org/#website","name":"Tournament Schedule Tools","url":"https://tournamentscheduletools.org/","publisher":{"@id":"https://tournamentscheduletools.org/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tournamentscheduletools.org/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://tournamentscheduletools.org/tools/"},{"@type":"ListItem","position":3,"name":"Soccer Schedule Maker","item":"https://tournamentscheduletools.org/soccer-schedule-maker/"}]},{"@type":"WebPage","@id":"https://tournamentscheduletools.org/soccer-schedule-maker/#webpage","url":"https://tournamentscheduletools.org/soccer-schedule-maker/","name":"Soccer Schedule Maker","headline":"Soccer Schedule Maker","description":"Use this soccer schedule maker to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://tournamentscheduletools.org/#website"},"publisher":{"@id":"https://tournamentscheduletools.org/#organization"},"datePublished":"2026-07-28","dateModified":"2026-07-28"},{"@type":"WebApplication","@id":"https://tournamentscheduletools.org/soccer-schedule-maker/#app","name":"Soccer Schedule Maker","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://tournamentscheduletools.org/soccer-schedule-maker/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Tournament Schedule Tools home">
+      <span class="brand-mark">TS</span>
+      <span>Tournament Schedule Tools</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation"><a  href="/">Home</a><a  href="/tools/">Tools</a><a  href="/guides/">Guides</a><a  href="/tournament-schedule-maker/">Schedule Maker</a><a  href="/round-robin-generator/">Round Robin</a><a  href="/tournament-bracket-maker/">Bracket Maker</a><a  href="/guides/how-to-make-a-fair-tournament-schedule/">Fair Scheduling</a></nav>
+  </header>
+  <main>
+    <section class="hero compact">
+      <div>
+        <p class="eyebrow">use-case tool</p>
+        <h1>Soccer Schedule Maker</h1>
+        <p>Soccer coaches and league organizers need fixture lists with fields, kickoff times, byes, and fair home or away rotation.</p>
+      </div>
+    </section>
+    <section class="tool-shell" data-audit-exclude data-tool data-default-mode="league_schedule">
+    <div class="tool-panel">
+      <div class="field-block">
+        <label for="participants-soccer-schedule-maker">Teams or players</label>
+        <textarea id="participants-soccer-schedule-maker" data-participants rows="8">U10 North
+U10 South
+Riverside
+Lakeside
+City FC
+United
+Strikers
+Keepers</textarea>
+      </div>
+      <div class="control-grid">
+        <label>Format
+          <select data-mode>
+            
+            
+            <option value="round_robin">Round robin</option>
+            <option value="league_schedule">League fixtures</option>
+          </select>
+        </label>
+        <label>Courts or venues
+          <input data-courts type="number" min="1" max="24" value="2">
+        </label>
+        <label>Start time
+          <input data-start type="time" value="09:00">
+        </label>
+        <label>Match length
+          <input data-length type="number" min="5" max="240" value="50">
+        </label>
+        <label>Seeding
+          <select data-seeding>
+            <option value="manual">Use entered order</option>
+            <option value="shuffle">Randomize first</option>
+          </select>
+        </label>
+      </div>
+      <div class="actions">
+        <button class="primary" data-generate type="button">Generate schedule</button>
+        <button data-copy type="button">Copy</button>
+        <button data-csv type="button">CSV</button>
+        <button data-share type="button">Share</button>
+        <button data-print type="button">Print</button>
+      </div>
+      <p class="tool-note" data-status>Each venue is a field. Include warmup, halftime, and turnover time before publishing kickoff slots.</p>
+    </div>
+    <div class="result-panel" aria-live="polite">
+      <div class="result-head">
+        <h2>Generated schedule</h2>
+        <span data-summary-pill>Ready</span>
+      </div>
+      <div data-fairness class="fairness-grid"></div>
+      <div data-results class="results-table"><div class="sample-output" aria-label="League fixture preview">
+    <p><strong>League fixture preview</strong> Use league fixtures when matches are spread across dates instead of one short bracket session.</p>
+    <div class="fairness-grid static-metrics"><div class="metric"><strong>4</strong><span>Fixtures</span></div><div class="metric"><strong>2</strong><span>Rounds</span></div><div class="metric"><strong>2</strong><span>Venues</span></div><div class="metric"><strong>CSV</strong><span>Export</span></div></div>
+    <table><thead><tr><th>Round</th><th>Home</th><th>Away</th><th>Court</th><th>Time</th></tr></thead><tbody><tr><td>Week 1</td><td>U10 North</td><td>U10 South</td><td>Venue 1</td><td>09:00</td></tr><tr><td>Week 1</td><td>Riverside</td><td>Lakeside</td><td>Venue 2</td><td>09:00</td></tr><tr><td>Week 2</td><td>U10 North</td><td>Riverside</td><td>Venue 1</td><td>09:30</td></tr><tr><td>Week 2</td><td>U10 South</td><td>Lakeside</td><td>Venue 2</td><td>09:30</td></tr></tbody></table>
+  </div></div>
+    </div>
+  </section>
+    <article class="content-body">
+      <p>Use this soccer schedule maker when teams need a clear fixture list with fields, kickoff times, rest rounds, and home or away balance. It works best for youth leagues, rec tournaments, and short events where a spreadsheet would be easy to misread.</p>
+<h2>Soccer scheduling details</h2>
+<p>Start by treating each field as a venue. Match length should include warmup, halftime, injury buffer, and the time needed for teams to leave the field. A 40-minute game often needs a longer published field block.</p>
+<p>For a one-day soccer event, round robin is usually better when every team should get several games. A bracket is better after pool standings decide seeds.</p>
+<h2>Build the first version</h2>
+<ol>
+<li>Enter one team or player per line.</li>
+<li>Choose league fixtures or round robin for guaranteed games.</li>
+<li>Set the number of fields you can actually use.</li>
+<li>Add the first kickoff time and full field block length.</li>
+<li>Generate, then check whether any team has an unfair rest pattern.</li>
+</ol>
+<h2>Field and rest checks</h2>
+<ul>
+<li>Rename courts to Field 1, Field 2, or the real field names before sharing.</li>
+<li>Check that no team appears in overlapping kickoff blocks.</li>
+<li>Add a break before playoffs if pool games determine bracket seeds.</li>
+<li>Keep bye rounds visible so coaches know when teams are resting.</li>
+<li>Publish tie-breakers before the first match, not after a standings tie.</li>
+</ul>
+<h2>Related soccer planning tools</h2>
+<p>Use the <a href="/round-robin-generator/">Round Robin Generator</a> for one pool. Use the <a href="/fixture-generator/">Fixture Generator</a> for a season-style match list. Use the <a href="/tournament-bracket-maker/">Tournament Bracket Maker</a> only after teams have been seeded.</p>
+    </article>
+<section class="section-wrap"><h2>How should a soccer schedule handle fields and kickoff times?</h2><p>Use one venue per field and set match length from the full field block, not only game time. Youth and rec leagues usually need a small buffer for teams leaving and entering the field.</p><h3>When should soccer events use round robin instead of elimination?</h3><p>Use round robin when teams need guaranteed games. Use an elimination bracket only after pool play or standings decide seeds.</p></section>
+    <section class="link-band" data-audit-exclude aria-labelledby="related-heading">
+    <h2 id="related-heading">Related planning pages</h2>
+    <div class="link-grid"><a href="/pickleball-round-robin-generator/"><strong>Pickleball Round Robin Generator</strong><span>Use this when pickleball organizers need court rotation, byes, and reduced repeat partners or opponents.</span></a><a href="/esports-bracket-maker/"><strong>Esports Bracket Maker</strong><span>Use this when esports organizers need simple seeded brackets for small tournaments.</span></a><a href="/cornhole-bracket-maker/"><strong>Cornhole Bracket Maker</strong><span>Use this when cornhole organizers need printable brackets and match lists.</span></a><a href="/tournament-schedule-maker/"><strong>Tournament Schedule Maker</strong><span>Use this when you need one place to make brackets, round robin schedules, league fixtures, and printable match lists.</span></a><a href="/round-robin-generator/"><strong>Round Robin Generator</strong><span>Use this when you need each team or player to face every other participant with fair byes and clear rounds.</span></a></div>
+  </section>
+  </main>
+  <footer class="site-footer">
+    <div>
+      <strong>Tournament Schedule Tools</strong>
+      <p>Fair brackets, round robins, fixtures, byes, print views, and exports for real events.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="/about/">About</a>
+      <a href="/how-it-works/">How it works</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </footer>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

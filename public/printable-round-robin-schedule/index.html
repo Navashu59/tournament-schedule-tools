@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Printable Round Robin Schedule | Tournament Schedule Tools</title>
+  <meta name="description" content="Use this printable round robin schedule to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://tournamentscheduletools.org/printable-round-robin-schedule/">
+  <meta name="theme-color" content="#17463a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tournament Schedule Tools">
+  <meta property="og:title" content="Printable Round Robin Schedule">
+  <meta property="og:description" content="Use this printable round robin schedule to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <meta property="og:url" content="https://tournamentscheduletools.org/printable-round-robin-schedule/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Printable Round Robin Schedule">
+  <meta name="twitter:description" content="Use this printable round robin schedule to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRBEHZZ2T5"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FRBEHZZ2T5",{anonymize_ip:true});</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://tournamentscheduletools.org/#organization","name":"Tournament Schedule Tools","url":"https://tournamentscheduletools.org/"},{"@type":"WebSite","@id":"https://tournamentscheduletools.org/#website","name":"Tournament Schedule Tools","url":"https://tournamentscheduletools.org/","publisher":{"@id":"https://tournamentscheduletools.org/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tournamentscheduletools.org/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://tournamentscheduletools.org/tools/"},{"@type":"ListItem","position":3,"name":"Printable Round Robin Schedule","item":"https://tournamentscheduletools.org/printable-round-robin-schedule/"}]},{"@type":"WebPage","@id":"https://tournamentscheduletools.org/printable-round-robin-schedule/#webpage","url":"https://tournamentscheduletools.org/printable-round-robin-schedule/","name":"Printable Round Robin Schedule","headline":"Printable Round Robin Schedule","description":"Use this printable round robin schedule to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.","isPartOf":{"@id":"https://tournamentscheduletools.org/#website"},"publisher":{"@id":"https://tournamentscheduletools.org/#organization"},"datePublished":"2026-07-28","dateModified":"2026-07-28"},{"@type":"WebApplication","@id":"https://tournamentscheduletools.org/printable-round-robin-schedule/#app","name":"Printable Round Robin Schedule","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://tournamentscheduletools.org/printable-round-robin-schedule/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Tournament scheduling","Bracket generation","Round robin scheduling","Court assignment","CSV export","Print view"]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Tournament Schedule Tools home">
+      <span class="brand-mark">TS</span>
+      <span>Tournament Schedule Tools</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation"><a  href="/">Home</a><a  href="/tools/">Tools</a><a  href="/guides/">Guides</a><a  href="/tournament-schedule-maker/">Schedule Maker</a><a  href="/round-robin-generator/">Round Robin</a><a  href="/tournament-bracket-maker/">Bracket Maker</a><a  href="/guides/how-to-make-a-fair-tournament-schedule/">Fair Scheduling</a></nav>
+  </header>
+  <main>
+    <section class="hero compact">
+      <div>
+        <p class="eyebrow">export tool</p>
+        <h1>Printable Round Robin Schedule</h1>
+        <p>Organizers need a round robin schedule that prints cleanly with rounds, courts, times, and byes visible.</p>
+      </div>
+    </section>
+    <section class="tool-shell" data-audit-exclude data-tool data-default-mode="round_robin">
+    <div class="tool-panel">
+      <div class="field-block">
+        <label for="participants-printable-round-robin-schedule">Teams or players</label>
+        <textarea id="participants-printable-round-robin-schedule" data-participants rows="8">Team 1
+Team 2
+Team 3
+Team 4
+Team 5
+Team 6</textarea>
+      </div>
+      <div class="control-grid">
+        <label>Format
+          <select data-mode>
+            
+            
+            <option value="round_robin">Round robin</option>
+            
+          </select>
+        </label>
+        <label>Courts or venues
+          <input data-courts type="number" min="1" max="24" value="2">
+        </label>
+        <label>Start time
+          <input data-start type="time" value="09:00">
+        </label>
+        <label>Match length
+          <input data-length type="number" min="5" max="240" value="30">
+        </label>
+        <label>Seeding
+          <select data-seeding>
+            <option value="manual">Use entered order</option>
+            <option value="shuffle">Randomize first</option>
+          </select>
+        </label>
+      </div>
+      <div class="actions">
+        <button class="primary" data-generate type="button">Generate schedule</button>
+        <button data-copy type="button">Copy</button>
+        <button data-csv type="button">CSV</button>
+        <button data-share type="button">Share</button>
+        <button data-print type="button">Print</button>
+      </div>
+      <p class="tool-note" data-status>Use Print after generation for a clean match list. CSV is available when you want to edit in a spreadsheet first.</p>
+    </div>
+    <div class="result-panel" aria-live="polite">
+      <div class="result-head">
+        <h2>Generated schedule</h2>
+        <span data-summary-pill>Ready</span>
+      </div>
+      <div data-fairness class="fairness-grid"></div>
+      <div data-results class="results-table"><div class="sample-output" aria-label="6-team round robin preview">
+    <p><strong>6-team round robin preview</strong> The live tool will regenerate this table with your teams, courts, start time, and match length.</p>
+    <div class="fairness-grid static-metrics"><div class="metric"><strong>5</strong><span>Rounds</span></div><div class="metric"><strong>15</strong><span>Games</span></div><div class="metric"><strong>2</strong><span>Courts</span></div><div class="metric"><strong>0</strong><span>Byes</span></div></div>
+    <table><thead><tr><th>Round</th><th>Home</th><th>Away</th><th>Court</th><th>Time</th></tr></thead><tbody><tr><td>Round 1</td><td>Team 1</td><td>Team 6</td><td>Court 1</td><td>09:00</td></tr><tr><td>Round 1</td><td>Team 2</td><td>Team 5</td><td>Court 2</td><td>09:00</td></tr><tr><td>Round 1</td><td>Team 3</td><td>Team 4</td><td>Court 3</td><td>09:00</td></tr><tr><td>Round 2</td><td>Team 1</td><td>Team 5</td><td>Court 1</td><td>09:00</td></tr><tr><td>Round 2</td><td>Team 6</td><td>Team 4</td><td>Court 2</td><td>09:00</td></tr><tr><td>Round 2</td><td>Team 2</td><td>Team 3</td><td>Court 3</td><td>09:00</td></tr><tr><td>Round 3</td><td>Team 1</td><td>Team 4</td><td>Court 1</td><td>09:00</td></tr><tr><td>Round 3</td><td>Team 5</td><td>Team 3</td><td>Court 2</td><td>09:00</td></tr><tr><td>Round 3</td><td>Team 6</td><td>Team 2</td><td>Court 3</td><td>09:00</td></tr><tr><td>Round 4</td><td>Team 1</td><td>Team 3</td><td>Court 1</td><td>09:00</td></tr><tr><td>Round 4</td><td>Team 4</td><td>Team 2</td><td>Court 2</td><td>09:00</td></tr><tr><td>Round 4</td><td>Team 5</td><td>Team 6</td><td>Court 3</td><td>09:00</td></tr><tr><td>Round 5</td><td>Team 1</td><td>Team 2</td><td>Court 1</td><td>09:00</td></tr><tr><td>Round 5</td><td>Team 3</td><td>Team 6</td><td>Court 2</td><td>09:00</td></tr><tr><td>Round 5</td><td>Team 4</td><td>Team 5</td><td>Court 3</td><td>09:00</td></tr></tbody></table>
+  </div></div>
+    </div>
+  </section>
+    <article class="content-body">
+      <p>Use this printable round robin schedule when the final output needs to be posted, handed out, or pasted into an event message. The page focuses on a readable match list: rounds, teams, byes, courts, and times.</p>
+<h2>Print-friendly round robin output</h2>
+<p>Round robin tables can become hard to read because every team plays many matches. A printable version should show each round separately, make byes obvious, and keep venue names short enough to fit on paper.</p>
+<p>Use the browser print control for a quick event sheet. Use CSV when you need to add logos, score boxes, ref assignments, or pool names before printing.</p>
+<h2>Create the printable version</h2>
+<ol>
+<li>Enter one team or player per line.</li>
+<li>Keep one participant per line so names do not merge.</li>
+<li>Set courts or venues to match the labels at the event.</li>
+<li>Generate the schedule and scan the bye rounds.</li>
+<li>Print only after confirming match length and start time.</li>
+</ol>
+<h2>Before printing</h2>
+<ul>
+<li>Make team names short enough to fit in table cells.</li>
+<li>Use real venue names if players will move between courts or fields.</li>
+<li>Check that each participant has the expected number of games.</li>
+<li>Confirm that byes are shown as rest rounds, not blank rows.</li>
+<li>Add tie-breaker rules somewhere near the printed schedule.</li>
+</ul>
+<h2>Related printable pages</h2>
+<p>Use the <a href="/printable-tournament-bracket/">Printable Tournament Bracket</a> for elimination events. Use the <a href="/round-robin-generator/">Round Robin Generator</a> when you want the main tool page. Use the <a href="/tournament-schedule-template/">Tournament Schedule Template</a> when you plan to edit the output in a spreadsheet.</p>
+    </article>
+<section class="section-wrap"><h2>What makes a round robin schedule printable?</h2><p>A printable schedule needs round names, participants, byes, venue or court names, and start times in one table. Avoid hiding byes; participants need to know when they are resting.</p><h3>Should I print before or after editing?</h3><p>Generate first, export CSV if you need spreadsheet edits, then print the final version after checking venue names and match length.</p></section>
+    <section class="link-band" data-audit-exclude aria-labelledby="related-heading">
+    <h2 id="related-heading">Related planning pages</h2>
+    <div class="link-grid"><a href="/printable-tournament-bracket/"><strong>Printable Tournament Bracket</strong><span>Use this when you need a bracket layout that prints cleanly for events and classrooms.</span></a><a href="/tournament-schedule-template/"><strong>Tournament Schedule Template</strong><span>Use this when you want a printable or spreadsheet-friendly tournament schedule template they can customize quickly.</span></a><a href="/tournament-schedule-maker/"><strong>Tournament Schedule Maker</strong><span>Use this when you need one place to make brackets, round robin schedules, league fixtures, and printable match lists.</span></a><a href="/round-robin-generator/"><strong>Round Robin Generator</strong><span>Use this when you need each team or player to face every other participant with fair byes and clear rounds.</span></a><a href="/tournament-bracket-maker/"><strong>Tournament Bracket Maker</strong><span>Use this when you need a quick elimination bracket with seeds, byes, print, and export.</span></a></div>
+  </section>
+  </main>
+  <footer class="site-footer">
+    <div>
+      <strong>Tournament Schedule Tools</strong>
+      <p>Fair brackets, round robins, fixtures, byes, print views, and exports for real events.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="/about/">About</a>
+      <a href="/how-it-works/">How it works</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </footer>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>
