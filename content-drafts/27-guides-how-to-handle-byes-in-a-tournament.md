@@ -14,6 +14,12 @@ Byes appear when the participant count does not fit the format. Five teams in a 
 
 For elimination brackets, calculate byes with this rule: next clean bracket size minus actual entrants. A 5-team bracket needs 3 byes, a 6-team bracket needs 2 byes, and a 12-team bracket needs 4 byes. For round robin schedules with an odd number of teams, one team rests each round.
 
+## How many byes do I need?
+
+Use the next bracket size above your field, then subtract the actual team count. A 10-team single elimination bracket fits into a 16-slot bracket, so it needs 6 byes. A 13-team bracket needs 3 byes. A 7-team bracket needs 1 bye.
+
+If that creates too many byes, reconsider the format. A 9-team single elimination bracket needs 7 byes, which can feel awkward for a casual event. A preliminary play-in, pools, or round robin may be easier to explain.
+
 ## How odd-team round robins rotate rest rounds
 
 In round robin, a bye means rest. The important check is distribution: each participant should receive the same number of byes when the format allows it. Also check timing, because a late bye can feel different from an early bye.
@@ -31,6 +37,12 @@ The fairest method is the one you can explain before the first match. Do not cha
 In a bracket, a bye usually advances a participant to the next round without playing. Seeded events often give byes to higher seeds. Casual events should explain whether byes were assigned randomly or by entered order.
 
 The most common mistake is hiding byes inside a bracket image. Label them clearly in the first round and explain the rule: "Top seeds receive byes" or "Byes were assigned by random draw." That is easier to defend than adjusting the bracket after players notice a rest advantage.
+
+### Do byes belong in the first round or later?
+
+For a standard single elimination bracket, byes should be visible in the first round so the bracket can reach a clean second-round field. A bye appearing later usually means the bracket was built from an uneven structure or edited after generation.
+
+Put the rule in plain language before the event starts: top seeds receive byes, entered order receives byes, or byes were assigned randomly. The rule matters more than the visual layout because players will ask why one team advanced without playing.
 
 ## Bye examples by field size
 

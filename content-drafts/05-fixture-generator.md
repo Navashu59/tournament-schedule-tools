@@ -18,6 +18,12 @@ The generated table can be copied, printed, or exported to CSV for spreadsheet e
 
 A fixture list is the practical schedule people follow: match order, round or week, venue, and time slot. Use this generator when the event needs a shareable list rather than only a bracket path. If you also need seeded tournament rounds, set the participant order here before generating the fixtures.
 
+## How many fixtures will my league need?
+
+For a single round robin with `n` teams, use `n x (n - 1) / 2`. Eight teams make 28 fixtures. Ten teams make 45 fixtures. A home-and-away league doubles that number because each pair plays twice.
+
+The generator handles the fixture count automatically, but the number matters before you publish. If the total is too large for the venue, split the field into pools, shorten the season, or use a bracket after group play instead of forcing every matchup.
+
 ## What should I enter before creating fixtures?
 
 Enter one team or player per line, choose the format that matches your event, then click Generate schedule. Use manual seeding when the order already matters. Use shuffle only when you want a random starting order. The schedule appears with rounds, matchups, court or venue assignment, and time slots.
@@ -37,6 +43,10 @@ For a small league, scan each team's row after export. No team should be stuck w
 ## Can I create fixtures for an odd number of teams?
 
 Yes. Odd team counts need a bye in each round. The important check is whether the bye rotates fairly, so one team does not repeatedly get the easiest rest slot. Before sharing the fixture list, scan each round and count how often every team sits out.
+
+### How many rounds does an odd-team fixture list create?
+
+For a single round robin, an even field usually needs `n - 1` rounds. An odd field usually needs `n` rounds because one team rests each round. A 7-team fixture list has 7 rounds, 21 fixtures, and 7 visible byes.
 
 ## Fixture generator vs tournament schedule generator
 
@@ -59,6 +69,10 @@ After generating, scan the team pairs rather than only the round numbers. Each p
 ## Can I export a fixture list to a spreadsheet?
 
 Use Copy when you need to paste the schedule into chat or email. Use CSV when you want to edit it in Excel or Google Sheets. Use Print when you need a clipboard copy, wall sheet, or registration-desk version.
+
+## Can I share the fixture list without making players sign in?
+
+Yes. Generate the fixture list in the browser, then use Copy, CSV, Share, or Print depending on how you publish schedules. Use CSV when the schedule needs spreadsheet edits; use Print when players need a clean table at the venue.
 
 ## Common Questions
 

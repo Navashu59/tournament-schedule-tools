@@ -10,11 +10,23 @@ Enter one team or player per line, choose the format that matches your event, th
 
 Round robin means every participant plays every other participant. The matchup count is n times n minus 1 divided by 2. If the participant count is odd, one team sits out each round. That bye is normal, not an error.
 
+## What happens with an odd number of teams?
+
+With an odd number of teams, one team receives a bye each round. The field still completes a fair all-play-all schedule when the bye rotates: every team plays `n - 1` matches and rests once.
+
+A 5-team round robin creates 5 rounds and 10 games. A 7-team round robin creates 7 rounds and 21 games. If you see the same team resting twice before another team rests once, regenerate or review the participant list before publishing.
+
 ## How many games are in a round robin tournament?
 
 Use `n x (n - 1) / 2` for a single round robin, where `n` is the number of teams or players. Six teams make 15 games, eight teams make 28 games, and ten teams make 45 games. A double round robin doubles those totals.
 
 Check the game count before you publish. A full round robin can be fair but too long for one day if you have limited courts or short venue time.
+
+## How many rounds and games will my tournament have?
+
+For an even number of teams, expect `n - 1` rounds with `n / 2` games in each round. For an odd number of teams, expect `n` rounds with `(n - 1) / 2` games and one bye in each round. Total games stay `n x (n - 1) / 2` for a single round robin.
+
+Use the court count and match length to check whether those rounds fit the real day. If the calculated schedule is too long, pools or a shorter bracket may be easier than squeezing a full round robin into the venue.
 
 ## How do I make a round robin schedule online?
 

@@ -890,7 +890,7 @@ function writeSupportFiles() {
     { url: "/", lastmod: "2026-05-28" },
     { url: "/tools/", lastmod: "2026-07-04" },
     { url: "/guides/", lastmod: "2026-07-04" },
-    ...pages.filter((p) => !inactivePageUrls.has(p.url)).map((p) => ({ url: p.url, lastmod: contentQualityUpdated })),
+    ...pages.filter((p) => !inactivePageUrls.has(p.url)).map((p) => ({ url: p.url, lastmod: p.date_modified || contentQualityUpdated })),
     ...trustPages.map((p) => ({ url: p.url, lastmod: "2026-05-28" }))
   ];
   fs.writeFileSync(path.join(publicDir, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>

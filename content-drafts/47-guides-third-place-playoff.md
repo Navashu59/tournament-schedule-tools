@@ -24,6 +24,12 @@ A third-place game decides only third and fourth place. A [Consolation Bracket](
 
 Use one placement game when only bronze or third place matters. Use a consolation format when the event wants to guarantee more playing time across a larger part of the field.
 
+### When is a full consolation bracket better than one bronze match?
+
+Use a full consolation bracket when the event promises multiple games, complete placement, or meaningful ranking below fourth place. A single bronze match helps only the two semifinal losers. It does not solve the problem of first-round losers traveling for one short match.
+
+If the goal is participant experience, compare the time cost before choosing. A third-place playoff adds one match. A full consolation bracket can add several rounds and needs clearer communication, staffing, and court time.
+
 ## When should the third-place playoff be scheduled?
 
 Schedule it only after both semifinals are complete. Three common options are:
