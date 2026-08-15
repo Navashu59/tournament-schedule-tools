@@ -14,6 +14,12 @@ Use the fixture generator when you need a match list that people can follow in o
 
 The generated table can be copied, printed, or exported to CSV for spreadsheet edits. Use the exported version when you need to add referees, field numbers, notes, or manual date changes.
 
+## What setup fields matter before generating fixtures?
+
+Start with the participant list, then decide the format, number of courts or venues, start time, and match length. These fields shape whether the fixture list is usable in the real event. A correct matchup order still needs enough venue capacity and enough time between rounds.
+
+If fixtures happen across several dates, generate the match order first and export CSV. Add dates, referee names, field numbers, or manual notes in the spreadsheet after you have checked that every team appears in the expected number of matches.
+
 ## How do I generate a fixture list for a tournament?
 
 A fixture list is the practical schedule people follow: match order, round or week, venue, and time slot. Use this generator when the event needs a shareable list rather than only a bracket path. If you also need seeded tournament rounds, set the participant order here before generating the fixtures.
@@ -53,6 +59,12 @@ For a single round robin, an even field usually needs `n - 1` rounds. An odd fie
 Use a fixture generator when you want a list of matches by round, week, venue, or time. Use a tournament schedule generator when you are still choosing the event format: round robin, single elimination, double elimination, or a league-style fixture list.
 
 If you already know the format, this page keeps the task narrow: create the fixtures, review conflicts, then export or print.
+
+## Should I use a fixture generator or league software?
+
+Use this fixture generator when you need a fast browser-based match list that can be copied, shared, printed, or exported. It is a good fit for small leagues, club nights, school events, and organizers who want to review the schedule before publishing.
+
+Use league software when you also need player accounts, registration, payments, standings, referee workflows, live scoring, or a public league website. This page focuses on fixtures and schedule review, so it should not be treated as a full league-management platform.
 
 ## What should I check before publishing a fixture list?
 

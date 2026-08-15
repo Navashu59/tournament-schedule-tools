@@ -18,6 +18,12 @@ Enter teams first, then set the number of courts or fields, the start time, and 
 
 If you are using multiple courts, check the first two rounds for overloaded courts or back-to-back matches. Fixing those issues before printing is easier than changing the schedule after players arrive.
 
+## Should I use a simple schedule maker or full league software?
+
+Use this schedule maker when you need a clean match order, byes, courts, times, copy, print, share, or CSV export without creating accounts. That fits one-day tournaments, club events, classroom games, office brackets, and small leagues where the organizer still reviews the final schedule.
+
+Use full league software when you also need registration, payments, player accounts, live scoring, standings, referee assignments, waivers, or a public season website. A simple generator is faster for schedule creation, but it is not a replacement for a league-management system.
+
 ## Review rounds, byes, and rest
 
 Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.
@@ -27,6 +33,12 @@ Start with a rough participant list, generate once, then look for practical prob
 Choose round robin when every team should play every other team. Choose single elimination when the event needs to finish quickly. Choose league fixtures when matches are spread across weeks, sessions, or venues.
 
 If fairness matters more than speed, compare formats before publishing. A full round robin gives more games, but it can overload a venue. A bracket is faster, but players may be done after one loss.
+
+## What should I check before sharing a tournament schedule?
+
+Check the schedule the same way a player will read it: who they play, where they play, when they play, and when they rest. A schedule that looks mathematically correct can still fail if one team has repeated back-to-back matches, a court is overloaded, or the final round starts after the venue closes.
+
+For a quick organizer review, scan duplicate names, first-round byes, court count, match length, break time, and whether the published format matches what participants expected.
 
 ## Can I export the tournament schedule to Excel or Google Sheets?
 

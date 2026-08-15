@@ -22,6 +22,12 @@ Use `n x (n - 1) / 2` for a single round robin, where `n` is the number of teams
 
 Check the game count before you publish. A full round robin can be fair but too long for one day if you have limited courts or short venue time.
 
+## How does the round robin circle method work?
+
+The circle method keeps one participant fixed and rotates the others each round. In a six-team schedule, each team needs five rounds so every pair meets once. If the field has an odd number of teams, add a temporary bye slot; whoever is paired with that slot rests during that round.
+
+This page handles the rotation for you, but the same rule is worth understanding when you audit the output. Every team should appear once per round unless it has the bye, and no pair should repeat in a single round robin.
+
 ## How many rounds and games will my tournament have?
 
 For an even number of teams, expect `n - 1` rounds with `n / 2` games in each round. For an odd number of teams, expect `n` rounds with `(n - 1) / 2` games and one bye in each round. Total games stay `n x (n - 1) / 2` for a single round robin.
@@ -41,6 +47,10 @@ Yes. Use Print for a clean event copy, CSV for Excel or Google Sheets, and Copy 
 ## Can I make a round robin with home and away games?
 
 Use a double round robin if each pair should play twice, once as home and once as away. For casual events, home/away may simply mean first-listed team, court side, or jersey color. For leagues, export to CSV and review each team's sequence so the same team is not always listed away.
+
+## Can I run a round robin on multiple courts?
+
+Yes. Courts change the timeline, not the total number of games. Set the number of courts or venues before generating, then check the first two rounds for repeated court pressure and back-to-back matches. If the schedule still runs too long, reduce the participant count, split into pools, shorten match length, or move to a bracket after pool play.
 
 ## Review rounds, byes, and rest
 
