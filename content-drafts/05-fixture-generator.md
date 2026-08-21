@@ -40,11 +40,19 @@ Start with the match order, then add the real venue constraints before publishin
 
 If dates are spread across weeks, export the fixture list to a spreadsheet and add the date column there. Keep the generated round and matchup order intact while you make venue-specific edits.
 
+### Can I create weekly league fixtures?
+
+Yes. Generate the matchup order first, then export CSV and add week numbers, dates, field names, referee assignments, or weather notes in a spreadsheet. Keep the generated round order stable while you make date edits so repeated opponents and byes are easier to audit.
+
 ## How do I create fixtures with home and away balance?
 
 League fixtures are useful when matches happen over days or weeks instead of one bracket session. After generating the list, review whether home and away labels, venue use, and rest timing make sense for the league you are running.
 
 For a small league, scan each team's row after export. No team should be stuck with the same venue pattern, repeated back-to-back games, or a long gap that other teams do not have.
+
+### How do I check home and away balance before publishing?
+
+Look at each team rather than only the full fixture table. Count how often each team is listed first, how often it travels to a different field, and whether the same team gets several late games in a row. The generator gives the draft; the final league calendar still needs this organizer review.
 
 ## Can I create fixtures for an odd number of teams?
 
@@ -77,6 +85,10 @@ For a round robin, every team should appear against every other team once unless
 ### How do I avoid duplicate fixtures?
 
 After generating, scan the team pairs rather than only the round numbers. Each pairing should appear once in a single round robin, or twice if you intentionally run home-and-away legs. Duplicate pairings usually mean the participant list had a repeated team name or the format was changed after the first draft.
+
+### What is the difference between a fixture generator and a match scheduler?
+
+A fixture generator decides who plays whom. A match scheduler adds when and where those fixtures happen. This page does both at a basic level: it creates the matchup list, then assigns rounds, courts or fields, and time slots that you can review before export.
 
 ## Can I export a fixture list to a spreadsheet?
 

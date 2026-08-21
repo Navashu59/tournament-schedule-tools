@@ -22,6 +22,10 @@ Start with the number of courts. With three courts, each round can run as one ti
 
 For example, 20-minute matches on one court need at least 420 minutes before breaks. The same event on three courts needs at least 140 minutes before breaks. Add buffer time if players need to move between fields, report scores, or warm up after a bye.
 
+### How many courts do I need for a 7-team round robin?
+
+Three courts let each round run at full speed because a 7-team round has three games and one bye. Two courts work, but each round spills into a second time slot. One court is easiest to manage but takes the longest because all 21 games run one after another.
+
 ## 7 team round robin schedule example
 
 Use this example to check the shape of the schedule before you enter real team names:
@@ -39,6 +43,10 @@ The generated tool output will use your team names, courts, and start time. Use 
 ## How do byes work with 7 teams?
 
 One team rests in each round. That bye should rotate so no team gets two rest rounds and no team plays every round. If the bye order feels unfair for your venue, regenerate or change the entered order before publishing the final schedule.
+
+### Is a 7-team round robin fair?
+
+It is fair when every team plays six games, every pair meets once, and each team receives exactly one bye. The organizer still needs to check practical fairness: whether one team gets a very early bye, too many late games, or repeated court assignments.
 
 ## Example 7-team setup
 

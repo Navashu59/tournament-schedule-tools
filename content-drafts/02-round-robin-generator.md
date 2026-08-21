@@ -52,6 +52,14 @@ Use a double round robin if each pair should play twice, once as home and once a
 
 Yes. Courts change the timeline, not the total number of games. Set the number of courts or venues before generating, then check the first two rounds for repeated court pressure and back-to-back matches. If the schedule still runs too long, reduce the participant count, split into pools, shorten match length, or move to a bracket after pool play.
 
+### How do I estimate round robin schedule time?
+
+Estimate the total time from rounds, courts, and match length. Even teams usually need `n - 1` rounds; odd teams usually need `n` rounds. If each round can run at the same time across enough courts, multiply rounds by match length plus breaks. If you only have one court, multiply total games by match length plus breaks.
+
+### Should I use single or double round robin?
+
+Use a single round robin when every team only needs to meet once. Use a double round robin when home and away balance matters or when the league needs more games. Double round robin is fairer for leagues, but it doubles the match count and can make a one-day event unrealistic.
+
 ## Review rounds, byes, and rest
 
 Start with a rough participant list, generate once, then look for practical problems: too many matches on one court, a bye at the wrong time, top seeds meeting too early, or a schedule that runs past your venue booking. Adjust inputs and generate again before printing.

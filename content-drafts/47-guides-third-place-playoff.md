@@ -14,6 +14,10 @@ The two semifinal losers play each other. The winner finishes third and the lose
 
 Show that path explicitly in the bracket or schedule. If the bracket layout has no connector for the extra game, add a separate row labeled “Third-place game: Semifinal loser 1 vs Semifinal loser 2.”
 
+### How do I label the third-place playoff in a bracket?
+
+Use labels that name the source of each team: “Loser of Semifinal 1” and “Loser of Semifinal 2.” Avoid writing the original seed numbers unless both semifinals are already known, because those labels can become wrong after an upset.
+
 ## Is a bronze-medal match different from a third-place playoff?
 
 Usually, no. “Bronze-medal match” is common in medal events, while “third-place playoff,” “third-place game,” and “placement match” are common in tournament schedules. The format is the same: one extra match between the semifinal losers.
@@ -40,6 +44,10 @@ Schedule it only after both semifinals are complete. Three common options are:
 
 Allow both semifinal losers enough recovery time. Do not place the bronze match immediately after one semifinal if the other player receives a much longer rest.
 
+### Should the bronze match be before or after the final?
+
+Before the final is the safest choice when you want the championship match to close the event. Running it beside the final can save time if you have another court, but it may split attention. After the final only works when third place affects medals, points, or qualification.
+
 ## How do I add the bronze match to a tournament schedule?
 
 Build the main path with the [Tournament Bracket Maker](/tournament-bracket-maker/), then add one placement row after both semifinals. Use the [Tournament Schedule Maker](/tournament-schedule-maker/) when the match also needs a court and time slot.
@@ -51,6 +59,10 @@ Before publishing, confirm:
 - what the result changes;
 - how much rest each semifinal loser receives;
 - whether the venue has time and space for it.
+
+### Can a third-place playoff be optional?
+
+It can, but the rule should be published before the semifinals. If the match is optional, say what happens when one side declines: shared third, forfeit, no placement awarded, or the other side receives third place.
 
 ## What happens if a team declines the third-place game?
 
