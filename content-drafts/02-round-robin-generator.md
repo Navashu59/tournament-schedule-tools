@@ -26,12 +26,12 @@ Check the game count before you publish. A full round robin can be fair but too 
 
 Use a round robin when fair ranking matters more than speed. Every team plays every other team, so one bad game does not end the event. Use a knockout or single-elimination bracket when you have many teams, limited venue time, or only need a fast winner.
 
-| Format | Best for | Tradeoff |
-| --- | --- | --- |
-| Round robin | Small groups, leagues, qualifying pools, fair ranking | More matches and more venue time |
-| Knockout bracket | Large fields, one-day events, fast winners | One loss can remove a strong team |
-| Pools then bracket | Medium events that need both fairness and a final winner | More setup and clearer communication needed |
-| Double round robin | Home-and-away leagues or longer seasons | Doubles the match count |
+Use these rules of thumb:
+
+- **Round robin:** best for small groups, leagues, qualifying pools, and fair ranking; the tradeoff is more matches and more venue time.
+- **Knockout bracket:** best for large fields, one-day events, and fast winners; the tradeoff is that one bad game can remove a strong team.
+- **Pools then bracket:** best for medium events that need both fair group play and a final winner; the tradeoff is more setup and clearer communication.
+- **Double round robin:** best for home-and-away leagues or longer seasons; the tradeoff is that the match count doubles.
 
 If the match count is too high, make pools first and send the top teams to a [single elimination bracket](/single-elimination-bracket-generator/) or [tournament bracket](/tournament-bracket-maker/). If the event is a season rather than a one-day tournament, a [fixture generator](/fixture-generator/) or [league schedule maker](/league-schedule-maker/) may be a better fit.
 
