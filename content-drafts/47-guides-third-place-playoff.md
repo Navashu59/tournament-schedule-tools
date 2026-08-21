@@ -8,6 +8,15 @@ Add the match when third place affects medals, points, qualification, seeding, o
 
 Skip it when third place has no consequence, venue time is tight, or semifinal losers are unlikely to stay. If guaranteed games are the goal, compare the available options in [Tournament Formats](/guides/tournament-formats/) instead of adding one late match by default.
 
+The practical test is simple: publish a third-place playoff only when the result changes something. That might be a bronze medal, a ranking point, a qualifying spot, or a promised placement match. If it only adds fatigue and delays the final, leave it out or make the rule optional before the event starts.
+
+| Add the match when | Skip the match when |
+| --- | --- |
+| Third place affects medals, prizes, points, or qualification | Third and fourth place have no practical difference |
+| Players expect a complete placement result | Venue time is tight or staff coverage is limited |
+| Another court can run it without delaying the final | Semifinal losers are unlikely to stay |
+| Sponsors or spectators value the extra match | Guaranteed games should be handled with pools or consolation play instead |
+
 ## Who plays in the third-place game?
 
 The two semifinal losers play each other. The winner finishes third and the loser finishes fourth.

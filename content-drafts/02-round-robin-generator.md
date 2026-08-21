@@ -22,6 +22,19 @@ Use `n x (n - 1) / 2` for a single round robin, where `n` is the number of teams
 
 Check the game count before you publish. A full round robin can be fair but too long for one day if you have limited courts or short venue time.
 
+## When should you use a round robin instead of a knockout tournament?
+
+Use a round robin when fair ranking matters more than speed. Every team plays every other team, so one bad game does not end the event. Use a knockout or single-elimination bracket when you have many teams, limited venue time, or only need a fast winner.
+
+| Format | Best for | Tradeoff |
+| --- | --- | --- |
+| Round robin | Small groups, leagues, qualifying pools, fair ranking | More matches and more venue time |
+| Knockout bracket | Large fields, one-day events, fast winners | One loss can remove a strong team |
+| Pools then bracket | Medium events that need both fairness and a final winner | More setup and clearer communication needed |
+| Double round robin | Home-and-away leagues or longer seasons | Doubles the match count |
+
+If the match count is too high, make pools first and send the top teams to a [single elimination bracket](/single-elimination-bracket-generator/) or [tournament bracket](/tournament-bracket-maker/). If the event is a season rather than a one-day tournament, a [fixture generator](/fixture-generator/) or [league schedule maker](/league-schedule-maker/) may be a better fit.
+
 ## How does the round robin circle method work?
 
 The circle method keeps one participant fixed and rotates the others each round. In a six-team schedule, each team needs five rounds so every pair meets once. If the field has an odd number of teams, add a temporary bye slot; whoever is paired with that slot rests during that round.

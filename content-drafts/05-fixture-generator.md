@@ -68,6 +68,10 @@ Use a fixture generator when you want a list of matches by round, week, venue, o
 
 If you already know the format, this page keeps the task narrow: create the fixtures, review conflicts, then export or print.
 
+### What is the difference between fixtures and a round robin schedule?
+
+Fixtures are the individual matches people need to play: who plays whom, when, and where. A round robin schedule is one possible fixture pattern where every team plays every other team once, or twice in a home-and-away league. Use fixtures when the practical calendar matters most; use the [round robin generator](/round-robin-generator/) when the all-play-all format is the main requirement.
+
 ## Should I use a fixture generator or league software?
 
 Use this fixture generator when you need a fast browser-based match list that can be copied, shared, printed, or exported. It is a good fit for small leagues, club nights, school events, and organizers who want to review the schedule before publishing.
