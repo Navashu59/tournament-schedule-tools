@@ -34,7 +34,7 @@
         "round_robin"
       ],
       "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
-      "date_modified": "2026-08-21"
+      "date_modified": "2026-08-24"
     },
     {
       "rank": 3,
@@ -80,7 +80,7 @@
         "league_schedule"
       ],
       "content_angle": "Solve the task first with a usable scheduler, then explain edge cases, examples, and fairness rules.",
-      "date_modified": "2026-08-21"
+      "date_modified": "2026-08-24"
     },
     {
       "rank": 6,
@@ -602,7 +602,7 @@
       "user_problem": "Organizers need to understand Swiss tournaments before choosing rounds, pairings, standings rules, and schedule tools.",
       "tool_modes": [],
       "date_published": "2026-06-02",
-      "date_modified": "2026-06-02",
+      "date_modified": "2026-08-24",
       "content_angle": "Explain the format carefully without claiming one official pairing algorithm across all sports, games, and leagues."
     },
     {

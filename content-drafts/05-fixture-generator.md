@@ -40,6 +40,10 @@ Start with the match order, then add the real venue constraints before publishin
 
 If dates are spread across weeks, export the fixture list to a spreadsheet and add the date column there. Keep the generated round and matchup order intact while you make venue-specific edits.
 
+### How do I create a fixture list with dates and venues?
+
+Generate the fixture order first, then export CSV and add real dates, venue names, referee assignments, and notes in your spreadsheet. Keep the generated round order unchanged while you add calendar details so duplicate opponents, repeated byes, and uneven rest gaps remain easy to audit.
+
 ### Can I create weekly league fixtures?
 
 Yes. Generate the matchup order first, then export CSV and add week numbers, dates, field names, referee assignments, or weather notes in a spreadsheet. Keep the generated round order stable while you make date edits so repeated opponents and byes are easier to audit.
@@ -77,6 +81,10 @@ Fixtures are the individual matches people need to play: who plays whom, when, a
 Use this fixture generator when you need a fast browser-based match list that can be copied, shared, printed, or exported. It is a good fit for small leagues, club nights, school events, and organizers who want to review the schedule before publishing.
 
 Use league software when you also need player accounts, registration, payments, standings, referee workflows, live scoring, or a public league website. This page focuses on fixtures and schedule review, so it should not be treated as a full league-management platform.
+
+### Can I use this as a sports matchup generator?
+
+Yes, when the task is to create fair matchups and a readable schedule. Enter teams or players, choose the format, then review whether the generated pairings fit your courts, fields, dates, and match length. If you need standings, payments, registrations, or live scoring, use dedicated league software after the fixture list is planned.
 
 ## What should I check before publishing a fixture list?
 

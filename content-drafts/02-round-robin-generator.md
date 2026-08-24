@@ -57,6 +57,10 @@ If you are not sure whether a full round robin is realistic, check the match cou
 
 Yes. Use Print for a clean event copy, CSV for Excel or Google Sheets, and Copy when you need to paste the schedule into an email, chat, or registration message. Before printing, check that every team appears in the expected number of rounds and that byes rotate correctly for odd team counts.
 
+### Can I share or print a round robin schedule?
+
+Yes. Use Print for a clean event copy, CSV for spreadsheet editing, and Copy when the schedule needs to go into email, chat, or a registration note. Before sharing, verify every team has the expected number of games and that odd-team byes rotate once per team.
+
 ## Can I make a round robin with home and away games?
 
 Use a double round robin if each pair should play twice, once as home and once as away. For casual events, home/away may simply mean first-listed team, court side, or jersey color. For leagues, export to CSV and review each team's sequence so the same team is not always listed away.
@@ -72,6 +76,10 @@ Estimate the total time from rounds, courts, and match length. Even teams usuall
 ### Should I use single or double round robin?
 
 Use a single round robin when every team only needs to meet once. Use a double round robin when home and away balance matters or when the league needs more games. Double round robin is fairer for leagues, but it doubles the match count and can make a one-day event unrealistic.
+
+### How do I make a round robin schedule with dates?
+
+Generate the rounds first, then export CSV and add dates or weeks after the matchup order is correct. If a league plays once per week, keep each generated round together unless venue availability forces a change. Moving individual matches by hand can create repeated rest gaps or hide an uneven bye.
 
 ## Review rounds, byes, and rest
 

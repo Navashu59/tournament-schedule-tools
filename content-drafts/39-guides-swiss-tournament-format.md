@@ -24,6 +24,16 @@ There is no single round count that fits every Swiss event. Organizers usually c
 
 More rounds give the standings more information, but they also require more courts, tables, or time slots. Before publishing the schedule, check how many matches each round creates and whether your venue can run them.
 
+## How many rounds should a Swiss tournament have?
+
+A practical starting point is to choose enough rounds that players with similar records can separate, but not so many that the venue runs out of time. Small casual events often use 3 rounds for about 8 players, 4 or 5 rounds for about 16 players, and 5 or 6 rounds for about 32 players.
+
+Treat those as planning ranges, not official rules. The right number depends on time control, match length, whether draws are possible, how exact the standings need to be, and whether the top finishers move into a playoff bracket.
+
+### Is there a Swiss tournament round formula?
+
+Some organizers use `ceil(log2(n))` as a rough minimum for separating a field, where `n` is the number of entrants. That shortcut helps with planning, but it does not replace the rules for chess, esports, tabletop events, or any platform that has its own pairing and tie-break requirements.
+
 ## Pairings and standings
 
 Swiss pairings are commonly based on current record, but exact pairing rules vary by sport, game, platform, and organizer. Some events avoid repeat pairings, some protect teams from facing clubmates, and some use software-specific tie-breakers.

@@ -202,6 +202,15 @@ function pageDescription(page) {
   if (page.url === "/guides/third-place-playoff/") {
     return "What a third-place playoff is, who plays, when to schedule the bronze-medal match, and when a consolation bracket is the better choice.";
   }
+  if (page.url === "/guides/how-to-handle-byes-in-a-tournament/") {
+    return "How tournament byes work in brackets and round robins, how many byes are needed, and how to assign them fairly before publishing.";
+  }
+  if (page.url === "/guides/swiss-tournament-format/") {
+    return "What a Swiss tournament format is, how pairings work, how many rounds to plan, and when Swiss is better than round robin or elimination.";
+  }
+  if (page.url === "/fixture-generator/") {
+    return "Create a fixture list with teams, rounds, courts, venues, time slots, CSV export, and checks for byes, repeats, and rest gaps.";
+  }
   const base = {
     tool: `Use this ${page.keyword} to create fair matchups, byes, court assignments, time slots, print views, and CSV exports.`,
     guide: `${page.title}: a practical guide for planning fair tournaments, brackets, round robins, byes, and schedules.`
