@@ -7,6 +7,7 @@ const siteOrigin = (process.env.SITE_ORIGIN || "https://tournamentscheduletools.
 const siteName = "Tournament Schedule Tools";
 const contentQualityUpdated = "2026-07-28";
 const gaMeasurementId = process.env.GA_MEASUREMENT_ID || "G-FRBEHZZ2T5";
+const indexNowKey = "828dd65056bd7082aea0b4d4eb35498f";
 const pages = JSON.parse(fs.readFileSync(path.join(root, "planning", "page-map.json"), "utf8")).pages;
 const inactivePageUrls = new Set([
   "/bracket-generator/",
@@ -911,6 +912,7 @@ ${urlEntries.map((entry) => `  <url><loc>${canonical(entry.url)}</loc><lastmod>$
 Allow: /
 Sitemap: ${siteOrigin}/sitemap.xml
 `);
+  fs.writeFileSync(path.join(publicDir, `${indexNowKey}.txt`), indexNowKey);
   if (siteOrigin === "https://tournamentscheduletools.org") {
     fs.writeFileSync(path.join(publicDir, "_redirects"), `${[...retiredRedirects].map(([from, to]) => `${from} ${to} 301`).join("\n")}
 https://www.tournamentscheduletools.org/* https://tournamentscheduletools.org/:splat 301
